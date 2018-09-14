@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class='container'>
+  <h1>Batches</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Date</td>
+        <td>Type</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let batch of batches">
+        <td><a routerLink="/editBatch/{{batch.id}}">{{batch.name}}</a></td>
+        <td>{{batch.creationDate | date : "MMMM d, y @ h:mm a"}}</td>
+        <td>{{batch.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

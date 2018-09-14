@@ -1,0 +1,141 @@
+<nav class='navbar navbar-inverse'>
+  <div class='container'>
+    <a class='navbar-brand' [routerLink]="['', languageService.language]">{{'Header.Title' | translate}}</a>
+
+    <div id='controls'>
+      {{'ImageViewer.Timer' | translate}}: {{time.minutes}}:{{time.seconds | number:'2.0'}} <span *ngIf="paused">({{'ImageViewer.Paused'
+        | translate}})</span>
+
+      <button (click)="previousImage()">
+        <fa-icon icon="backward"></fa-icon>
+      </button>
+      <button (click)="togglePause()"><span *ngIf="!paused">
+          <fa-icon icon="pause"></fa-icon>
+        </span><span *ngIf="paused">
+          <fa-icon icon="play"></fa-icon>
+        </span></button>
+      <button (click)="stop()">
+        <fa-icon icon="stop"></fa-icon>
+      </button>
+      <button (click)="nextImage()">
+        <fa-icon icon="forward"></fa-icon>
+      </button>
+      <button (click)="openModal(info)">
+        <fa-icon icon="info-circle"></fa-icon>
+      </button>
+      <button (click)="openModal(about)">
+        <fa-icon icon="question-circle"></fa-icon>
+      </button>
+
+      <div *ngIf="classInfo">
+        {{'Filters.ClassMode' | translate}}: {{classInfo.breakdown[classIndex].current + 1}} /
+        {{classInfo.breakdown[classIndex].count}} - {{classInfo.breakdown[classIndex].value}}.
+
+        <span *ngIf="classInfo.breakdown[classIndex + 1] != null">
+          {{'ImageViewer.Next' | translate}}: <span *ngIf="classInfo.breakdown[classIndex + 1]?.type=='break'">{{'Filters.Break'
+            | translate}}: </span>{{classInfo.breakdown[classIndex
+          + 1]?.value}}
+
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class='container' (document:keyup)="keyPressed($event)">
+
+
+  <div id="image" *ngIf="imageFound() && image.file !== undefined">
+    <img *ngIf="!break" src='{{getUrl(image.file)}}' class='referenceImage' [@fadeOut]="fadeOut">
+    <div *ngIf="break">
+      <h2>{{'ImageViewer.TakeABreak' | translate}}</h2>
+      {{'ImageViewer.ItsTimeForABreak' | translate}}
+    </div>
+  </div>
+
+  <div *ngIf="!imageFound()">
+    {{'ImageViewer.NoMoreImages' | translate}}
+  </div>
+
+</div>
+
+
+
+<ng-template #info let-c="close" let-d="dismiss">
+  <div class='modal-header'>
+    <h3>{{'ImageViewer.ImageInfo' | translate}}</h3>
+  </div>
+  <div class='modal-body'>
+    <a *ngIf="image.sourceUrl" href='{{image.sourceUrl}}'>{{'ImageViewer.Source' | translate}}</a>
+    <br /> <b>{{'ImageViewer.Model' | translate}}: </b>
+    <a href='{{image.model?.webpage}}'>{{image.model?.name}}</a>
+    <br /> <b>{{'ImageViewer.Photographer' | translate}}: </b>
+    <a href='{{image.photographer?.webpage}}'>{{image.photographer?.name}}</a>
+    <br /> <b>{{'ImageViewer.DateAdded' | translate}}: </b> {{image.uploadDate | date : "MMMM d, y"}}
+    <br /> <b>{{'ImageViewer.TermsOfUse' | translate}}: </b> {{image.termsOfUse}}
+    <br />
+    <hr />
+    <h4>{{'ImageViewer.Classifications' | translate}}</h4>
+    <div *ngIf="referenceType == 'FullBodies'">
+      <b>{{'Filters.NSFW' | translate}}:</b> {{'Filters.' + image.classifications.nsfw | translate}}<br />
+      <b>{{'FullBody.Clothing' | translate}}:</b> {{'Filters.' + image.classifications.clothing | translate}}<br />
+      <b>{{'Filters.Gender' | translate}}:</b> {{'Filters.' + image.classifications.gender | translate}}<br />
+      <b>{{'FullBody.Pose' | translate}}:</b> {{'FullBody.' + image.classifications.poseType | translate}}<br />
+      <b>{{'Filters.View' | translate}}:</b> {{'Filters.' + image.classifications.viewAngle | translate}}
+    </div>
+
+    <div *ngIf="referenceType == 'Animals'">
+      <b>{{'Animal.Species' | translate}}: </b> {{'Animal.' + image.classifications.species | translate}}<br />
+      <b>{{'Animal.Category' | translate}}: </b>{{'Animal.' + image.classifications.category | translate}}<br />
+      <b>{{'Filters.View' | translate}}: </b>{{'Filters.' + image.classifications.viewAngle | translate}}
+    </div>
+
+    <div *ngIf="referenceType == 'BodyParts'">
+      <b>{{'BodyPart.BodyPart' | translate}}: </b>{{'BodyPart.' + image.classifications.bodyPart | translate}}<br />
+      <b>{{'Filters.Gender' | translate}}: </b>{{'Filters.' + image.classifications.gender | translate}}<br />
+      <b>{{'Filters.View' | translate}}: </b>{{'Filters.' + image.classifications.viewAngle | translate}}
+    </div>
+    <hr />
+    <div>
+      <b>Id: </b>{{image.id}}<br />
+      <b>Batch: </b>{{image.batchId}}<br />
+    </div>
+
+  </div>
+  <div class='modal-footer'>
+    <button (click)="c()">{{'ImageViewer.Close' | translate}}</button>
+  </div>
+</ng-template>
+
+<ng-template #about let-c="close" let-d="dismiss">
+  <div class='modal-header'>
+    <h3>{{'ImageViewer.About' | translate}}</h3>
+  </div>
+  <div class='modal-body'>
+    {{'ImageViewer.LeftControls' | translate}}
+    <br /> {{'ImageViewer.RightControls' | translate}}
+    <br /> {{'ImageViewer.SpacebarControls' | translate}}
+    <br /> {{'ImageViewer.EscapeControls' | translate}}<br />
+    <br />
+    <a href='mailto:artomizer@sketchdaily.net'>Contact us</a> to report issues or suggest improvements!<br />
+    <a href='https://www.reddit.com/r/sketchdaily'>{{'ImageViewer.VisitUsOnReddit' | translate}}</a>
+
+  </div>
+  <div class='modal-footer'>
+    <button (click)="c()">{{'ImageViewer.Close' | translate}}</button>
+  </div>
+</ng-template>
+
+<ng-template #classComplete let-c="close" let-d="dismiss">
+  <div class='modal-header'>
+    <h3>{{'ImageViewer.ClassComplete' | translate}}</h3>
+  </div>
+  <div class='modal-body'>
+    {{'ImageViewer.NiceWork' | translate}}<br /><br />
+    {{'ImageViewer.MaybeTakeABreak' | translate}}
+
+  </div>
+  <div class='modal-footer'>
+    <button (click)="c()">{{'ImageViewer.Close' | translate}}</button>
+  </div>
+</ng-template>

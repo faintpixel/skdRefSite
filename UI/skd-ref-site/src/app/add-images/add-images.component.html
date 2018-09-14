@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class='container'>
+    <div class='well'>
+        <h2>Add Images</h2>
+
+        <app-image-pre-upload-questions *ngIf="!questionsAnswered" (questionsAnsweredSuccessfully)="onQuestionsAnswered($event)"></app-image-pre-upload-questions>
+
+        <app-image-uploader *ngIf="questionsAnswered && !imagesUploaded" [batchInfo]="answers" (imagesUploaded)="onImagesUploaded($event)"></app-image-uploader>
+
+        <app-image-categorizer *ngIf="imagesUploaded" [images]="images" [referenceType]="answers.type"></app-image-categorizer>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-inverse {
+    background-color: #1b1b1b;
+    background-color: #1b1b1b;
+    background-image: -moz-linear-gradient(top,#222,#111);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#222),to(#111));
+    background-image: -webkit-linear-gradient(top,#222,#111);
+    background-image: -o-linear-gradient(top,#222,#111);
+    background-image: linear-gradient(to bottom,#222,#111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    border-width: 1px;
+    border-style: solid;
+    height: 41px;
+}
+
+select {
+    background-color: black;
+    color: grey;
+    
+    border: none;
+}

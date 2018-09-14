@@ -1,0 +1,18 @@
+#home {
+    margin-top: 60px;
+}
+
+.background {
+    background-image: url('/assets/img/background.jpg');
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    overflow: auto;
+}
+
+.strike {
+    text-decoration: line-through;
+}

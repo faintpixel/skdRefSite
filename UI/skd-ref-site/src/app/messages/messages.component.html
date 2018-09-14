@@ -1,0 +1,6 @@
+<div *ngIf="messageService.messages.length" class='alertContainer'>
+  <div *ngFor='let message of messageService.messages' class='alert alert-danger'>
+    <b>{{message.type}}:</b>
+    {{message.details}}
+  </div>
+</div>

@@ -1,0 +1,142 @@
+<div (change)="updateCount()" class='well'>
+  <ngb-tabset (tabChange)="tabChanged($event)">
+    <ngb-tab title="{{'FullBody.FullBody' | translate}}" id='FullBodiesTab'>
+      <ng-template ngbTabContent>
+        <div>
+          <label for='fullBodyGender'>{{'Filters.Gender' | translate}}:</label>
+          <select id='fullBodyGender' class='form-control' [(ngModel)]="filters.FullBodies.Gender">
+            <option *ngFor="let gender of genders" [value]="gender">{{ 'Filters.' + gender | translate }}</option>
+
+          </select>
+          <br />
+          <label for='fullBodyClothing'>{{'FullBody.Clothing' | translate}}:</label>
+          <select id='fullBodyClothing' class='form-control' [(ngModel)]="filters.FullBodies.Clothing">
+            <option *ngFor="let c of clothing" [value]="c">{{ 'FullBody.' + c | translate }}</option>
+          </select>
+          <br />
+          <span *ngIf="filters.FullBodies.Clothing == 'Clothed'" class='form-check'>
+            <input id='fullBodiesIncludeNSFW' class="form-check-input" type='checkbox' [(ngModel)]="filters.FullBodies.NSFW" />
+            <label class='form-check-label' for='fullBodiesIncludeNSFW'>{{'FullBody.IncludeNSFWImages' | translate}}</label>
+            <br />
+          </span>
+          <label for='fullBodiesPose'>{{'FullBody.Pose' | translate}}:</label>
+          <select id='fullBodiesPose' class='form-control' [(ngModel)]="filters.FullBodies.PoseType">
+            <option *ngFor="let pose of poseTypes" [value]="pose">{{ 'FullBody.' + pose | translate }}</option>
+          </select>
+          <br />
+          <label for='fullBodiesView'>{{'Filters.View' | translate}}:</label>
+          <select id='fullBodiesView' class='form-control' [(ngModel)]="filters.FullBodies.ViewAngle">
+            <option *ngFor="let angle of viewAngles" [value]="angle">{{ 'Filters.' + angle | translate }}</option>
+          </select>
+          <br />
+
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="{{'BodyPart.BodyPart' | translate}}" id='BodyPartsTab'>
+      <ng-template ngbTabContent>
+
+
+        <div>
+          <label for='bodyPartsPart'>{{'BodyPart.BodyPart' | translate}}:</label>
+          <select id='bodyPartsPart' class='form-control' [(ngModel)]="filters.BodyParts.BodyPart">
+            <option *ngFor="let part of bodyParts" [value]="part">{{ 'BodyPart.' + part | translate }}</option>
+          </select>
+          <br />
+          <label for='bodyPartsGender'>{{'Filters.Gender' | translate}}:</label>
+          <select id='bodyPartsGender' class='form-control' [(ngModel)]="filters.BodyParts.Gender">
+            <option *ngFor="let gender of genders" [value]="gender">{{ 'Filters.' + gender | translate }}</option>
+          </select>
+          <br />
+          <label for='bodyPartsAngle'>{{'Filters.View' | translate}}:</label>
+          <select id='bodyPartsAngle' class='form-control' [(ngModel)]="filters.BodyParts.ViewAngle">
+            <option *ngFor="let angle of viewAngles" [value]="angle">{{ 'Filters.' + angle | translate }}</option>
+          </select>
+
+
+
+          <br />
+
+        </div>
+
+
+
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="{{'Animal.Animal' | translate}}" id='AnimalsTab'>
+      <ng-template ngbTabContent>
+
+
+        <div>
+          <label for='animalsSpecies'>{{'Animal.Species' | translate}}:</label>
+          <select id='animalsSpecies' class='form-control' [(ngModel)]="filters.Animals.Species">
+            <option *ngFor="let s of species" [value]="s">{{ 'Animal.' + s | translate }}</option>
+          </select>
+          <br />
+          <label for='animalsCategory'>{{'Animal.Category' | translate}}:</label>
+          <select id='animalsCategory' class='form-control' [(ngModel)]="filters.Animals.Category">
+            <option *ngFor="let category of animalCategories" [value]="category">{{ 'Animal.' + category | translate }}</option>
+          </select>
+          <br />
+          <label for='animalsAngle'>{{'Filters.View' | translate}}:</label>
+          <select id='animalsAngle' class='form-control' [(ngModel)]="filters.Animals.ViewAngle">
+            <option *ngFor="let angle of viewAngles" [value]="angle">{{ 'Filters.' + angle | translate }}</option>
+          </select>
+
+
+          <br />
+
+        </div>
+
+
+
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+
+
+
+  <div>
+    <div class='form-check'>
+      <input id='classMode' class='form-check-input' type='checkbox' [(ngModel)]="filters.ClassMode" />
+      <label for='classMode' class='form-check-label'>{{'Filters.ClassMode' | translate}}</label>
+    </div>
+
+    <div *ngIf="!filters.ClassMode">
+      <label for='time'>{{'Filters.Time' | translate}}:</label>
+      <select id='time' class='form-control' [(ngModel)]="filters.Time">
+        <option value='30'>{{'Timers.seconds' | translate:{'total': '30'} }}</option>
+        <option value='60'>{{'Timers.minutes' | translate:{'total': '1'} }}</option>
+        <option value='120'>{{'Timers.minutes' | translate:{'total': '2'} }}</option>
+        <option value='300'>{{'Timers.minutes' | translate:{'total': '5'} }}</option>
+        <option value='600'>{{'Timers.minutes' | translate:{'total': '10'} }}</option>
+        <option value='class'>{{'Timers.Class mode' | translate }}</option>
+        <option value='class'>{{'Timers.No timers' | translate }}</option>
+      </select>
+    </div>
+
+    <div *ngIf="filters.ClassMode">
+      <label for='classLength'>{{'Filters.Class' | translate}}:</label>
+      <select id='classLength' class='form-control' [(ngModel)]="filters.Class">
+        <option *ngFor="let class of classOptions" [value]="class.key">{{ 'Timers.' + class.value | translate }}</option>
+      </select>
+
+      <div>
+        <div *ngFor="let time of getClassBreakdown()">
+          <span *ngIf="time.type == 'break'">{{'Filters.Break' | translate}}: </span>
+          {{time.value}} <span *ngIf="time.type != 'break'">x {{ time.count}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div id='onlyMostRecentImages' class='form-check'>
+      <input id='onlyMostRecent' class='form-check-input' type='checkbox' [(ngModel)]="filters.OnlyMostRecent" />
+      <label for='onlyMostRecent' class='form-check-label'>{{'Filters.OnlyMostRecentImages' | translate}}</label>
+    </div>
+
+    <br /> {{'Filters.NumberOfImages' | translate}}: {{imageCount}}
+    <br />
+    <button class='btn btn-primary btn-block' (click)="start()">{{'Filters.Start' | translate}}</button>
+
+  </div>
+</div>

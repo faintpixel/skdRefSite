@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SkdRefSiteAPI</name>
+    </assembly>
+    <members>
+        <member name="T:SkdRefSiteAPI.Controllers.AnimalsController">
+            <summary>
+            API for working with animal references
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.Get(SkdRefSiteAPI.DAO.Models.Animals.AnimalClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Get animals
+            </summary>
+            <param name="criteria"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.GetNext(SkdRefSiteAPI.DAO.Models.Animals.AnimalClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            Gets the next image for a drawing session
+            </summary>
+            <param name="criteria"></param>
+            <param name="excludeIds"></param>
+            <param name="onlyRecentImages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.Save(System.Collections.Generic.List{SkdRefSiteAPI.DAO.Models.Animals.AnimalReference})">
+            <summary>
+            Save animals
+            </summary>
+            <param name="images"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.Count(SkdRefSiteAPI.DAO.Models.Animals.AnimalClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Gets the number of animal references matching the criteria
+            </summary>
+            <param name="classifications"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.BaseController">
+            <summary>
+            Base controller
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.BaseController.GetCurrentUser">
+            <summary>
+            Gets the current user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.BodyPartsController">
+            <summary>
+            API for working with body part references
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.Get(SkdRefSiteAPI.DAO.Models.People.BodyPartClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Get body parts
+            </summary>
+            <param name="criteria"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.GetNext(SkdRefSiteAPI.DAO.Models.People.BodyPartClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            Gets the next image for a drawing session
+            </summary>
+            <param name="criteria"></param>
+            <param name="excludeIds"></param>
+            <param name="onlyRecentImages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.Save(System.Collections.Generic.List{SkdRefSiteAPI.DAO.Models.People.BodyPartReference})">
+            <summary>
+            Save body parts
+            </summary>
+            <param name="images"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.Count(SkdRefSiteAPI.DAO.Models.People.BodyPartClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Gets the number of body part references matching the criteria
+            </summary>
+            <param name="classifications"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.DebugController">
+            <summary>
+            Debug methods for troubleshooting connectivity
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.DebugController.GetNoCommunication">
+            <summary>
+            Returns a string. No communication with other systems
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.FullBodiesController">
+            <summary>
+            API for working with full body references
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.Get(SkdRefSiteAPI.DAO.Models.People.FullBodyClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Gets full bodies
+            </summary>
+            <param name="criteria"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.GetNext(SkdRefSiteAPI.DAO.Models.People.FullBodyClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            Gets the next image for a drawing session
+            </summary>
+            <param name="criteria"></param>
+            <param name="excludeIds"></param>
+            <param name="onlyRecentImages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.Save(System.Collections.Generic.List{SkdRefSiteAPI.DAO.Models.People.FullBodyReference})">
+            <summary>
+            Saves full bodies
+            </summary>
+            <param name="images"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.Count(SkdRefSiteAPI.DAO.Models.People.FullBodyClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Gets the number of full body references matching the criteria
+            </summary>
+            <param name="classifications"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.ImageController">
+            <summary>
+            API for working with images
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.ImageController.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="hostingEnvironment"></param>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.ImageController.UploadImage(System.String)">
+            <summary>
+            Upload image
+            </summary>
+            <returns>Batch id</returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.ImageController.GetBatches">
+            <summary>
+            Gets batches
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.ImageController.GetBatchImages(System.String)">
+            <summary>
+            Gets images from batch
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.LogsController">
+            <summary>
+            API for working with logs
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.LogsController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.LogsController.Get">
+            <summary>
+            Gets all the logs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.LogsController.Delete(System.String)">
+            <summary>
+            Delete a log
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.LogsController.GetCount">
+            <summary>
+            Counts all the logs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.NewsController">
+            <summary>
+            API for working with news and announcements
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.NewsController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.NewsController.Get">
+            <summary>
+            Get news
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.NewsController.Save(SkdRefSiteAPI.DAO.Models.News)">
+            <summary>
+            Save news
+            </summary>
+            <param name="news"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.NewsController.SaveAnnouncement(SkdRefSiteAPI.DAO.Models.Announcement)">
+            <summary>
+            Saves announcement
+            </summary>
+            <param name="announcement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.NewsController.GetAnnouncement">
+            <summary>
+            Gets announcement
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.TranslationsController">
+            <summary>
+            API for working with translations
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.TranslationsController.Save(SkdRefSiteAPI.DAO.Models.Translation)">
+            <summary>
+            Submit a translation
+            </summary>
+        </member>
+    </members>
+</doc>

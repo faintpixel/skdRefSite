@@ -1,0 +1,12 @@
+<h1>{{'News.WhatsNew' | translate}}</h1>
+
+<div *ngIf="announcement != ''">
+    <b>{{'News.Announcement' | translate}}: </b> <span [innerHTML]="announcement"></span>
+    <hr />
+</div>
+
+<div *ngFor="let entry of news">
+    <span class='title'><b>{{entry.title}}</b></span>
+    <span class='date'>{{entry.date | date : "MMMM d, y"}}</span>
+    <div [innerHTML]="entry.content" class='content'></div>
+</div>

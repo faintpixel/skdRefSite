@@ -1,0 +1,48 @@
+<div class='container'>
+  <div class='well'>
+    <form (ngSubmit)="submit()" #translateForm="ngForm">
+      <div>
+        Language:
+        <select [(ngModel)]="selectedLanguage" (change)="changeLanguage()" name='existingLanguage'>
+          <option value=''>New</option>
+          <option *ngFor="let language of languageService.languages" [value]="language.code">{{language.name}}</option>
+        </select>
+
+        <span *ngIf="selectedLanguage === ''">
+          Name: <input type='text' [(ngModel)]="newLanguageName" name='language' required /> (Will be displayed in the
+          language dropdown list)
+        </span>
+        <br /><br />
+        The name you'd like credited with this submission: <input [(ngModel)]="author" type='text' required name='author' /><br />
+        Comments: <input type='text' [(ngModel)]="comments" name='comments' class='form-control' /><br />
+        <b>Notes:</b>
+        <ul>
+          <li>You must provide a value for each field below to submit. If you're unsure of something but would like to
+            submit a partial translation, please enter the english value.</li>
+          <li>Values contained within <ng-container ngNonBindable>{{}}</ng-container>'s are paramters. You can change
+            the text around them, but don't change the text inside.</li>
+        </ul>
+      </div>
+
+      <br />
+
+      <table class='table'>
+        <thead>
+          <tr>
+            <td>English</td>
+            <td>Translation</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let entry of english">
+            <td>{{ entry.value }}</td>
+            <td><input type='text' required [(ngModel)]="translation[entry.property + '.' + entry.subProperty]" class='form-control'
+                name="{{entry.property + '.' + entry.subProperty}}" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class='btn btn-primary' type='submit' [disabled]="!translateForm.form.valid">Submit</button>
+    </form>
+  </div>
+</div>

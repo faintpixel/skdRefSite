@@ -1,0 +1,14 @@
+<nav class='navbar navbar-inverse'>
+  <div class='container'>
+    <a class='navbar-brand' [routerLink]="['', languageService.language]">{{'Header.Title' | translate}}</a>
+    <div>
+
+      <select [(ngModel)]="selectedLanguage" (change)="changeLanguage()">
+        <option *ngFor="let language of languageService.languages" [value]="language.code">{{language.name}}</option>
+      </select>&nbsp;
+      <app-login></app-login>
+
+    </div>
+
+  </div>
+</nav>

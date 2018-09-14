@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class='container'>
+  <div class='well'>
+    <table>
+      <thead>
+        <tr>
+          <td></td>
+          <td>Time</td>
+          <td>Source</td>
+          <td>Message</td>
+          <td>Parameters</td>
+          <td>Exception</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of logs">
+          <td><button (click)="delete(log.id)">Delete</button></td>
+          <td>{{log.time}}</td>
+          <td>{{log.source}}</td>
+          <td>{{log.message}}</td>
+          <td><button (click)="view(viewModal, log.parameters)">View Parameters</button></td>
+          <td><button (click)="view(viewModal, log.exception)">View Exception</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<ng-template #viewModal let-c="close" let-d="dismiss">
+  <div class='modal-body'>
+    <div id='viewModalContent'>
+      {{viewModalContent}}
+    </div>
+  </div>
+  <div class='modal-footer'>
+    <button (click)="c()">Close</button>
+  </div>
+</ng-template>

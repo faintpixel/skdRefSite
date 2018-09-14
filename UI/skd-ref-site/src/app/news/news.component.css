@@ -1,0 +1,17 @@
+h1 {
+    font-size: 12pt;
+    font-weight: bold;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    line-height: 40px;
+}
+
+.date {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.content {
+    margin-bottom: 10px;
+}

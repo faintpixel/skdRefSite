@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class='container'>
+  <div class='well'>
+
+    <fieldset [disabled]="saving || loadingAnnouncement || loadingNews">
+      <div class='row'>
+        Announcement: <input type='text' [(ngModel)]="announcement" placeholder="{{currentAnnouncement}}" /> <button
+          (click)="saveAnnouncement()">Save</button>
+      </div>
+      <hr />
+
+      <div class='row'>
+        <div class='col-sm'>
+
+          <button (click)="new()">New</button>
+          <br /> Title:
+          <input type='text' [(ngModel)]="news.title" />
+          <br /> Date:
+          <div class="input-group">
+            <input placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="news.datePicker" ngbDatepicker #d="ngbDatepicker">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
+                <img src="assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;" />
+              </button>
+            </div>
+          </div>
+          <br /> Content:
+          <br />
+          <textarea rows="10" cols="100" [(ngModel)]="news.content"></textarea>
+          <br />
+          <button (click)="save()">Save</button>
+
+        </div>
+        <div class='col-sm'>
+
+          <div *ngFor="let entry of oldNews" (click)="setNews(entry)">
+            <b>{{entry.title}}</b> - {{entry.date | date : "dd MMMM y"}}
+            <div class='content'>{{entry.content}}</div>
+          </div>
+
+        </div>
+      </div>
+    </fieldset>
+
+  </div>
+</div>
