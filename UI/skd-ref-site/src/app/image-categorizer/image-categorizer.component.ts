@@ -147,9 +147,11 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
         bodyPart = this.getCommonValue(bodyPart, image.classifications.bodyPart);
         species = this.getCommonValue(species, image.classifications.species);
         animalCategory = this.getCommonValue(animalCategory, image.classifications.category);
-        photographerName = this.getCommonValue(photographerName, image.photographer.name);
-        photographerWebsite = this.getCommonValue(photographerWebsite, image.photographer.webpage);
-        if (image.model !== undefined) {
+        if (image.photographer !== undefined && image.photographer !== null) {
+          photographerName = this.getCommonValue(photographerName, image.photographer.name);
+          photographerWebsite = this.getCommonValue(photographerWebsite, image.photographer.webpage);
+        }
+        if (image.model !== undefined && image.model !== null) {
           modelName = this.getCommonValue(modelName, image.model.name);
           modelWebsite = this.getCommonValue(modelWebsite, image.model.webpage);
         }
