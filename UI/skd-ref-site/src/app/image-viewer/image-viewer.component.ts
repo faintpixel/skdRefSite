@@ -47,6 +47,8 @@ export class ImageViewerComponent implements OnInit {
   classIndex: number;
   break: boolean;
   loadingImage = false;
+  imageUrl: string = null;
+  nextImageUrl: string = null;
 
   @ViewChild('classComplete') private classCompleteModal;
   constructor(
@@ -160,6 +162,7 @@ export class ImageViewerComponent implements OnInit {
 
   showNewImage(image: any, addToHistory: boolean) {
     this.loadingImage = true;
+    this.imageUrl = this.getUrl(image.file);
     const previousIds = this.sessionService.GetPreviousIds();
     this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(i => this.preloadNextImage(i));
     this.image = image;
@@ -175,6 +178,7 @@ export class ImageViewerComponent implements OnInit {
 
   preloadNextImage(image: any) {
     this.sessionService.addPreloadedImage(image);
+    this.nextImageUrl = this.getUrl(image.file);
   }
 
   getUrl(image: string) {

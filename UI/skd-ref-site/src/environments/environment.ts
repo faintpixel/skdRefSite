@@ -7,7 +7,7 @@ export const environment = {
   baseUrl: 'http://beta.sketchdaily.net:4000/api/',
   // baseUrl: 'http://localhost:15285/api/',
 
-  imageUrl: 'http://beta.sketchdaily.net:4000/',
+  imageUrl: 'http://beta.sketchdaily.net:4000',
   auth0RedirectUri: 'http://localhost:4200/callback'
 };
 
