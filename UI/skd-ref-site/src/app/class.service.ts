@@ -7,7 +7,7 @@ export class ClassService {
 
   private classOptions: Array<any> = [
     {
-      key: 0.5, value: '30 minutes', breakdown: [
+      key: '0.5', value: '30 minutes', breakdown: [
         { type: 'image', key: 30, value: '30 seconds', count: 10 },
         { type: 'image', key: 60, value: '1 minute', count: 5 },
         { type: 'image', key: 300, value: '5 minutes', count: 2 },
@@ -15,7 +15,7 @@ export class ClassService {
       ]
     },
     {
-      key: 1, value: '1 hour', breakdown: [
+      key: '1', value: '1 hour', breakdown: [
         { type: 'image', key: 30, value: '30 seconds', count: 10 },
         { type: 'image', key: 60, value: '1 minute', count: 5 },
         { type: 'image', key: 300, value: '5 minutes', count: 2 },
@@ -25,7 +25,7 @@ export class ClassService {
       ]
     },
     {
-      key: 2, value: '2 hours', breakdown: [
+      key: '2', value: '2 hours', breakdown: [
         { type: 'image', key: 30, value: '30 seconds', count: 6 },
         { type: 'image', key: 60, value: '1 minute', count: 3 },
         { type: 'image', key: 300, value: '5 minutes', count: 2 },
@@ -36,7 +36,7 @@ export class ClassService {
       ]
     },
     {
-      key: 3, value: '3 hours', breakdown: [
+      key: '3', value: '3 hours', breakdown: [
         { type: 'image', key: 30, value: '30 seconds', count: 10 },
         { type: 'image', key: 60, value: '1 minute', count: 5 },
         { type: 'image', key: 300, value: '5 minutes', count: 2 },
@@ -49,7 +49,7 @@ export class ClassService {
       ]
     },
     {
-      key: 6, value: '6 hours', breakdown: [
+      key: '6', value: '6 hours', breakdown: [
         { type: 'image', key: 30, value: '30 seconds', count: 10 },
         { type: 'image', key: 60, value: '1 minute', count: 5 },
         { type: 'image', key: 300, value: '5 minutes', count: 2 },

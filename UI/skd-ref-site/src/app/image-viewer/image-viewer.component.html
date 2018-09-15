@@ -44,8 +44,8 @@
 
 <div class='container' (document:keyup)="keyPressed($event)">
 
-
   <div id="image" *ngIf="imageFound() && image.file !== undefined">
+    
     <img *ngIf="!break" src='{{getUrl(image.file)}}' class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()">
     <div *ngIf="break">
       <h2>{{'ImageViewer.TakeABreak' | translate}}</h2>
