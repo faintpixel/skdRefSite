@@ -156,6 +156,9 @@ export class ImageViewerComponent implements OnInit {
   }
 
   imageLoaded() {
+    this.setTimer();
+    this.fadeOut = false;
+    this.paused = false;
     this.timer = setInterval(() => { this.decrementTime(); }, 1000);
     this.loadingImage = false;
   }
@@ -170,10 +173,6 @@ export class ImageViewerComponent implements OnInit {
       this.sessionService.AddToImageHistory(image);
       this.previousImages = this.sessionService.GetPreviousIds();
     }
-    this.setTimer();
-    this.fadeOut = false;
-    this.paused = false;
-    // this.timer = setInterval(() => { this.decrementTime(); }, 1000);
   }
 
   preloadNextImage(image: any) {
