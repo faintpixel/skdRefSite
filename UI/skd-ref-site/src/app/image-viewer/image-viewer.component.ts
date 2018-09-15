@@ -46,6 +46,7 @@ export class ImageViewerComponent implements OnInit {
   classInfo: any = null;
   classIndex: number;
   break: boolean;
+  loadingImage = false;
 
   @ViewChild('classComplete') private classCompleteModal;
   constructor(
@@ -150,7 +151,13 @@ export class ImageViewerComponent implements OnInit {
     this.showNewImage(previousImage, false);
   }
 
+  imageLoaded() {
+    this.timer = setInterval(() => { this.decrementTime(); }, 1000);
+    this.loadingImage = false;
+  }
+
   showNewImage(image: any, addToHistory: boolean) {
+    this.loadingImage = true;
     const previousIds = this.sessionService.GetPreviousIds();
     this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(i => this.preloadNextImage(i));
     this.image = image;
@@ -161,7 +168,7 @@ export class ImageViewerComponent implements OnInit {
     this.setTimer();
     this.fadeOut = false;
     this.paused = false;
-    this.timer = setInterval(() => { this.decrementTime(); }, 1000);
+    // this.timer = setInterval(() => { this.decrementTime(); }, 1000);
   }
 
   preloadNextImage(image: any) {

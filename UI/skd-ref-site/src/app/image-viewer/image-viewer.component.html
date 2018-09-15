@@ -3,7 +3,7 @@
     <a class='navbar-brand' [routerLink]="['', languageService.language]">{{'Header.Title' | translate}}</a>
 
     <div id='controls'>
-      {{'ImageViewer.Timer' | translate}}: {{time.minutes}}:{{time.seconds | number:'2.0'}} <span *ngIf="paused">({{'ImageViewer.Paused'
+      {{'ImageViewer.Timer' | translate}}: <span *ngIf="loadingImage">Loading... </span><span *ngIf="!loadingImage">{{time.minutes}}:{{time.seconds | number:'2.0'}} </span> <span *ngIf="paused">({{'ImageViewer.Paused'
         | translate}})</span>
 
       <button (click)="previousImage()">
@@ -46,7 +46,7 @@
 
 
   <div id="image" *ngIf="imageFound() && image.file !== undefined">
-    <img *ngIf="!break" src='{{getUrl(image.file)}}' class='referenceImage' [@fadeOut]="fadeOut">
+    <img *ngIf="!break" src='{{getUrl(image.file)}}' class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()">
     <div *ngIf="break">
       <h2>{{'ImageViewer.TakeABreak' | translate}}</h2>
       {{'ImageViewer.ItsTimeForABreak' | translate}}
