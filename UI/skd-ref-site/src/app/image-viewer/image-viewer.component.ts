@@ -61,6 +61,8 @@ export class ImageViewerComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.languageService.updateLanguageFromRoute(this.route);
+
     this.params = this.route.params.subscribe(params => {
       this.referenceType = params['type'];
     });
@@ -185,6 +187,7 @@ export class ImageViewerComponent implements OnInit {
 
   stop(): void {
     clearInterval(this.timer);
+    console.log('stopping');
     this.languageService.redirectToLanguageHome(this.languageService.language);
   }
 

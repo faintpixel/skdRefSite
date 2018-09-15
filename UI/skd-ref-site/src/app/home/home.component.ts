@@ -12,14 +12,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.activeRoute.params.subscribe(routeParams => {
-      let language = routeParams.lang;
-      console.log('router got language: ' + language);
-      if (language === undefined) {
-        language = 'en';
-      }
-      this.languageService.changeLanguage(language);
-    });
+    this.languageService.updateLanguageFromRoute(this.activeRoute);
   }
 
 }

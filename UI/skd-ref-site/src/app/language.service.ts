@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -8,14 +8,14 @@ import { Router } from '@angular/router';
 export class LanguageService {
 
   public languages: Array<any> = [
-    {code: 'en', name: 'English'},
-    {code: 'de', name: 'Deutsch'},
-    {code: 'es', name: 'Español'},
-    {code: 'nl', name: 'Nederlands'},
-    {code: 'fr', name: 'Français'},
-    {code: 'pt', name: 'Português'},
-    {code: 'ru', name: 'Русский'},
-    {code: 'sv', name: 'Svenska'}
+    { code: 'en', name: 'English' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'es', name: 'Español' },
+    { code: 'nl', name: 'Nederlands' },
+    { code: 'fr', name: 'Français' },
+    { code: 'pt', name: 'Português' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'sv', name: 'Svenska' }
   ];
 
   public language: 'en';
@@ -33,6 +33,17 @@ export class LanguageService {
 
   redirectToLanguageHome(language) {
     this.router.navigate(['', language]);
+  }
+
+  updateLanguageFromRoute(activeRoute) {
+    activeRoute.params.subscribe(routeParams => {
+      let language = routeParams.lang;
+      console.log('router got language: ' + language);
+      if (language === undefined) {
+        language = 'en';
+      }
+      this.changeLanguage(language);
+    });
   }
 
 }
