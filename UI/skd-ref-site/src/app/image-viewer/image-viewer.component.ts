@@ -139,9 +139,6 @@ export class ImageViewerComponent implements OnInit {
     } else {
       const previousIds = this.sessionService.GetPreviousIds();
       this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(image => {
-        if (image == null) {
-          alert('Error getting next image.');
-        }
         this.showNewImage(image, true);
       });
     }
@@ -165,7 +162,7 @@ export class ImageViewerComponent implements OnInit {
 
   showNewImage(image: any, addToHistory: boolean) {
     this.loadingImage = true;
-    this.imageUrl = this.getUrl(image.file);
+    this.imageUrl = this.getUrl(image);
     const previousIds = this.sessionService.GetPreviousIds();
     this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(i => this.preloadNextImage(i));
     this.image = image;
@@ -177,11 +174,15 @@ export class ImageViewerComponent implements OnInit {
 
   preloadNextImage(image: any) {
     this.sessionService.addPreloadedImage(image);
-    this.nextImageUrl = this.getUrl(image.file);
+    this.nextImageUrl = this.getUrl(image);
   }
 
-  getUrl(image: string) {
-    return environment.imageUrl + image;
+  getUrl(image: any) {
+    if (image === null || image === undefined) {
+      return '';
+    } else {
+      return environment.imageUrl + image.file;
+    }
   }
 
   togglePause(): void {
