@@ -67,7 +67,7 @@ namespace SkdRefSiteAPI.DAO
 
         public List<News> Get()
         {
-            var results =_news.Find(_ => true).ToList();
+            var results =_news.Find(_ => true).SortByDescending(x => x.Date).ToList();
             return results;
         }
 
