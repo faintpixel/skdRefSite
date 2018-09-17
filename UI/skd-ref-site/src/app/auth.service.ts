@@ -15,7 +15,7 @@ export class AuthService {
     responseType: 'token id_token',
     audience: 'https://sketchdaily.auth0.com/userinfo',
     redirectUri: environment.auth0RedirectUri,
-    scope: 'openid profile'
+    scope: 'openid email profile'
   });
 
   userProfile: any;
@@ -74,6 +74,8 @@ export class AuthService {
 
     const self = this;
     this.auth0.client.userInfo(accessToken, (err, profile) => {
+      console.log('got user');
+      console.log(profile);
       if (profile) {
         self.userProfile = profile;
       }
