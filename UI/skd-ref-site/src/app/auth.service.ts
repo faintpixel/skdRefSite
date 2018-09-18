@@ -74,8 +74,6 @@ export class AuthService {
 
     const self = this;
     this.auth0.client.userInfo(accessToken, (err, profile) => {
-      console.log('got user');
-      console.log(profile);
       if (profile) {
         self.userProfile = profile;
       }
@@ -96,5 +94,9 @@ export class AuthService {
 
     const grantedRoles = r.split(' ');
     return roles.every(role => grantedRoles.includes(role));
+  }
+
+  public isAdmin() {
+    return this.userHasRoles(['admin']);
   }
 }

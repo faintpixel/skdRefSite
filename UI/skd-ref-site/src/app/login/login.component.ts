@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit {
   profile: any;
   logCount = 0;
 
-  constructor(private authService: AuthService, private logsService: LogsService) { }
+
+  constructor(public authService: AuthService, private logsService: LogsService) { }
 
   ngOnInit() {
     this.updateLogCount();
@@ -20,7 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   updateLogCount() {
-    if (this.loggedIn()) {
+    if (this.loggedIn() && this.authService.isAdmin()) {
       this.logsService.getLogCount().subscribe(count => this.logCount = count);
     }
   }
