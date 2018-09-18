@@ -12,29 +12,45 @@ using System.Threading.Tasks;
 
 namespace SkdRefSiteAPI.DAO
 {
-    public class AnimalsDAO
+    public class ReferenceDAO<TReference, TClassifications> where TReference : Image
     {
         public MongoClient _mongoClient;
         private IMongoDatabase _db;
-        private IMongoCollection<AnimalReference> _collection;
+        private IMongoCollection<TReference> _collection;
         private Logger _logger;
+        private IQueryable<TReference, TClassifications> _queryable;
 
-        public AnimalsDAO()
+        public ReferenceDAO(ReferenceType type, IQueryable<TReference, TClassifications> queryable)
         {
+            string collectionName = GetCollectionName(type);
+
             _mongoClient = new MongoClient(AppSettings.MongoDBConnection);
             _db = _mongoClient.GetDatabase("refsite");
-            _collection = _db.GetCollection<AnimalReference>("animalReferences");
-            _logger = new Logger("AnimalsDAO");
+            _collection = _db.GetCollection<TReference>(collectionName);
+            _logger = new Logger("ReferenceDAO");
+            _queryable = queryable;
         }
 
-        public AnimalsDAO(string connectionString)
+        private string GetCollectionName(ReferenceType type)
         {
-            _mongoClient = new MongoClient(connectionString);
-            _db = _mongoClient.GetDatabase("refsite");
-            _collection = _db.GetCollection<AnimalReference>("animalReferences");
+            string collectionName;
+            if (type == ReferenceType.Animal)
+                collectionName = "animalReferences";
+            else if (type == ReferenceType.BodyPart)
+                collectionName = "bodyPartReferences";
+            else if (type == ReferenceType.FullBody)
+                collectionName = "fullBodyReferences";
+            else if (type == ReferenceType.Structure)
+                collectionName = "structureReferences";
+            else if (type == ReferenceType.Vegetation)
+                collectionName = "vegetationStructure";
+            else
+                throw new Exception("Collection not specified");
+
+            return collectionName;
         }
 
-        public async Task<List<ReplaceOneResult>> Save(List<AnimalReference> references)
+        public async Task<List<ReplaceOneResult>> Save(List<TReference> references)
         {
             try
             {
@@ -42,12 +58,13 @@ namespace SkdRefSiteAPI.DAO
 
                 foreach (var reference in references)
                 {
-                    if (reference.Status == Status.Deleted)
-                        DeleteReference(reference);
+                    Image refImage = (Image)reference;
+                    if (refImage.Status == Status.Deleted)
+                        DeleteReference(refImage);
                     else
                     {
                         var replaceResult = await _collection.ReplaceOneAsync(
-                            filter: new BsonDocument("_id", reference.Id),
+                            filter: new BsonDocument("_id", refImage.Id),
                             options: new UpdateOptions { IsUpsert = true },
                             replacement: reference);
                         results.Add(replaceResult);
@@ -63,13 +80,13 @@ namespace SkdRefSiteAPI.DAO
             }
         }
 
-        public void DeleteReference(AnimalReference reference)
+        public void DeleteReference(Image reference)
         {
             File.Delete(reference.Location);
             _collection.DeleteOne(filter: new BsonDocument("_id", reference.Id));
         }
 
-        public async Task<int> Count(AnimalClassifications classifications, bool? recentImagesOnly)
+        public async Task<int> Count(TClassifications classifications, bool? recentImagesOnly)
         {
             var data = GetQueryable(classifications, recentImagesOnly);
             var results = await data.CountAsync();
@@ -77,7 +94,7 @@ namespace SkdRefSiteAPI.DAO
             return results;
         }
 
-        public async Task<AnimalReference> Get(AnimalClassifications classifications, List<string> excludeIds, bool? recentImagesOnly)
+        public async Task<TReference> Get(TClassifications classifications, List<string> excludeIds, bool? recentImagesOnly)
         {
             var data = GetQueryable(classifications, recentImagesOnly);
             data = data.Where(x => !excludeIds.Contains(x.Id));
@@ -92,7 +109,7 @@ namespace SkdRefSiteAPI.DAO
             return result;
         }
 
-        public async Task<List<AnimalReference>> Search(string batchId)
+        public async Task<List<TReference>> Search(string batchId)
         {
             var query = _collection.AsQueryable();
             query = query.Where(x => x.BatchId == batchId);
@@ -100,24 +117,10 @@ namespace SkdRefSiteAPI.DAO
             return await query.ToListAsync();
         }
 
-        private IMongoQueryable<AnimalReference> GetQueryable(AnimalClassifications classifications, bool? recentImagesOnly)
+        private IMongoQueryable<TReference> GetQueryable(TClassifications classifications, bool? recentImagesOnly)
         {
-            var query = _collection.AsQueryable();
-            if (classifications.Category.HasValue)
-                query = query.Where(x => x.Classifications.Category == classifications.Category);
-            if (classifications.Species.HasValue)
-                query = query.Where(x => x.Classifications.Species == classifications.Species);
-            if (classifications.ViewAngle.HasValue)
-                query = query.Where(x => x.Classifications.ViewAngle == classifications.ViewAngle);
-            if (recentImagesOnly == true)
-            {
-                query = query.OrderByDescending(x => x.UploadDate);
-                query = query.Take(50);
-            }
-
-            query = query.Where(x => x.Status == Status.Active);
-
-            return query;
+            return _queryable.GetQueryable(_collection, classifications, recentImagesOnly);
         }
+
     }
 }

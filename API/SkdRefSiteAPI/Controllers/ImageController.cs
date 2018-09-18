@@ -5,6 +5,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models;
+using SkdRefSiteAPI.DAO.Models.Animals;
+using SkdRefSiteAPI.DAO.Models.People;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -94,19 +96,22 @@ namespace SkdRefSiteAPI.Controllers
 
             if(results.Batch.Type == ReferenceType.Animal)
             {
-                var animalsDAO = new AnimalsDAO();
+                var queryable = new AnimalsQueryable();
+                var animalsDAO = new ReferenceDAO<AnimalReference, AnimalClassifications>(ReferenceType.Animal, queryable);
                 var images = await animalsDAO.Search(id);
                 results.Images = images.ToList<object>();
             }
             else if (results.Batch.Type == ReferenceType.BodyPart)
             {
-                var bodyPartsDAO = new BodyPartsDAO();
+                var queryable = new BodyPartsQueryable();
+                var bodyPartsDAO = new ReferenceDAO<BodyPartReference, BodyPartClassifications>(ReferenceType.BodyPart, queryable);
                 var images = await bodyPartsDAO.Search(id);
                 results.Images = images.ToList<object>();
             }
             else if (results.Batch.Type == ReferenceType.FullBody)
             {
-                var fullBodiesDAO = new FullBodiesDAO();
+                var queryable = new FullBodiesQueryable();
+                var fullBodiesDAO = new ReferenceDAO<FullBodyReference, FullBodyClassifications>(ReferenceType.FullBody, queryable);
                 var images = await fullBodiesDAO.Search(id);
                 results.Images = images.ToList<object>();
             }

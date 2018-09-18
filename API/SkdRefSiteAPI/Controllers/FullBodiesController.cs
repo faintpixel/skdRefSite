@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SkdRefSiteAPI.DAO;
+using SkdRefSiteAPI.DAO.Models;
 using SkdRefSiteAPI.DAO.Models.People;
 using System;
 using System.Collections.Generic;
@@ -14,14 +15,15 @@ namespace SkdRefSiteAPI.Controllers
     /// </summary>
     public class FullBodiesController : Controller
     {
-        private FullBodiesDAO _dao;
+        private ReferenceDAO<FullBodyReference, FullBodyClassifications> _dao;
 
         /// <summary>
         /// Constructor
         /// </summary>
         public FullBodiesController()
         {
-            _dao = new FullBodiesDAO();
+            var queryable = new FullBodiesQueryable();
+            _dao = new ReferenceDAO<FullBodyReference, FullBodyClassifications>(ReferenceType.FullBody, queryable);
         }
 
         /// <summary>

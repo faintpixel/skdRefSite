@@ -8,6 +8,8 @@ namespace SkdRefSiteAPI.DAO.Models
     {
         Animal = 0,
         BodyPart = 1,
-        FullBody = 2
+        FullBody = 2,
+        Structure = 3,
+        Vegetation = 4
     }
 }

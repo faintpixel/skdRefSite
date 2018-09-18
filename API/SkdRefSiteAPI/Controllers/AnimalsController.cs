@@ -14,14 +14,15 @@ namespace SkdRefSiteAPI.Controllers
     /// </summary>
     public class AnimalsController : Controller
     {
-        private AnimalsDAO _dao;
+        private ReferenceDAO<AnimalReference, AnimalClassifications> _dao;
 
         /// <summary>
         /// Constructor
         /// </summary>
         public AnimalsController()
         {
-            _dao = new AnimalsDAO();
+            var queryable = new AnimalsQueryable();
+            _dao = new ReferenceDAO<AnimalReference, AnimalClassifications>(DAO.Models.ReferenceType.Animal, queryable);
         }
         /// <summary>
         /// Get animals
