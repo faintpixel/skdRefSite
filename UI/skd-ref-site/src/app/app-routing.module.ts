@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'home', redirectTo: '' },
   { path: 'addImages',
       component: AddImagesComponent, canDeactivate: ['canDeactivateAddImages'], canActivate: [ScopeGuard],
-      data: { expectedRoles: ['admin']} },
+      data: { expectedRoles: ['admin', 'user']} },
   { path: 'news', component: NewsManagerComponent, canActivate: [ScopeGuard], data: { expectedRoles: ['admin']} },
   { path: 'editBatch/:id', component: BatchEditorComponent, data: { expectedRoles: ['admin']} },
   { path: 'batches', component: BatchListComponent, data: { expectedRoles: ['admin']} },

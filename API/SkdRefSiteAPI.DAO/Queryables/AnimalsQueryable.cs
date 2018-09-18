@@ -10,7 +10,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdRefSiteAPI.DAO.Queryables
 {
     public class AnimalsQueryable : IQueryable<AnimalReference, AnimalClassifications>
     {

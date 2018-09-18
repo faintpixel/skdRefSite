@@ -7,6 +7,7 @@ using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models;
 using SkdRefSiteAPI.DAO.Models.Animals;
 using SkdRefSiteAPI.DAO.Models.People;
+using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -50,7 +51,7 @@ namespace SkdRefSiteAPI.Controllers
                 Batch deserializedBatch = JsonConvert.DeserializeObject<Batch>(batch, converter);
                 deserializedBatch.User = GetCurrentUser().Email;
                 var files = Request.Form.Files;
-                var images = _fileDAO.Upload(files, deserializedBatch);
+                var images = _fileDAO.Upload(files, deserializedBatch, GetCurrentUser());
                 return images;
             }
             catch(Exception ex)

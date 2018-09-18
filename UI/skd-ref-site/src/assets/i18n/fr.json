@@ -36,8 +36,25 @@
 		"Mammal": "Mammal",
     "All": "Toute"
   },
+  "Structure": {
+		"Structure": "Structure",
+		"House": "House",
+		"Building": "Building",
+		"Other": "Other",
+		"All": "All"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetation",
+		"Flowers": "Flowers",
+		"Plants": "Plants",
+		"PhotoType": "Photo Type",
+		"Closeup": "Closeup",
+		"Full": "Full",
+		"All": "All"
+	},
   "Filters": {
     "All": "Toute",	
+    "Type": "Type",
     "Gender": "Genre",
     "Male": "Mâle",
     "Female": "Femelle",

@@ -247,6 +247,48 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:SkdRefSiteAPI.Controllers.StructuresController">
+            <summary>
+            API for working with structure references
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.Get(SkdRefSiteAPI.DAO.Models.Structures.StructureClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Get Structures
+            </summary>
+            <param name="criteria"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.GetNext(SkdRefSiteAPI.DAO.Models.Structures.StructureClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            Gets the next image for a drawing session
+            </summary>
+            <param name="criteria"></param>
+            <param name="excludeIds"></param>
+            <param name="onlyRecentImages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.Save(System.Collections.Generic.List{SkdRefSiteAPI.DAO.Models.Structures.StructureReference})">
+            <summary>
+            Save structures
+            </summary>
+            <param name="images"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.Count(SkdRefSiteAPI.DAO.Models.Structures.StructureClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Gets the number of structure references matching the criteria
+            </summary>
+            <param name="classifications"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
         <member name="T:SkdRefSiteAPI.Controllers.TranslationsController">
             <summary>
             API for working with translations
@@ -256,6 +298,48 @@
             <summary>
             Submit a translation
             </summary>
+        </member>
+        <member name="T:SkdRefSiteAPI.Controllers.VegetationController">
+            <summary>
+            API for working with vegetation references
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.Get(SkdRefSiteAPI.DAO.Models.Vegetation.VegetationClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Get vegetation
+            </summary>
+            <param name="criteria"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.GetNext(SkdRefSiteAPI.DAO.Models.Vegetation.VegetationClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
+            <summary>
+            Gets the next image for a drawing session
+            </summary>
+            <param name="criteria"></param>
+            <param name="excludeIds"></param>
+            <param name="onlyRecentImages"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.Save(System.Collections.Generic.List{SkdRefSiteAPI.DAO.Models.Vegetation.VegetationReference})">
+            <summary>
+            Save vegetation
+            </summary>
+            <param name="images"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.Count(SkdRefSiteAPI.DAO.Models.Vegetation.VegetationClassifications,System.Nullable{System.Boolean})">
+            <summary>
+            Gets the number of vegetation references matching the criteria
+            </summary>
+            <param name="classifications"></param>
+            <param name="recentImagesOnly"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

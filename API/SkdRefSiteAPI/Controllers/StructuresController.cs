@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.People;
+using SkdRefSiteAPI.DAO.Models.Structures;
 using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
@@ -12,35 +12,37 @@ using System.Threading.Tasks;
 namespace SkdRefSiteAPI.Controllers
 {
     /// <summary>
-    /// API for working with full body references
+    /// API for working with structure references
     /// </summary>
-    public class FullBodiesController : Controller, IReferenceController<FullBodyReference, FullBodyClassifications>
+    public class StructuresController: BaseController, IReferenceController<StructureReference, StructureClassifications>
     {
-        private ReferenceDAO<FullBodyReference, FullBodyClassifications> _dao;
+        private ReferenceDAO<StructureReference, StructureClassifications> _dao;
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public FullBodiesController()
+        public StructuresController()
         {
-            var queryable = new FullBodiesQueryable();
-            _dao = new ReferenceDAO<FullBodyReference, FullBodyClassifications>(ReferenceType.FullBody, queryable);
+            var queryable = new StructuresQueryable();
+            _dao = new ReferenceDAO<StructureReference, StructureClassifications>(ReferenceType.Structure, queryable);
         }
 
         /// <summary>
-        /// Gets full bodies
+        /// Get Structures
         /// </summary>
         /// <param name="criteria"></param>
         /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("api/FullBodies")]
-        public async Task<FullBodyReference> Get([FromQuery(Name = "")]FullBodyClassifications criteria, [FromQuery]bool? recentImagesOnly)
+        [Route("api/Structures")]
+        public async Task<StructureReference> Get([FromQuery(Name = "")]StructureClassifications criteria, [FromQuery]bool? recentImagesOnly = null)
         {
             if (criteria == null)
-                criteria = new FullBodyClassifications();
+                criteria = new StructureClassifications();
 
-            return await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - remove list
+            var image = await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - get rid of this list
+
+            return image;
         }
 
         /// <summary>
@@ -51,11 +53,11 @@ namespace SkdRefSiteAPI.Controllers
         /// <param name="onlyRecentImages"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("api/FullBodies/Next")]
-        public async Task<FullBodyReference> GetNext([FromQuery(Name = "")]FullBodyClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? onlyRecentImages)
+        [Route("api/Structures/Next")]
+        public async Task<StructureReference> GetNext([FromQuery(Name = "")]StructureClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? onlyRecentImages = null)
         {
             if (criteria == null)
-                criteria = new FullBodyClassifications();
+                criteria = new StructureClassifications();
             if (excludeIds == null)
                 excludeIds = new List<string>();
 
@@ -65,31 +67,31 @@ namespace SkdRefSiteAPI.Controllers
         }
 
         /// <summary>
-        /// Saves full bodies
+        /// Save structures
         /// </summary>
         /// <param name="images"></param>
         /// <returns></returns>
         [HttpPost]
         [Authorize]
-        [Route("api/FullBodies")]
-        public async Task<List<FullBodyReference>> Save([FromBody]List<FullBodyReference> images)
+        [Route("api/Structures")]
+        public async Task<List<StructureReference>> Save([FromBody]List<StructureReference> images)
         {
-            var result = await _dao.Save(images);
+            var results = await _dao.Save(images);
             return images; // TO DO - return something better
         }
 
         /// <summary>
-        /// Gets the number of full body references matching the criteria
+        /// Gets the number of structure references matching the criteria
         /// </summary>
         /// <param name="classifications"></param>
         /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("api/FullBodies/Count")]
-        public async Task<int> Count([FromQuery(Name = "")]FullBodyClassifications classifications, [FromQuery]bool? recentImagesOnly)
+        [Route("api/Structures/Count")]
+        public async Task<int> Count([FromQuery(Name = "")]StructureClassifications classifications, [FromQuery]bool? recentImagesOnly)
         {
             if (classifications == null)
-                classifications = new FullBodyClassifications();
+                classifications = new StructureClassifications();
             return await _dao.Count(classifications, recentImagesOnly);
         }
     }

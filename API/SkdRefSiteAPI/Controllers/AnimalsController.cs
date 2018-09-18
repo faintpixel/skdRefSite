@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models.Animals;
+using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace SkdRefSiteAPI.Controllers
     /// <summary>
     /// API for working with animal references
     /// </summary>
-    public class AnimalsController : Controller
+    public class AnimalsController : Controller, IReferenceController<AnimalReference, AnimalClassifications>
     {
         private ReferenceDAO<AnimalReference, AnimalClassifications> _dao;
 

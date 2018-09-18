@@ -12,6 +12,9 @@ import { SessionService } from '../session.service';
 import { Router } from '@angular/router';
 import { ClassService } from '../class.service';
 import { LanguageService } from '../language.service';
+import { StructureType } from '../models/structureType';
+import { VegetationPhotoType } from '../models/vegetationPhotoType';
+import { VegetationType } from '../models/vegetationType';
 
 @Component({
   selector: 'app-reference-filters',
@@ -37,6 +40,13 @@ export class ReferenceFiltersComponent implements OnInit {
       Category: 'All',
       ViewAngle: 'All'
     },
+    Structures: {
+      StructureType: 'All'
+    },
+    Vegetation: {
+      VegetationType: 'All',
+      PhotoType: 'All'
+    },
     Time: 30,
     Class: 0.5
   };
@@ -47,6 +57,9 @@ export class ReferenceFiltersComponent implements OnInit {
   bodyParts: Array<string>;
   species: Array<string>;
   animalCategories: Array<string>;
+  structureTypes: Array<string>;
+  vegetationTypes: Array<string>;
+  vegetationPhotoTypes: Array<string>;
   classOptions: Array<any>;
   currentTab = 'FullBodiesTab';
 
@@ -78,6 +91,15 @@ export class ReferenceFiltersComponent implements OnInit {
 
     this.bodyParts = Object.keys(BodyPart);
     this.bodyParts.unshift('All');
+
+    this.structureTypes = Object.keys(StructureType);
+    this.structureTypes.unshift('All');
+
+    this.vegetationPhotoTypes = Object.keys(VegetationPhotoType);
+    this.vegetationPhotoTypes.unshift('All');
+
+    this.vegetationTypes = Object.keys(VegetationType);
+    this.vegetationTypes.unshift('All');
 
     this.classOptions = this.classService.getClassOptions();
   }

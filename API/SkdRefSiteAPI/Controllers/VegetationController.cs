@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.People;
+using SkdRefSiteAPI.DAO.Models.Vegetation;
 using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
@@ -12,35 +12,37 @@ using System.Threading.Tasks;
 namespace SkdRefSiteAPI.Controllers
 {
     /// <summary>
-    /// API for working with full body references
+    /// API for working with vegetation references
     /// </summary>
-    public class FullBodiesController : Controller, IReferenceController<FullBodyReference, FullBodyClassifications>
+    public class VegetationController : BaseController, IReferenceController<VegetationReference, VegetationClassifications>
     {
-        private ReferenceDAO<FullBodyReference, FullBodyClassifications> _dao;
+        private ReferenceDAO<VegetationReference, VegetationClassifications> _dao;
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public FullBodiesController()
+        public VegetationController()
         {
-            var queryable = new FullBodiesQueryable();
-            _dao = new ReferenceDAO<FullBodyReference, FullBodyClassifications>(ReferenceType.FullBody, queryable);
+            var queryable = new VegetationQueryable();
+            _dao = new ReferenceDAO<VegetationReference, VegetationClassifications>(ReferenceType.Vegetation, queryable);
         }
 
         /// <summary>
-        /// Gets full bodies
+        /// Get vegetation
         /// </summary>
         /// <param name="criteria"></param>
         /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("api/FullBodies")]
-        public async Task<FullBodyReference> Get([FromQuery(Name = "")]FullBodyClassifications criteria, [FromQuery]bool? recentImagesOnly)
+        [Route("api/Vegetation")]
+        public async Task<VegetationReference> Get([FromQuery(Name = "")]VegetationClassifications criteria, [FromQuery]bool? recentImagesOnly = null)
         {
             if (criteria == null)
-                criteria = new FullBodyClassifications();
+                criteria = new VegetationClassifications();
 
-            return await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - remove list
+            var image = await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - get rid of this list
+
+            return image;
         }
 
         /// <summary>
@@ -51,11 +53,11 @@ namespace SkdRefSiteAPI.Controllers
         /// <param name="onlyRecentImages"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("api/FullBodies/Next")]
-        public async Task<FullBodyReference> GetNext([FromQuery(Name = "")]FullBodyClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? onlyRecentImages)
+        [Route("api/Vegetation/Next")]
+        public async Task<VegetationReference> GetNext([FromQuery(Name = "")]VegetationClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? onlyRecentImages = null)
         {
             if (criteria == null)
-                criteria = new FullBodyClassifications();
+                criteria = new VegetationClassifications();
             if (excludeIds == null)
                 excludeIds = new List<string>();
 
@@ -65,31 +67,31 @@ namespace SkdRefSiteAPI.Controllers
         }
 
         /// <summary>
-        /// Saves full bodies
+        /// Save vegetation
         /// </summary>
         /// <param name="images"></param>
         /// <returns></returns>
         [HttpPost]
         [Authorize]
-        [Route("api/FullBodies")]
-        public async Task<List<FullBodyReference>> Save([FromBody]List<FullBodyReference> images)
+        [Route("api/Vegetation")]
+        public async Task<List<VegetationReference>> Save([FromBody]List<VegetationReference> images)
         {
-            var result = await _dao.Save(images);
+            var results = await _dao.Save(images);
             return images; // TO DO - return something better
         }
 
         /// <summary>
-        /// Gets the number of full body references matching the criteria
+        /// Gets the number of vegetation references matching the criteria
         /// </summary>
         /// <param name="classifications"></param>
         /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("api/FullBodies/Count")]
-        public async Task<int> Count([FromQuery(Name = "")]FullBodyClassifications classifications, [FromQuery]bool? recentImagesOnly)
+        [Route("api/Vegetation/Count")]
+        public async Task<int> Count([FromQuery(Name = "")]VegetationClassifications classifications, [FromQuery]bool? recentImagesOnly)
         {
             if (classifications == null)
-                classifications = new FullBodyClassifications();
+                classifications = new VegetationClassifications();
             return await _dao.Count(classifications, recentImagesOnly);
         }
     }

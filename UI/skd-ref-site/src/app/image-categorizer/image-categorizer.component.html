@@ -44,6 +44,18 @@
       <br />
     </div>
 
+    <div *ngIf="referenceType == 'Structure'" class='classifications'>
+      <b>Type:</b> {{image.classifications?.structureType}}
+      <br />
+    </div>
+
+    <div *ngIf="referenceType == 'Vegetation'" class='classifications'>
+      <b>Type:</b> {{image.classifications?.vegetationType}}
+      <br />
+      <b>Photo Type:</b> {{image.classifications?.photoType}}
+      <br />
+    </div>
+
     <div class='classifications'>
       <b>Photographer:</b> {{image.photographer?.name}}
       <br /> {{image.photographer?.webpage}}
@@ -140,6 +152,28 @@
             <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
           </select>
         </div>
+
+        <div *ngIf="referenceType == 'Vegetation'">
+          <h3>Vegetation Classifications</h3>
+          Type:
+          <select [(ngModel)]="selectedVegetationType" (change)="propertyChanged(selectedVegetationType, 'vegetationType')">
+            <option *ngFor="let t of vegetationTypes" [value]="t">{{t}}</option>
+          </select>
+          <br /> Photo Type:
+          <select [(ngModel)]="selectedVegetationPhotoType" (change)="propertyChanged(selectedVegetationPhotoType, 'photoType')">
+            <option *ngFor="let t of vegetationPhotoTypes" [value]="t">{{t}}</option>
+          </select>
+        </div>
+
+        <div *ngIf="referenceType == 'Structure'">
+          <h3>Structure Classifications</h3>
+          Type:
+          <select [(ngModel)]="selectedStructureType" (change)="propertyChanged(selectedStructureType, 'structureType')">
+            <option *ngFor="let t of structureTypes" [value]="t">{{t}}</option>
+          </select>
+        </div>
+
+
       </div>
     </div>
 

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models;
 using SkdRefSiteAPI.DAO.Models.People;
+using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace SkdRefSiteAPI.Controllers
     /// <summary>
     /// API for working with body part references
     /// </summary>
-    public class BodyPartsController : Controller
+    public class BodyPartsController : Controller, IReferenceController<BodyPartReference, BodyPartClassifications>
     {
         private ReferenceDAO<BodyPartReference, BodyPartClassifications> _dao;
 

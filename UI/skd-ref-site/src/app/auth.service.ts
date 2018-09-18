@@ -74,6 +74,7 @@ export class AuthService {
 
     const self = this;
     this.auth0.client.userInfo(accessToken, (err, profile) => {
+      console.log(profile);
       if (profile) {
         self.userProfile = profile;
       }
@@ -93,7 +94,12 @@ export class AuthService {
     }
 
     const grantedRoles = r.split(' ');
-    return roles.every(role => grantedRoles.includes(role));
+    for (const role of grantedRoles) {
+      if(roles.indexOf(role) !== -1) {
+        return true;
+      }
+    }
+    return false;
   }
 
   public isAdmin() {

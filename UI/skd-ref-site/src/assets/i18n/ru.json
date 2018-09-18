@@ -36,8 +36,25 @@
 		"Mammal": "Mammal",
     "All": "Все"
   },
+  "Structure": {
+		"Structure": "Structure",
+		"House": "House",
+		"Building": "Building",
+		"Other": "Other",
+		"All": "All"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetation",
+		"Flowers": "Flowers",
+		"Plants": "Plants",
+		"PhotoType": "Photo Type",
+		"Closeup": "Closeup",
+		"Full": "Full",
+		"All": "All"
+	},
   "Filters": {
     "All": "Bce",	
+    "Type": "Type",
     "Gender": "Пол",
     "Male": "Мужской",
     "Female": "Женский",

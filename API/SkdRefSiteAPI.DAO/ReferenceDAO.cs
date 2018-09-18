@@ -4,6 +4,7 @@ using MongoDB.Driver.Linq;
 using SkdRefSiteAPI.DAO.Models;
 using SkdRefSiteAPI.DAO.Models.Animals;
 using SkdRefSiteAPI.DAO.Models.People;
+using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.IO;

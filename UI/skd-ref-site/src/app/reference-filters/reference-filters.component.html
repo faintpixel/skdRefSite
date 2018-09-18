@@ -92,6 +92,50 @@
 
       </ng-template>
     </ngb-tab>
+
+
+    <ngb-tab title="{{'Structure.Structure' | translate}}" id='StructuresTab'>
+      <ng-template ngbTabContent>
+
+        <div>
+          <label for='structuresType'>{{'Filters.Type' | translate}}:</label>
+          <select id='structuresType' class='form-control' [(ngModel)]="filters.Structures.StructureType">
+            <option *ngFor="let t of structureTypes" [value]="t">{{ 'Structure.' + t | translate }}</option>
+          </select>
+          
+          <br />
+
+        </div>
+
+      </ng-template>
+    </ngb-tab>
+
+
+
+    <ngb-tab title="{{'Vegetation.Vegetation' | translate}}" id='VegetationTab'>
+      <ng-template ngbTabContent>
+
+        <div>
+          <label for='vegetationType'>{{'Filters.Type' | translate}}:</label>
+          <select id='vegetationType' class='form-control' [(ngModel)]="filters.Vegetation.VegetationType">
+            <option *ngFor="let t of vegetationTypes" [value]="t">{{ 'Vegetation.' + t | translate }}</option>
+          </select>
+          <br />
+          <label for='vegetationPhotoType'>{{'Vegetation.PhotoType' | translate}}:</label>
+          <select id='vegetationPhotoType' class='form-control' [(ngModel)]="filters.Vegetation.PhotoType">
+            <option *ngFor="let t of vegetationPhotoTypes" [value]="t">{{ 'Vegetation.' + t | translate }}</option>
+          </select>
+
+          <br />
+
+        </div>
+
+      </ng-template>
+    </ngb-tab>
+
+
+
+
   </ngb-tabset>
 
 

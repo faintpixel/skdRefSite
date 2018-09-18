@@ -8,6 +8,9 @@ import { AnimalCategory } from '../models/animalCategory';
 import { BodyPart } from '../models/bodyPart';
 import { ReferenceService } from '../reference.service';
 import { environment } from '../../environments/environment';
+import { VegetationType } from '../models/vegetationType';
+import { VegetationPhotoType } from '../models/vegetationPhotoType';
+import { StructureType } from '../models/structureType';
 
 @Component({
   selector: 'app-image-categorizer',
@@ -35,6 +38,15 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
 
   bodyParts: Array<string>;
   selectedBodyPart: string;
+
+  structureTypes: Array<string>;
+  selectedStructureType: string;
+
+  vegetationTypes: Array<string>;
+  selectedVegetationType: string;
+
+  vegetationPhotoTypes: Array<string>;
+  selectedVegetationPhotoType: string;
 
   yesNo: Array<string> = ['', 'true', 'false'];
   selectedNSFW: string;
@@ -76,6 +88,15 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
 
     this.bodyParts = Object.keys(BodyPart);
     this.bodyParts.unshift('');
+
+    this.vegetationTypes = Object.keys(VegetationType);
+    this.vegetationTypes.unshift('');
+
+    this.vegetationPhotoTypes = Object.keys(VegetationPhotoType);
+    this.vegetationPhotoTypes.unshift('');
+
+    this.structureTypes = Object.keys(StructureType);
+    this.structureTypes.unshift('');
   }
 
   ngOnInit() {
@@ -129,6 +150,9 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
     let clothed = null;
     let bodyPart = null;
     let species = null;
+    let structureType = null;
+    let vegetationType = null;
+    let vegetationPhotoType = null;
     let animalCategory = null;
     let photographerName = null;
     let photographerWebsite = null;
@@ -146,6 +170,9 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
         clothed = this.getCommonValue(clothed, image.classifications.clothing);
         bodyPart = this.getCommonValue(bodyPart, image.classifications.bodyPart);
         species = this.getCommonValue(species, image.classifications.species);
+        structureType = this.getCommonValue(structureType, image.classifications.structureType);
+        vegetationType = this.getCommonValue(vegetationType, image.classifications.vegetationType);
+        vegetationPhotoType = this.getCommonValue(vegetationPhotoType, image.classifications.photoType);
         animalCategory = this.getCommonValue(animalCategory, image.classifications.category);
         if (image.photographer !== undefined && image.photographer !== null) {
           photographerName = this.getCommonValue(photographerName, image.photographer.name);
@@ -168,6 +195,9 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
     this.selectedClothed = clothed;
     this.selectedBodyPart = bodyPart;
     this.selectedSpecies = species;
+    this.selectedVegetationPhotoType = vegetationPhotoType;
+    this.selectedVegetationType = vegetationType;
+    this.selectedStructureType = structureType;
     this.selectedAnimalCategory = animalCategory;
     this.selectedPhotographerName = photographerName;
     this.selectedPhotographerWebsite = photographerWebsite;
@@ -260,10 +290,38 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
         status = this.validateFullBodyClassifications(image);
       } else if (ReferenceType[this.referenceType] === ReferenceType.BodyPart) {
         status = this.validateBodyPartClassifications(image);
+      } else if (ReferenceType[this.referenceType] === ReferenceType.Vegetation) {
+        status = this.validateVegetationClassifications(image);
+      } else if (ReferenceType[this.referenceType] === ReferenceType.Structure) {
+        status = this.validateStructureClassifications(image);
       }
     }
 
     image.validationStatus = status;
+  }
+
+  validateStructureClassifications(image): boolean {
+    // TO DO - is there some typescript/angular magic i could do to validate this instead?
+    const requiredFields = ['structureType'];
+    for (const field of requiredFields) {
+      if (image.classifications[field] === '' || image.classifications[field] === undefined) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  validateVegetationClassifications(image): boolean {
+    // TO DO - is there some typescript/angular magic i could do to validate this instead?
+    const requiredFields = ['vegetationType', 'photoType'];
+    for (const field of requiredFields) {
+      if (image.classifications[field] === '' || image.classifications[field] === undefined) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   validateAnimalClassifications(image): boolean {
@@ -321,6 +379,10 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
       refType = 'FullBodies';
     } else if (ReferenceType[this.referenceType] === ReferenceType.BodyPart) {
       refType = 'BodyParts';
+    } else if (ReferenceType[this.referenceType] === ReferenceType.Vegetation) {
+      refType = 'Vegetation';
+    } else if (ReferenceType[this.referenceType] === ReferenceType.Structure) {
+      refType = 'Structure';
     }
 
     this.referenceService.updateReference(refType, this.images).subscribe(result => {

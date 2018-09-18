@@ -25,7 +25,7 @@ namespace SkdRefSiteAPI.DAO
             File.Delete(file);
         }
 
-        public List<Image> Upload(IFormFileCollection files, Batch batch)
+        public List<Image> Upload(IFormFileCollection files, Batch batch, User user)
         {
             var images = new List<Image>();
 
@@ -62,6 +62,7 @@ namespace SkdRefSiteAPI.DAO
                 image.Status = Status.Pending;
                 image.TermsOfUse = "";
                 image.UploadDate = DateTime.Now;
+                image.UploadedBy = user.Email;
                 image.BatchId = batchId;
                 image.Location = fileLocation;
                 //save
