@@ -1,0 +1,66 @@
+<div class='image'>
+
+  <div>
+    <span *ngIf="image.validationStatus; else notValid">READY</span>
+    <ng-template #notValid>
+      <span>Not ready...</span>
+    </ng-template>
+  </div>
+
+  <img src='{{getUrl(image.file)}}' class='thumbnail' />
+
+  <div *ngIf="referenceType == 'FullBody'" class='classifications'>
+    <b>NSFW:</b> {{image.classifications?.nsfw}}
+    <br />
+    <b>Clothed:</b> {{image.classifications?.clothing}}
+    <br />
+    <b>Gender:</b> {{image.classifications?.gender}}
+    <br />
+    <b>Pose:</b> {{image.classifications?.poseType}}
+    <br />
+    <b>View:</b> {{image.classifications?.viewAngle}}
+    <br />
+  </div>
+
+  <div *ngIf="referenceType == 'BodyPart'" class='classifications'>
+    <b>Part:</b> {{image.classifications?.bodyPart}}
+    <br />
+    <b>Gender:</b> {{image.classifications?.gender}}
+    <br />
+    <b>View:</b> {{image.classifications?.viewAngle}}
+    <br />
+  </div>
+
+  <div *ngIf="referenceType == 'Animal'" class='classifications'>
+    <b>Species:</b> {{image.classifications?.species}}
+    <br />
+    <b>Category:</b> {{image.classifications?.category}}
+    <br />
+    <b>View:</b> {{image.classifications?.viewAngle}}
+    <br />
+  </div>
+
+  <div *ngIf="referenceType == 'Structure'" class='classifications'>
+    <b>Type:</b> {{image.classifications?.structureType}}
+    <br />
+  </div>
+
+  <div *ngIf="referenceType == 'Vegetation'" class='classifications'>
+    <b>Type:</b> {{image.classifications?.vegetationType}}
+    <br />
+    <b>Photo Type:</b> {{image.classifications?.photoType}}
+    <br />
+  </div>
+
+  <div class='classifications'>
+    <b>Photographer:</b> {{image.photographer?.name}}
+    <br /> {{image.photographer?.webpage}}
+    <br />
+    <b>Model/Subject:</b> {{image.model?.name}}
+    <br /> {{image.model?.webpage}}
+    <br />
+    <b>Terms:</b> {{image.termsOfUse}}
+    <br />
+    <b>Status:</b> {{image.status}}
+  </div>
+</div>

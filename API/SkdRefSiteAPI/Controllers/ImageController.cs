@@ -7,6 +7,8 @@ using SkdRefSiteAPI.DAO;
 using SkdRefSiteAPI.DAO.Models;
 using SkdRefSiteAPI.DAO.Models.Animals;
 using SkdRefSiteAPI.DAO.Models.People;
+using SkdRefSiteAPI.DAO.Models.Structures;
+using SkdRefSiteAPI.DAO.Models.Vegetation;
 using SkdRefSiteAPI.DAO.Queryables;
 using System;
 using System.Collections.Generic;
@@ -114,6 +116,20 @@ namespace SkdRefSiteAPI.Controllers
                 var queryable = new FullBodiesQueryable();
                 var fullBodiesDAO = new ReferenceDAO<FullBodyReference, FullBodyClassifications>(ReferenceType.FullBody, queryable);
                 var images = await fullBodiesDAO.Search(id);
+                results.Images = images.ToList<object>();
+            }
+            else if (results.Batch.Type == ReferenceType.Vegetation)
+            {
+                var queryable = new VegetationQueryable();
+                var vegetationDAO = new ReferenceDAO<VegetationReference, VegetationClassifications>(ReferenceType.Vegetation, queryable);
+                var images = await vegetationDAO.Search(id);
+                results.Images = images.ToList<object>();
+            }
+            else if (results.Batch.Type == ReferenceType.Structure)
+            {
+                var queryable = new StructuresQueryable();
+                var structuresDAO = new ReferenceDAO<StructureReference, StructureClassifications>(ReferenceType.Structure, queryable);
+                var images = await structuresDAO.Search(id);
                 results.Images = images.ToList<object>();
             }
 

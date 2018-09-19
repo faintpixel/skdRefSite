@@ -34,6 +34,7 @@ import { ImagePreUploadQuestionsComponent } from './image-pre-upload-questions/i
 import { TranslationManagerComponent } from './translation-manager/translation-manager.component';
 import { NewsManagerComponent } from './news-manager/news-manager.component';
 import { ImageCategorizerComponent } from './image-categorizer/image-categorizer.component';
+import { ImageThumbnailComponent } from './image-thumbnail/image-thumbnail.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -62,7 +63,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImagePreUploadQuestionsComponent,
     TranslationManagerComponent,
     NewsManagerComponent,
-    ImageCategorizerComponent
+    ImageCategorizerComponent,
+    ImageThumbnailComponent
   ],
   imports: [
     BrowserModule,

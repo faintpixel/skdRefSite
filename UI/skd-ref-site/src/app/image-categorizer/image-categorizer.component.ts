@@ -66,6 +66,9 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
       this.validateAllImages();
     }
     if (changes['images']) {
+      if(this.images == null) {
+        this.images = [];
+      }
       this.validateAllImages();
     }
   }
@@ -106,10 +109,6 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
       this.images[i].Model = {};
       this.images[i].validationStatus = false;
     }
-  }
-
-  getUrl(image: string) {
-    return environment.imageUrl + image;
   }
 
   selectAll(): void {
@@ -227,8 +226,10 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
   }
 
   validateAllImages() {
-    for (const image of this.images) {
-      this.updateImageValidationStatus(image);
+    if (this.images !== null) {
+      for (const image of this.images) {
+        this.updateImageValidationStatus(image);
+      }
     }
   }
 
