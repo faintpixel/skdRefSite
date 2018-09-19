@@ -3,8 +3,9 @@
 
 <div id='images'>
 
-  <app-image-thumbnail *ngFor="let image of images" class='thumbnail' [class.selected]="image.selected" (click)="selectImage(image)" [image]="image" [referenceType]="referenceType"></app-image-thumbnail>
-  
+  <app-image-thumbnail *ngFor="let image of images" class='thumbnail' [class.selected]="image.selected" (click)="selectImage(image)"
+    [image]="image" [referenceType]="referenceType"></app-image-thumbnail>
+
 </div>
 
 <div id='editContainer' *ngIf="referenceType">
@@ -13,7 +14,7 @@
 
 
   <fieldset [disabled]="!imageSelected()">
-    
+
     <div class='row'>
       <div class='col'>
 
@@ -29,14 +30,14 @@
         </select>
       </div>
       <div class='col'>
-          Model:
-          <input type='text' [(ngModel)]="selectedModelName" (change)="contactChanged(selectedModelName, 'model', 'name')" />
-          <br /> Model Website:
-          <input type='text' [(ngModel)]="selectedModelWebsite" (change)="contactChanged(selectedModelWebsite, 'model', 'webpage')"
-          />
-          <br /> Terms of Use:
-          <input type='text' [(ngModel)]="selectedTerms" (change)="termsChanged(selectedTerms)" />
-          
+        Model:
+        <input type='text' [(ngModel)]="selectedModelName" (change)="contactChanged(selectedModelName, 'model', 'name')" />
+        <br /> Model Website:
+        <input type='text' [(ngModel)]="selectedModelWebsite" (change)="contactChanged(selectedModelWebsite, 'model', 'webpage')"
+        />
+        <br /> Terms of Use:
+        <input type='text' [(ngModel)]="selectedTerms" (change)="termsChanged(selectedTerms)" />
+
       </div>
       <div class='col'>
         <div *ngIf="referenceType == 'FullBody'">
@@ -120,5 +121,6 @@
     </div>
 
   </fieldset>
+
   <button class='btn btn-sm btn-primary' [disabled]="!allReady()" (click)="save()">Finished</button>
 </div>
