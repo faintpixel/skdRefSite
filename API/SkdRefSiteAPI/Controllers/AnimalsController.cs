@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SkdRefSiteAPI.DAO;
+using SkdRefSiteAPI.DAO.Models;
 using SkdRefSiteAPI.DAO.Models.Animals;
 using SkdRefSiteAPI.DAO.Queryables;
 using System;
@@ -28,17 +29,15 @@ namespace SkdRefSiteAPI.Controllers
         /// <summary>
         /// Get animals
         /// </summary>
-        /// <param name="criteria"></param>
-        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
         [Route("api/Animals")]
-        public async Task<AnimalReference> Get([FromQuery(Name = "")]AnimalClassifications criteria, [FromQuery]bool? recentImagesOnly = null)
+        public async Task<List<AnimalReference>> Search([FromQuery(Name = "")]AnimalClassifications criteria, [FromQuery(Name ="")]OffsetLimit offsetLimit)
         {
             if (criteria == null)
                 criteria = new AnimalClassifications();
 
-            var image = await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - get rid of this list
+            var image = await _dao.Search(criteria, offsetLimit.Offset, offsetLimit.Limit);
 
             return image;
         }

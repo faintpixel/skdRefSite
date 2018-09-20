@@ -30,17 +30,15 @@ namespace SkdRefSiteAPI.Controllers
         /// <summary>
         /// Get vegetation
         /// </summary>
-        /// <param name="criteria"></param>
-        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
         [Route("api/Vegetation")]
-        public async Task<VegetationReference> Get([FromQuery(Name = "")]VegetationClassifications criteria, [FromQuery]bool? recentImagesOnly = null)
+        public async Task<List<VegetationReference>> Search([FromQuery(Name = "")]VegetationClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
             if (criteria == null)
                 criteria = new VegetationClassifications();
 
-            var image = await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - get rid of this list
+            var image = await _dao.Search(criteria, offsetLimit.Offset, offsetLimit.Limit);
 
             return image;
         }

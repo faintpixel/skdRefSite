@@ -29,7 +29,7 @@ namespace SkdRefSiteAPI.DAO
         {
             var images = new List<Image>();
 
-            var batchId = CreateOrUpdateBatch(batch);
+            var batchId = CreateOrUpdateBatch(batch, user);
 
             foreach (var file in files)
             {
@@ -55,14 +55,14 @@ namespace SkdRefSiteAPI.DAO
 
                 // create the Image record
                 var image = new Image();
-                image.File = $"/images/{newFileName}"; // TO DO - switch to / or the url for when we actually release it
+                image.File = $"/images/{newFileName}"; 
                 image.Model = new Contact();
                 image.Photographer = new Contact();
                 image.Source = UploadType.USER;
                 image.Status = Status.Pending;
                 image.TermsOfUse = "";
                 image.UploadDate = DateTime.Now;
-                image.UploadedBy = user.Email;
+                image.UploadedBy = user.Name;
                 image.BatchId = batchId;
                 image.Location = fileLocation;
                 //save
@@ -73,7 +73,7 @@ namespace SkdRefSiteAPI.DAO
             return images;
         }
 
-        private string CreateOrUpdateBatch(Batch batch)
+        private string CreateOrUpdateBatch(Batch batch, User user)
         {
             var batchDAO = new BatchDAO();
             batch.Id = batchDAO.GetExistingBatchId(batch.User, batch.Name);
@@ -81,6 +81,7 @@ namespace SkdRefSiteAPI.DAO
             {
                 batch.Id = Guid.NewGuid().ToString();
                 batch.CreationDate = DateTime.Now;
+                batch.User = user.Email;
                 batchDAO.Save(batch);
             }            
 

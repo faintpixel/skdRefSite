@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SkdRefSiteAPI.DAO.Models.People
 {
-    public class BodyPartClassifications
+    public class BodyPartClassifications : BaseClassifications
     {
         public BodyPart? BodyPart { get; set; }
         public ViewAngle? ViewAngle { get; set; }

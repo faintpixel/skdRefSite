@@ -30,16 +30,14 @@ namespace SkdRefSiteAPI.Controllers
         /// <summary>
         /// Get body parts
         /// </summary>
-        /// <param name="criteria"></param>
-        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
         [Route("api/BodyParts")]
-        public async Task<BodyPartReference> Get([FromQuery(Name = "")]BodyPartClassifications criteria, [FromQuery]bool? recentImagesOnly)
+        public async Task<List<BodyPartReference>> Search([FromQuery(Name = "")]BodyPartClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
             if (criteria == null)
                 criteria = new BodyPartClassifications();
-            return await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - remove list
+            return await _dao.Search(criteria, offsetLimit.Offset, offsetLimit.Limit);
         }
 
         /// <summary>

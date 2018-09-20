@@ -14,12 +14,10 @@
             Constructor
             </summary>
         </member>
-        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.Get(SkdRefSiteAPI.DAO.Models.Animals.AnimalClassifications,System.Nullable{System.Boolean})">
+        <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.Search(SkdRefSiteAPI.DAO.Models.Animals.AnimalClassifications,SkdRefSiteAPI.DAO.Models.OffsetLimit)">
             <summary>
             Get animals
             </summary>
-            <param name="criteria"></param>
-            <param name="recentImagesOnly"></param>
             <returns></returns>
         </member>
         <member name="M:SkdRefSiteAPI.Controllers.AnimalsController.GetNext(SkdRefSiteAPI.DAO.Models.Animals.AnimalClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
@@ -67,12 +65,10 @@
             Constructor
             </summary>
         </member>
-        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.Get(SkdRefSiteAPI.DAO.Models.People.BodyPartClassifications,System.Nullable{System.Boolean})">
+        <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.Search(SkdRefSiteAPI.DAO.Models.People.BodyPartClassifications,SkdRefSiteAPI.DAO.Models.OffsetLimit)">
             <summary>
             Get body parts
             </summary>
-            <param name="criteria"></param>
-            <param name="recentImagesOnly"></param>
             <returns></returns>
         </member>
         <member name="M:SkdRefSiteAPI.Controllers.BodyPartsController.GetNext(SkdRefSiteAPI.DAO.Models.People.BodyPartClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
@@ -120,12 +116,10 @@
             Constructor
             </summary>
         </member>
-        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.Get(SkdRefSiteAPI.DAO.Models.People.FullBodyClassifications,System.Nullable{System.Boolean})">
+        <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.Search(SkdRefSiteAPI.DAO.Models.People.FullBodyClassifications,SkdRefSiteAPI.DAO.Models.OffsetLimit)">
             <summary>
             Gets full bodies
             </summary>
-            <param name="criteria"></param>
-            <param name="recentImagesOnly"></param>
             <returns></returns>
         </member>
         <member name="M:SkdRefSiteAPI.Controllers.FullBodiesController.GetNext(SkdRefSiteAPI.DAO.Models.People.FullBodyClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
@@ -257,12 +251,10 @@
             Constructor
             </summary>
         </member>
-        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.Get(SkdRefSiteAPI.DAO.Models.Structures.StructureClassifications,System.Nullable{System.Boolean})">
+        <member name="M:SkdRefSiteAPI.Controllers.StructuresController.Search(SkdRefSiteAPI.DAO.Models.Structures.StructureClassifications,SkdRefSiteAPI.DAO.Models.OffsetLimit)">
             <summary>
             Get Structures
             </summary>
-            <param name="criteria"></param>
-            <param name="recentImagesOnly"></param>
             <returns></returns>
         </member>
         <member name="M:SkdRefSiteAPI.Controllers.StructuresController.GetNext(SkdRefSiteAPI.DAO.Models.Structures.StructureClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">
@@ -309,12 +301,10 @@
             Constructor
             </summary>
         </member>
-        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.Get(SkdRefSiteAPI.DAO.Models.Vegetation.VegetationClassifications,System.Nullable{System.Boolean})">
+        <member name="M:SkdRefSiteAPI.Controllers.VegetationController.Search(SkdRefSiteAPI.DAO.Models.Vegetation.VegetationClassifications,SkdRefSiteAPI.DAO.Models.OffsetLimit)">
             <summary>
             Get vegetation
             </summary>
-            <param name="criteria"></param>
-            <param name="recentImagesOnly"></param>
             <returns></returns>
         </member>
         <member name="M:SkdRefSiteAPI.Controllers.VegetationController.GetNext(SkdRefSiteAPI.DAO.Models.Vegetation.VegetationClassifications,System.Collections.Generic.List{System.String},System.Nullable{System.Boolean})">

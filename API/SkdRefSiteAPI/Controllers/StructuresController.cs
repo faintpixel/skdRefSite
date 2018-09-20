@@ -30,17 +30,15 @@ namespace SkdRefSiteAPI.Controllers
         /// <summary>
         /// Get Structures
         /// </summary>
-        /// <param name="criteria"></param>
-        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
         [Route("api/Structures")]
-        public async Task<StructureReference> Get([FromQuery(Name = "")]StructureClassifications criteria, [FromQuery]bool? recentImagesOnly = null)
+        public async Task<List<StructureReference>> Search([FromQuery(Name = "")]StructureClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
             if (criteria == null)
                 criteria = new StructureClassifications();
 
-            var image = await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - get rid of this list
+            var image = await _dao.Search(criteria, offsetLimit.Offset, offsetLimit.Limit);
 
             return image;
         }

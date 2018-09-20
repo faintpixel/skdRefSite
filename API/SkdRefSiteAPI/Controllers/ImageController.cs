@@ -101,35 +101,35 @@ namespace SkdRefSiteAPI.Controllers
             {
                 var queryable = new AnimalsQueryable();
                 var animalsDAO = new ReferenceDAO<AnimalReference, AnimalClassifications>(ReferenceType.Animal, queryable);
-                var images = await animalsDAO.Search(id);
+                var images = await animalsDAO.Search(new AnimalClassifications() { BatchId = id });
                 results.Images = images.ToList<object>();
             }
             else if (results.Batch.Type == ReferenceType.BodyPart)
             {
                 var queryable = new BodyPartsQueryable();
                 var bodyPartsDAO = new ReferenceDAO<BodyPartReference, BodyPartClassifications>(ReferenceType.BodyPart, queryable);
-                var images = await bodyPartsDAO.Search(id);
+                var images = await bodyPartsDAO.Search(new BodyPartClassifications { BatchId = id });
                 results.Images = images.ToList<object>();
             }
             else if (results.Batch.Type == ReferenceType.FullBody)
             {
                 var queryable = new FullBodiesQueryable();
                 var fullBodiesDAO = new ReferenceDAO<FullBodyReference, FullBodyClassifications>(ReferenceType.FullBody, queryable);
-                var images = await fullBodiesDAO.Search(id);
+                var images = await fullBodiesDAO.Search(new FullBodyClassifications { BatchId = id });
                 results.Images = images.ToList<object>();
             }
             else if (results.Batch.Type == ReferenceType.Vegetation)
             {
                 var queryable = new VegetationQueryable();
                 var vegetationDAO = new ReferenceDAO<VegetationReference, VegetationClassifications>(ReferenceType.Vegetation, queryable);
-                var images = await vegetationDAO.Search(id);
+                var images = await vegetationDAO.Search(new VegetationClassifications { BatchId = id });
                 results.Images = images.ToList<object>();
             }
             else if (results.Batch.Type == ReferenceType.Structure)
             {
                 var queryable = new StructuresQueryable();
                 var structuresDAO = new ReferenceDAO<StructureReference, StructureClassifications>(ReferenceType.Structure, queryable);
-                var images = await structuresDAO.Search(id);
+                var images = await structuresDAO.Search(new StructureClassifications { BatchId = id });
                 results.Images = images.ToList<object>();
             }
 

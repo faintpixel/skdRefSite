@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SkdRefSiteAPI.DAO.Models.Structures
 {
-    public class StructureClassifications
+    public class StructureClassifications : BaseClassifications
     {
         public StructureType? StructureType;
     }

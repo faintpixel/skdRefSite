@@ -13,7 +13,9 @@ using System.Threading.Tasks;
 
 namespace SkdRefSiteAPI.DAO
 {
-    public class ReferenceDAO<TReference, TClassifications> where TReference : Image
+    public class ReferenceDAO<TReference, TClassifications> 
+        where TReference : Image 
+        where TClassifications : BaseClassifications
     {
         public MongoClient _mongoClient;
         private IMongoDatabase _db;
@@ -110,10 +112,28 @@ namespace SkdRefSiteAPI.DAO
             return result;
         }
 
-        public async Task<List<TReference>> Search(string batchId)
+        public async Task<List<TReference>> Search(TClassifications classifications, int offset = 0, int limit = int.MaxValue)
         {
-            var query = _collection.AsQueryable();
-            query = query.Where(x => x.BatchId == batchId);
+            var query = _queryable.GetQueryable(_collection, classifications, false);
+            if(string.IsNullOrWhiteSpace(classifications.BatchId) == false)
+                query = query.Where(x => x.BatchId == classifications.BatchId);
+            if (classifications.UploadDateStart.HasValue)
+                query = query.Where(x => x.UploadDate >= classifications.UploadDateStart);
+            if (classifications.UploadDateEnd.HasValue)
+                query = query.Where(x => x.UploadDate <= classifications.UploadDateEnd);
+            if (classifications.Status.HasValue)
+                query = query.Where(x => x.Status == classifications.Status);
+            if (string.IsNullOrWhiteSpace(classifications.UploadedBy) == false)
+                query = query.Where(x => x.UploadedBy.Contains(classifications.UploadedBy));
+            if (string.IsNullOrWhiteSpace(classifications.FileName) == false)
+                query = query.Where(x => x.File.Contains(classifications.FileName));
+            if (string.IsNullOrWhiteSpace(classifications.Photographer) == false)
+                query = query.Where(x => x.Photographer.Name.Contains(classifications.Photographer));
+            if (string.IsNullOrWhiteSpace(classifications.Model) == false)
+                query = query.Where(x => x.Model.Name.Contains(classifications.Model));
+
+            query = query.Skip(offset);
+            query = query.Take(limit);
 
             return await query.ToListAsync();
         }

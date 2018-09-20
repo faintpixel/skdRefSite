@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SkdRefSiteAPI.DAO.Models.People
 {
-    public class FullBodyClassifications
+    public class FullBodyClassifications : BaseClassifications
     {
         public bool? NSFW { get; set; }
         public bool? Clothing { get; set; }

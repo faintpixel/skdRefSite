@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SkdRefSiteAPI.DAO.Models.Animals
 {
-    public class AnimalClassifications
+    public class AnimalClassifications : BaseClassifications
     {
         public Species? Species { get; set; }
         public Category? Category { get; set; }

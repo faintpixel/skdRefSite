@@ -30,17 +30,15 @@ namespace SkdRefSiteAPI.Controllers
         /// <summary>
         /// Gets full bodies
         /// </summary>
-        /// <param name="criteria"></param>
-        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpGet]
         [Route("api/FullBodies")]
-        public async Task<FullBodyReference> Get([FromQuery(Name = "")]FullBodyClassifications criteria, [FromQuery]bool? recentImagesOnly)
+        public async Task<List<FullBodyReference>> Search([FromQuery(Name = "")]FullBodyClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
             if (criteria == null)
                 criteria = new FullBodyClassifications();
 
-            return await _dao.Get(criteria, new List<string>(), recentImagesOnly); // TO DO - remove list
+            return await _dao.Search(criteria, offsetLimit.Offset, offsetLimit.Limit);
         }
 
         /// <summary>
