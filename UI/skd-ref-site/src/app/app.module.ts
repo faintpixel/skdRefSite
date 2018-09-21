@@ -35,6 +35,7 @@ import { TranslationManagerComponent } from './translation-manager/translation-m
 import { NewsManagerComponent } from './news-manager/news-manager.component';
 import { ImageCategorizerComponent } from './image-categorizer/image-categorizer.component';
 import { ImageThumbnailComponent } from './image-thumbnail/image-thumbnail.component';
+import { ImageSearchComponent } from './image-search/image-search.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -64,7 +65,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslationManagerComponent,
     NewsManagerComponent,
     ImageCategorizerComponent,
-    ImageThumbnailComponent
+    ImageThumbnailComponent,
+    ImageSearchComponent
   ],
   imports: [
     BrowserModule,

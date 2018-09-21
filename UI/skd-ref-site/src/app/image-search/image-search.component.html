@@ -1,0 +1,51 @@
+<div class='card'>
+
+  <div class='row'>
+    <div class='col'>
+      <label for='batch'>Batch: </label>
+      <input type='text' id='batch' [(ngModel)]="filters.batchId" />
+    </div>
+    <div class='col'>
+      <label for='uploadStartDate'>Upload date start: </label>
+      <input type='text' id='uploadStartDate' [(ngModel)]="filters.uploadDateStart" />
+    </div>
+    <div class='col'>
+      <label for='uploadEndDate'>Upload date end: </label>
+      <input type='text' id='uploadEndDate' [(ngModel)]="filters.uploadDateEnd" />
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col'>
+      <label for='status'>Status: </label>
+      <input type='text' id='status' [(ngModel)]="filters.status" />
+    </div>
+    <div class='col'>
+      <label for='uploadedBy'>Uploaded by: </label>
+      <input type='text' id='uploadedBy' [(ngModel)]="filters.uploadedBy" />
+    </div>
+    <div class='col'>
+      <label for='file'>File: </label>
+      <input type='text' id='file' [(ngModel)]="filters.fileName" />
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col'>
+      <label for='photographer'>Photographer: </label>
+      <input type='text' id='photographer' [(ngModel)]="filters.photographer" />
+    </div>
+    <div class='col'>
+      <label for='model'>Model: </label>
+      <input type='text' id='model' [(ngModel)]="filters.model" />
+    </div>
+    <div class='col'>
+      <label for='limit'>Limit: </label>
+      <input type='text' id='limit' [(ngModel)]="filters.limit" />
+    </div>
+  </div>
+
+
+  <button class='btn btn-outline-primary btn-sm' (click)="search()">Search</button>
+
+</div>

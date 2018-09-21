@@ -371,6 +371,10 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
     return true;
   }
 
+  performSearch(filters) {
+    alert('searching');
+  }
+
   save(): void {
     let refType = '';
 
