@@ -14,7 +14,7 @@ namespace SkdRefSiteAPI.Controllers
     /// <summary>
     /// API for working with full body references
     /// </summary>
-    public class FullBodiesController : Controller, IReferenceController<FullBodyReference, FullBodyClassifications>
+    public class FullBodiesController : BaseController, IReferenceController<FullBodyReference, FullBodyClassifications>
     {
         private ReferenceDAO<FullBodyReference, FullBodyClassifications> _dao;
 
@@ -32,6 +32,7 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize("admin")]
         [Route("api/FullBodies")]
         public async Task<List<FullBodyReference>> Search([FromQuery(Name = "")]FullBodyClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
@@ -74,7 +75,8 @@ namespace SkdRefSiteAPI.Controllers
         [Route("api/FullBodies")]
         public async Task<List<FullBodyReference>> Save([FromBody]List<FullBodyReference> images)
         {
-            var result = await _dao.Save(images);
+            var user = GetCurrentUser();
+            var result = await _dao.Save(images, user);
             return images; // TO DO - return something better
         }
 

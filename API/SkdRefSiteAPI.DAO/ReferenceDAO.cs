@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace SkdRefSiteAPI.DAO
 {
@@ -22,6 +23,7 @@ namespace SkdRefSiteAPI.DAO
         private IMongoCollection<TReference> _collection;
         private Logger _logger;
         private IQueryable<TReference, TClassifications> _queryable;
+        private readonly ReferenceType REFERENCE_TYPE;
 
         public ReferenceDAO(ReferenceType type, IQueryable<TReference, TClassifications> queryable)
         {
@@ -32,6 +34,7 @@ namespace SkdRefSiteAPI.DAO
             _collection = _db.GetCollection<TReference>(collectionName);
             _logger = new Logger("ReferenceDAO");
             _queryable = queryable;
+            REFERENCE_TYPE = type;
         }
 
         private string GetCollectionName(ReferenceType type)
@@ -53,10 +56,19 @@ namespace SkdRefSiteAPI.DAO
             return collectionName;
         }
 
-        public async Task<List<ReplaceOneResult>> Save(List<TReference> references)
+        public async Task<List<ReplaceOneResult>> Save(List<TReference> references, User user)
         {
+            await CheckSavePermissions(references, user);
             try
             {
+                if (user.IsAdmin == false)
+                    foreach (var reference in references)
+                    {
+                        if(reference.Status != Status.Pending || reference.Status != Status.Deleted)
+                            reference.Status = Status.Pending;
+                    }
+
+
                 var results = new List<ReplaceOneResult>();
 
                 foreach (var reference in references)
@@ -74,12 +86,30 @@ namespace SkdRefSiteAPI.DAO
                     }
                 }
 
+                if (user.IsAdmin == false)
+                    _logger.Log("Reference Added", $"User {user.Name} ({user.Email}) has added {references.Count} new {REFERENCE_TYPE} images", user);
+
                 return results;
             }
             catch (Exception ex)
             {
                 _logger.Log("Save", ex, references);
                 throw;
+            }
+        }
+
+        private async Task CheckSavePermissions(List<TReference> references, User user)
+        {
+            if (user.IsAdmin)
+                return;
+
+            var batchIds = references.Select(x => x.BatchId).Distinct().ToList();
+            var batchDAO = new BatchDAO();
+            foreach(var id in batchIds)
+            {
+                var batch = await batchDAO.Get(id);
+                if (batch.User != user.Email)
+                    throw new Exception("Unauthorized");
             }
         }
 

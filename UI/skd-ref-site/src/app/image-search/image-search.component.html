@@ -1,69 +1,69 @@
 <div class='card'>
+  <form #searchForm="ngForm" (ngSubmit)="search()">
+    <div class='row'>
+      <div class='col'>
+        <label for='referenceType'>Type*: </label>
+        <select id='referenceType' [(ngModel)]="filters.searchType" required name='referenceType'>
+          <option *ngFor="let referenceType of referenceTypes" [value]="referenceType">{{referenceType}}</option>
+        </select>
+      </div>
+      <div class='col'>
+        <label for='uploadStartDate'>Upload date start: </label>
+        <input (click)="dstart.toggle()" class='calendarText' placeholder="yyyy-mm-dd" name="startdp" [(ngModel)]="uploadDateStartPicker"
+          ngbDatepicker #dstart="ngbDatepicker" />
+        <span (click)="dstart.toggle()">📅</span>
+      </div>
+      <div class='col'>
+        <label for='uploadEndDate'>Upload date end: </label>
+        <input (click)="dend.toggle()" class='calendarText' placeholder="yyyy-mm-dd" name="enddp" [(ngModel)]="uploadDateEndPicker"
+          ngbDatepicker #dend="ngbDatepicker">
+        <span (click)="dend.toggle()">📅</span>
 
-  <div class='row'>
-    <div class='col'>
-      <label for='referenceType'>Type: </label>
-      <select id='referenceType' [(ngModel)]="searchtype">
-        <option *ngFor="let referenceType of referenceTypes" [value]="referenceType">{{referenceType}}</option>
-      </select>
+      </div>
     </div>
-    <div class='col'>
-      <label for='uploadStartDate'>Upload date start: </label>
-      <input (click)="dstart.toggle()" class='calendarText' placeholder="yyyy-mm-dd" name="startdp" [(ngModel)]="uploadDateStartPicker"
-        ngbDatepicker #dstart="ngbDatepicker" />
-      <span (click)="dstart.toggle()">📅</span>
-    </div>
-    <div class='col'>
-      <label for='uploadEndDate'>Upload date end: </label>
-      <input (click)="dend.toggle()" class='calendarText' placeholder="yyyy-mm-dd" name="enddp" [(ngModel)]="uploadDateEndPicker"
-        ngbDatepicker #dend="ngbDatepicker">
-      <span (click)="dend.toggle()">📅</span>
 
+    <div class='row'>
+      <div class='col'>
+        <label for='status'>Status: </label>
+        <select [(ngModel)]="filters.status" name='status'>
+          <option *ngFor="let option of statuses" [value]="option">{{option}}</option>
+        </select>
+      </div>
+      <div class='col'>
+        <label for='uploadedBy'>Uploaded by: </label>
+        <input type='text' id='uploadedBy' [(ngModel)]="filters.uploadedBy" name='uploadBy'/>
+      </div>
+      <div class='col'>
+        <label for='file'>File: </label>
+        <input type='text' id='file' [(ngModel)]="filters.fileName" name='file' />
+      </div>
     </div>
-  </div>
 
-  <div class='row'>
-    <div class='col'>
-      <label for='status'>Status: </label>
-      <select [(ngModel)]="filters.status">
-        <option *ngFor="let option of statuses" [value]="option">{{option}}</option>
-      </select>
+    <div class='row'>
+      <div class='col'>
+        <label for='photographer'>Photographer: </label>
+        <input type='text' id='photographer' [(ngModel)]="filters.photographer" name='photographer' />
+      </div>
+      <div class='col'>
+        <label for='model'>Model: </label>
+        <input type='text' id='model' [(ngModel)]="filters.model" name='model'/>
+      </div>
+      <div class='col'>
+        <label for='limit'>Limit*: </label>
+        <input type='text' id='limit' [(ngModel)]="filters.limit" name='limit' required/>
+      </div>
     </div>
-    <div class='col'>
-      <label for='uploadedBy'>Uploaded by: </label>
-      <input type='text' id='uploadedBy' [(ngModel)]="filters.uploadedBy" />
-    </div>
-    <div class='col'>
-      <label for='file'>File: </label>
-      <input type='text' id='file' [(ngModel)]="filters.fileName" />
-    </div>
-  </div>
 
-  <div class='row'>
-    <div class='col'>
-      <label for='photographer'>Photographer: </label>
-      <input type='text' id='photographer' [(ngModel)]="filters.photographer" />
+    <div class='row'>
+      <div class='col'>
+        <label for='batch'>Batch Id: </label>
+        <input type='text' id='batch' [(ngModel)]="filters.batchId" name='batchId'/>
+      </div>
+      <div class='col'></div>
+      <div class='col'>
+        <button class='btn btn-outline-primary btn-sm btn-block' type='submit' [disabled]="searchForm.form.invalid">Search</button>
+      </div>
     </div>
-    <div class='col'>
-      <label for='model'>Model: </label>
-      <input type='text' id='model' [(ngModel)]="filters.model" />
-    </div>
-    <div class='col'>
-      <label for='limit'>Limit: </label>
-      <input type='text' id='limit' [(ngModel)]="filters.limit" />
-    </div>
-  </div>
-
-  <div class='row'>
-    <div class='col'>
-      <label for='batch'>Batch Id: </label>
-      <input type='text' id='batch' [(ngModel)]="filters.batchId" />
-    </div>
-    <div class='col'></div>
-    <div class='col'>
-      <button class='btn btn-outline-primary btn-sm btn-block' (click)="search()">Search</button>
-    </div>
-  </div>
-
+  </form>
 
 </div>

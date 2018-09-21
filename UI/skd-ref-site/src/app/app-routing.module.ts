@@ -12,6 +12,7 @@ import { BatchListComponent } from './batch-list/batch-list.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { NewsManagerComponent } from './news-manager/news-manager.component';
 import { TranslationManagerComponent } from './translation-manager/translation-manager.component';
+import { ImageEditorComponent } from './image-editor/image-editor.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'en', pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
       component: AddImagesComponent, canDeactivate: ['canDeactivateAddImages'], canActivate: [ScopeGuard],
       data: { expectedRoles: ['admin', 'user']} },
   { path: 'news', component: NewsManagerComponent, canActivate: [ScopeGuard], data: { expectedRoles: ['admin']} },
-  { path: 'editBatch/:id', component: BatchEditorComponent, data: { expectedRoles: ['admin']} },
+  { path: 'editBatch/:id', component: BatchEditorComponent, data: { expectedRoles: ['user', 'admin']} },
+  { path: 'manageImages', component: ImageEditorComponent, data: { expectedRoles: ['admin']} },
   { path: 'batches', component: BatchListComponent, data: { expectedRoles: ['admin']} },
   { path: 'logs', component: LogsComponent, canActivate: [ScopeGuard], data: { expectedRoles: ['admin']} },
   { path: 'translate', component: TranslationManagerComponent },

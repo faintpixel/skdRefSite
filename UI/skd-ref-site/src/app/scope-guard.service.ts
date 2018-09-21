@@ -15,6 +15,7 @@ export class ScopeGuardService { // TO DO - rename to role guard or else figure 
     const scopes = (route.data as any).expectedRoles;
 
     if (!this.auth.isAuthenticated() || !this.auth.userHasRoles(scopes)) {
+      console.log('access denied');
       this.router.navigate(['']);
       return false;
     }

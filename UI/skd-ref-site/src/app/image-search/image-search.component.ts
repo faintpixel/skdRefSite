@@ -8,22 +8,34 @@ import { ReferenceType } from '../models/referenceType';
 })
 export class ImageSearchComponent implements OnInit {
   @Output() searchEvent: EventEmitter<any> = new EventEmitter();
-  
+
   filters: any = {
-    limit: 10
+    limit: 30,
+    searchType: 'Animal'
   };
   statuses: Array<string> = ['', 'Active', 'Deleted', 'Pending', 'Rejected'];
   referenceTypes = [];
-  
-  constructor() { 
+  uploadDateStartPicker: any;
+  uploadDateEndPicker: any;
+
+  constructor() {
     this.referenceTypes = Object.keys(ReferenceType);
-    this.referenceTypes.unshift('');
   }
 
   ngOnInit() {
   }
 
   search() {
+    this.filters.uploadDateStart = this.setDatePickerFilter(this.uploadDateStartPicker);
+    this.filters.uploadDateEnd = this.setDatePickerFilter(this.uploadDateEndPicker);
     this.searchEvent.emit(this.filters);
+  }
+
+  setDatePickerFilter(datePickerValue) {
+    if (datePickerValue == null) {
+      return null;
+    } else {
+      return new Date(datePickerValue.year, datePickerValue.month - 1, datePickerValue.day).toISOString();
+    }
   }
 }

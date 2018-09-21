@@ -14,7 +14,7 @@ namespace SkdRefSiteAPI.Controllers
     /// <summary>
     /// API for working with animal references
     /// </summary>
-    public class AnimalsController : Controller, IReferenceController<AnimalReference, AnimalClassifications>
+    public class AnimalsController : BaseController, IReferenceController<AnimalReference, AnimalClassifications>
     {
         private ReferenceDAO<AnimalReference, AnimalClassifications> _dao;
 
@@ -31,6 +31,7 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize("admin")]
         [Route("api/Animals")]
         public async Task<List<AnimalReference>> Search([FromQuery(Name = "")]AnimalClassifications criteria, [FromQuery(Name ="")]OffsetLimit offsetLimit)
         {
@@ -73,7 +74,8 @@ namespace SkdRefSiteAPI.Controllers
         [Route("api/Animals")]
         public async Task<List<AnimalReference>> Save([FromBody]List<AnimalReference> images)
         {
-            var results = await _dao.Save(images);
+            var user = GetCurrentUser();
+            var results = await _dao.Save(images, user);
             return images; // TO DO - return something better
         }
 

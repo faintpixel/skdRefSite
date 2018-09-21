@@ -1,9 +1,11 @@
-<app-image-search (searchEvent)="performSearch($event)"></app-image-search>
+<app-image-search *ngIf="showSearch" (searchEvent)="performSearch($event)"></app-image-search>
 
 <button (click)="selectAll()">Select all</button>
 <button (click)="selectNone()">Select none</button>
 
 <div id='images'>
+
+  <ngb-progressbar type="info" [value]="100" [striped]="true" [animated]="true" *ngIf="loading"></ngb-progressbar>
 
   <app-image-thumbnail *ngFor="let image of images" class='thumbnail' [class.selected]="image.selected" (click)="selectImage(image)"
     [image]="image" [referenceType]="referenceType"></app-image-thumbnail>
@@ -12,8 +14,8 @@
 
 <div id='editContainer' *ngIf="referenceType">
 
-  <button type="button" class="btn btn-outline-secondary btn-sm" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
-    aria-controls="editContents">
+  <button type="button" class="btn btn-outline-secondary btn-sm" (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed" aria-controls="editContents">
     <span *ngIf="isCollapsed">▲</span>
     <span *ngIf="!isCollapsed">▼</span>
   </button>
@@ -30,11 +32,9 @@
         <div class='col'>
 
           Photographer*:
-          <input type='text' [(ngModel)]="selectedPhotographerName" (change)="contactChanged(selectedPhotographerName, 'photographer', 'name')"
-          />
+          <input type='text' [(ngModel)]="selectedPhotographerName" (change)="contactChanged(selectedPhotographerName, 'photographer', 'name')" />
           <br /> Photographer Website:
-          <input type='text' [(ngModel)]="selectedPhotographerWebsite" (change)="contactChanged(selectedPhotographerWebsite, 'photographer', 'webpage')"
-          />
+          <input type='text' [(ngModel)]="selectedPhotographerWebsite" (change)="contactChanged(selectedPhotographerWebsite, 'photographer', 'webpage')" />
           <br /> Status:
           <select [(ngModel)]="selectedStatus" (change)="statusChanged()">
             <option *ngFor="let option of statuses" [value]="option">{{option}}</option>
@@ -44,8 +44,7 @@
           Model:
           <input type='text' [(ngModel)]="selectedModelName" (change)="contactChanged(selectedModelName, 'model', 'name')" />
           <br /> Model Website:
-          <input type='text' [(ngModel)]="selectedModelWebsite" (change)="contactChanged(selectedModelWebsite, 'model', 'webpage')"
-          />
+          <input type='text' [(ngModel)]="selectedModelWebsite" (change)="contactChanged(selectedModelWebsite, 'model', 'webpage')" />
           <br /> Terms of Use:
           <input type='text' [(ngModel)]="selectedTerms" (change)="termsChanged(selectedTerms)" />
 

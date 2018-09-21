@@ -32,6 +32,7 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize("admin")]
         [Route("api/Structures")]
         public async Task<List<StructureReference>> Search([FromQuery(Name = "")]StructureClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
@@ -74,7 +75,8 @@ namespace SkdRefSiteAPI.Controllers
         [Route("api/Structures")]
         public async Task<List<StructureReference>> Save([FromBody]List<StructureReference> images)
         {
-            var results = await _dao.Save(images);
+            var user = GetCurrentUser();
+            var results = await _dao.Save(images, user);
             return images; // TO DO - return something better
         }
 

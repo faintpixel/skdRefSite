@@ -14,7 +14,7 @@ namespace SkdRefSiteAPI.Controllers
     /// <summary>
     /// API for working with body part references
     /// </summary>
-    public class BodyPartsController : Controller, IReferenceController<BodyPartReference, BodyPartClassifications>
+    public class BodyPartsController : BaseController, IReferenceController<BodyPartReference, BodyPartClassifications>
     {
         private ReferenceDAO<BodyPartReference, BodyPartClassifications> _dao;
 
@@ -32,6 +32,7 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize("admin")]
         [Route("api/BodyParts")]
         public async Task<List<BodyPartReference>> Search([FromQuery(Name = "")]BodyPartClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
@@ -71,7 +72,8 @@ namespace SkdRefSiteAPI.Controllers
         [Route("api/BodyParts")]
         public async Task<List<BodyPartReference>> Save([FromBody]List<BodyPartReference> images)
         {
-            var results = await _dao.Save(images);
+            var user = GetCurrentUser();
+            var results = await _dao.Save(images, user);
             return images; // TO DO - return something better
         }
 

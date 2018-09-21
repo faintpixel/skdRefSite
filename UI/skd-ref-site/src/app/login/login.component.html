@@ -2,8 +2,9 @@
 
 <span *ngIf="loggedIn()">
     <a routerLink="/addImages">{{'Header.AddImages' | translate}}</a> |
-    <a routerLink="/batches">{{'Header.ManageImages' | translate}}</a> | 
+    <a routerLink="/batches">{{'Header.YourImages' | translate}}</a> | 
     <span *ngIf="authService.isAdmin()">
+        <a routerLink="/manageImages">{{'Header.ManageImages' | translate}}</a> | 
         <a routerLink="/news">{{'Header.News' | translate}}</a> |
         <a routerLink="/logs">{{logCount}} {{'Header.Logs' | translate}}</a> |
     </span>

@@ -36,6 +36,7 @@ import { NewsManagerComponent } from './news-manager/news-manager.component';
 import { ImageCategorizerComponent } from './image-categorizer/image-categorizer.component';
 import { ImageThumbnailComponent } from './image-thumbnail/image-thumbnail.component';
 import { ImageSearchComponent } from './image-search/image-search.component';
+import { ImageEditorComponent } from './image-editor/image-editor.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -66,7 +67,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NewsManagerComponent,
     ImageCategorizerComponent,
     ImageThumbnailComponent,
-    ImageSearchComponent
+    ImageSearchComponent,
+    ImageEditorComponent
   ],
   imports: [
     BrowserModule,

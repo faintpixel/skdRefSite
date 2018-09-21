@@ -32,6 +32,7 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize("admin")]
         [Route("api/Vegetation")]
         public async Task<List<VegetationReference>> Search([FromQuery(Name = "")]VegetationClassifications criteria, [FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
@@ -74,7 +75,9 @@ namespace SkdRefSiteAPI.Controllers
         [Route("api/Vegetation")]
         public async Task<List<VegetationReference>> Save([FromBody]List<VegetationReference> images)
         {
-            var results = await _dao.Save(images);
+            var user = GetCurrentUser();
+
+            var results = await _dao.Save(images, user);
             return images; // TO DO - return something better
         }
 

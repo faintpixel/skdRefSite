@@ -1,8 +1,17 @@
 <div>
   <h3>Thanks for wanting to add some images!</h3>
-  Before we begin, we have a few questions.
+  Before we begin, we have a few questions.<br/>
 
-  <div id='question1'>
+  <div id='whatTypeOfImages'>
+    What type of images are these?
+    <select class='form-control' [(ngModel)]="answers.type">
+      <option *ngFor="let referenceType of referenceTypes" [value]="referenceType">{{referenceType}}</option>
+    </select>
+    Note: We're currently limiting the allowed upload types. We'll be expanding the options soon!<br/>
+  </div>
+
+  <div id='question1' *ngIf="answers.type != ''">
+    <hr/>
     <div class='question'>Where did these images come from?</div>
     <label><input type='radio' name='source' value='photographer' [(ngModel)]="answers.source"> I took them myself.</label><br />
     <label><input type='radio' name='source' value='found' [(ngModel)]="answers.source"> I found them!</label><br />
@@ -10,6 +19,7 @@
   </div>
 
   <div id='question2' *ngIf="answers.source =='photographer'">
+      <hr/>
     <div class='question'>Great! Do you give us full permission to host these images, and to resize and crop them as
       needed?</div>
     <label><input type='radio' name='permission' value='yes' [(ngModel)]="answers.permission"> Yes</label><br />
@@ -17,6 +27,7 @@
   </div>
 
   <div id='question2b' *ngIf="answers.source && answers.source != 'photographer'">
+      <hr/>
     <div class='question' *ngIf="answers.source == 'found'">Ok great, but this may be a little trickier.</div>
     <div class='question' *ngIf="answers.source == 'other'">How mysterious! Please provide some additional information.</div>
     <br />
@@ -30,20 +41,18 @@
   </div>
 
   <div id='unableToProceed' *ngIf="!PermissionGranted() && AllQuestionsAnswered()">
+      <hr/>
     Unfortunately it sounds like we can't host your images. We have to have permission to use the images, as we don't
     want to get in trouble! If you're not sure about it, <a href="mailto:artomizer@sketchdaily.net?Subject=Adding%20Images">send
       us an email</a> with the details and we can try reaching out to the photographer to see if we can get permission.
   </div>
 
   <div id='proceed' *ngIf="PermissionGranted() && AllQuestionsAnswered()">
+      <hr/>
     It sounds like everything is good!<br /><br />
 
     Please enter a name for this batch of images.
-    <input type='text' class='form-control' [(ngModel)]="answers.name" /><br />
-    What type of images are these?
-    <select class='form-control' [(ngModel)]="answers.type">
-      <option *ngFor="let referenceType of referenceTypes" [value]="referenceType">{{referenceType}}</option>
-    </select>
+    <input type='text' class='form-control' [(ngModel)]="answers.name" /><br />    
 
     <button (click)="Completed()" [disabled]="answers.name == '' || answers.name == null || answers.type == '' || answers.type == null">Proceed</button>
   </div>

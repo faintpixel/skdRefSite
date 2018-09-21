@@ -20,6 +20,7 @@ import { StructureType } from '../models/structureType';
 export class ImageCategorizerComponent implements OnInit, OnChanges {
   @Input() images;
   @Input() referenceType;
+  @Input() showSearch = false;
 
   genders: Array<string>;
   selectedGender: string;
@@ -60,6 +61,8 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
 
   statuses: Array<string> = ['', 'Active', 'Deleted', 'Pending', 'Rejected'];
   selectedStatus: string;
+
+  loading = false;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['referenceType']) {
@@ -372,23 +375,31 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
   }
 
   performSearch(filters) {
-    const refType = this.getRefType();
+    this.loading = true;
+    this.images = [];
+    this.referenceType = filters.searchType;
+    const refType = this.getRefType(filters.searchType);
     this.referenceService.searchReference(refType, filters)
-      .subscribe(x => this.images = x);
+      .subscribe(x => {
+        this.images = x;
+        this.selectNone();
+        this.validateAllImages();
+        this.loading = false;
+      });
   }
 
-  getRefType() {
+  getRefType(referenceType) {
     let refType = '';
 
-    if (ReferenceType[this.referenceType] === ReferenceType.Animal) {
+    if (ReferenceType[referenceType] === ReferenceType.Animal) {
       refType = 'Animals';
-    } else if (ReferenceType[this.referenceType] === ReferenceType.FullBody) {
+    } else if (ReferenceType[referenceType] === ReferenceType.FullBody) {
       refType = 'FullBodies';
-    } else if (ReferenceType[this.referenceType] === ReferenceType.BodyPart) {
+    } else if (ReferenceType[referenceType] === ReferenceType.BodyPart) {
       refType = 'BodyParts';
-    } else if (ReferenceType[this.referenceType] === ReferenceType.Vegetation) {
+    } else if (ReferenceType[referenceType] === ReferenceType.Vegetation) {
       refType = 'Vegetation';
-    } else if (ReferenceType[this.referenceType] === ReferenceType.Structure) {
+    } else if (ReferenceType[referenceType] === ReferenceType.Structure) {
       refType = 'Structure';
     }
 
@@ -396,7 +407,7 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
   }
 
   save(): void {
-    const refType = this.getRefType();
+    const refType = this.getRefType(this.referenceType);
 
     this.referenceService.updateReference(refType, this.images).subscribe(result => {
       if (result) {
