@@ -128,9 +128,9 @@ namespace SkdRefSiteAPI.DAO
             if (string.IsNullOrWhiteSpace(classifications.FileName) == false)
                 query = query.Where(x => x.File.Contains(classifications.FileName));
             if (string.IsNullOrWhiteSpace(classifications.Photographer) == false)
-                query = query.Where(x => x.Photographer.Name.Contains(classifications.Photographer));
+                query = query.Where(x => x.Photographer != null && x.Photographer.Name.ToLower().Contains(classifications.Photographer.ToLower()));
             if (string.IsNullOrWhiteSpace(classifications.Model) == false)
-                query = query.Where(x => x.Model.Name.Contains(classifications.Model));
+                query = query.Where(x => x.Model != null && x.Model.Name.ToLower().Contains(classifications.Model.ToLower()));
 
             query = query.Skip(offset);
             query = query.Take(limit);

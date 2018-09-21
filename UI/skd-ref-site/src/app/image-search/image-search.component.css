@@ -5,3 +5,15 @@ div {
 label {
     width: 100px;
 }
+
+.btn-tiny {
+    padding: 0;
+}
+
+.calendarText {
+    width: 100px;
+}
+
+.input-group {
+    display: inline;
+}

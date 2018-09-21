@@ -37,6 +37,8 @@ namespace SkdRefSiteAPI.Controllers
         {
             if (criteria == null)
                 criteria = new FullBodyClassifications();
+            if (offsetLimit == null)
+                offsetLimit = new OffsetLimit();
 
             return await _dao.Search(criteria, offsetLimit.Offset, offsetLimit.Limit);
         }

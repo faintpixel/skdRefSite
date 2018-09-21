@@ -7,8 +7,8 @@ export const environment = {
   // baseUrl: 'http://beta.sketchdaily.net:4000/api/', // TO DO - should rename this
   baseUrl: 'http://localhost:15285/api/',
 
-  // imageUrl: 'http://beta.sketchdaily.net:4000',
-  imageUrl: 'http://localhost:15285',
+  imageUrl: 'http://beta.sketchdaily.net:4000',
+  // imageUrl: 'http://localhost:15285',
   auth0RedirectUri: 'http://localhost:4200/callback/en'
 };
 

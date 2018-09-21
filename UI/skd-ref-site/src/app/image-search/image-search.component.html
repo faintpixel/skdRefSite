@@ -2,23 +2,32 @@
 
   <div class='row'>
     <div class='col'>
-      <label for='batch'>Batch: </label>
-      <input type='text' id='batch' [(ngModel)]="filters.batchId" />
+      <label for='referenceType'>Type: </label>
+      <select id='referenceType' [(ngModel)]="searchtype">
+        <option *ngFor="let referenceType of referenceTypes" [value]="referenceType">{{referenceType}}</option>
+      </select>
     </div>
     <div class='col'>
       <label for='uploadStartDate'>Upload date start: </label>
-      <input type='text' id='uploadStartDate' [(ngModel)]="filters.uploadDateStart" />
+      <input (click)="dstart.toggle()" class='calendarText' placeholder="yyyy-mm-dd" name="startdp" [(ngModel)]="uploadDateStartPicker"
+        ngbDatepicker #dstart="ngbDatepicker" />
+      <span (click)="dstart.toggle()">📅</span>
     </div>
     <div class='col'>
       <label for='uploadEndDate'>Upload date end: </label>
-      <input type='text' id='uploadEndDate' [(ngModel)]="filters.uploadDateEnd" />
+      <input (click)="dend.toggle()" class='calendarText' placeholder="yyyy-mm-dd" name="enddp" [(ngModel)]="uploadDateEndPicker"
+        ngbDatepicker #dend="ngbDatepicker">
+      <span (click)="dend.toggle()">📅</span>
+
     </div>
   </div>
 
   <div class='row'>
     <div class='col'>
       <label for='status'>Status: </label>
-      <input type='text' id='status' [(ngModel)]="filters.status" />
+      <select [(ngModel)]="filters.status">
+        <option *ngFor="let option of statuses" [value]="option">{{option}}</option>
+      </select>
     </div>
     <div class='col'>
       <label for='uploadedBy'>Uploaded by: </label>
@@ -45,7 +54,16 @@
     </div>
   </div>
 
+  <div class='row'>
+    <div class='col'>
+      <label for='batch'>Batch Id: </label>
+      <input type='text' id='batch' [(ngModel)]="filters.batchId" />
+    </div>
+    <div class='col'></div>
+    <div class='col'>
+      <button class='btn btn-outline-primary btn-sm btn-block' (click)="search()">Search</button>
+    </div>
+  </div>
 
-  <button class='btn btn-outline-primary btn-sm' (click)="search()">Search</button>
 
 </div>

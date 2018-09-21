@@ -372,10 +372,12 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
   }
 
   performSearch(filters) {
-    alert('searching');
+    const refType = this.getRefType();
+    this.referenceService.searchReference(refType, filters)
+      .subscribe(x => this.images = x);
   }
 
-  save(): void {
+  getRefType() {
     let refType = '';
 
     if (ReferenceType[this.referenceType] === ReferenceType.Animal) {
@@ -389,6 +391,12 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
     } else if (ReferenceType[this.referenceType] === ReferenceType.Structure) {
       refType = 'Structure';
     }
+
+    return refType;
+  }
+
+  save(): void {
+    const refType = this.getRefType();
 
     this.referenceService.updateReference(refType, this.images).subscribe(result => {
       if (result) {

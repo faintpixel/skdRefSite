@@ -23,6 +23,11 @@ export class ReferenceService {
       .pipe(catchError(this.errorService.handleError('Error getting reference.', 'getReference', null)));
   }
 
+  searchReference(type: string, filters: any) {
+    return this.http.get<Array<any>>(environment.baseUrl + type, { params: filters })
+      .pipe(catchError(this.errorService.handleError('Error searching references.', 'searchReference', [])));
+  }
+
   getReferenceCount(type: string, filters: any) {
     if (type === 'FullBodies') {
       filters = this.fixFullBodyFilters(filters);

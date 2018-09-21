@@ -1,4 +1,4 @@
-<app-image-search (searchEvent)="performSearch($event)" ></app-image-search>
+<app-image-search (searchEvent)="performSearch($event)"></app-image-search>
 
 <button (click)="selectAll()">Select all</button>
 <button (click)="selectNone()">Select none</button>
@@ -11,118 +11,128 @@
 </div>
 
 <div id='editContainer' *ngIf="referenceType">
-  <span *ngIf="!imageSelected()">Select images to begin.</span>
-  {{selectedImageCount()}} image(s) selected
+
+  <button type="button" class="btn btn-outline-secondary btn-sm" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="editContents">
+    <span *ngIf="isCollapsed">▲</span>
+    <span *ngIf="!isCollapsed">▼</span>
+  </button>
+
+  <div id='editContents' [ngbCollapse]="isCollapsed">
+
+    <span *ngIf="!imageSelected()">Select images to begin.</span>
+    {{selectedImageCount()}} image(s) selected
 
 
-  <fieldset [disabled]="!imageSelected()">
+    <fieldset [disabled]="!imageSelected()">
 
-    <div class='row'>
-      <div class='col'>
+      <div class='row'>
+        <div class='col'>
 
-        Photographer*:
-        <input type='text' [(ngModel)]="selectedPhotographerName" (change)="contactChanged(selectedPhotographerName, 'photographer', 'name')"
-        />
-        <br /> Photographer Website:
-        <input type='text' [(ngModel)]="selectedPhotographerWebsite" (change)="contactChanged(selectedPhotographerWebsite, 'photographer', 'webpage')"
-        />
-        <br /> Status:
-        <select [(ngModel)]="selectedStatus" (change)="statusChanged()">
-          <option *ngFor="let option of statuses" [value]="option">{{option}}</option>
-        </select>
+          Photographer*:
+          <input type='text' [(ngModel)]="selectedPhotographerName" (change)="contactChanged(selectedPhotographerName, 'photographer', 'name')"
+          />
+          <br /> Photographer Website:
+          <input type='text' [(ngModel)]="selectedPhotographerWebsite" (change)="contactChanged(selectedPhotographerWebsite, 'photographer', 'webpage')"
+          />
+          <br /> Status:
+          <select [(ngModel)]="selectedStatus" (change)="statusChanged()">
+            <option *ngFor="let option of statuses" [value]="option">{{option}}</option>
+          </select>
+        </div>
+        <div class='col'>
+          Model:
+          <input type='text' [(ngModel)]="selectedModelName" (change)="contactChanged(selectedModelName, 'model', 'name')" />
+          <br /> Model Website:
+          <input type='text' [(ngModel)]="selectedModelWebsite" (change)="contactChanged(selectedModelWebsite, 'model', 'webpage')"
+          />
+          <br /> Terms of Use:
+          <input type='text' [(ngModel)]="selectedTerms" (change)="termsChanged(selectedTerms)" />
+
+        </div>
+        <div class='col'>
+          <div *ngIf="referenceType == 'FullBody'">
+            <h3>Full Body Classifications</h3>
+            NSFW:
+            <select [(ngModel)]="selectedNSFW" (change)="propertyChanged(selectedNSFW, 'nsfw')">
+              <option *ngFor="let option of yesNo" [value]="option">{{option}}</option>
+            </select>
+            <br /> Clothed:
+            <select [(ngModel)]="selectedClothed" (change)="propertyChanged(selectedClothed, 'clothing')">
+              <option *ngFor="let option of yesNo" [value]="option">{{option}}</option>
+            </select>
+            <br /> Gender:
+            <select [(ngModel)]="selectedGender" (change)="propertyChanged(selectedGender, 'gender')">
+              <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>
+            </select>
+            <br /> Pose:
+            <select [(ngModel)]="selectedPose" (change)="propertyChanged(selectedPose, 'poseType')">
+              <option *ngFor="let pose of poseTypes" [value]="pose">{{pose}}</option>
+            </select>
+            <br /> View:
+            <select [(ngModel)]="selectedViewAngle" (change)="propertyChanged(selectedViewAngle, 'viewAngle')">
+              <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
+            </select>
+          </div>
+
+          <div *ngIf="referenceType == 'BodyPart'">
+            <h3>Body Part Classifications</h3>
+            Part:
+            <select [(ngModel)]="selectedBodyPart" (change)="propertyChanged(selectedBodyPart, 'bodyPart')">
+              <option *ngFor="let part of bodyParts" [value]="part">{{part}}</option>
+            </select>
+            <br /> Gender:
+            <select [(ngModel)]="selectedGender" (change)="propertyChanged(selectedGender, 'gender')">
+              <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>
+            </select>
+            <br /> View:
+            <select [(ngModel)]="selectedViewAngle" (change)="propertyChanged(selectedViewAngle, 'viewAngle')">
+              <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
+            </select>
+          </div>
+
+          <div *ngIf="referenceType == 'Animal'">
+            <h3>Animal Classifications</h3>
+            Species:
+            <select [(ngModel)]="selectedSpecies" (change)="propertyChanged(selectedSpecies, 'species')">
+              <option *ngFor="let s of species" [value]="s">{{s}}</option>
+            </select>
+            <br /> Category:
+            <select [(ngModel)]="selectedAnimalCategory" (change)="propertyChanged(selectedAnimalCategory, 'category')">
+              <option *ngFor="let category of animalCategories" [value]="category">{{category}}</option>
+            </select>
+            <br /> View:
+            <select [(ngModel)]="selectedViewAngle" (change)="propertyChanged(selectedViewAngle, 'viewAngle')">
+              <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
+            </select>
+          </div>
+
+          <div *ngIf="referenceType == 'Vegetation'">
+            <h3>Vegetation Classifications</h3>
+            Type:
+            <select [(ngModel)]="selectedVegetationType" (change)="propertyChanged(selectedVegetationType, 'vegetationType')">
+              <option *ngFor="let t of vegetationTypes" [value]="t">{{t}}</option>
+            </select>
+            <br /> Photo Type:
+            <select [(ngModel)]="selectedVegetationPhotoType" (change)="propertyChanged(selectedVegetationPhotoType, 'photoType')">
+              <option *ngFor="let t of vegetationPhotoTypes" [value]="t">{{t}}</option>
+            </select>
+          </div>
+
+          <div *ngIf="referenceType == 'Structure'">
+            <h3>Structure Classifications</h3>
+            Type:
+            <select [(ngModel)]="selectedStructureType" (change)="propertyChanged(selectedStructureType, 'structureType')">
+              <option *ngFor="let t of structureTypes" [value]="t">{{t}}</option>
+            </select>
+          </div>
+
+
+        </div>
       </div>
-      <div class='col'>
-        Model:
-        <input type='text' [(ngModel)]="selectedModelName" (change)="contactChanged(selectedModelName, 'model', 'name')" />
-        <br /> Model Website:
-        <input type='text' [(ngModel)]="selectedModelWebsite" (change)="contactChanged(selectedModelWebsite, 'model', 'webpage')"
-        />
-        <br /> Terms of Use:
-        <input type='text' [(ngModel)]="selectedTerms" (change)="termsChanged(selectedTerms)" />
 
-      </div>
-      <div class='col'>
-        <div *ngIf="referenceType == 'FullBody'">
-          <h3>Full Body Classifications</h3>
-          NSFW:
-          <select [(ngModel)]="selectedNSFW" (change)="propertyChanged(selectedNSFW, 'nsfw')">
-            <option *ngFor="let option of yesNo" [value]="option">{{option}}</option>
-          </select>
-          <br /> Clothed:
-          <select [(ngModel)]="selectedClothed" (change)="propertyChanged(selectedClothed, 'clothing')">
-            <option *ngFor="let option of yesNo" [value]="option">{{option}}</option>
-          </select>
-          <br /> Gender:
-          <select [(ngModel)]="selectedGender" (change)="propertyChanged(selectedGender, 'gender')">
-            <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>
-          </select>
-          <br /> Pose:
-          <select [(ngModel)]="selectedPose" (change)="propertyChanged(selectedPose, 'poseType')">
-            <option *ngFor="let pose of poseTypes" [value]="pose">{{pose}}</option>
-          </select>
-          <br /> View:
-          <select [(ngModel)]="selectedViewAngle" (change)="propertyChanged(selectedViewAngle, 'viewAngle')">
-            <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
-          </select>
-        </div>
+    </fieldset>
 
-        <div *ngIf="referenceType == 'BodyPart'">
-          <h3>Body Part Classifications</h3>
-          Part:
-          <select [(ngModel)]="selectedBodyPart" (change)="propertyChanged(selectedBodyPart, 'bodyPart')">
-            <option *ngFor="let part of bodyParts" [value]="part">{{part}}</option>
-          </select>
-          <br /> Gender:
-          <select [(ngModel)]="selectedGender" (change)="propertyChanged(selectedGender, 'gender')">
-            <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>
-          </select>
-          <br /> View:
-          <select [(ngModel)]="selectedViewAngle" (change)="propertyChanged(selectedViewAngle, 'viewAngle')">
-            <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
-          </select>
-        </div>
-
-        <div *ngIf="referenceType == 'Animal'">
-          <h3>Animal Classifications</h3>
-          Species:
-          <select [(ngModel)]="selectedSpecies" (change)="propertyChanged(selectedSpecies, 'species')">
-            <option *ngFor="let s of species" [value]="s">{{s}}</option>
-          </select>
-          <br /> Category:
-          <select [(ngModel)]="selectedAnimalCategory" (change)="propertyChanged(selectedAnimalCategory, 'category')">
-            <option *ngFor="let category of animalCategories" [value]="category">{{category}}</option>
-          </select>
-          <br /> View:
-          <select [(ngModel)]="selectedViewAngle" (change)="propertyChanged(selectedViewAngle, 'viewAngle')">
-            <option *ngFor="let angle of viewAngles" [value]="angle">{{angle}}</option>
-          </select>
-        </div>
-
-        <div *ngIf="referenceType == 'Vegetation'">
-          <h3>Vegetation Classifications</h3>
-          Type:
-          <select [(ngModel)]="selectedVegetationType" (change)="propertyChanged(selectedVegetationType, 'vegetationType')">
-            <option *ngFor="let t of vegetationTypes" [value]="t">{{t}}</option>
-          </select>
-          <br /> Photo Type:
-          <select [(ngModel)]="selectedVegetationPhotoType" (change)="propertyChanged(selectedVegetationPhotoType, 'photoType')">
-            <option *ngFor="let t of vegetationPhotoTypes" [value]="t">{{t}}</option>
-          </select>
-        </div>
-
-        <div *ngIf="referenceType == 'Structure'">
-          <h3>Structure Classifications</h3>
-          Type:
-          <select [(ngModel)]="selectedStructureType" (change)="propertyChanged(selectedStructureType, 'structureType')">
-            <option *ngFor="let t of structureTypes" [value]="t">{{t}}</option>
-          </select>
-        </div>
-
-
-      </div>
-    </div>
-
-  </fieldset>
-
-  <button class='btn btn-sm btn-primary' [disabled]="!allReady()" (click)="save()">Finished</button>
+    <button class='btn btn-sm btn-primary' [disabled]="!allReady()" (click)="save()">Finished</button>
+  </div>
 </div>
