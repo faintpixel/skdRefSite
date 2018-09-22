@@ -276,13 +276,6 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
   updateImageValidationStatus(image): void {
     let status = true;
 
-    if (image.photographer === undefined || image.photographer.name === undefined) {
-      status = false;
-    }
-    if (image.photographer.name == null || image.photographer.name.length < 1) {
-      status = false;
-    }
-
     if (image.status === '') {
       status = false;
     }

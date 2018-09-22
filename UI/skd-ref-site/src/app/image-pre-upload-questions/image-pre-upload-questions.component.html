@@ -7,7 +7,6 @@
     <select class='form-control' [(ngModel)]="answers.type">
       <option *ngFor="let referenceType of referenceTypes" [value]="referenceType">{{referenceType}}</option>
     </select>
-    Note: We're currently limiting the allowed upload types. We'll be expanding the options soon!<br/>
   </div>
 
   <div id='question1' *ngIf="answers.type != ''">
@@ -52,7 +51,10 @@
     It sounds like everything is good!<br /><br />
 
     Please enter a name for this batch of images.
-    <input type='text' class='form-control' [(ngModel)]="answers.name" /><br />    
+    <input type='text' class='form-control' [(ngModel)]="answers.name" /><br /> 
+    
+    Comments:<br/>
+    <textarea class='form-control' [(ngModel)]="answers.comments"></textarea>
 
     <button (click)="Completed()" [disabled]="answers.name == '' || answers.name == null || answers.type == '' || answers.type == null">Proceed</button>
   </div>
