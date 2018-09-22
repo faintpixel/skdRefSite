@@ -133,6 +133,8 @@ export class ReferenceFiltersComponent implements OnInit {
       filter = this.referenceService.fixFullBodyFilters(filter);
     }
     filter.recentImagesOnly = this.filters.OnlyMostRecent;
+    console.log(this.languageService.language);
+    console.log(referenceType);
 
     this.router.navigate([this.languageService.language, 'view', referenceType], { queryParams: filter });
   }

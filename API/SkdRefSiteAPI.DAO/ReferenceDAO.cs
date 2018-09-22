@@ -49,7 +49,7 @@ namespace SkdRefSiteAPI.DAO
             else if (type == ReferenceType.Structure)
                 collectionName = "structureReferences";
             else if (type == ReferenceType.Vegetation)
-                collectionName = "vegetationStructure";
+                collectionName = "vegetationReferences";
             else
                 throw new Exception("Collection not specified");
 
@@ -121,6 +121,7 @@ namespace SkdRefSiteAPI.DAO
 
         public async Task<int> Count(TClassifications classifications, bool? recentImagesOnly)
         {
+            classifications.Status = Status.Active;
             var data = GetQueryable(classifications, recentImagesOnly);
             var results = await data.CountAsync();
 
@@ -129,6 +130,7 @@ namespace SkdRefSiteAPI.DAO
 
         public async Task<TReference> Get(TClassifications classifications, List<string> excludeIds, bool? recentImagesOnly)
         {
+            classifications.Status = Status.Active;
             var data = GetQueryable(classifications, recentImagesOnly);
             data = data.Where(x => !excludeIds.Contains(x.Id));
             var recordCount = await data.CountAsync();

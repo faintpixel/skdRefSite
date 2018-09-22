@@ -31,8 +31,8 @@ namespace SkdRefSiteAPI.DAO.Queryables
                 query = query.OrderByDescending(x => x.UploadDate);
                 query = query.Take(50);
             }
-
-            query = query.Where(x => x.Status == Status.Active);
+            if (classifications.Status.HasValue)
+                query = query.Where(x => x.Status == classifications.Status);
 
             return query;
         }
