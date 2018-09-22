@@ -18,5 +18,6 @@ namespace SkdRefSiteAPI.DAO.Models
         public string From { get; set; }
         public string User { get; set; }
         public ReferenceType Type { get; set; }
+        public string Comments { get; set; }
     }
 }

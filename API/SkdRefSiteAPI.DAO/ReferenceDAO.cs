@@ -64,7 +64,9 @@ namespace SkdRefSiteAPI.DAO
                 if (user.IsAdmin == false)
                     foreach (var reference in references)
                     {
-                        if(reference.Status != Status.Pending || reference.Status != Status.Deleted)
+                        if (reference.Status == Status.Deleted)
+                            reference.Status = Status.DeleteRequested;
+                        else
                             reference.Status = Status.Pending;
                     }
 
@@ -87,7 +89,7 @@ namespace SkdRefSiteAPI.DAO
                 }
 
                 if (user.IsAdmin == false)
-                    _logger.Log("Reference Added", $"User {user.Name} ({user.Email}) has added {references.Count} new {REFERENCE_TYPE} images", user);
+                    _logger.Log("Reference Added", $"User {user.Name} ({user.Email}) has added {references.Count} new {REFERENCE_TYPE} images", LogType.Image,  user);
 
                 return results;
             }
@@ -163,6 +165,8 @@ namespace SkdRefSiteAPI.DAO
                 query = query.Where(x => x.Photographer != null && x.Photographer.Name.ToLower().Contains(classifications.Photographer.ToLower()));
             if (string.IsNullOrWhiteSpace(classifications.Model) == false)
                 query = query.Where(x => x.Model != null && x.Model.Name.ToLower().Contains(classifications.Model.ToLower()));
+            if (string.IsNullOrWhiteSpace(classifications.ImageId) == false)
+                query = query.Where(x => x.Id == classifications.ImageId);
 
             query = query.Skip(offset);
             query = query.Take(limit);

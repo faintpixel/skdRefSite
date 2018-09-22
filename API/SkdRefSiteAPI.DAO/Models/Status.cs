@@ -10,6 +10,7 @@ namespace SkdRefSiteAPI.DAO.Models
         Active = 1,
         Deleted = 2,
         Pending = 3,
-        Rejected = 4
+        Rejected = 4,
+        DeleteRequested = 5
     }
 }

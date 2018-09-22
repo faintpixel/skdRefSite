@@ -169,6 +169,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:SkdRefSiteAPI.Controllers.ImageController.ReportImage(System.String,SkdRefSiteAPI.DAO.Models.Report)">
+            <summary>
+            Report image
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:SkdRefSiteAPI.Controllers.ImageController.GetBatchImages(System.String)">
             <summary>
             Gets images from batch

@@ -31,7 +31,7 @@
       </div>
       <div class='col'>
         <label for='uploadedBy'>Uploaded by: </label>
-        <input type='text' id='uploadedBy' [(ngModel)]="filters.uploadedBy" name='uploadBy'/>
+        <input type='text' id='uploadedBy' [(ngModel)]="filters.uploadedBy" name='uploadBy' />
       </div>
       <div class='col'>
         <label for='file'>File: </label>
@@ -46,7 +46,7 @@
       </div>
       <div class='col'>
         <label for='model'>Model: </label>
-        <input type='text' id='model' [(ngModel)]="filters.model" name='model'/>
+        <input type='text' id='model' [(ngModel)]="filters.model" name='model' />
       </div>
       <div class='col'>
         <label for='limit'>Limit*: </label>
@@ -57,9 +57,12 @@
     <div class='row'>
       <div class='col'>
         <label for='batch'>Batch Id: </label>
-        <input type='text' id='batch' [(ngModel)]="filters.batchId" name='batchId'/>
+        <input type='text' id='batch' [(ngModel)]="filters.batchId" name='batchId' />
       </div>
-      <div class='col'></div>
+      <div class='col'>
+        <label for='image'>Image Id: </label>
+        <input type='text' id='image' [(ngModel)]="filters.imageId" name='image' />
+      </div>
       <div class='col'>
         <button class='btn btn-outline-primary btn-sm btn-block' type='submit' [disabled]="searchForm.form.invalid">Search</button>
       </div>

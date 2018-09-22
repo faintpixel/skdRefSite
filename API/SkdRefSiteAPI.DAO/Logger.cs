@@ -32,16 +32,16 @@ namespace SkdRefSiteAPI.DAO
         public void Log(string source, Exception ex, params object[] parameters)
         {
             var serializedParameters = GetSerializedParameters(parameters);
-            PerformLog(source, "Error", serializedParameters, ex);
+            PerformLog(source, "Error", serializedParameters, LogType.Error, ex).Wait();
         }
 
-        public void Log(string source, string message, params object[] parameters)
+        public void Log(string source, string message, LogType type, params object[] parameters)
         {
             var serializedParameters = GetSerializedParameters(parameters);
-            PerformLog(source, message, serializedParameters);
+            PerformLog(source, message, serializedParameters, type).Wait();
         }
 
-        private async Task PerformLog(string source, string message, string parameters, Exception exception = null)
+        private async Task PerformLog(string source, string message, string parameters, LogType type, Exception exception = null)
         {
             try
             {
@@ -52,6 +52,7 @@ namespace SkdRefSiteAPI.DAO
                 log.Parameters = parameters;
                 log.Source = APPLICATION_NAME + " " + source;
                 log.Time = DateTime.Now;
+                log.Type = type;
 
                 var replaceResult = await _collection.ReplaceOneAsync(
                             filter: new BsonDocument("_id", log.Id),

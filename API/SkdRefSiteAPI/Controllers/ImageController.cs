@@ -77,6 +77,21 @@ namespace SkdRefSiteAPI.Controllers
         }
 
         /// <summary>
+        /// Report image
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("api/Images/{id}/Report")]
+        public bool ReportImage(string id, [FromBody] Report report)
+        {
+            report.ImageId = id;
+            report.User = GetCurrentUser();
+            report.Date = DateTime.Now;
+            _logger.Log("Image Report", $"User has reported image", LogType.Report, report);
+            return true;
+        }
+
+        /// <summary>
         /// Gets images from batch
         /// </summary>
         /// <param name="id"></param>

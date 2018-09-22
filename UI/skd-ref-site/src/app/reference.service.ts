@@ -75,4 +75,14 @@ export class ReferenceService {
     return this.http.post<Array<object>>(environment.baseUrl + 'translations', body)
       .pipe(catchError(this.errorService.handleError('Error updating reference.', 'updateReference', false)));
   }
+
+  reportImage(imageId: string, comment: string, reportType: any, referenceType: string) {
+    const body = {
+      comment: comment,
+      referenceType: referenceType,
+      reportType: reportType
+    };
+    return this.http.post<Array<object>>(environment.baseUrl + 'images/' + imageId + '/report', body)
+      .pipe(catchError(this.errorService.handleError('Error reporting image.', 'reportImage', false)));
+  }
 }

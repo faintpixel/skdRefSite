@@ -21,7 +21,7 @@ namespace SkdRefSiteAPI.Controllers
         public bool Save([FromBody]Translation translation)
         {
             var logger = new Logger("Translations");
-            logger.Log("Translation Submission", $"A new translation has been submitted for language '{translation.Language}' by author '{translation.Author}'", translation.Comments, translation.TranslationFile);
+            logger.Log("Translation Submission", $"A new translation has been submitted for language '{translation.Language}' by author '{translation.Author}'", LogType.Translation, translation.Comments, translation.TranslationFile);
             return true;
         }
     }

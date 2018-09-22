@@ -101,6 +101,20 @@
       <b>Batch: </b>{{image.batchId}}<br />
     </div>
 
+    <hr/>
+    <div>
+      <b>Report Image</b><br/>
+      <select [(ngModel)]="reportType">
+        <option value="1">Inappropriate</option>
+        <option value="2">Wrong Classifications</option>
+        <option value="3">Low Quality</option>
+        <option value="4">Other</option>
+      </select>
+      <textarea class='form-control' rows='2' [(ngModel)]="comment"></textarea>
+      <button class='btn btn-outline-danger btn-sm' (click)="report()" [disabled]="reporting">Report</button>
+    </div>
+
+
   </div>
   <div class='modal-footer'>
     <button (click)="c()">{{'ImageViewer.Close' | translate}}</button>

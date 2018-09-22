@@ -7,6 +7,7 @@ namespace SkdRefSiteAPI.DAO.Models
     public class BaseClassifications
     {
         public string BatchId { get; set; }
+        public string ImageId { get; set; }
         public DateTime? UploadDateStart { get; set; }
         public DateTime? UploadDateEnd { get; set; }
         public Status? Status { get; set; }

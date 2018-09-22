@@ -49,6 +49,9 @@ export class ImageViewerComponent implements OnInit {
   loadingImage = false;
   imageUrl: string = null;
   nextImageUrl: string = null;
+  reporting = false;
+  reportType = 4;
+  comment = ''
 
   @ViewChild('classComplete') private classCompleteModal;
   constructor(
@@ -242,6 +245,15 @@ export class ImageViewerComponent implements OnInit {
 
   imageFound() {
     return this.image !== {} && this.image != null;
+  }
+
+  report() {
+    this.reporting = true;
+    this.referenceService.reportImage(this.image.id, this.comment, this.reportType, this.referenceType)
+      .subscribe(x => {
+        alert('Image has been reported.');
+        this.reporting = false;
+      });
   }
 
 }

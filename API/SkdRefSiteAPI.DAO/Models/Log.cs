@@ -15,6 +15,7 @@ namespace SkdRefSiteAPI.DAO.Models
         public string Message { get; set; }
         public string Parameters { get; set; }
         public string Exception { get; set; }
+        public LogType Type { get; set; }
         
         public Log()
         {
