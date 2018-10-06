@@ -47,7 +47,30 @@ namespace SkdRefSiteAPI.DAO
                 var images = await dao.Search(new Models.Animals.AnimalClassifications { BatchId = id });
                 dao.DeleteReferences(images);
             }
-
+            else if (type == ReferenceType.BodyPart)
+            {
+                var dao = ReferenceDAOFactory.GetBodyPartsDAO();
+                var images = await dao.Search(new Models.People.BodyPartClassifications { BatchId = id });
+                dao.DeleteReferences(images);
+            }
+            if (type == ReferenceType.FullBody)
+            {
+                var dao = ReferenceDAOFactory.GetFullBodiesDAO();
+                var images = await dao.Search(new Models.People.FullBodyClassifications { BatchId = id });
+                dao.DeleteReferences(images);
+            }
+            if (type == ReferenceType.Structure)
+            {
+                var dao = ReferenceDAOFactory.GetStructuresDAO();
+                var images = await dao.Search(new Models.Structures.StructureClassifications { BatchId = id });
+                dao.DeleteReferences(images);
+            }
+            if (type == ReferenceType.Vegetation)
+            {
+                var dao = ReferenceDAOFactory.GetVegetationsDAO();
+                var images = await dao.Search(new Models.Vegetation.VegetationClassifications { BatchId = id });
+                dao.DeleteReferences(images);
+            }
         }
 
         public async Task<List<Batch>> GetUserBatches(string user)

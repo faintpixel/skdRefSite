@@ -28,7 +28,7 @@ namespace SkdRefSiteAPI.Controllers
                 var role = HttpContext.User.Claims.FirstOrDefault(c => c.Type == @"https://reference.sketchdaily.net/roles" && c.Issuer == @"https://sketchdaily.auth0.com/").Value;
                 user.IsAdmin = role == "admin";
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 user.IsAdmin = false;
                 user.Name = "Unknown";

@@ -58,7 +58,7 @@ namespace SkdRefSiteAPI.DAO
             }
             catch (Exception ex)
             {
-                throw; // TO DO - log
+                _logger.Log("SaveAnnouncement", ex, announcement);
                 return false;
             }
 
