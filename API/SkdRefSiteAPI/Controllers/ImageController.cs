@@ -45,22 +45,29 @@ namespace SkdRefSiteAPI.Controllers
         [HttpPost]
         [Authorize]
         [Route("api/Image")]
-        public List<Image> UploadImage([FromForm]string batch)
+        public ImageSaveResults UploadImage([FromForm]string batch)
         {
+            var results = new ImageSaveResults();
+            Batch deserializedBatch = null;
             try
             {
                 var converter = new StringEnumConverter();
-                Batch deserializedBatch = JsonConvert.DeserializeObject<Batch>(batch, converter);
+                deserializedBatch = JsonConvert.DeserializeObject<Batch>(batch, converter);
                 deserializedBatch.User = GetCurrentUser().Email;
                 var files = Request.Form.Files;
-                var images = _fileDAO.Upload(files, deserializedBatch, GetCurrentUser());
-                return images;
+                var images = _fileDAO.Upload(files, ref deserializedBatch, GetCurrentUser());
+                results.Images = images;
+                results.BatchId = deserializedBatch.Id;
+                results.Success = true;
             }
             catch(Exception ex)
             {
+                if(batch != null)
+                    results.BatchId = deserializedBatch.Id;
+                results.Success = false;
                 _logger.Log("UploadImage", ex, batch);
-                throw;
             }
+            return results;
         }
 
         /// <summary>
@@ -96,7 +103,9 @@ namespace SkdRefSiteAPI.Controllers
         [Route("api/Batches/{id}")]
         public async Task<bool> DeleteBatch(string id)
         {
-
+            var user = GetCurrentUser();
+            await _batchDAO.DeleteReference(id, user);
+            return true;
         }
 
         /// <summary>

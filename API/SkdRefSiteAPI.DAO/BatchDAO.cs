@@ -34,13 +34,13 @@ namespace SkdRefSiteAPI.DAO
             _collection.InsertOne(batch);
         }
 
-        public async Task DeleteReference(string id, ReferenceType type, User user)
+        public async Task DeleteReference(string id, User user)
         {
             var batch = await Get(id);
             if (batch.User != user.Email)
                 throw new Exception("Access to delete batch denied");
             _collection.DeleteOne(filter: new BsonDocument("_id", id));
-
+            var type = batch.Type;
             if(type == ReferenceType.Animal)
             {
                 var dao = ReferenceDAOFactory.GetAnimalsDAO();
@@ -53,19 +53,19 @@ namespace SkdRefSiteAPI.DAO
                 var images = await dao.Search(new Models.People.BodyPartClassifications { BatchId = id });
                 dao.DeleteReferences(images);
             }
-            if (type == ReferenceType.FullBody)
+            else if (type == ReferenceType.FullBody)
             {
                 var dao = ReferenceDAOFactory.GetFullBodiesDAO();
                 var images = await dao.Search(new Models.People.FullBodyClassifications { BatchId = id });
                 dao.DeleteReferences(images);
             }
-            if (type == ReferenceType.Structure)
+            else if (type == ReferenceType.Structure)
             {
                 var dao = ReferenceDAOFactory.GetStructuresDAO();
                 var images = await dao.Search(new Models.Structures.StructureClassifications { BatchId = id });
                 dao.DeleteReferences(images);
             }
-            if (type == ReferenceType.Vegetation)
+            else if (type == ReferenceType.Vegetation)
             {
                 var dao = ReferenceDAOFactory.GetVegetationsDAO();
                 var images = await dao.Search(new Models.Vegetation.VegetationClassifications { BatchId = id });

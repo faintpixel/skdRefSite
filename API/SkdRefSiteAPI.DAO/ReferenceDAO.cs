@@ -125,8 +125,15 @@ namespace SkdRefSiteAPI.DAO
         {
             foreach(var reference in references)
             {
-                File.Delete(reference.Location);
-                _collection.DeleteOne(filter: new BsonDocument("_id", reference.Id));
+                try
+                {
+                    File.Delete(reference.Location);
+                    _collection.DeleteOne(filter: new BsonDocument("_id", reference.Id));
+                }
+                catch(Exception ex)
+                {
+                    _logger.Log("DeleteReferences", ex, reference);
+                }
             }            
         }
 

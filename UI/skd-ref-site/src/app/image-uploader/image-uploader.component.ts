@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { FileUploader, FileItem, ParsedResponseHeaders } from 'ng2-file-upload';
 import { environment } from '../../environments/environment';
+import { ReferenceService } from '../reference.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-image-uploader',
@@ -16,6 +18,7 @@ export class ImageUploaderComponent implements OnInit {
   public hasAnotherDropZoneOver = false;
   public uploadedFiles: Array<object> = [];
   public failedFiles = [];
+  public loading = false;
 
   public fileOverBase(e: any): void {
     this.hasBaseDropZoneOver = e;
@@ -25,7 +28,7 @@ export class ImageUploaderComponent implements OnInit {
     this.hasAnotherDropZoneOver = e;
   }
 
-  constructor() {
+  constructor(private referenceService: ReferenceService, private router: Router) {
     this.uploader = new FileUploader({ 
       url: environment.baseUrl + 'Image',
       maxFileSize: 5*1024*1024 // 5 MB
@@ -60,14 +63,25 @@ export class ImageUploaderComponent implements OnInit {
     if(window.confirm(this.failedFiles.length + ' of ' + this.uploadedFiles.length + ' files failed to upload. Continue?')) {
       this.imagesUploaded.emit(this.uploadedFiles);
     } else {
-      // TO DO - clean batch
-      
+      this.loading = true;
+      this.referenceService.deleteBatch(this.batchInfo.id)
+        .subscribe(x => {
+          this.loading = false;
+          this.router.navigate(['']);
+        });
     }
   }
 
   onSuccessItem(item: FileItem, response: string, status: number, headers: ParsedResponseHeaders): any {
     const data = JSON.parse(response); // success server response
-    this.uploadedFiles = this.uploadedFiles.concat(data);
+    if (data.success) {
+      this.uploadedFiles = this.uploadedFiles.concat(data.images);
+    } else {
+      this.failedFiles.push(item.file.name);
+    }    
+    if (data.batchId) {
+      this.batchInfo.id = data.batchId;
+    }
   }
 
   onErrorItem(item: FileItem, response: string, status: number, headers: ParsedResponseHeaders): any {
