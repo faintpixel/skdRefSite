@@ -91,6 +91,14 @@ namespace SkdRefSiteAPI.Controllers
             return true;
         }
 
+        [Authorize]
+        [HttpDelete]
+        [Route("api/Batches/{id}")]
+        public async Task<bool> DeleteBatch(string id)
+        {
+
+        }
+
         /// <summary>
         /// Gets images from batch
         /// </summary>

@@ -15,6 +15,7 @@ export class ImageUploaderComponent implements OnInit {
   public hasBaseDropZoneOver = false;
   public hasAnotherDropZoneOver = false;
   public uploadedFiles: Array<object> = [];
+  public failedFiles = [];
 
   public fileOverBase(e: any): void {
     this.hasBaseDropZoneOver = e;
@@ -25,13 +26,14 @@ export class ImageUploaderComponent implements OnInit {
   }
 
   constructor() {
-    this.uploader = new FileUploader({ url: environment.baseUrl + 'Image' });
-    this.uploader.onCompleteAll = () => {
-      console.log('files have been uploaded.');
-      this.imagesUploaded.emit(this.uploadedFiles);
-    };
+    this.uploader = new FileUploader({ 
+      url: environment.baseUrl + 'Image',
+      maxFileSize: 5*1024*1024 // 5 MB
+    });
+    this.uploader.onCompleteAll = () => this.allFilesCompleted();
 
     this.uploader.onSuccessItem = (item, response, status, headers) => this.onSuccessItem(item, response, status, headers);
+    this.uploader.onErrorItem = (item, response, status, headers) => this.onErrorItem(item, response, status, headers);
 
     const authHeader: Array<any> = [];
     authHeader.push({ name: 'Authorization', value: 'Bearer ' + localStorage.getItem('id_token') });
@@ -41,9 +43,35 @@ export class ImageUploaderComponent implements OnInit {
     this.uploader.setOptions(uploadOptions);
   }
 
+  allFilesCompleted() {
+    console.log('files have been uploaded.');
+    if(this.failedFiles.length > 0 && this.uploadedFiles.length === 0) {
+      alert('File upload failed. Please try again later.');
+    } else if(this.uploadedFiles.length > 0 && this.failedFiles.length > 0) {
+      this.handlePartialSuccess();      
+    } else  {
+      this.imagesUploaded.emit(this.uploadedFiles);
+    }   
+    
+    this.uploader.clearQueue();
+  }
+
+  handlePartialSuccess() {
+    if(window.confirm(this.failedFiles.length + ' of ' + this.uploadedFiles.length + ' files failed to upload. Continue?')) {
+      this.imagesUploaded.emit(this.uploadedFiles);
+    } else {
+      // TO DO - clean batch
+      
+    }
+  }
+
   onSuccessItem(item: FileItem, response: string, status: number, headers: ParsedResponseHeaders): any {
     const data = JSON.parse(response); // success server response
     this.uploadedFiles = this.uploadedFiles.concat(data);
+  }
+
+  onErrorItem(item: FileItem, response: string, status: number, headers: ParsedResponseHeaders): any {
+    this.failedFiles.push(item.file.name);
   }
 
   ngOnInit() {

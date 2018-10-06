@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using SkdRefSiteAPI.DAO.Models;
 using System;
@@ -31,6 +32,22 @@ namespace SkdRefSiteAPI.DAO
         public void Save(Batch batch)
         {
             _collection.InsertOne(batch);
+        }
+
+        public async Task DeleteReference(string id, ReferenceType type, User user)
+        {
+            var batch = await Get(id);
+            if (batch.User != user.Email)
+                throw new Exception("Access to delete batch denied");
+            _collection.DeleteOne(filter: new BsonDocument("_id", id));
+
+            if(type == ReferenceType.Animal)
+            {
+                var dao = ReferenceDAOFactory.GetAnimalsDAO();
+                var images = await dao.Search(new Models.Animals.AnimalClassifications { BatchId = id });
+                dao.DeleteReferences(images);
+            }
+
         }
 
         public async Task<List<Batch>> GetUserBatches(string user)
