@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "안녕하세요!",
+		"Welcome": "SketchDaily 레퍼런스 뭐시기에 오신걸 환영합니다.",
+		"LookingForSomethingElseToDraw": "다른 걸 그리고 싶나요?",
+		"JoinTheFun": "같이 즐겨봐요!"
+	},
+	"FullBody": {
+		"FullBody": "전신",
+		"Clothing": "옷",
+		"Clothed": "옷 입음",
+		"Nude": "누드",
+		"IncludeNSFWImages": "19금 이미지 포함",
+		"Pose": "포즈",
+		"Action": "동적",
+		"Stationary": "정적",
+		"All": "모두"
+	},
+	"BodyPart": {
+		"BodyPart": "신체 부위",
+		"Hand": "손",
+		"Foot": "발",
+		"Head": "머리",
+		"All": "모두"
+	},
+	"Animal": {
+		"Animal": "동물",
+		"Species": "종",
+		"Bird": "새",
+		"Fish": "물고기",
+		"ReptileOrAmphibian": "파충류 및 양서류",
+		"Category": "분류",
+		"Living": "생물",
+		"SkeletonOrBones": "골격 및 뼈",
+		"Bug": "곤충",
+		"Mammal": "포유류",
+		"All": "모두"
+	},
+	"Structure": {
+		"Structure": "구조물",
+		"House": "집",
+		"Building": "건축물",
+		"Other": "그 외",
+		"All": "모두"
+	},
+	"Vegetation": {
+		"Vegetation": "초목",
+		"Flowers": "꽃",
+		"Plants": "식물",
+		"PhotoType": "사진 종류",
+		"Closeup": "근접",
+		"Full": "전체",
+		"All": "모두"
+	},
+	"Filters": {
+		"All": "모두",
+		"Type": "분류",
+		"Gender": "성별",
+		"Male": "남성",
+		"Female": "여성",
+		"View": "시점",
+		"Front": "정면",
+		"Side": "측면",
+		"Back": "후면",
+		"AboveOrBelow": "위와 아래",
+		"ClassMode": "수업 모드",
+		"Class": "수업",
+		"Minutes": "분",
+		"Seconds": "초",
+		"Hour": "시",
+		"Hours": "시간",
+		"NoTimers": "타이머 없음",
+		"OnlyMostRecentImages": "최근 이미지만 사용",
+		"NumberOfImages": "이미지 개수",
+		"Start": "시작",
+		"Time": "시간",
+		"Break": "휴식",
+		"NSFW": "19금",
+		"true": "예",
+		"false": "아니요"
+	},
+	"Header": {
+		"Title": "r/SketchDaily 레퍼런스",
+		"AddImages": "이미지 추가",
+		"ManageImages": "이미지 관리",
+		"YourImages": "당신의 이미지",
+		"News": "뉴스",
+		"Logs": "기록",
+		"LogIn": "로그인",
+		"LogOut": "로그아웃"
+	},
+	"News": {
+		"WhatsNew": "새로운 소식",
+		"Announcement": "공지사항"
+	},
+	"ImageViewer": {
+		"Timer": "타이머",
+		"Paused": "정지됨",
+		"ImageInfo": "이미지 정보",
+		"Source": "소스",
+		"Model": "모델",
+		"Photographer": "사진작가",
+		"DateAdded": "추가된 날짜",
+		"TermsOfUse": "사용 약관",
+		"Classifications": "정의",
+		"About": "정보",
+		"LeftControls": "왼쪽 - 전 이미지",
+		"RightControls": "오른쪽 - 다음 이미지",
+		"SpacebarControls": "스페이스 - 일시정지",
+		"EscapeControls": "Ecs - 중지",
+		"VisitUsOnReddit": "저희 Reddit에 놀러오세요!",
+		"Next": "다음",
+		"TakeABreak": "휴식 시간!",
+		"ItsTimeForABreak": "휴식 시간입니다. 타이머가 0이 되면 수업이 재개됩니다.",
+		"NoMoreImages": "필터 조건에 맞는 이미지를 못 찾았습니다. 죄송해요!",
+		"Close": "닫기",
+		"ClassComplete": "수업 끝",
+		"NiceWork": "수고하셨어요. 수업이 끝났습니다!",
+		"MaybeTakeABreak": "잠깐 휴식을 하면서 다른 사람들이 뭘 했는지 <a href='https://www.reddit.com/r/sketchdaily'>레딧에서</a> 확인해보세요!"
+	},
+	"Timers": {
+		"seconds": "{{total}} 초",
+		"minutes": "{{total}} 분",
+		"Class mode": "수업 모드",
+		"No timers": "타이머 없음",
+		"30 minutes": "30 분",
+		"1 hour": "1 시간",
+		"2 hours": "2 시간",
+		"3 hours": "3 시간",
+		"6 hours": "6 시간"
+	}
+}

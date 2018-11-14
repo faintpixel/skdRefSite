@@ -37,6 +37,7 @@ import { ImageCategorizerComponent } from './image-categorizer/image-categorizer
 import { ImageThumbnailComponent } from './image-thumbnail/image-thumbnail.component';
 import { ImageSearchComponent } from './image-search/image-search.component';
 import { ImageEditorComponent } from './image-editor/image-editor.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -68,7 +69,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImageCategorizerComponent,
     ImageThumbnailComponent,
     ImageSearchComponent,
-    ImageEditorComponent
+    ImageEditorComponent,
+    ContributorsComponent
   ],
   imports: [
     BrowserModule,

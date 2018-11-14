@@ -13,6 +13,7 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { NewsManagerComponent } from './news-manager/news-manager.component';
 import { TranslationManagerComponent } from './translation-manager/translation-manager.component';
 import { ImageEditorComponent } from './image-editor/image-editor.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'en', pathMatch: 'full' },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'batches', component: BatchListComponent, data: { expectedRoles: ['admin']} },
   { path: 'logs', component: LogsComponent, canActivate: [ScopeGuard], data: { expectedRoles: ['admin']} },
   { path: 'translate', component: TranslationManagerComponent },
+  { path: 'contributors', component: ContributorsComponent },
   { path: 'callback', component: AuthCallbackComponent },
   { path: 'en', component: HomeComponent, pathMatch: 'full' },
   { path: ':lang/view/:type', component: ImageViewerComponent },

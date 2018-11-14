@@ -69,7 +69,7 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
       this.validateAllImages();
     }
     if (changes['images']) {
-      if(this.images == null) {
+      if (this.images == null) {
         this.images = [];
       }
       this.validateAllImages();
