@@ -16,6 +16,7 @@ import { ImageEditorComponent } from './image-editor/image-editor.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 
 const routes: Routes = [
+  { path: 'undefined', redirectTo: 'en'},
   { path: '', redirectTo: 'en', pathMatch: 'full' },
   { path: 'home', redirectTo: '' },
   { path: 'addImages',

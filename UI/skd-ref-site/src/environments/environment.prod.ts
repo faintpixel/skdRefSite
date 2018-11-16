@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://beta.sketchdaily.net:4000/api/',
-  imageUrl: 'http://beta.sketchdaily.net:4000',
-  auth0RedirectUri: 'http://beta.sketchdaily.net/callback/en'
+  baseUrl: 'http://reference.sketchdaily.net:4000/api/',
+  imageUrl: 'http://reference.sketchdaily.net:4000',
+  auth0RedirectUri: 'http://reference.sketchdaily.net/callback/en'
 };

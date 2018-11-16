@@ -25,7 +25,7 @@ export class ReferenceService {
 
   searchReference(type: string, filters: any) {
     console.log('search');
-    return this.http.get<Array<any>>(environment.baseUrl + type, { 
+    return this.http.get<Array<any>>(environment.baseUrl + type, {
       params: filters ,
       headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('id_token')}`)
     }).pipe(catchError(this.errorService.handleError('Error searching references.', 'searchReference', [])));

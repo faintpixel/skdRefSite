@@ -16,3 +16,8 @@
 .strike {
     text-decoration: line-through;
 }
+
+hr {
+    background-color: slategrey;
+    color: slategrey;
+}
