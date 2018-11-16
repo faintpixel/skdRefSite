@@ -85,4 +85,11 @@ export class ReferenceService {
     return this.http.post<Array<object>>(environment.baseUrl + 'images/' + imageId + '/report', body)
       .pipe(catchError(this.errorService.handleError('Error reporting image.', 'reportImage', false)));
   }
+
+  deleteBatch(id: string) {
+    return this.http.delete<boolean>(environment.baseUrl + 'batches/' + id, {
+      headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('id_token')}`)
+    }).pipe(catchError(this.errorService.handleError('Error deleting batch.', 'deleteBatch', false)));
+  }
+
 }

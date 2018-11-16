@@ -121,6 +121,22 @@ namespace SkdRefSiteAPI.DAO
             _collection.DeleteOne(filter: new BsonDocument("_id", reference.Id));
         }
 
+        public void DeleteReferences(List<TReference> references)
+        {
+            foreach(var reference in references)
+            {
+                try
+                {
+                    File.Delete(reference.Location);
+                    _collection.DeleteOne(filter: new BsonDocument("_id", reference.Id));
+                }
+                catch(Exception ex)
+                {
+                    _logger.Log("DeleteReferences", ex, reference);
+                }
+            }            
+        }
+
         public async Task<int> Count(TClassifications classifications, bool? recentImagesOnly)
         {
             classifications.Status = Status.Active;

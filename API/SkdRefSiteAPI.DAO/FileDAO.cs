@@ -25,19 +25,15 @@ namespace SkdRefSiteAPI.DAO
             File.Delete(file);
         }
 
-        public List<Image> Upload(IFormFileCollection files, Batch batch, User user)
+        public List<Image> Upload(IFormFileCollection files, ref Batch batch, User user)
         {
             var images = new List<Image>();
 
             var batchId = CreateOrUpdateBatch(batch, user);
+            batch.Id = batchId;
 
             foreach (var file in files)
             {
-                // Validate the file is a jpg/png
-
-                // Validate the dimensions of the image - maybe reject if the file is too big. 
-
-                // save the file somewhere accessible
                 var uniqueId = Guid.NewGuid().ToString();
                 var timestamp = DateTime.Now.ToString("yyyyMMddhhmmss");
                 var fileName = Path.GetFileNameWithoutExtension(file.FileName);
@@ -66,6 +62,10 @@ namespace SkdRefSiteAPI.DAO
                 image.BatchId = batchId;
                 image.Location = fileLocation;
                 //save
+
+                var x = false;
+                if (x)
+                    throw new Exception("test");
 
                 images.Add(image);
             }

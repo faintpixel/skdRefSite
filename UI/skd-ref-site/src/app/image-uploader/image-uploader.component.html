@@ -1,9 +1,12 @@
-<div ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}" (fileOver)="fileOverBase($event)" [uploader]="uploader"
-    class="well my-drop-zone">
-    Base drop zone
+<div>
+    <ul>
+        <li>Allowed file types: jpg, png</li>
+        <li>Max file size: 5mb</li>
+        <li>Recommended max images per upload batch: 25</li>
+    </ul>
 </div>
 
-<input type="file" ng2FileSelect [uploader]="uploader" multiple />
+<input type="file" ng2FileSelect [uploader]="uploader" multiple accept=".jpg,.png" />
 
 <h3>Upload queue</h3>
 <p>Queue length: {{ uploader?.queue?.length }}</p>
