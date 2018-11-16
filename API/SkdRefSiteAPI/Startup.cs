@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Cors.Internal;
@@ -66,16 +67,7 @@ namespace SkdRefSiteAPI
 
             services.AddSingleton<IAuthorizationHandler, HasRoleHandler>();
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll",
-                    builder => builder.WithOrigins("http://localhost:4200", "http://localhost:4000", "http://localhost:3000", "http://beta.sketchdaily.net", "http://sketchdaily.net").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
-            });
-
-            services.Configure<MvcOptions>(options =>
-            {
-                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAll"));
-            });
+            services.AddCors();
 
             services.AddSwaggerGen(c =>
             {
@@ -107,9 +99,17 @@ namespace SkdRefSiteAPI
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseCors("AllowAll");
+                app.UseDeveloperExceptionPage();                
             }
+
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
+                builder.AllowCredentials();
+                //builder.AllowAnyOrigin();
+                builder.WithOrigins("http://localhost:4200", "http://localhost:4000", "http://localhost:3000", "http://beta.sketchdaily.net", "http://sketchdaily.net", "http://reference.sketchdaily.net");
+        });
 
             app.UseAuthentication();
 

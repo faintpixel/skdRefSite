@@ -51,7 +51,7 @@ export class ImageViewerComponent implements OnInit {
   nextImageUrl: string = null;
   reporting = false;
   reportType = 4;
-  comment = ''
+  comment = '';
 
   @ViewChild('classComplete') private classCompleteModal;
   constructor(

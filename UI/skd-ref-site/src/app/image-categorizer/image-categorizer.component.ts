@@ -393,7 +393,7 @@ export class ImageCategorizerComponent implements OnInit, OnChanges {
     } else if (ReferenceType[referenceType] === ReferenceType.Vegetation) {
       refType = 'Vegetation';
     } else if (ReferenceType[referenceType] === ReferenceType.Structure) {
-      refType = 'Structure';
+      refType = 'Structures';
     }
 
     return refType;
