@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "Cześć!",
+        "Welcome": "Witamy na SketchDaily - miejscu, gdzie znajdziesz referencje rysunkowe.",
+        "LookingForSomethingElseToDraw": "Szukasz czegoś, co mógłbyś narysować?",
+        "JoinTheFun": "Dołącz do zabawy!"
+    },
+    "FullBody": {
+        "FullBody": "Całe ciało",
+        "Clothing": "Odzież",
+        "Clothed": "W ubraniach",
+        "Nude": "Bez ubrań",
+        "IncludeNSFWImages": "Zawiera obrazy NSFW",
+        "Pose": "Poza",
+        "Action": "W akcji",
+        "Stationary": "Statyczne",
+        "All": "Wszystko"
+    },
+    "BodyPart": {
+        "BodyPart": "Część ciała",
+        "Hand": "Ręce",
+        "Foot": "Stopy",
+        "Head": "Głowy",
+        "All": "Wszystko"
+    },
+    "Animal": {
+        "Animal": "Zwierzęta",
+        "Species": "Rodzaje",
+        "Bird": "Ptak",
+        "Fish": "Ryba",
+        "ReptileOrAmphibian": "Gad lub płaz",
+        "Category": "Kategoria",
+        "Living": "Życie",
+        "SkeletonOrBones": "Szkielet lub kości",
+        "Bug": "Robak",
+        "Mammal": "SSak",
+        "All": "Wszystko"
+    },
+    "Structure": {
+        "Structure": "Struktury",
+        "House": "Dom",
+        "Building": "Budynek",
+        "Other": "Inne",
+        "All": "Wszystko"
+    },
+    "Vegetation": {
+        "Vegetation": "Roślinność",
+        "Flowers": "Kwiaty",
+        "Plants": "Rośliny",
+        "PhotoType": "Rodzaj zdjęcia",
+        "Closeup": "Zbliżenie",
+        "Full": "Całość",
+        "All": "Wszystko"
+    },
+    "Filters": {
+        "All": "Wszystko",
+        "Type": "Rodzaj",
+        "Gender": "Płeć",
+        "Male": "Mężczyzna",
+        "Female": "Kobieta",
+        "View": "Widok",
+        "Front": "Przód",
+        "Side": "Z boku",
+        "Back": "Tył",
+        "AboveOrBelow": "Od góry lub od dołu",
+        "ClassMode": "Tryb lekcyjny",
+        "Class": "Lekcja",
+        "Minutes": "minuty",
+        "Seconds": "sekundy",
+        "Hour": "godzina",
+        "Hours": "godziny",
+        "NoTimers": "Bez mierzenia czasu",
+        "OnlyMostRecentImages": "Używaj tylko najnowszych obrazów",
+        "NumberOfImages": "Liczba obrazów",
+        "Start": "Początek",
+        "Time": "Czas",
+        "Break": "Przerwa",
+        "NSFW": "NSFW",
+        "true": "Prawda",
+        "false": "Fałsz"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "Dodaj obrazy",
+        "ManageImages": "Zarządzaj obrazami",
+        "YourImages": "Twoje obrazy",
+        "News": "Nowości",
+        "Logs": "Logi",
+        "LogIn": "Zaloguj",
+        "LogOut": "Wyloguj"
+    },
+    "News": {
+        "WhatsNew": "Co nowego",
+        "Announcement": "Ogłoszenie"
+    },
+    "ImageViewer": {
+        "Timer": "Czasomierz",
+        "Paused": "Zatrzymany",
+        "ImageInfo": "Informacje o obrazie",
+        "Source": "Źródło",
+        "Model": "Model",
+        "Photographer": "Fotograf",
+        "DateAdded": "Data dodania",
+        "TermsOfUse": "Warunki użycia",
+        "Classifications": "Klasyfikacje",
+        "About": "About",
+        "LeftControls": "W lewo - Poprzedni obraz",
+        "RightControls": "W prawo - Następny obraz",
+        "SpacebarControls": "Spacja - Przerwa",
+        "EscapeControls": "Esc - Wstrzymanie",
+        "VisitUsOnReddit": "Odwiedź nas na Reddicie!",
+        "Next": "Następny",
+        "TakeABreak": "Zrób przerwę!",
+        "ItsTimeForABreak": "Czas na przerwę. Lekcja zostanie wznowiona gdy licznik czasu osiągnie 0.",
+        "NoMoreImages": "Nie ma obrazów pasujących do twoich filtrów. Przepraszamy!",
+        "Close": "Zamknij",
+        "ClassComplete": "Lekcja skończona",
+        "NiceWork": "Dobra robota, skończyłeś lekcję!",
+        "MaybeTakeABreak": "Maybe take a little break and check out what people have been up to on <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "Timers": {
+        "seconds": "{{total}} sekund",
+        "minutes": "{{total}} minut",
+        "Class mode": "Tryb lekcyjny",
+        "No timers": "Brak czasomierzy",
+        "30 minutes": "30 minut",
+        "1 hour": "Godzina",
+        "2 hours": "2 godziny",
+        "3 hours": "3 godziny",
+        "6 hours": "6 godzin"
+    }
+}

@@ -13,6 +13,7 @@ export class LanguageService {
     { code: 'es', name: 'Español' },
     { code: 'ko', name: '한국말' },
     { code: 'nl', name: 'Nederlands' },
+    { code: 'po', name: 'Polski' },
     { code: 'fr', name: 'Français' },
     { code: 'pt', name: 'Português' },
     { code: 'ru', name: 'Русский' },
