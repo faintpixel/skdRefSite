@@ -10,7 +10,7 @@
 
         <span *ngIf="selectedLanguage === ''">
           Name: <input type='text' [(ngModel)]="newLanguageName" name='language' required /> (Will be displayed in the
-          language dropdown list)
+          language dropdown list. Should be the non-english name of the language, ie, instead of Swedish it should be Svenska.)
         </span>
         <br /><br />
         The name you'd like credited with this submission: <input [(ngModel)]="author" type='text' required name='author' /><br />

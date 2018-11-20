@@ -6,6 +6,6 @@ namespace SkdRefSiteAPI.DAO.Models.Structures
 {
     public class StructureClassifications : BaseClassifications
     {
-        public StructureType? StructureType;
+        public StructureType? StructureType { get; set; }
     }
 }

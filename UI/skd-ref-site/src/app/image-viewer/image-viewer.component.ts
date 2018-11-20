@@ -50,7 +50,7 @@ export class ImageViewerComponent implements OnInit {
   imageUrl: string = null;
   nextImageUrl: string = null;
   reporting = false;
-  reportType = 4;
+  reportType = '4';
   comment = '';
 
   @ViewChild('classComplete') private classCompleteModal;
@@ -248,12 +248,16 @@ export class ImageViewerComponent implements OnInit {
   }
 
   report() {
-    this.reporting = true;
-    this.referenceService.reportImage(this.image.id, this.comment, this.reportType, this.referenceType)
-      .subscribe(x => {
-        alert('Image has been reported.');
-        this.reporting = false;
-      });
+    if (this.comment.length === 0 && this.reportType === '4') {
+      alert('Please enter a comment to describe the issue.');
+    } else {
+      this.reporting = true;
+      this.referenceService.reportImage(this.image.id, this.comment, this.reportType, this.referenceType)
+        .subscribe(x => {
+          alert('Image has been reported.');
+          this.reporting = false;
+        });
+    }
   }
 
 }

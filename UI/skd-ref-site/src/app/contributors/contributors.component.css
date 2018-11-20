@@ -1,0 +1,15 @@
+.category h1 {
+    font-size: 14pt;
+}
+
+h2 {
+    font-size: 12pt;
+}
+
+.category {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: darkslategrey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
