@@ -20,7 +20,7 @@ namespace SkdRefSiteAPI.DAO.Queryables
                 query = query.Where(x => x.Classifications.Clothing.Value == classifications.Clothing);
             if (classifications.Gender.HasValue)
                 query = query.Where(x => x.Classifications.Gender == classifications.Gender);
-            if (classifications.NSFW.HasValue == false || classifications.NSFW == false)
+            if (classifications.Clothing.HasValue && classifications.Clothing.Value && (classifications.NSFW.HasValue == false || classifications.NSFW == false))
                 query = query.Where(x => x.Classifications.NSFW.Value == false);
             if (classifications.PoseType.HasValue)
                 query = query.Where(x => x.Classifications.PoseType == classifications.PoseType);
