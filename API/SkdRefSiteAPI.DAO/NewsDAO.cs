@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 using SkdRefSiteAPI.DAO.Models;
 using System;
 using System.Collections.Generic;
@@ -65,9 +66,13 @@ namespace SkdRefSiteAPI.DAO
             return true;
         }
 
-        public List<News> Get()
+        public List<News> Get(OffsetLimit offsetLimit)
         {
-            var results =_news.Find(_ => true).SortByDescending(x => x.Date).ToList();
+            var query = _news.AsQueryable();
+            query = query.OrderByDescending(x => x.Date);
+            query = query.Skip(offsetLimit.Offset);
+            query = query.Take(offsetLimit.Limit);
+            var results = query.ToList();
             return results;
         }
 

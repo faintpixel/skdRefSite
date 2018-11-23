@@ -221,7 +221,7 @@
             Constructor
             </summary>
         </member>
-        <member name="M:SkdRefSiteAPI.Controllers.NewsController.Get">
+        <member name="M:SkdRefSiteAPI.Controllers.NewsController.Get(SkdRefSiteAPI.DAO.Models.OffsetLimit)">
             <summary>
             Get news
             </summary>

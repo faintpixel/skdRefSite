@@ -3,7 +3,8 @@
     <a class='navbar-brand' [routerLink]="['', languageService.language]">{{'Header.Title' | translate}}</a>
 
     <div id='controls'>
-      {{'ImageViewer.Timer' | translate}}: <span *ngIf="loadingImage">Loading... </span><span *ngIf="!loadingImage">{{time.minutes}}:{{time.seconds | number:'2.0'}} </span> <span *ngIf="paused">({{'ImageViewer.Paused'
+      {{'ImageViewer.Timer' | translate}}: <span *ngIf="loadingImage">Loading... </span><span *ngIf="!loadingImage">{{time.minutes}}:{{time.seconds
+        | number:'2.0'}} </span> <span *ngIf="paused">({{'ImageViewer.Paused'
         | translate}})</span>
 
       <button (click)="previousImage()">
@@ -44,9 +45,10 @@
 
 <div class='container' (document:keyup)="keyPressed($event)">
   <div id="image" *ngIf="imageFound() && image.file !== undefined">
-    
-    <img *ngIf="!break" [src]='imageUrl' class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()"/>
-    <img id='nextImage' *ngIf="nextImageUrl != null" [src]="nextImageUrl"/>
+    <span *ngIf="!break">
+      <img *ngFor="let url of imageUrls" [src]="url" class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()" />
+    </span>
+    <img id='nextImage' *ngIf="nextImageUrl != null" [src]="nextImageUrl" />
     <div *ngIf="break">
       <h2>{{'ImageViewer.TakeABreak' | translate}}</h2>
       {{'ImageViewer.ItsTimeForABreak' | translate}}
@@ -101,9 +103,9 @@
       <b>Batch: </b>{{image.batchId}}<br />
     </div>
 
-    <hr/>
+    <hr />
     <div>
-      <b>Report Image</b><br/>
+      <b>Report Image</b><br />
       <select [(ngModel)]="reportType">
         <option value="1">Inappropriate</option>
         <option value="2">Wrong Classifications</option>

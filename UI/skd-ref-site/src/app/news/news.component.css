@@ -15,3 +15,17 @@ h1 {
 .content {
     margin-bottom: 10px;
 }
+
+.newsSeperator {
+    border-color: darkslategray;
+    border-style: dotted;
+    opacity: 0.7;
+}
+
+.pageControls {
+    font-size: small;
+}
+
+.pageControls a {
+    padding-right: 10px;
+}

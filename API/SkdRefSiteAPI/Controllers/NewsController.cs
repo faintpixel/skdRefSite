@@ -30,9 +30,9 @@ namespace SkdRefSiteAPI.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("api/News")]
-        public List<News> Get()
+        public List<News> Get([FromQuery(Name = "")]OffsetLimit offsetLimit)
         {
-            return _dao.Get();
+            return _dao.Get(offsetLimit);
         }
 
         /// <summary>

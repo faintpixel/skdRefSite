@@ -51,7 +51,7 @@ export class NewsManagerComponent implements OnInit {
   }
 
   getNews() {
-    this.newsService.get().subscribe(news => {
+    this.newsService.get(5, 0).subscribe(news => {
       this.oldNews = news;
       this.loadingNews = false;
     });

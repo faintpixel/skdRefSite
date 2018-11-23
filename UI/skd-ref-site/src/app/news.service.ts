@@ -18,9 +18,14 @@ export class NewsService {
     }).pipe(catchError(this.errorService.handleError('Error saving news.', 'save', false)));
   }
 
-  get(): Observable<object[]> {
-    return this.http.get<Array<object>>(environment.baseUrl + 'news')
-      .pipe(catchError(this.errorService.handleError('Error getting news.', 'get', [])));
+  get(limit: number, offset: number): Observable<object[]> {
+    const parameters = {
+      offset: offset + '',
+      limit: limit + ''
+    };
+    return this.http.get<Array<object>>(environment.baseUrl + 'news', {
+      params: parameters
+    }).pipe(catchError(this.errorService.handleError('Error getting news.', 'get', [])));
   }
 
   saveAnnouncement(announcement: string): Observable<boolean> {

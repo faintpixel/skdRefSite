@@ -5,8 +5,14 @@
     <hr />
 </div>
 
-<div *ngFor="let entry of news">
+<div *ngFor="let entry of news; let lastItem = last;">
     <span class='title'><b>{{entry.title}}</b></span>
     <span class='date'>{{entry.date | date : "MMMM d, y"}}</span>
     <div [innerHTML]="entry.content" class='content'></div>
+    <hr class='newsSeperator' *ngIf="!lastItem" />
+</div>
+
+<div class='pageControls'>
+    <a href='javascript:void(0);' (click)="showOlderNews()" *ngIf="news.length === limit">&lt; Older</a>
+    <a href='javascript:void(0);' (click)="showNewerNews()" *ngIf="offset != 0">Newer &gt;</a>
 </div>
