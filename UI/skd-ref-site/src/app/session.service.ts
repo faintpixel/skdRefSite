@@ -10,10 +10,15 @@ export class SessionService {
   private imageHistory: Array<any> = [];
   private imageIds: Array<string> = [];
   private historyIndex = -1;
+  public referenceType = '';
 
-  AddToImageHistory(image: any) {
+  AddToImageHistory(image: any, type: string) {
     if (image == null || image === {}) {
       return;
+    }
+
+    if (type !== this.referenceType) {
+      console.log('invalid reference');
     }
 
     if (this.imageHistory.length > 100) {
@@ -24,13 +29,17 @@ export class SessionService {
     this.imageIds.push(image.id);
   }
 
-  addPreloadedImage(image: any): any {
+  addPreloadedImage(image: any, type: string): any {
     if (image == null || image === {}) {
       return;
     }
 
+    if (type !== this.referenceType) {
+      console.log('invalid reference2');
+    }
+
     if (!this.imageIds.includes(image.id)) {
-      this.AddToImageHistory(image);
+      this.AddToImageHistory(image, type);
     }
   }
 

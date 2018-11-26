@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { SessionService } from '../session.service';
 import { ReferenceService } from '../reference.service';
@@ -32,7 +32,7 @@ import { LanguageService } from '../language.service';
     ])
   ]
 })
-export class ImageViewerComponent implements OnInit {
+export class ImageViewerComponent implements OnInit, OnDestroy {
 
   image: any = {};
   filters: any = {};
@@ -72,6 +72,7 @@ export class ImageViewerComponent implements OnInit {
 
     this.params = this.route.params.subscribe(params => {
       this.referenceType = params['type'];
+      this.sessionService.referenceType = this.referenceType;
     });
 
     this.route.queryParamMap.subscribe(params => {
@@ -92,6 +93,12 @@ export class ImageViewerComponent implements OnInit {
     this.sessionService.ClearHistory();
     this.previousImages = this.sessionService.GetPreviousIds();
     this.nextImage(false);
+  }
+
+  ngOnDestroy() {
+    if (this.timer != null) {
+      clearInterval(this.timer);
+    }
   }
 
   openModal(content) {
@@ -178,15 +185,13 @@ export class ImageViewerComponent implements OnInit {
     this.imageUrls = [ this.imageUrl ]; // workaround to get images to display while they load
 
     if (addToHistory) {
-      this.sessionService.AddToImageHistory(image);
+      this.sessionService.AddToImageHistory(image, this.referenceType);
       this.previousImages = this.sessionService.GetPreviousIds();
     }
   }
 
   preloadNextImage(image: any) {
-    console.log('got next image');
-    console.log(image.classifications);
-    this.sessionService.addPreloadedImage(image);
+    this.sessionService.addPreloadedImage(image, this.referenceType);
     this.nextImageUrl = this.getUrl(image);
   }
 
