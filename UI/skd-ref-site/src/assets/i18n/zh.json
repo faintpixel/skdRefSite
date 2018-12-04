@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "你好！",
+		"LookingForSomethingElseToDraw": "想找些别的东西来画吗？",
+		"Welcome": "欢迎来到每日素描参照装置。",
+		"JoinTheFun": "加入到这一乐趣中吧！"
+	},
+	"FullBody": {
+		"FullBody": "全身",
+		"Clothing": "衣着",
+		"Clothed": "着衣的",
+		"Nude": "裸体的",
+		"IncludeNSFWImages": "包含不适宜于办公区域展示的图片",
+		"Pose": "姿势",
+		"Action": "动态",
+		"Stationary": "静态",
+		"All": "全部"
+	},
+	"BodyPart": {
+		"BodyPart": "身体部分",
+		"Hand": "手",
+		"Foot": "脚",
+		"Head": "头",
+		"All": "全部"
+	},
+	"Animal": {
+		"Animal": "动物",
+		"Species": "种类",
+		"Bird": "鸟类",
+		"Fish": "鱼类",
+		"ReptileOrAmphibian": "爬虫或两栖类",
+		"Category": "分类",
+		"Living": "活物",
+		"SkeletonOrBones": "骨架或骨骼",
+		"Bug": "小虫",
+		"Mammal": "哺乳动物",
+		"All": "全部"
+	},
+	"Structure": {
+		"Structure": "建筑",
+		"House": "住宅",
+		"Building": "建筑物",
+		"Other": "其他",
+		"All": "全部"
+	},
+	"Vegetation": {
+		"Vegetation": "草木",
+		"Flowers": "花",
+		"Plants": "植物",
+		"PhotoType": "照片类型",
+		"Closeup": "特写",
+		"Full": "整体",
+		"All": "全部"
+	},
+	"Filters": {
+		"All": "全部",
+		"Type": "种类",
+		"Gender": "性别",
+		"Male": "男性",
+		"Female": "女性",
+		"View": "视角",
+		"Front": "正面",
+		"Side": "侧面",
+		"Back": "背面",
+		"AboveOrBelow": "上方或下方的角度",
+		"ClassMode": "课堂模式",
+		"Class": "课堂",
+		"Minutes": "分钟",
+		"Seconds": "秒钟",
+		"Hour": "小时",
+		"Hours": "小时（复数）",
+		"NoTimers": "不计时",
+		"OnlyMostRecentImages": "仅使用最新的图片",
+		"NumberOfImages": "图片数量",
+		"Start": "开始",
+		"Time": "时间",
+		"Break": "休息",
+		"NSFW": "不建议在工作区域开启或展示",
+		"true": "正确",
+		"false": "错误"
+	},
+	"Header": {
+		"Title": "r/SketchDaily References",
+		"AddImages": "添加图片",
+		"ManageImages": "整理图片",
+		"YourImages": "你的图片",
+		"News": "新闻",
+		"Logs": "日志",
+		"LogIn": "登入",
+		"LogOut": "登出"
+	},
+	"News": {
+		"WhatsNew": "最新消息",
+		"Announcement": "通知"
+	},
+	"ImageViewer": {
+		"Timer": "计时器",
+		"Paused": "暂停",
+		"ImageInfo": "图片信息",
+		"Source": "资源",
+		"Model": "模特",
+		"Photographer": "摄影师",
+		"DateAdded": "加入日期",
+		"TermsOfUse": "使用条款",
+		"Classifications": "分类",
+		"About": "关于",
+		"LeftControls": "左键 - 前一张图片",
+		"RightControls": "右键 - 后一张图片",
+		"SpacebarControls": "空格 - 暂停",
+		"EscapeControls": "ESC - 停止",
+		"VisitUsOnReddit": "在Reddit上拜访我们！",
+		"Next": "下一个",
+		"TakeABreak": "休息一会！",
+		"ItsTimeForABreak": "是时候休息一下了。你的课程将在计时器为零时重新开始。",
+		"NoMoreImages": "很抱歉！没有符合筛选的图片。",
+		"Close": "关闭",
+		"ClassComplete": "课程完成",
+		"NiceWork": "干得好，你完成了这个课程！",
+		"MaybeTakeABreak": "也许你该休息一会，然后到 <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a> 看看人们都在做些什么。"
+	},
+	"Timers": {
+		"seconds": "{{total}} 秒钟",
+		"minutes": "{{total}} 分钟",
+		"Class mode": "课堂模式",
+		"No timers": "不计时",
+		"30 minutes": "30分钟",
+		"1 hour": "1小时",
+		"2 hours": "2小时",
+		"3 hours": "3小时",
+		"6 hours": "6小时"
+	}
+}

@@ -17,7 +17,8 @@ export class LanguageService {
     { code: 'fr', name: 'Français' },
     { code: 'pt', name: 'Português' },
     { code: 'ru', name: 'Русский' },
-    { code: 'sv', name: 'Svenska' }
+    { code: 'sv', name: 'Svenska' },
+    { code: 'zh', name: '简体中文' }
   ];
 
   public language: 'en';
