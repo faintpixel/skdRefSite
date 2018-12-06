@@ -49,18 +49,18 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <param name="criteria"></param>
         /// <param name="excludeIds"></param>
-        /// <param name="onlyRecentImages"></param>
+        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("api/Structures/Next")]
-        public async Task<StructureReference> GetNext([FromQuery(Name = "")]StructureClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? onlyRecentImages = null)
+        public async Task<StructureReference> GetNext([FromQuery(Name = "")]StructureClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? recentImagesOnly = null)
         {
             if (criteria == null)
                 criteria = new StructureClassifications();
             if (excludeIds == null)
                 excludeIds = new List<string>();
 
-            var image = await _dao.Get(criteria, excludeIds, onlyRecentImages);
+            var image = await _dao.Get(criteria, excludeIds, recentImagesOnly);
 
             return image;
         }

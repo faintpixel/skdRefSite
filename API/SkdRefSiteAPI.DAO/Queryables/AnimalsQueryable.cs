@@ -25,13 +25,20 @@ namespace SkdRefSiteAPI.DAO.Queryables
                 query = query.Where(x => x.Classifications.ViewAngle == classifications.ViewAngle);
             if (recentImagesOnly == true)
             {
-                query = query.OrderByDescending(x => x.UploadDate);
-                query = query.Take(50);
+                var mostRecentUpload = GetMostRecentImageUploadDate(collection);
+                query = query.Where(x => x.UploadDate >= mostRecentUpload.AddDays(-30));
             }
             if (classifications.Status.HasValue)
                 query = query.Where(x => x.Status == classifications.Status);
 
             return query;
+        }
+
+        private DateTime GetMostRecentImageUploadDate(IMongoCollection<AnimalReference> collection)
+        {
+            var query = collection.AsQueryable().OrderByDescending(x => x.UploadDate).Take(1);
+            var item = query.First();
+            return item.UploadDate;
         }
     }
 }

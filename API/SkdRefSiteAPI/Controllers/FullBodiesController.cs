@@ -49,18 +49,18 @@ namespace SkdRefSiteAPI.Controllers
         /// </summary>
         /// <param name="criteria"></param>
         /// <param name="excludeIds"></param>
-        /// <param name="onlyRecentImages"></param>
+        /// <param name="recentImagesOnly"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("api/FullBodies/Next")]
-        public async Task<FullBodyReference> GetNext([FromQuery(Name = "")]FullBodyClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? onlyRecentImages)
+        public async Task<FullBodyReference> GetNext([FromQuery(Name = "")]FullBodyClassifications criteria, [FromBody]List<string> excludeIds, [FromQuery]bool? recentImagesOnly)
         {
             if (criteria == null)
                 criteria = new FullBodyClassifications();
             if (excludeIds == null)
                 excludeIds = new List<string>();
 
-            var image = await _dao.Get(criteria, excludeIds, onlyRecentImages);
+            var image = await _dao.Get(criteria, excludeIds, recentImagesOnly);
 
             return image;
         }
