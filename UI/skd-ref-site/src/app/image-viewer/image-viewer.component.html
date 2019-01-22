@@ -148,8 +148,7 @@
   </div>
   <div class='modal-body'>
     {{'ImageViewer.NiceWork' | translate}}<br /><br />
-    {{'ImageViewer.MaybeTakeABreak' | translate}}
-
+    <span [innerHtml]="'ImageViewer.MaybeTakeABreak' | translate"></span>
   </div>
   <div class='modal-footer'>
     <button (click)="c()">{{'ImageViewer.Close' | translate}}</button>

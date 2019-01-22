@@ -240,7 +240,7 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
     if (this.time.minutes === 0 && this.time.seconds === 5) {
       this.fadeOut = true;
     } else if (this.time.minutes === 0 && this.time.seconds === 0) {
-
+      this.break = false;
       this.nextImage();
     }
   }
