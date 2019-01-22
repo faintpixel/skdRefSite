@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // baseUrl: 'http://reference.sketchdaily.net:4000/api/', // TO DO - should rename this
-  baseUrl: 'http://localhost:15285/api/',
+  baseUrl: 'http://reference.sketchdaily.net:4000/api/', // TO DO - should rename this
+  // baseUrl: 'http://localhost:15285/api/',
 
   imageUrl: 'http://reference.sketchdaily.net:4000',
   // imageUrl: 'http://localhost:15285',

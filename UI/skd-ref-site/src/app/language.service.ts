@@ -11,13 +11,16 @@ export class LanguageService {
     { code: 'en', name: 'English' },
     { code: 'de', name: 'Deutsch' },
     { code: 'es', name: 'Español' },
+    { code: 'iw', name: 'עברית' },
     { code: 'ko', name: '한국말' },
     { code: 'nl', name: 'Nederlands' },
+    { code: 'nn', name: 'Norsk' },
     { code: 'po', name: 'Polski' },
     { code: 'fr', name: 'Français' },
     { code: 'pt', name: 'Português' },
     { code: 'ru', name: 'Русский' },
     { code: 'sv', name: 'Svenska' },
+    { code: 'tr', name: 'Türkçe' },
     { code: 'zh', name: '简体中文' }
   ];
 

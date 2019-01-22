@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "שלום!",
+		"Welcome": "ברוכים הבאים לאתר הרפרנסים של SketchDaily",
+		"LookingForSomethingElseToDraw": "מחפשים משהו אחר לצייר?",
+		"JoinTheFun": "הצטרפו לכיף!"
+	},
+	"FullBody": {
+		"FullBody": "גוף מלא",
+		"Clothing": "בגדים",
+		"Clothed": "עם לבוש",
+		"Nude": "עירום",
+		"IncludeNSFWImages": "כלול תמונות עירום",
+		"Pose": "תנוחה",
+		"Action": "בתנועה",
+		"Stationary": "יציב",
+		"All": "הכל"
+	},
+	"BodyPart": {
+		"BodyPart": "חלק גוף",
+		"Hand": "ידיים",
+		"Foot": "רגליים",
+		"Head": "ראשים",
+		"All": "הכל"
+	},
+	"Animal": {
+		"Animal": "בעלי חיים",
+		"Species": "זן",
+		"Bird": "ציפור",
+		"Fish": "דג",
+		"ReptileOrAmphibian": "זוחל או דו-חי",
+		"Category": "קטגוריה",
+		"Living": "חי",
+		"SkeletonOrBones": "שלד או עצמות",
+		"Bug": "חרק",
+		"Mammal": "יונק",
+		"All": "הכל"
+	},
+	"Structure": {
+		"Structure": "מבנה",
+		"House": "בית",
+		"Building": "בניין",
+		"Other": "אחר",
+		"All": "הכל"
+	},
+	"Vegetation": {
+		"Vegetation": "צמחייה",
+		"Flowers": "פרחים",
+		"Plants": "צמחים",
+		"PhotoType": "סוג תמונה",
+		"Closeup": "קרוב (קלוזאפ)",
+		"Full": "מלא",
+		"All": "הכל"
+	},
+	"Filters": {
+		"All": "הכל",
+		"Type": "סוג",
+		"Gender": "מין",
+		"Male": "זכר",
+		"Female": "נקבה",
+		"View": "נקודת מבט",
+		"Front": "קדמי",
+		"Side": "צדדי",
+		"Back": "אחורי",
+		"AboveOrBelow": "מעל או מתחת",
+		"ClassMode": "מצב שיעור",
+		"Class": "שיעור",
+		"Minutes": "דקות",
+		"Seconds": "שניות",
+		"Hour": "שעה",
+		"Hours": "שעות",
+		"NoTimers": "ללא טיימר",
+		"OnlyMostRecentImages": "השתמש רק בתמונות חדשות",
+		"NumberOfImages": "מספר תמונות",
+		"Start": "התחל",
+		"Time": "זמן",
+		"Break": "הפסקה",
+		"NSFW": "לא בטוח לעבודה (עירום)",
+		"true": "נכון",
+		"false": "לא נכון"
+	},
+	"Header": {
+		"Title": "רפרנסים מ-r/SketchDaily",
+		"AddImages": "הוסף תמונות",
+		"ManageImages": "נהל תמונות",
+		"YourImages": "התמונות שלך",
+		"News": "חדשות",
+		"Logs": "עדכונים",
+		"LogIn": "להתחבר",
+		"LogOut": "להתנתק"
+	},
+	"News": {
+		"WhatsNew": "מה חדש",
+		"Announcement": "הכרזות"
+	},
+	"ImageViewer": {
+		"Timer": "טיימר",
+		"Paused": "נעצר",
+		"ImageInfo": "מידע על התמונה",
+		"Source": "מקור",
+		"Model": "מודל",
+		"Photographer": "צלם/ת",
+		"DateAdded": "תאריך הוספה",
+		"TermsOfUse": "תנאי שימוש",
+		"Classifications": "סיווג",
+		"About": "אודות",
+		"LeftControls": "שמאלה - תמונה קודמת",
+		"RightControls": "ימינה - תמונה הבאה",
+		"SpacebarControls": "רווח - לעצור",
+		"EscapeControls": "אסקייפ - להפסיק",
+		"VisitUsOnReddit": "בקרו אותנו ברדיט!",
+		"Next": "הבא",
+		"TakeABreak": "קחו הפסקה!",
+		"ItsTimeForABreak": "זמן להפסקה. השיעור שלך תחזור כשהטיימר יגיע ל-0.",
+		"NoMoreImages": "אין עוד תמונות התואמות לפילטר שלך. מצטערים!",
+		"Close": "לסגור",
+		"ClassComplete": "שיעור הסתיים",
+		"NiceWork": "עבודה טובה, סיימת את השיעור!",
+		"MaybeTakeABreak": "אולי תיקחו הפסקה קצרה ותבדקו מה אנשים עושים ב <a href='https://www.reddit.com/r/sketchdaily'>סאברדיט!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} שניות",
+		"minutes": "{{total}} דקות",
+		"Class mode": "מצב שיעור",
+		"No timers": "ללא טיימרים",
+		"30 minutes": "30 דקות",
+		"1 hour": "שעה",
+		"2 hours": "שעתיים",
+		"3 hours": "3 שעות",
+		"6 hours": "6 שעות"
+	}
+}
