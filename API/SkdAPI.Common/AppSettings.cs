@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.Common
 {
     public static class AppSettings
     {

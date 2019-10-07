@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.RefSite.DAO
 {
     public static class RandomGenerator
     {

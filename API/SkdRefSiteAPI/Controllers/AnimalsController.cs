@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using SkdRefSiteAPI.DAO;
-using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.Animals;
-using SkdRefSiteAPI.DAO.Queryables;
+using SkdAPI.Common.Models;
+using SkdAPI.RefSite.DAO;
+using SkdAPI.RefSite.DAO.Models;
+using SkdAPI.RefSite.DAO.Models.Animals;
+using SkdAPI.RefSite.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.Controllers
+namespace SkdAPI.Controllers
 {
     /// <summary>
     /// API for working with animal references
@@ -24,8 +25,9 @@ namespace SkdRefSiteAPI.Controllers
         public AnimalsController()
         {
             var queryable = new AnimalsQueryable();
-            _dao = new ReferenceDAO<AnimalReference, AnimalClassifications>(DAO.Models.ReferenceType.Animal, queryable);
+            _dao = new ReferenceDAO<AnimalReference, AnimalClassifications>(ReferenceType.Animal, queryable);
         }
+
         /// <summary>
         /// Get animals
         /// </summary>

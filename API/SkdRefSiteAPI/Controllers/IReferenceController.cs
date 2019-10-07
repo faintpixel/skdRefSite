@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.Animals;
+using SkdAPI.Common.Models;
+using SkdAPI.RefSite.DAO.Models;
+using SkdAPI.RefSite.DAO.Models.Animals;
 
-namespace SkdRefSiteAPI.Controllers
+namespace SkdAPI.Controllers
 {
     public interface IReferenceController<TReference, TClassifications>
     {

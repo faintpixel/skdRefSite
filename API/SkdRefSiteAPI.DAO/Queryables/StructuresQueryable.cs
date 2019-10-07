@@ -1,12 +1,12 @@
 ﻿using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.Structures;
+using SkdAPI.RefSite.DAO.Models;
+using SkdAPI.RefSite.DAO.Models.Structures;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO.Queryables
+namespace SkdAPI.RefSite.DAO.Queryables
 {
     public class StructuresQueryable : IQueryable<StructureReference, StructureClassifications>
     {

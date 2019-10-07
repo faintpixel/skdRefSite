@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.DAO.Models
+namespace SkdAPI.RefSite.DAO.Models
 {
     public class Image
     {

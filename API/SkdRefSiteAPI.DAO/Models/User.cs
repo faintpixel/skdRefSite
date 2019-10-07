@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO.Models
+namespace SkdAPI.RefSite.DAO.Models
 {
     public class User
     {

@@ -1,13 +1,14 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using SkdRefSiteAPI.DAO.Models;
+using SkdAPI.RefSite.DAO.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using SkdAPI.Common;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.RefSite.DAO
 {
     public class BatchDAO
     {

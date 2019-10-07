@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SkdRefSiteAPI.DAO.Models;
+using SkdAPI.RefSite.DAO.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.Controllers
+namespace SkdAPI.Controllers
 {
     /// <summary>
     /// Base controller

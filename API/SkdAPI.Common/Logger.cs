@@ -2,17 +2,14 @@
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using Newtonsoft.Json;
-using SkdRefSiteAPI.DAO.Models;
+using SkdAPI.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.Common
 {
     public class Logger
     {
@@ -21,11 +18,11 @@ namespace SkdRefSiteAPI.DAO
         private IMongoDatabase _db;
         private IMongoCollection<Log> _collection;
 
-        public Logger(string applicationName)
+        public Logger(string databaseName, string applicationName)
         {
             APPLICATION_NAME = applicationName;
             _mongoClient = new MongoClient(AppSettings.MongoDBConnection);
-            _db = _mongoClient.GetDatabase("refsite");
+            _db = _mongoClient.GetDatabase(databaseName);
             _collection = _db.GetCollection<Log>("logs");
         }
 
@@ -46,7 +43,7 @@ namespace SkdRefSiteAPI.DAO
             try
             {
                 var log = new Log();
-                if(exception != null)
+                if (exception != null)
                     log.Exception = exception.ToString();
                 log.Message = message;
                 log.Parameters = parameters;
@@ -59,7 +56,7 @@ namespace SkdRefSiteAPI.DAO
                             options: new UpdateOptions { IsUpsert = true },
                             replacement: log);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine("Error logging: " + ex.ToString());
             }
@@ -86,7 +83,7 @@ namespace SkdRefSiteAPI.DAO
                 _collection.DeleteOne(filter: new BsonDocument("_id", id));
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Log("DeleteLog", ex, id);
                 return false;

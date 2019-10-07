@@ -16,10 +16,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Converters;
-using SkdRefSiteAPI.DAO;
+using SkdAPI.Common;
+using SkdAPI.RefSite.DAO;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace SkdRefSiteAPI
+namespace SkdAPI
 {
     public class Startup
     {

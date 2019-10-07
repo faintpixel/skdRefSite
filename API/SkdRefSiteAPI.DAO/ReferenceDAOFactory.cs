@@ -1,14 +1,14 @@
-﻿using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.Animals;
-using SkdRefSiteAPI.DAO.Models.People;
-using SkdRefSiteAPI.DAO.Models.Structures;
-using SkdRefSiteAPI.DAO.Models.Vegetation;
-using SkdRefSiteAPI.DAO.Queryables;
+﻿using SkdAPI.RefSite.DAO.Models;
+using SkdAPI.RefSite.DAO.Models.Animals;
+using SkdAPI.RefSite.DAO.Models.People;
+using SkdAPI.RefSite.DAO.Models.Structures;
+using SkdAPI.RefSite.DAO.Models.Vegetation;
+using SkdAPI.RefSite.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.RefSite.DAO
 {
     public class ReferenceDAOFactory
     {

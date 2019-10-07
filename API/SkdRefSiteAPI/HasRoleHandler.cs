@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI
+namespace SkdAPI
 {
     public class HasRoleHandler : AuthorizationHandler<HasRoleRequirement>
     {

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
-using SkdRefSiteAPI.DAO.Models;
+using SkdAPI.RefSite.DAO.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.RefSite.DAO
 {
     public class FileDAO
     {

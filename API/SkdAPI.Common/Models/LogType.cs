@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO.Models
+namespace SkdAPI.Common.Models
 {
     public enum LogType
     {

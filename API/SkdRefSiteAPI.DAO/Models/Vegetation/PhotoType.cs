@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO.Models.Vegetation
+namespace SkdAPI.RefSite.DAO.Models.Vegetation
 {
     public enum PhotoType
     {

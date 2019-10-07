@@ -1,18 +1,20 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.Animals;
-using SkdRefSiteAPI.DAO.Models.People;
-using SkdRefSiteAPI.DAO.Queryables;
+using SkdAPI.RefSite.DAO.Models;
+using SkdAPI.RefSite.DAO.Models.Animals;
+using SkdAPI.RefSite.DAO.Models.People;
+using SkdAPI.RefSite.DAO.Queryables;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using SkdAPI.Common;
+using SkdAPI.Common.Models;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.RefSite.DAO
 {
     public class ReferenceDAO<TReference, TClassifications> 
         where TReference : Image 
@@ -32,7 +34,7 @@ namespace SkdRefSiteAPI.DAO
             _mongoClient = new MongoClient(AppSettings.MongoDBConnection);
             _db = _mongoClient.GetDatabase("refsite");
             _collection = _db.GetCollection<TReference>(collectionName);
-            _logger = new Logger("ReferenceDAO");
+            _logger = new Logger(Databases.REFSITE, "ReferenceDAO");
             _queryable = queryable;
             REFERENCE_TYPE = type;
         }

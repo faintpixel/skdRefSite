@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO.Queryables
+namespace SkdAPI.RefSite.DAO.Queryables
 {
     public interface IQueryable<TReference, TClassifications>
     {

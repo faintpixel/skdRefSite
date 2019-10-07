@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO.Models.Structures
+namespace SkdAPI.RefSite.DAO.Models.Structures
 {
     public enum StructureType
     {

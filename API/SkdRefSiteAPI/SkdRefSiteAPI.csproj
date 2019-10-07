@@ -16,6 +16,7 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
   </ItemGroup>
 
@@ -24,7 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SkdRefSiteAPI.DAO\SkdRefSiteAPI.DAO.csproj" />
+    <ProjectReference Include="..\Critique.DAO\SkdAPI.ArtCrit.DAO.csproj" />
+    <ProjectReference Include="..\SkdRefSiteAPI.DAO\SkdAPI.RefSite.DAO.csproj" />
   </ItemGroup>
 
   <ItemGroup>

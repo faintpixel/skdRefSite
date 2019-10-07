@@ -1,15 +1,15 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using SkdRefSiteAPI.DAO.Models;
-using SkdRefSiteAPI.DAO.Models.People;
+using SkdAPI.RefSite.DAO.Models;
+using SkdAPI.RefSite.DAO.Models.People;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.DAO.Queryables
+namespace SkdAPI.RefSite.DAO.Queryables
 {
     public class BodyPartsQueryable : IQueryable<BodyPartReference, BodyPartClassifications>
     {

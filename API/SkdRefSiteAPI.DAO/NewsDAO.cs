@@ -1,13 +1,15 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using SkdRefSiteAPI.DAO.Models;
+using SkdAPI.Common;
+using SkdAPI.Common.Models;
+using SkdAPI.RefSite.DAO.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace SkdRefSiteAPI.DAO
+namespace SkdAPI.RefSite.DAO
 {
     public class NewsDAO
     {
@@ -23,7 +25,7 @@ namespace SkdRefSiteAPI.DAO
             _db = _mongoClient.GetDatabase("refsite");
             _news = _db.GetCollection<News>("news");
             _announcement = _db.GetCollection<Announcement>("announcement");
-            _logger = new Logger("NewsDAO");
+            _logger = new Logger(Databases.REFSITE, "NewsDAO");
         }
 
         public bool Save(News news)

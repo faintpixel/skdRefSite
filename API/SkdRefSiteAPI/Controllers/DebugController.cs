@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkdRefSiteAPI.Controllers
+namespace SkdAPI.Controllers
 {
     /// <summary>
     /// Debug methods for troubleshooting connectivity
