@@ -5,6 +5,7 @@ using SkdAPI.RefSite.DAO;
 using SkdAPI.RefSite.DAO.Models;
 using SkdAPI.RefSite.DAO.Models.People;
 using SkdAPI.RefSite.DAO.Queryables;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;

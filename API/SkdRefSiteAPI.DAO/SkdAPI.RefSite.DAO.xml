@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SkdAPI.RefSite.DAO</name>
+    </assembly>
+    <members>
+        <member name="M:SkdAPI.RefSite.DAO.FileDAO.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="webRootPath"></param>
+        </member>
+    </members>
+</doc>
