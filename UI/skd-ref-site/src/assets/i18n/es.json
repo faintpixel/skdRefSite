@@ -75,7 +75,7 @@
 		"Start": "Iniciar",
 		"Time": "Tiempo",
 		"Break": "Descanso",
-		"NSFW": "NSFW",
+		"NSFW": "No apto para el trabajo",
 		"true": "Verdadero",
 		"false": "Falso"
 	},
@@ -112,10 +112,10 @@
 		"Next": "Siguiente",
 		"TakeABreak": "¡Toma un descanso!",
 		"ItsTimeForABreak": "Es hora de un descanso. Tu clase se renudará cuando el contador llegue a 0.",
-		"NoMoreImages": "¡Lo sentimos! Ninguna imagen coincide con tu búsqueda.",
+		"NoMoreImages": "¡Lo sentimos! No hay mas imágenes que calcen con tus filtros.",
 		"Close": "Cerrar",
 		"ClassComplete": "Clase completada",
-		"NiceWork": "Buen trabajo, has terminado la clase!",
+		"NiceWork": "Buen trabajo, ¡Has terminado la clase!",
 		"MaybeTakeABreak": "Tal vez tómate un descanso y echa un vistazo a lo que ocurre en <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
 	},
 	"Timers": {

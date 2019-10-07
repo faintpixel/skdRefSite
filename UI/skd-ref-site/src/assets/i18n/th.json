@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "สวัสดี!",
+		"Welcome": "ยินดีต้อนรับเข้าสู่ SketchDaily ศูนย์รวมเรเฟอร์เรนซ์",
+		"LookingForSomethingElseToDraw": "หาอย่างอื่นวาดอยู่รึเปล่า",
+		"JoinTheFun": "มาสนุกกัน!"
+	},
+	"FullBody": {
+		"FullBody": "เต็มตัว",
+		"Clothing": "เสื้อผ้า",
+		"Clothed": "ใส่เสื้อผ้า",
+		"Nude": "เปลือย",
+		"IncludeNSFWImages": "รวม NSFW",
+		"Pose": "โพส",
+		"Action": "ท่าทาง",
+		"Stationary": "นิ่ง",
+		"All": "ทั้งหมด"
+	},
+	"BodyPart": {
+		"BodyPart": "ส่วนร่างกาย",
+		"Hand": "มือ",
+		"Foot": "เท้า",
+		"Head": "หัว",
+		"All": "ทั้งหมด"
+	},
+	"Animal": {
+		"Animal": "สัตว์",
+		"Species": "สายพันธุ์",
+		"Bird": "นก",
+		"Fish": "ปลา",
+		"ReptileOrAmphibian": "เลื้อยคลาน/ครึ่งบกครึ่งน้ำ",
+		"Category": "ปรถเภท",
+		"Living": "Living",
+		"SkeletonOrBones": "กระดูก",
+		"Bug": "บัค",
+		"Mammal": "สัตว์เลี้ยงลูกด้วยนม",
+		"All": "ทั้งหมด"
+	},
+	"Structure": {
+		"Structure": "โครงสร้าง",
+		"House": "บ้าน",
+		"Building": "ตึก",
+		"Other": "อื่นๆ",
+		"All": "ทั้งหมด"
+	},
+	"Vegetation": {
+		"Vegetation": "ผัก",
+		"Flowers": "ดอกไม้",
+		"Plants": "ต้นไม้",
+		"PhotoType": "ประเภทภาพ",
+		"Closeup": "ขนาดใกล้",
+		"Full": "เต็มตัว",
+		"All": "ทั้งหมด"
+	},
+	"Filters": {
+		"All": "ทั้งหมด",
+		"Type": "ประเภท",
+		"Gender": "เพศ",
+		"Male": "ชาย",
+		"Female": "หญิง",
+		"View": "ดู",
+		"Front": "ด้านหน้า",
+		"Side": "ด้านข้าง",
+		"Back": "ด้านหลัง",
+		"AboveOrBelow": "ด้านบนหรือล่าง",
+		"ClassMode": "โหมดการเรียน",
+		"Class": "การเรียน",
+		"Minutes": "นาที",
+		"Seconds": "วินาที",
+		"Hour": "ชั่วโมง",
+		"Hours": "ชั่วโมง",
+		"NoTimers": "ไม่ตั้งเวลา",
+		"OnlyMostRecentImages": "ใช้รูปภาพล่าสุดเท่านั้น",
+		"NumberOfImages": "จำนวนภาพ",
+		"Start": "เริ่ม",
+		"Time": "เวลา",
+		"Break": "พัก",
+		"NSFW": "NSFW",
+		"true": "จริง",
+		"false": "เท็จ"
+	},
+	"Header": {
+		"Title": "r/SketchDaily อ้างอิง",
+		"AddImages": "เพิ่มรูปภาพ",
+		"ManageImages": "จัดการรูปภาพ",
+		"YourImages": "รูปภาพของคุณ",
+		"News": "ข่าว",
+		"Logs": "ล็อค",
+		"LogIn": "ล็อคอิน",
+		"LogOut": "ล็อคเอาท์"
+	},
+	"News": {
+		"WhatsNew": "ข่าว",
+		"Announcement": "ประกาศ"
+	},
+	"ImageViewer": {
+		"Timer": "ตั้งเวลา",
+		"Paused": "หยุด",
+		"ImageInfo": "รายละเอียดภาพ",
+		"Source": "ที่มา",
+		"Model": "โมเดล",
+		"Photographer": "ผู้ถ่าย",
+		"DateAdded": "วันที่สร้าง",
+		"TermsOfUse": "ข้อตกลง",
+		"Classifications": "การจำแนก",
+		"About": "เกี่ยวกับ",
+		"LeftControls": "ซ้าย - รูปก่อนหน้า",
+		"RightControls": "ขวา - รูปถัดไป",
+		"SpacebarControls": "Spacebar - พัก",
+		"EscapeControls": "Escape - หยุด",
+		"VisitUsOnReddit": "พบเราที่ Reddit!",
+		"Next": "ถัดไป",
+		"TakeABreak": "พักกันหน่อย!",
+		"ItsTimeForABreak": "ถึงเวลาพักแล้ว คลาสจะเริ่่มใหม่เมื่อเวลาเป็น 0",
+		"NoMoreImages": "ไม่มีภาพที่คุณค้นหา ขอโทษ!",
+		"Close": "ปิด",
+		"ClassComplete": "จบคลาส",
+		"NiceWork": "ทำได้เยี่ยม จบคลาสแล้ว!",
+		"MaybeTakeABreak": "พักซักนิด ระหว่างนี้มาดูว่าคนที่นี่คิดยังไง <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} วินาที",
+		"minutes": "{{total}} นาที",
+		"Class mode": "โหมดคลาส",
+		"No timers": "ไม่ตั้งเวลา",
+		"30 minutes": "30 วินาที",
+		"1 hour": "1 ชั่วโมง",
+		"2 hours": "2 ชั่วโมง",
+		"3 hours": "3 ชั่วโมง",
+		"6 hours": "6 ชั่วโมง"
+	}
+}

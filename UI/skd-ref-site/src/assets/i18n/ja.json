@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "こんにちは！",
+		"Welcome": "SketchDailyの資料ツールへようこそ。",
+		"LookingForSomethingElseToDraw": "他にイラストのお題をお探しですか？",
+		"JoinTheFun": "あなたも一緒に楽しもう！"
+	},
+	"FullBody": {
+		"FullBody": "全身",
+		"Clothing": "衣服",
+		"Clothed": "着衣",
+		"Nude": "裸体",
+		"IncludeNSFWImages": "※裸体あり",
+		"Pose": "ポーズ",
+		"Action": "アクション",
+		"Stationary": "静止",
+		"All": "全て"
+	},
+	"BodyPart": {
+		"Hand": "手",
+		"Foot": "足",
+		"Head": "頭部",
+		"All": "全て",
+		"BodyPart": "パーツ"
+	},
+	"Animal": {
+		"Animal": "動物",
+		"Species": "種",
+		"Bird": "鳥類",
+		"Fish": "魚類",
+		"ReptileOrAmphibian": "爬虫類・両生類",
+		"Category": "カテゴリー",
+		"SkeletonOrBones": "骨格・骨",
+		"Bug": "虫",
+		"Mammal": "ほ乳類",
+		"All": "全て",
+		"Living": "生体"
+	},
+	"Structure": {
+		"Structure": "建造物",
+		"House": "家屋",
+		"Building": "建物",
+		"Other": "その他",
+		"All": "全て"
+	},
+	"Vegetation": {
+		"Vegetation": "植物",
+		"Flowers": "花",
+		"Plants": "草木",
+		"PhotoType": "写真のタイプ",
+		"Closeup": "クローズアップ",
+		"Full": "フル",
+		"All": "全て"
+	},
+	"Filters": {
+		"All": "全て",
+		"Type": "タイプ",
+		"Gender": "性別",
+		"Male": "男性",
+		"Female": "女性",
+		"Front": "正面",
+		"Side": "横",
+		"Back": "後ろ",
+		"AboveOrBelow": "ふかん・あおり",
+		"View": "アングル",
+		"ClassMode": "セッションモード",
+		"Class": "セッション",
+		"Minutes": "分",
+		"Seconds": "秒",
+		"Hour": "時間",
+		"Hours": "時間",
+		"NoTimers": "タイマーを使用しない",
+		"OnlyMostRecentImages": "最新の画像のみ使用する",
+		"NumberOfImages": "画像数",
+		"Start": "スタート",
+		"Time": "時間",
+		"NSFW": "※裸体あり",
+		"true": "True",
+		"false": "False",
+		"Break": "休憩"
+	},
+	"Header": {
+		"Title": "r/SketchDaily References",
+		"AddImages": "画像を追加する",
+		"ManageImages": "画像を管理する",
+		"YourImages": "セーブした画像",
+		"News": "最新情報",
+		"Logs": "ログ",
+		"LogIn": "ログイン",
+		"LogOut": "ログアウト"
+	},
+	"News": {
+		"WhatsNew": "更新履歴",
+		"Announcement": "発表"
+	},
+	"ImageViewer": {
+		"Timer": "タイマー",
+		"Paused": "一時停止中",
+		"ImageInfo": "画像の詳細",
+		"Source": "ソース",
+		"Model": "モデル名",
+		"Photographer": "撮影者",
+		"DateAdded": "追加日",
+		"TermsOfUse": "利用規約",
+		"Classifications": "分類",
+		"About": "詳細",
+		"LeftControls": "左：前の画像",
+		"RightControls": "右：次の画像",
+		"SpacebarControls": "スペースバー：一時停止",
+		"EscapeControls": "Esc：停止",
+		"VisitUsOnReddit": "Redditでお会いしましょう！",
+		"Next": "次",
+		"TakeABreak": "休憩する",
+		"ItsTimeForABreak": "そろそろ休憩の時間です。タイマーが0になるとセッションを再開します。",
+		"NoMoreImages": "該当画像はもうありません。ごめんなさい！",
+		"Close": "閉じる",
+		"ClassComplete": "セッションを終える",
+		"NiceWork": "セッション終了です。お疲れさまでした！",
+		"MaybeTakeABreak": "ちょっと休憩をして<a href='https://www.reddit.com/r/sketchdaily'>レディット</a>のみんなとお話をしよう！"
+	},
+	"Timers": {
+		"seconds": "{{total}} 秒",
+		"minutes": "{{total}} 分",
+		"Class mode": "セッションモード",
+		"No timers": "タイマーを使用しない",
+		"30 minutes": "30分",
+		"1 hour": "1時間",
+		"2 hours": "2時間",
+		"3 hours": "3時間",
+		"6 hours": "6時間"
+	}
+}

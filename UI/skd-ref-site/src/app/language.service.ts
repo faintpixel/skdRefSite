@@ -9,10 +9,13 @@ export class LanguageService {
 
   public languages: Array<any> = [
     { code: 'en', name: 'English' },
+    { code: 'cs', name: 'Česky' },
     { code: 'de', name: 'Deutsch' },
     { code: 'es', name: 'Español' },
     { code: 'iw', name: 'עברית' },
+    { code: 'ja', name: '日本語' },
     { code: 'ko', name: '한국말' },
+    { code: 'hu', name: 'Magyar' },
     { code: 'nl', name: 'Nederlands' },
     { code: 'nn', name: 'Norsk' },
     { code: 'po', name: 'Polski' },
@@ -20,6 +23,7 @@ export class LanguageService {
     { code: 'pt', name: 'Português' },
     { code: 'ru', name: 'Русский' },
     { code: 'sv', name: 'Svenska' },
+    { code: 'th', name: 'Thai' },
     { code: 'tr', name: 'Türkçe' },
     { code: 'zh', name: '简体中文' }
   ];

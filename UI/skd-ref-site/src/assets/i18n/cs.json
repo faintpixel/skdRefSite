@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Ahoj!",
+		"Welcome": "Vítej na SketchDaily promítátku předloh.",
+		"LookingForSomethingElseToDraw": "Hledáš něco jiného na kreslení?",
+		"JoinTheFun": "Přidej se!"
+	},
+	"FullBody": {
+		"FullBody": "Celé tělo",
+		"Clothing": "Oblečení",
+		"Clothed": "Oblečen",
+		"Nude": "Akt",
+		"IncludeNSFWImages": "Včetně NSFW obrázků",
+		"Pose": "Póza",
+		"Action": "Akční",
+		"Stationary": "Klidná",
+		"All": "Vše"
+	},
+	"BodyPart": {
+		"BodyPart": "Část těla",
+		"Hand": "Ruce",
+		"Foot": "Chodidla",
+		"Head": "Hlavy",
+		"All": "Vše"
+	},
+	"Animal": {
+		"Animal": "Zvířata",
+		"Species": "Druh",
+		"Bird": "Pták",
+		"Fish": "Ryba",
+		"ReptileOrAmphibian": "Ještěrka nebo obojživelník",
+		"Category": "Kategorie",
+		"Living": "Žijící",
+		"SkeletonOrBones": "Kostra nebo kosti",
+		"Bug": "Brouk",
+		"Mammal": "Savec",
+		"All": "Vše"
+	},
+	"Structure": {
+		"Structure": "Stavby",
+		"House": "Domy",
+		"Building": "Stavby",
+		"Other": "Ostatní",
+		"All": "Vše"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetace",
+		"Flowers": "Květiny",
+		"Plants": "Rostliny",
+		"PhotoType": "Typ fotky",
+		"Closeup": "Detail",
+		"Full": "Celek",
+		"All": "Vše"
+	},
+	"Filters": {
+		"All": "Vše",
+		"Type": "Typ",
+		"Gender": "Pohlaví",
+		"Male": "Muž",
+		"Female": "Žena",
+		"View": "Pohled",
+		"Front": "Zepředu",
+		"Side": "Boční",
+		"Back": "Zezadu",
+		"AboveOrBelow": "Nadhled nebo podhled",
+		"ClassMode": "Mód lekce",
+		"Class": "Lekce",
+		"Minutes": "min",
+		"Seconds": "s",
+		"Hour": "h",
+		"Hours": "h",
+		"NoTimers": "Bez časovače",
+		"OnlyMostRecentImages": "Pouze nejnovější obrázky",
+		"NumberOfImages": "Počet obrázků",
+		"Start": "Start",
+		"Time": "Čas",
+		"Break": "Přestávka",
+		"NSFW": "NSFW",
+		"true": "Ano",
+		"false": "Ne"
+	},
+	"Header": {
+		"Title": "r/SketchDaily Reference",
+		"AddImages": "Přidat obrázky",
+		"ManageImages": "Spravovat obrázky",
+		"YourImages": "Tvoje obrázky",
+		"News": "Novinky",
+		"Logs": "Logy",
+		"LogIn": "Přihlásit",
+		"LogOut": "Odhlásit"
+	},
+	"News": {
+		"WhatsNew": "Co je nového",
+		"Announcement": "Oznámení"
+	},
+	"ImageViewer": {
+		"Timer": "Časovač",
+		"Paused": "Pozastaveno",
+		"ImageInfo": "Informace o obrázku",
+		"Source": "Zdroj",
+		"Model": "Model(ka)",
+		"Photographer": "Fotograf(ka)",
+		"DateAdded": "Datum přidání",
+		"TermsOfUse": "Podmínky použití",
+		"Classifications": "Klasifikace",
+		"About": "Nápověda",
+		"LeftControls": "Vlevo - Předchozí obrázek",
+		"RightControls": "Vpravo - Následující obrázek",
+		"SpacebarControls": "Mezerník - Přestávka",
+		"EscapeControls": "Escape - Konec promítání",
+		"VisitUsOnReddit": "Navštiv nás na Redditu!",
+		"Next": "Další",
+		"TakeABreak": "Je čas na přestávku!",
+		"ItsTimeForABreak": "Je čas na přestávku! Lekce bude pokračovat po vypršení odpočtu.",
+		"NoMoreImages": "Žádné další obrázky nesplňují vybrané filtry. Omlouváme se!",
+		"Close": "Zavřít",
+		"ClassComplete": "Lekce dokončena",
+		"NiceWork": "Dobrá práce, dokončil(a) jsi lekci!",
+		"MaybeTakeABreak": "Možná si zkus vzít krátkou přestávku a mrknout se, jak si vedou ostatní na <a href='https://www.reddit.com/r/sketchdaily'>subredditu!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} s",
+		"minutes": "{{total}} min",
+		"Class mode": "Mód lekce",
+		"No timers": "Bez časovače",
+		"30 minutes": "30 minut",
+		"1 hour": "1 hodina",
+		"2 hours": "2 hodiny",
+		"3 hours": "3 hodiny",
+		"6 hours": "6 hodin"
+	}
+}

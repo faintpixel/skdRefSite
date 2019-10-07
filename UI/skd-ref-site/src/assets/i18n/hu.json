@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"LookingForSomethingElseToDraw": "Valami mást szeretnél rajzolni?",
+		"Hello": "Helló!",
+		"Welcome": "Üdv a Napi-Vázlat referencia alkalmazásban. ",
+		"JoinTheFun": "Csatlakozz a szórakozáshoz!"
+	},
+	"FullBody": {
+		"FullBody": "Teljes alak",
+		"Clothing": "Ruházat",
+		"Nude": "Ruha nélkül",
+		"Clothed": "Ruhával",
+		"Pose": "Póz",
+		"IncludeNSFWImages": "Felnőtt tartalom",
+		"All": "Mindegyik",
+		"Action": "Dinamikus",
+		"Stationary": "Mozdulatlan"
+	},
+	"BodyPart": {
+		"BodyPart": "Testrészek",
+		"Hand": "Kezek",
+		"Foot": "Lábfej",
+		"Head": "Fejek",
+		"All": "Mindegyik"
+	},
+	"Animal": {
+		"Animal": "Állatok",
+		"Species": "Fajok",
+		"Bird": "Madár",
+		"Fish": "Hal",
+		"ReptileOrAmphibian": "Hüllő vagy Kétéltű",
+		"Category": "Kategória",
+		"Living": "Élő",
+		"SkeletonOrBones": "Csontváz vagy csontok",
+		"Bug": "Rovar",
+		"Mammal": "Emlős",
+		"All": "Mindegyik"
+	},
+	"Structure": {
+		"Structure": "Szerkezetek",
+		"House": "Házak",
+		"Building": "Épületek",
+		"Other": "Más",
+		"All": "Mindegyik"
+	},
+	"Vegetation": {
+		"Vegetation": "Növényzet",
+		"Flowers": "Virágok",
+		"Plants": "Növények",
+		"PhotoType": "Fotó típus",
+		"Closeup": "Közeli kép",
+		"Full": "Teljes alakos",
+		"All": "Mindegyik"
+	},
+	"Filters": {
+		"All": "Mindegyik",
+		"Type": "Típus",
+		"Gender": "Nem",
+		"Male": "Férfi",
+		"Female": "Nő",
+		"View": "Nézet",
+		"Front": "Szemből",
+		"Side": "Profil",
+		"Back": "Hátulról",
+		"AboveOrBelow": "Felülről vagy Alulról",
+		"Minutes": "perc",
+		"Seconds": "másodperc",
+		"Hour": "óra",
+		"Hours": "órák",
+		"NoTimers": "időkeret nélkül",
+		"OnlyMostRecentImages": "Csak a legfrissebb képekkel",
+		"NumberOfImages": "Képek száma",
+		"Start": "Kezdés",
+		"Time": "Idő",
+		"Break": "Szünet",
+		"NSFW": "Felnőtt tartalom",
+		"true": "Igaz",
+		"false": "Hamis",
+		"ClassMode": "Óra mód",
+		"Class": "Óra"
+	},
+	"Header": {
+		"Title": "r/NapiVázlat Referenciák",
+		"AddImages": "Képek hozzáadása",
+		"ManageImages": "Képek rendezése",
+		"YourImages": "Saját képek",
+		"News": "Hírek",
+		"Logs": "Bejelentkezések",
+		"LogIn": "Bejelentkezés",
+		"LogOut": "Kijelentkezés"
+	},
+	"News": {
+		"WhatsNew": "Újdonságok",
+		"Announcement": "Hirdetmények"
+	},
+	"ImageViewer": {
+		"Timer": "Időzítő",
+		"Paused": "Megállítva",
+		"ImageInfo": "Információk",
+		"Source": "Forrás",
+		"Model": "Model",
+		"Photographer": "Fényképész",
+		"DateAdded": "Dátum",
+		"TermsOfUse": "Felhasználási feltételek",
+		"Classifications": "Besorolás",
+		"About": "Rólunk",
+		"LeftControls": "Balra - Előző kép",
+		"RightControls": "Jobbra - Következő kép",
+		"SpacebarControls": "Szóköz - Megállítás",
+		"EscapeControls": "ESC - Kilépés",
+		"Next": "Következő",
+		"TakeABreak": "Tarts szünetet!",
+		"ItsTimeForABreak": "Ideje szünetet tartani. Az órád folytatódik, amint a visszaszámlálás eléri a nullát. ",
+		"NoMoreImages": "Nincs több a keresésnek megfelelő képünk. Sajnáljuk!",
+		"Close": "Bezár",
+		"ClassComplete": "Óra teljesítve",
+		"NiceWork": "Szép munka, teljesítetted az órát!",
+		"MaybeTakeABreak": "Talán tarts egy kis szünetet, és nézd meg mások mit alkottak <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>",
+		"VisitUsOnReddit": "Nézz be hozzánk Redditen!"
+	},
+	"Timers": {
+		"seconds": "{{total}} másodperc",
+		"minutes": "{{total}} perc",
+		"Class mode": "Óra mód",
+		"No timers": "Visszaszámlálás nélkül",
+		"30 minutes": "30 perc",
+		"1 hour": "1 óra",
+		"2 hours": "2 óra",
+		"3 hours": "3 óra",
+		"6 hours": "6 óra"
+	}
+}
