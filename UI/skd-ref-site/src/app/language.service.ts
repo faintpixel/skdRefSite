@@ -20,6 +20,7 @@ export class LanguageService {
     { code: 'ja', name: '日本語' },
     { code: 'ko', name: '한국말' },
     { code: 'hu', name: 'Magyar' },
+    { code: 'mk', name: 'Македонски' },
     { code: 'nl', name: 'Nederlands' },
     { code: 'nn', name: 'Norsk' },
     { code: 'po', name: 'Polski' },

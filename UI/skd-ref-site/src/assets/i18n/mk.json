@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Здраво!",
+		"Welcome": "Добредојдовте на галеријата за идеи на SketchDaily.",
+		"LookingForSomethingElseToDraw": "Сакате да цртате нешто друго?",
+		"JoinTheFun": "Приклучете се на забавата!"
+	},
+	"FullBody": {
+		"FullBody": "Цело тело",
+		"Clothing": "Облека",
+		"Clothed": "Облечен/а",
+		"Nude": "Гол/а",
+		"IncludeNSFWImages": "Покажувај слики кои не се безбедни за работа",
+		"Pose": "Поза",
+		"Action": "Акција",
+		"Stationary": "Неподвижна",
+		"All": "Сите"
+	},
+	"BodyPart": {
+		"BodyPart": "Дел од телото",
+		"Hand": "Раце",
+		"Foot": "Нозе",
+		"Head": "Глава",
+		"All": "Сите"
+	},
+	"Animal": {
+		"Animal": "Животно",
+		"Species": "Вид",
+		"Bird": "Птица",
+		"Fish": "Риба",
+		"ReptileOrAmphibian": "Рептил ",
+		"Category": "Категорија",
+		"Living": "Живи",
+		"SkeletonOrBones": "Скелет или коски",
+		"Bug": "Инсект",
+		"Mammal": "Цицач",
+		"All": "Сите"
+	},
+	"Structure": {
+		"Structure": "Структура",
+		"House": "Куќа",
+		"Building": "Зграда",
+		"Other": "Други",
+		"All": "Сите"
+	},
+	"Vegetation": {
+		"Vegetation": "Вегетација",
+		"Flowers": "Цветови",
+		"Plants": "Растенија",
+		"PhotoType": "Вид на фотографија",
+		"Closeup": "Приближен кадар",
+		"Full": "Целосна слика",
+		"All": "Сите"
+	},
+	"Filters": {
+		"All": "Сите",
+		"Type": "Вид",
+		"Gender": "Пол",
+		"Male": "Машки",
+		"Female": "Женски",
+		"View": "Поглед",
+		"Front": "Напред",
+		"Side": "Страничен",
+		"Back": "Заден",
+		"AboveOrBelow": "Од горе или од долу",
+		"ClassMode": "Училница",
+		"Class": "Училишен час",
+		"Minutes": "минути",
+		"Seconds": "секунди",
+		"Hour": "час",
+		"Hours": "часови",
+		"NoTimers": "Без тајмер",
+		"OnlyMostRecentImages": "Користи само неодамнешни слики",
+		"NumberOfImages": "Број на слики",
+		"Start": "Започни",
+		"Time": "Време",
+		"Break": "Пауза",
+		"NSFW": "Не е безбедно за работа",
+		"true": "Точно",
+		"false": "Неточно"
+	},
+	"Header": {
+		"Title": "r/SketchDaily слики",
+		"AddImages": "Додади слики",
+		"ManageImages": "Управувај со сликите",
+		"YourImages": "Твоите слики",
+		"News": "Новости",
+		"Logs": "Лоѓирања",
+		"LogIn": "Логирај се",
+		"LogOut": "Одлогирај се"
+	},
+	"News": {
+		"WhatsNew": "Што е ново ",
+		"Announcement": "Објавување"
+	},
+	"ImageViewer": {
+		"Timer": "Тајмер",
+		"Paused": "Паузирано",
+		"ImageInfo": "Информации за сликата",
+		"Source": "Извор",
+		"Model": "Модел",
+		"Photographer": "Фотографер",
+		"DateAdded": "Дата на која е додадено",
+		"TermsOfUse": "Услови на употреба",
+		"Classifications": "Класификации",
+		"About": "За",
+		"LeftControls": "Лево - претходна слика",
+		"RightControls": "Десно - следна слика",
+		"SpacebarControls": "Спејсбар - паузирај",
+		"EscapeControls": "Ескепј - стопирај",
+		"VisitUsOnReddit": "Посетете не на Реддит!",
+		"Next": "Следно",
+		"TakeABreak": "Направи пауза!",
+		"ItsTimeForABreak": "Време е за пауза. Часот ке продолжи кога тајмерот ке стигне до 0.",
+		"NoMoreImages": "Нема слики кои се согласуваат со вашите барања. Извинете!",
+		"Close": "Блиску",
+		"ClassComplete": "Часот е завршен",
+		"NiceWork": "Добро сторено, го заврши часот!",
+		"MaybeTakeABreak": "Направи мала пауза и види што луѓето прават на <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} секунди",
+		"minutes": "{{total}} минути",
+		"Class mode": "Училница",
+		"No timers": "Без тајмер",
+		"30 minutes": "30 минути",
+		"1 hour": "еден час",
+		"2 hours": "2 часа",
+		"3 hours": "3 часа",
+		"6 hours": "6 часа"
+	}
+}
