@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "سلام ",
+		"Welcome": "خوش اومدیم به مرجع اسکچ روزانه ",
+		"LookingForSomethingElseToDraw": "دنبال چیزی واسه طراحی میگردی؟ ",
+		"JoinTheFun": "ازش لذت ببر "
+	},
+	"FullBody": {
+		"FullBody": "بدن کامل",
+		"Clothing": "لباس",
+		"Clothed": "پوشیده ",
+		"Nude": "برهنه",
+		"IncludeNSFWImages": "شامل تصاویر مناسب بزرگسالان ",
+		"Pose": "موقعیت ",
+		"Action": "اکشن",
+		"Stationary": "ثابت",
+		"All": "همه"
+	},
+	"BodyPart": {
+		"BodyPart": "اعضای بدن ",
+		"Hand": "دست ",
+		"Foot": "پا",
+		"Head": "سر ",
+		"All": "همه"
+	},
+	"Animal": {
+		"Animal": "حیوانات ",
+		"Species": "گونه ها",
+		"Bird": "پرنده",
+		"Fish": "ماهی ",
+		"ReptileOrAmphibian": "خزندگان یا دوزیستان ",
+		"Category": "دسته بندی ",
+		"Living": "زنده",
+		"SkeletonOrBones": "اسکلت یا استخوان ",
+		"Bug": "حشره ",
+		"Mammal": "پستاندار",
+		"All": "همه"
+	},
+	"Structure": {
+		"Structure": "سازه",
+		"House": "خانه",
+		"Building": "ساختمان ",
+		"Other": "سایر",
+		"All": "همه"
+	},
+	"Vegetation": {
+		"Vegetation": "گیاهان",
+		"Flowers": "گل ها",
+		"Plants": "گیاهان ",
+		"PhotoType": "نوع عکس ",
+		"Closeup": "نزدیک ",
+		"Full": "کامل",
+		"All": "همه"
+	},
+	"Filters": {
+		"All": "همه",
+		"Type": "نوع",
+		"Gender": "جنسیت ",
+		"Male": "مرد",
+		"Female": "زن",
+		"View": "زاویه دید",
+		"Front": "روبرو",
+		"Side": "کنار",
+		"Back": "پشت",
+		"AboveOrBelow": "بالا یا پایین ",
+		"ClassMode": "حالت کلاس ",
+		"Class": "کلاس",
+		"Minutes": "دقیقه",
+		"Seconds": "ثانیه ",
+		"Hour": "ساعت",
+		"Hours": "ساعت ها",
+		"NoTimers": "بدون زمان سنج ",
+		"OnlyMostRecentImages": "فقط تصاویر اخیرا زیاد استفاده شده ",
+		"NumberOfImages": "تعداد تصاویر ",
+		"Start": "شروع ",
+		"Time": "زمان",
+		"Break": "استراحت ",
+		"NSFW": "محتوای مناسب بزرگسالان ",
+		"true": "صحیح",
+		"false": "غلط"
+	},
+	"Header": {
+		"Title": "/SketchDaily References",
+		"AddImages": "افزودن تصاویر ",
+		"ManageImages": "مدیریت تصاویر ",
+		"YourImages": "تصاویر شما ",
+		"News": "اخبار ",
+		"Logs": "Logs",
+		"LogIn": "ورود",
+		"LogOut": "خروج"
+	},
+	"News": {
+		"WhatsNew": "قابلیت های جدید ",
+		"Announcement": "اعلامیه"
+	},
+	"ImageViewer": {
+		"Timer": "زمان سنج",
+		"Paused": "متوقف",
+		"ImageInfo": "اطلاعات تصویر ",
+		"Source": "منبع",
+		"Model": "مدل",
+		"Photographer": "عکاس",
+		"DateAdded": "تاریخ افزودن ",
+		"TermsOfUse": "شرایط استفاده ",
+		"Classifications": "رده بندی",
+		"About": "درباره",
+		"LeftControls": "چپ-تصویر قبلی ",
+		"RightControls": "راست - تصویر بعدی ",
+		"SpacebarControls": "Space-وقفه",
+		"EscapeControls": "Escape-توقف",
+		"VisitUsOnReddit": "مارا در Reddit مشاهده کنید ",
+		"Next": "بعدی",
+		"TakeABreak": "استراحت کنید ",
+		"ItsTimeForABreak": "زمان استراحته. کلاس شما زمانی که عدد زمان سنج به صفر برسد ادامه پیدا خواهد کرد ",
+		"NoMoreImages": "عکس های بیشتری بر اساس فیلتر های شما موجود نیست. متأسفم! ",
+		"Close": "بستن",
+		"ClassComplete": "کلاس کامل شد ",
+		"NiceWork": "آفرین، تو کلاس رو به پایان رسوندی! ",
+		"MaybeTakeABreak": "شاید بهتر باشه یکم استراحت کنید و ببینید که دیگران چه کارهایی انجام دادن در لینک زیر <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "ثانیه ها",
+		"minutes": "دقایق",
+		"Class mode": "حالت کلاس ",
+		"No timers": "بدون زمان سنج ",
+		"30 minutes": "سی دقیقه ",
+		"1 hour": "یک ساعت ",
+		"2 hours": "دوساعت ",
+		"3 hours": "سه ساعت",
+		"6 hours": "شش ساعت "
+	}
+}

@@ -12,6 +12,7 @@ export class LanguageService {
     { code: 'cs', name: 'Česky' },
     { code: 'de', name: 'Deutsch' },
     { code: 'es', name: 'Español' },
+    { code: 'fa', name: 'فارسی' },
     { code: 'iw', name: 'עברית' },
     { code: 'ja', name: '日本語' },
     { code: 'ko', name: '한국말' },
