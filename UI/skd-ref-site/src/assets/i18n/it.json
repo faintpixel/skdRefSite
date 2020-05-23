@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Ciao!",
+		"Welcome": "Benvenuto alla macchinetta di riferimento SketchDaily.",
+		"LookingForSomethingElseToDraw": "Cerchi qualcos'altro da disegnare?",
+		"JoinTheFun": "Unisciti al divertimento!"
+	},
+	"FullBody": {
+		"FullBody": "Full body",
+		"Clothing": "Vestiti",
+		"Clothed": "Con vestiti",
+		"Nude": "Foto di nudo",
+		"IncludeNSFWImages": "Includere immagini NSFW",
+		"Pose": "Posa",
+		"Action": "Azione",
+		"All": "Tutto",
+		"Stationary": "Stazionario"
+	},
+	"BodyPart": {
+		"BodyPart": "Parte del corpo",
+		"Hand": "Mani",
+		"Foot": "Piedi",
+		"Head": "Teste",
+		"All": "Tutto"
+	},
+	"Animal": {
+		"Animal": "Animali",
+		"Species": "Specie",
+		"Bird": "Uccello",
+		"Fish": "Pesce",
+		"ReptileOrAmphibian": "Rettile o anfibio",
+		"Category": "Categoria",
+		"Living": "Vivi",
+		"SkeletonOrBones": "Scheletro o ossa",
+		"Bug": "Insetto",
+		"Mammal": "Mammifero",
+		"All": "Tutto"
+	},
+	"Structure": {
+		"Structure": "Struttura",
+		"House": "Casa",
+		"Building": "Edificio",
+		"Other": "Altro",
+		"All": "Tutto"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetazione",
+		"Flowers": "Fiori",
+		"Plants": "Piante",
+		"PhotoType": "Tipo di foto",
+		"Closeup": "Ravvicinato",
+		"Full": "Full",
+		"All": "Tutto"
+	},
+	"Filters": {
+		"All": "Tutto",
+		"Type": "Tipo",
+		"Gender": "Genere",
+		"Male": "Maschio",
+		"Female": "Femmina",
+		"View": "Vista",
+		"Front": "Fronte",
+		"Side": "Lato",
+		"Back": "Retro",
+		"AboveOrBelow": "Sopra o Sotto",
+		"ClassMode": "Modalità classe",
+		"Class": "Classe",
+		"Minutes": "minuti",
+		"Seconds": "secondi",
+		"Hour": "ora",
+		"Hours": "ore",
+		"NoTimers": "Nessun timer",
+		"OnlyMostRecentImages": "Usa solo le immagini più recenti",
+		"NumberOfImages": "Numero di immagini",
+		"Start": "Inizia",
+		"Time": "Tempo",
+		"Break": "Break",
+		"NSFW": "NSFW",
+		"true": "Vero",
+		"false": "Falso"
+	},
+	"Header": {
+		"Title": "Riferimenti di r/SketchDaily",
+		"AddImages": "Aggiungi immagini",
+		"ManageImages": "Gestisci immagini",
+		"YourImages": "Le tue immagini",
+		"News": "Notizie",
+		"Logs": "Logs",
+		"LogIn": "Accedi",
+		"LogOut": "Esci"
+	},
+	"News": {
+		"WhatsNew": "Novità",
+		"Announcement": "Annuncio"
+	},
+	"ImageViewer": {
+		"Timer": "Timer",
+		"Paused": "In pausa",
+		"ImageInfo": "Info immagine",
+		"Source": "Fonte",
+		"Model": "Modello/a",
+		"Photographer": "Fotografo",
+		"DateAdded": "Data di Aggiunta",
+		"TermsOfUse": "Termini d'Utilizzo",
+		"Classifications": "Classificazioni",
+		"About": "About",
+		"LeftControls": "Sinistra - Immagine precedente",
+		"RightControls": "Destra - Prossima immagine",
+		"SpacebarControls": "Barra spaziatrice - Pausa",
+		"EscapeControls": "Esc - Stop",
+		"VisitUsOnReddit": "Visitaci su Reddit!",
+		"Next": "Prossima",
+		"TakeABreak": "Fai una pausa!",
+		"ItsTimeForABreak": "È il momento di fare una pausa. La tua classe riprenderà quando il timer arriverà a 0.",
+		"NoMoreImages": "Non ci sono altre immagini che corrispondano ai tuoi criteri. Scusa!",
+		"Close": "Chiudi",
+		"ClassComplete": "Classe completata",
+		"NiceWork": "Ben fatto, hai terminato la classe!",
+		"MaybeTakeABreak": "Magari fai una pausa e guarda cos'è successo nel frattempo sul <a href='https://www.reddit.com/r/sketchdaily'>subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "secondi",
+		"minutes": "minuti",
+		"Class mode": "Modalità classe",
+		"No timers": "Nessun timer",
+		"30 minutes": "30 minuti",
+		"1 hour": "1 ora",
+		"2 hours": "2 ore",
+		"3 hours": "3 ore",
+		"6 hours": "6 ore"
+	}
+}
