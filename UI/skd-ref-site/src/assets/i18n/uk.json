@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Доброго дня! ",
+		"Welcome": "Ласкаво просимо до SketchDaily - базу зображень для малювання за зразком! ",
+		"LookingForSomethingElseToDraw": "Шукаєте, що б намалювати?",
+		"JoinTheFun": "Долучайтеся до забави! "
+	},
+	"FullBody": {
+		"FullBody": "Тіло повністю ",
+		"Clothing": "Одяг",
+		"Clothed": "В одязі",
+		"Nude": "Оголені",
+		"IncludeNSFWImages": "Включити нецензурні зображення",
+		"Pose": "Поза",
+		"Action": "Дія",
+		"Stationary": "Стаціонарна",
+		"All": "Всі"
+	},
+	"BodyPart": {
+		"BodyPart": "Частина тіла",
+		"Hand": "Руки",
+		"Foot": "Ноги",
+		"Head": "Голови",
+		"All": "Всі"
+	},
+	"Animal": {
+		"Animal": "Тварини",
+		"Species": "Види",
+		"Bird": "Птахи",
+		"Fish": "Риба",
+		"ReptileOrAmphibian": "Рептилії чи амфібії",
+		"Category": "Категорія ",
+		"Living": "Живе",
+		"SkeletonOrBones": "Скелет чи кістки",
+		"Bug": "Комаха",
+		"Mammal": "Ссавець",
+		"All": "Всі"
+	},
+	"Structure": {
+		"Structure": "Будівля",
+		"House": "Дім",
+		"Building": "Будинок",
+		"Other": "Інше ",
+		"All": "Всі"
+	},
+	"Vegetation": {
+		"Vegetation": "Овочі",
+		"Flowers": "Квіти",
+		"Plants": "Рослини ",
+		"PhotoType": "Тип фото",
+		"Closeup": "Крупний план",
+		"Full": "Повне",
+		"All": "Всі"
+	},
+	"Filters": {
+		"All": "Всі",
+		"Type": "Тип",
+		"Gender": "Стать",
+		"Male": "Чоловіча",
+		"Female": "Жіноча",
+		"View": "Вид",
+		"Front": "Сперед",
+		"Side": "Збоку ",
+		"Back": "Ззаду",
+		"AboveOrBelow": "Під чи над",
+		"ClassMode": "Режим заняття",
+		"Class": "Заняття",
+		"Minutes": "хвилини",
+		"Seconds": "секунди",
+		"Hour": "година",
+		"Hours": "години",
+		"NoTimers": "без таймерів",
+		"OnlyMostRecentImages": "Використовувати лише найновіші зображення",
+		"NumberOfImages": "Кількість зображень",
+		"Start": "Початок ",
+		"Time": "Час",
+		"Break": "Перерва ",
+		"NSFW": "Нецензурні зображення",
+		"true": "Увімкнено",
+		"false": "Вимкнено"
+	},
+	"Header": {
+		"Title": "r/SketchDaily зразки",
+		"AddImages": "Додати зображення",
+		"ManageImages": "Керувати зображеннями",
+		"YourImages": "Мої зображення ",
+		"News": "Новини ",
+		"Logs": "Історія",
+		"LogIn": "Вхід",
+		"LogOut": "Вихід"
+	},
+	"News": {
+		"WhatsNew": "Що нового",
+		"Announcement": "Оголошення"
+	},
+	"ImageViewer": {
+		"Timer": "Таймер",
+		"Paused": "Поставлено на паузу ",
+		"ImageInfo": "Інформація про зображення",
+		"Source": "Джерело ",
+		"Model": "Модель",
+		"Photographer": "Фотограф",
+		"DateAdded": "Дата додання",
+		"TermsOfUse": "Правила використання",
+		"Classifications": "Визначення",
+		"About": "Про сайт",
+		"LeftControls": "Стілка вліво - попереднє зображення",
+		"RightControls": "Стрілка вправо - наступне зображення",
+		"SpacebarControls": "Пробіл - пауза ",
+		"EscapeControls": "ESC - стоп. ",
+		"VisitUsOnReddit": "Завітайте до нас на Reddit!",
+		"Next": "Наступне",
+		"TakeABreak": "Зробіть перерву! ",
+		"ItsTimeForABreak": "Час перерви. Заняття почнеться знову, коли таймер досягне 0. ",
+		"NoMoreImages": "Більше нема зображень, що підходять від ваші фільтри, вибачте!",
+		"Close": "Закрити",
+		"ClassComplete": "Заняття завершено. ",
+		"NiceWork": "Гарна робота, ви завершили заняття!",
+		"MaybeTakeABreak": "Можливо, зробите невеличку перерву та подивитеся, що люди роблять в нашому <a href='https://www.reddit.com/r/sketchdaily'>сабреддіті?</a>"
+	},
+	"Timers": {
+		"seconds": "всього секунд",
+		"minutes": "всього хвилин",
+		"Class mode": "Режим заняття",
+		"No timers": "Без таймерів",
+		"30 minutes": "30 хвилин",
+		"1 hour": "1 година",
+		"2 hours": "2 години",
+		"3 hours": "3 години",
+		"6 hours": "6 годин"
+	}
+}

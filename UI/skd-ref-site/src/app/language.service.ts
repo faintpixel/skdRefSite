@@ -28,6 +28,7 @@ export class LanguageService {
     { code: 'sv', name: 'Svenska' },
     { code: 'th', name: 'Thai' },
     { code: 'tr', name: 'Türkçe' },
+    { code: 'uk', name: 'Українська' },
     { code: 'vi', name: 'Tiếng Việt' },
     { code: 'zh', name: '简体中文' }
   ];
