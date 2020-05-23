@@ -1,8 +1,8 @@
 {
 	"Welcome": {
 		"Hello": "Merhaba!",
-		"Welcome": "SketchDaily referans doohickisine hoşgeldiniz.",
-		"LookingForSomethingElseToDraw": "Çizmek için birşey mi arıyorsunuz?",
+		"Welcome": "SketchDaily referans zımbırtısına hoşgeldiniz.",
+		"LookingForSomethingElseToDraw": "Çizmek için birş ey mi arıyorsunuz?",
 		"JoinTheFun": "Eğlenceye katılın!"
 	},
 	"FullBody": {
@@ -17,7 +17,7 @@
 		"Stationary": "Hareketsiz"
 	},
 	"BodyPart": {
-		"BodyPart": "Vücudun parçası",
+		"BodyPart": "Vücudun Parçası",
 		"Hand": "Eller",
 		"Foot": "Ayak",
 		"Head": "Kafalar",
@@ -27,12 +27,12 @@
 		"Animal": "Hayvanlar",
 		"Bird": "Kuş",
 		"Fish": "Balık",
-		"ReptileOrAmphibian": "Sürüngenler ve Amfibiler",
+		"ReptileOrAmphibian": "Sürüngen veya amfibi",
 		"Category": "Kategori",
 		"Living": "Canlı",
 		"SkeletonOrBones": "İskelet veya kemik",
 		"Bug": "Böcek",
-		"Mammal": "Memmeli hayvanlar",
+		"Mammal": "Memeli hayvanlar",
 		"All": "Hepsi",
 		"Species": "Hayvan türleri"
 	},
@@ -45,7 +45,7 @@
 	},
 	"Vegetation": {
 		"Vegetation": "Bitki Örtüsü",
-		"Flowers": "Çiçekler",
+		"Flowers": "Çiçek",
 		"Plants": "Bitkiler",
 		"PhotoType": "Fotoğraf türü",
 		"Closeup": "Yakından",
@@ -56,7 +56,7 @@
 		"All": "Hepsi",
 		"Type": "Tür",
 		"Gender": "Cinsiyet",
-		"Male": "Adam",
+		"Male": "Erkek",
 		"Female": "Kadın",
 		"View": "Görüntü Yönleri",
 		"Front": "Önden",
@@ -70,7 +70,7 @@
 		"Hour": "saat",
 		"Hours": "saat",
 		"NoTimers": "zamansız",
-		"OnlyMostRecentImages": "En yeni resimlseri kullan",
+		"OnlyMostRecentImages": "En yeni resimleri kullan",
 		"NumberOfImages": "Resim sayısı",
 		"Start": "Başla",
 		"Time": "Zaman",
@@ -85,9 +85,9 @@
 		"ManageImages": "Fotoğrafları ayarla",
 		"YourImages": "Benim fotoğraflarım",
 		"News": "Haberler",
-		"Logs": "Oturumlar",
-		"LogIn": "Oturum aç",
-		"LogOut": "Çıkış yap"
+		"Logs": "Logs",
+		"LogIn": "Giriş Yap",
+		"LogOut": "Çıkış Yap"
 	},
 	"News": {
 		"WhatsNew": "Yeni haberler",
@@ -95,28 +95,28 @@
 	},
 	"ImageViewer": {
 		"Paused": "Durduruldu",
-		"ImageInfo": "Fotoğraf hakkında bilgi",
+		"ImageInfo": "Fotoğraf bilgisi",
 		"Model": "Model",
-		"Photographer": "Fotoğrafcı",
+		"Photographer": "Fotoğrafçı",
 		"DateAdded": "Eklenen tarih",
 		"TermsOfUse": "Kulanım Anlaşması",
 		"About": "Hakkında",
-		"LeftControls": "Sol - Bir önceki fotoğraf",
-		"RightControls": "Sağ - Bir sonraki fotoğraf",
+		"LeftControls": "Sol - Önceki fotoğraf",
+		"RightControls": "Sağ - sonraki fotoğraf",
 		"EscapeControls": "Esc - Dur",
 		"VisitUsOnReddit": "Reddit'de bize ziyaret edin!",
-		"Next": "Bir sonraki",
+		"Next": "Sonraki",
 		"TakeABreak": "Ara ver!",
-		"ItsTimeForABreak": "Ara zamanı. Zaman 0'a gelince ders devam edecektir.",
-		"NoMoreImages": "Filtrenize göre resim bulunamadı. Özür dileriz!",
+		"ItsTimeForABreak": "Ara zamanı. Zaman 0'a gelince ders devam edecek.tir.",
+		"NoMoreImages": "Filtrenize göre başka resim bulunamadı. Özür dileriz!",
 		"Close": "Yakın",
 		"ClassComplete": "Ders bitti",
-		"NiceWork": "Aferin, dersi bitirdin!",
+		"NiceWork": "Aferim, dersi bitirdin!",
 		"Timer": "Zamanlama",
 		"Source": "Kaynak",
 		"Classifications": "Sınıflandırma",
 		"SpacebarControls": "Spacebar - Pause",
-		"MaybeTakeABreak": "Maybe take a little break and acheck out...."
+		"MaybeTakeABreak": "Birazcık ara verip insanların orda ne yaptığına bakabilirsin belki <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
 	},
 	"Timers": {
 		"Class mode": "Ders modu",

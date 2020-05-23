@@ -27,6 +27,7 @@ export class LanguageService {
     { code: 'po', name: 'Polski' },
     { code: 'fr', name: 'Français' },
     { code: 'pt', name: 'Português' },
+    { code: 'ro', name: 'Romanian' },
     { code: 'ru', name: 'Русский' },
     { code: 'sv', name: 'Svenska' },
     { code: 'th', name: 'Thai' },

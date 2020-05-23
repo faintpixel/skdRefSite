@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Hei!",
+		"LookingForSomethingElseToDraw": "Cauti ceva amuzant de desenat?",
+		"JoinTheFun": "Alătură-te distracției!",
+		"Welcome": "Bine ai venit la SkethcDayily!"
+	},
+	"FullBody": {
+		"FullBody": "Tot corpul",
+		"Clothing": "Haine",
+		"Clothed": "Îmbrăcat",
+		"Nude": "Gol",
+		"IncludeNSFWImages": "Include imagini NSFW",
+		"Pose": "Poziție",
+		"Action": "Acțiune",
+		"Stationary": "Staționar",
+		"All": "Toate"
+	},
+	"BodyPart": {
+		"BodyPart": "Parte a corpului",
+		"Hand": "Maini",
+		"Foot": "Picior",
+		"Head": "Cap",
+		"All": "Toate"
+	},
+	"Animal": {
+		"Animal": "Animal",
+		"Species": "Specie",
+		"Bird": "Pasăre",
+		"Fish": "Pește",
+		"ReptileOrAmphibian": "Reptilă sau amfibian",
+		"Category": "Categorie",
+		"Living": "În viață",
+		"SkeletonOrBones": "Schelet sau oase",
+		"Bug": "Insectă",
+		"Mammal": "Mamifer",
+		"All": "Toate"
+	},
+	"Structure": {
+		"Structure": "Structura",
+		"House": "Casă",
+		"Building": "Clădire",
+		"Other": "Altele",
+		"All": "Toate"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetație",
+		"Flowers": "Flori",
+		"Plants": "Plante",
+		"PhotoType": "Tip de fotografie",
+		"Closeup": "De aproape",
+		"Full": "Complet",
+		"All": "Toate"
+	},
+	"Filters": {
+		"All": "Toate",
+		"Type": "Tip",
+		"Gender": "Sex",
+		"Male": "Masculin",
+		"Female": "Feminin",
+		"View": "Vedere",
+		"Front": "Față",
+		"Side": "Lateral",
+		"Back": "Spate",
+		"AboveOrBelow": "Deasupra sau dedesupt",
+		"ClassMode": "Modul clasă",
+		"Class": "Clasă",
+		"Minutes": "Minute",
+		"Seconds": "Secunde",
+		"Hour": "Oră",
+		"Hours": "Ore",
+		"NoTimers": "Fără temporizator",
+		"OnlyMostRecentImages": "Folosește doar imaginile recente",
+		"NumberOfImages": "Număr imagini",
+		"Start": "Start",
+		"Time": "Timp",
+		"Break": "Pauză",
+		"NSFW": "NSFW",
+		"true": "Adevărat",
+		"false": "Fals"
+	},
+	"Header": {
+		"Title": "r/SketchDaily References",
+		"AddImages": "Adaugă imagini",
+		"ManageImages": "Administrează imaginile",
+		"YourImages": "Imaginile tale",
+		"News": "Știri",
+		"Logs": "Înregistrări",
+		"LogIn": "Autentificare",
+		"LogOut": "Deconectare"
+	},
+	"News": {
+		"WhatsNew": "Ce este nou",
+		"Announcement": "Anunțuri"
+	},
+	"ImageViewer": {
+		"Timer": "Temporizator",
+		"Paused": "Pauză",
+		"ImageInfo": "Informații imagine",
+		"Source": "Sursă",
+		"Model": "Model",
+		"Photographer": "Fotograf",
+		"DateAdded": "Data adăugată",
+		"TermsOfUse": "Termeni de utilizare",
+		"Classifications": "Clasificări",
+		"About": "Despre",
+		"LeftControls": "Stânga - imaginea anterioară",
+		"RightControls": "Dreapta - imaginea următoare",
+		"SpacebarControls": "Spațiu - pauză",
+		"EscapeControls": "Escape - stop",
+		"VisitUsOnReddit": "Vizitează-ne pe Reddit!",
+		"Next": "Următor",
+		"TakeABreak": "Ia o pauză!",
+		"ItsTimeForABreak": "E timpul pentru o pauză! Clasa ta va continua indată ce temporizatorul ajunge la 0",
+		"NoMoreImages": "Nu mai există imagini care să se potrivească cu filtrele tale. Ne pare rău!",
+		"Close": "Inchide",
+		"ClassComplete": "Clasă completă",
+		"NiceWork": "Bună treabă, ai terminat clasa!",
+		"MaybeTakeABreak": "Poate faci o pauză și verificați ce au făcut oamenii pe <a href='https://www.reddit.com/r/sketchdaily'> subreddit! </a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} secunde",
+		"minutes": "{{total}} minute",
+		"Class mode": "Modul clasă",
+		"No timers": "Fără temporizator",
+		"30 minutes": "30 de minute",
+		"1 hour": "o oră",
+		"2 hours": "2 ore",
+		"3 hours": "3 ore",
+		"6 hours": "6 ore"
+	}
+}
