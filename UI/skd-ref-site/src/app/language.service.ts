@@ -14,6 +14,7 @@ export class LanguageService {
     { code: 'de', name: 'Deutsch' },
     { code: 'es', name: 'Español' },
     { code: 'fa', name: 'فارسی' },
+    { code: 'fi', name: 'Suomi' },
     { code: 'id', name: 'Indonesian' },
     { code: 'it', name: 'Italiano' },
     { code: 'iw', name: 'עברית' },

@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Päivää!",
+		"Welcome": "Tervetuloa SketchDaily -refrenssidoohikiin.",
+		"LookingForSomethingElseToDraw": "Etsitkö jotain muuta piirtää?",
+		"JoinTheFun": "Liity hauskan mukaan!"
+	},
+	"FullBody": {
+		"FullBody": "Kokovartalo",
+		"Clothing": "Vaatetus",
+		"Clothed": "Vaatteineen",
+		"Nude": "Alastin",
+		"IncludeNSFWImages": "Sisältää NSFW kuvia",
+		"Pose": "Poseraus",
+		"Action": "Toiminta",
+		"Stationary": "Paikalleen oleva",
+		"All": "Kaikki"
+	},
+	"BodyPart": {
+		"BodyPart": "Ruumiinosa",
+		"Hand": "Kädet",
+		"Foot": "Jalat",
+		"Head": "Päät",
+		"All": "Kaikki"
+	},
+	"Animal": {
+		"Animal": "Eläin",
+		"Species": "Laji",
+		"Bird": "Lintu",
+		"Fish": "Kala",
+		"ReptileOrAmphibian": "Matelija Tai Sammakkoeläin",
+		"Category": "Kategoria",
+		"Living": "Elävä",
+		"SkeletonOrBones": "Luuranko Tai Luusto",
+		"Bug": "Ötökkä",
+		"Mammal": "Nisäkäs",
+		"All": "Kaikki"
+	},
+	"Structure": {
+		"Structure": "Rakenne",
+		"House": "Talo",
+		"Building": "Rakennus",
+		"Other": "Toisenlainen",
+		"All": "Kaikki"
+	},
+	"Vegetation": {
+		"Vegetation": "Kasvillisuus",
+		"Flowers": "Kukat",
+		"Plants": "Kasvit",
+		"PhotoType": "Kuva Tyyppi",
+		"Closeup": "Lähikuva",
+		"Full": "Täysi",
+		"All": "Kaikki"
+	},
+	"Filters": {
+		"All": "Kaikki",
+		"Type": "Tyyppi",
+		"Gender": "Sukupuoli",
+		"Male": "Mies",
+		"Female": "Nainen",
+		"View": "Näkymä",
+		"Front": "Etu",
+		"Side": "Sivu",
+		"Back": "Taka",
+		"AboveOrBelow": "Ylhäältä tai Alhaalta",
+		"ClassMode": "Luokkatila",
+		"Class": "Luokka",
+		"Minutes": "minuutit",
+		"Seconds": "sekunnit",
+		"Hour": "tunti",
+		"Hours": "tunnit",
+		"NoTimers": "Ei ajastinta",
+		"OnlyMostRecentImages": "Käytä vain viimeisin lisättyjä kuvia",
+		"NumberOfImages": "Kuvien määrä",
+		"Start": "Aloita",
+		"Time": "Aika",
+		"Break": "Tauko",
+		"NSFW": "NSFW",
+		"true": "Tosi",
+		"false": "Väärä"
+	},
+	"Header": {
+		"Title": "r/SketchDaily Refrenssit",
+		"AddImages": "Lisää kuvia",
+		"ManageImages": "Hallinnoi kuvia",
+		"YourImages": "Sinun kuvia",
+		"News": "Uutisia",
+		"Logs": "Logit",
+		"LogIn": "Kirjaudu sisään",
+		"LogOut": "Kirjaudu ulos"
+	},
+	"News": {
+		"WhatsNew": "Mitä Uutta",
+		"Announcement": "Ilmoitukset"
+	},
+	"ImageViewer": {
+		"Timer": "Ajastin",
+		"Paused": "Pysäytetty",
+		"ImageInfo": "Kuvan Tiedot",
+		"Source": "Lähde",
+		"Model": "Malli",
+		"Photographer": "Valokuvaaja",
+		"DateAdded": "Päivämäärä lisätty",
+		"TermsOfUse": "Käyttöehdot",
+		"Classifications": "Luokittelu",
+		"About": "Aiheesta",
+		"LeftControls": "Vasen - Edellinen kuva",
+		"RightControls": "Oikea - Seuraava kuva",
+		"SpacebarControls": "Välilyönti - Tauko",
+		"EscapeControls": "Escape - Pysäytä",
+		"VisitUsOnReddit": "Vieraile meitä Reditissä!",
+		"Next": "Seuraava",
+		"TakeABreak": "Ota tauko!",
+		"ItsTimeForABreak": "On tauon aika. Opetus jatkuu kun ajastin saavuttaa 0.",
+		"NoMoreImages": "Ei enään kuvia jotka sopivat suodattimeesi. Anteeksi pahoillamme!",
+		"Close": "Sulje",
+		"ClassComplete": "Opinto suoritettu",
+		"NiceWork": "Hyvää työtä, suoritit opinnon!",
+		"MaybeTakeABreak": "Ehkä ota tauka ja tsekkaa mitä ihmiset tekevät https://www.reddit.com/r/sketchdaily"
+	},
+	"Timers": {
+		"seconds": "{{total}} sekuntia",
+		"minutes": "{{total}} minuuttia",
+		"Class mode": "Opintomuoto",
+		"No timers": "Ei ajastimia",
+		"30 minutes": "30 minuuttia",
+		"1 hour": "1 tunti",
+		"2 hours": "2 tuntia",
+		"3 hours": "3 tuntia",
+		"6 hours": "6 tuntia"
+	}
+}
