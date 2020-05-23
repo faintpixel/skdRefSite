@@ -14,13 +14,14 @@
         </span>
         <br /><br />
         The name you'd like credited with this submission: <input [(ngModel)]="author" type='text' required name='author' /><br />
-        Comments: <input type='text' [(ngModel)]="comments" name='comments' class='form-control' /><br />
+        Comments: <input type='text' [(ngModel)]="comments" name='comments' class='form-control' required /><br />
         <b>Notes:</b>
         <ul>
           <li>You must provide a value for each field below to submit. If you're unsure of something but would like to
             submit a partial translation, please enter the english value.</li>
           <li>Values contained within <ng-container ngNonBindable>{{}}</ng-container>'s are paramters. You can change
             the text around them, but don't change the text inside.</li>
+          <li>Please leave a comment explaining what you're changing and why. This helps when we receive multiple translations for the same language. Why is yours the version we should use?</li>
         </ul>
       </div>
 

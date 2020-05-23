@@ -2,7 +2,7 @@
 	"Welcome": {
 		"Hello": "Bonjour !",
 		"Welcome": "Bienvenue sur le site de références de SketchDaily.",
-		"LookingForSomethingElseToDraw": "Envie de dessiner autre chose ?",
+		"LookingForSomethingElseToDraw": "Envie de dessiner autre choses ?",
 		"JoinTheFun": "Rejoignez-nous !"
 	},
 	"FullBody": {
@@ -20,7 +20,7 @@
 		"BodyPart": "Partie du corps",
 		"Hand": "Mains",
 		"Foot": "Pieds",
-		"Head": "Têtes",
+		"Head": "Visages",
 		"All": "Tous"
 	},
 	"Animal": {
@@ -86,7 +86,7 @@
 		"Logs": "Identifiants",
 		"LogIn": "S'identifier",
 		"LogOut": "Se déconnecter",
-		"YourImages": "Vosimages",
+		"YourImages": "Vos images",
 		"ManageImages": "Gestion des images"
 	},
 	"News": {
