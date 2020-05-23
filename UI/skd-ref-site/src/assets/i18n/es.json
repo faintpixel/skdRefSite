@@ -80,7 +80,7 @@
 		"false": "Falso"
 	},
 	"Header": {
-		"Title": "r/Referencias SketchDaily",
+		"Title": "Referencias de r/SketchDaily",
 		"AddImages": "Añadir imágenes",
 		"News": "Noticias",
 		"Logs": "Registros",
@@ -116,7 +116,7 @@
 		"Close": "Cerrar",
 		"ClassComplete": "Clase completada",
 		"NiceWork": "Buen trabajo, ¡Has terminado la clase!",
-		"MaybeTakeABreak": "Tal vez tómate un descanso y echa un vistazo a lo que ocurre en <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+		"MaybeTakeABreak": "Tal vez tómate un descanso y echa un vistazo a lo que ocurre en <a href='https://www.reddit.com/r/sketchdaily'>nuestro Subreddit!</a>"
 	},
 	"Timers": {
 		"seconds": "{{total}} segundos",
