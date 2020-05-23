@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Hej!",
+		"Welcome": "Velkommen til SketchDaily reference doohickey",
+		"LookingForSomethingElseToDraw": "Leder du efter noget andet at tegne?",
+		"JoinTheFun": "Prøv selv!"
+	},
+	"FullBody": {
+		"FullBody": "Fuld krop",
+		"Clothing": "Tøj",
+		"Clothed": "Påklædt",
+		"Nude": "Nøgen",
+		"IncludeNSFWImages": "Indenholder ucensorerede billeder",
+		"Action": "Dynamisk",
+		"Stationary": "Stationær",
+		"All": "Alle",
+		"Pose": "positur"
+	},
+	"BodyPart": {
+		"BodyPart": "Kropsdel",
+		"Hand": "Hænder",
+		"Foot": "Fødder",
+		"Head": "Hoveder",
+		"All": "Alle"
+	},
+	"Animal": {
+		"Animal": "Dyr",
+		"Species": "Dyreart",
+		"Bird": "Fugl",
+		"Fish": "Fisk",
+		"Category": "Kategori",
+		"Living": "Levende",
+		"SkeletonOrBones": "Skelet eller knogler",
+		"Bug": "Insekt ",
+		"All": "Alle",
+		"Mammal": "Pattedyr",
+		"ReptileOrAmphibian": "Reptil eller Padde"
+	},
+	"Structure": {
+		"Structure": "Struktur",
+		"House": "Hus",
+		"Building": "Bygning",
+		"Other": "Andet",
+		"All": "Alle"
+	},
+	"Vegetation": {
+		"Flowers": "Blomster",
+		"Plants": "Planter",
+		"PhotoType": "Fototype",
+		"Closeup": "Nærbillede",
+		"Vegetation": "Vegetation",
+		"Full": "Fuld",
+		"All": "Alle"
+	},
+	"Filters": {
+		"Gender": "Køn",
+		"Male": "Mand",
+		"Female": "Kvinde",
+		"Side": "Sidefra",
+		"Back": "Bagfra",
+		"Front": "Forfra",
+		"AboveOrBelow": "Over eller under",
+		"Minutes": "minuter",
+		"Seconds": "sekunder",
+		"Hour": "time",
+		"Hours": "timer",
+		"NoTimers": "ingen tidstagning",
+		"OnlyMostRecentImages": "kun brug de nyeste billeder",
+		"NumberOfImages": "Antal billeder",
+		"Start": "Start",
+		"Time": "Tid",
+		"Break": "Pause",
+		"true": "sandt",
+		"false": "falsk",
+		"NSFW": "ucensoreret",
+		"All": "Alle",
+		"Type": "Type",
+		"View": "Synspunkt",
+		"ClassMode": "Klassetilstand",
+		"Class": "Klasse"
+	},
+	"Header": {
+		"Title": "r/SketchDaily referencer",
+		"AddImages": "Tilføj billeder",
+		"YourImages": "Dine billeder",
+		"News": "Nyheder",
+		"LogIn": "Log ind",
+		"LogOut": "Log ud",
+		"ManageImages": "administrer billeder",
+		"Logs": "Logiler"
+	},
+	"Timers": {
+		"6 hours": "6 timer",
+		"3 hours": "3 timer",
+		"2 hours": "2 timer",
+		"1 hour": "1 time",
+		"30 minutes": "30 minutter",
+		"No timers": "Ingen tidstagning",
+		"seconds": "{{total}} sekunder",
+		"minutes": "{{total}} minutter",
+		"Class mode": "Klassetilstand"
+	},
+	"ImageViewer": {
+		"Close": "Luk",
+		"NoMoreImages": "ikke flere billeder passer dine kriterier. Undskyld!",
+		"ItsTimeForABreak": "Tid til at tage en pause. dit studie vil forsætte når timeren rammer 0",
+		"ClassComplete": "Studiet færdiggjort",
+		"Source": "Kilde",
+		"Model": "Model",
+		"Photographer": "Fotograf",
+		"DateAdded": "Dato tilføjet",
+		"Classifications": "klassifikation",
+		"About": "Omkring",
+		"LeftControls": "Vestre - Forige billed",
+		"RightControls": "Højre - Næste billede",
+		"SpacebarControls": "Mellemrum - Pause",
+		"Next": "Næste",
+		"TakeABreak": "Tag en Pause!",
+		"Timer": "Timer",
+		"Paused": "På pause",
+		"ImageInfo": "Billede info",
+		"EscapeControls": "Escape - Stop",
+		"VisitUsOnReddit": "Besøg os på Reddit!",
+		"TermsOfUse": "betingelser for brug",
+		"NiceWork": "Godt arbejde, du har færdiggjort studiet!",
+		"MaybeTakeABreak": "Tag eventuelt end pause og se hvad folk laver på <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+	},
+	"News": {
+		"WhatsNew": "Hvad er nyt?",
+		"Announcement": "Meddelelse"
+	}
+}

@@ -10,6 +10,7 @@ export class LanguageService {
   public languages: Array<any> = [
     { code: 'en', name: 'English' },
     { code: 'cs', name: 'Česky' },
+    { code: 'da', name: 'Dansk' },
     { code: 'de', name: 'Deutsch' },
     { code: 'es', name: 'Español' },
     { code: 'fa', name: 'فارسی' },
