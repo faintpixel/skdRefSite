@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Xin chào!",
+		"Welcome": "Chào mừng đến với chương trình tham khảo reference SketchDaily.",
+		"LookingForSomethingElseToDraw": "Muốn tìm thứ gì khác để vẽ? ",
+		"JoinTheFun": "Tham gia vào cuộc vui nào!"
+	},
+	"FullBody": {
+		"FullBody": "Toàn thân",
+		"Clothing": "Quần áo",
+		"Nude": "Lõa thể",
+		"IncludeNSFWImages": "Thêm ảnh NSFW",
+		"Pose": "Tư thế",
+		"Action": "Hành động",
+		"Stationary": "Tĩnh vật",
+		"Clothed": "Có mặc quần áo",
+		"All": "Tất cả"
+	},
+	"BodyPart": {
+		"BodyPart": "Bộ phận cơ thể",
+		"Hand": "Bàn tay",
+		"Foot": "Bàn chân",
+		"Head": "Đầu",
+		"All": "Tất cả"
+	},
+	"Animal": {
+		"Animal": "Động vật",
+		"Species": "Giống loài",
+		"Bird": "Chim",
+		"Fish": "Cá",
+		"ReptileOrAmphibian": "Bò sát hay lưỡng cư",
+		"Category": "Phân loại",
+		"Living": "Động vật sống",
+		"SkeletonOrBones": "Xương",
+		"Bug": "Bọ/Côn trùng",
+		"Mammal": "Động vật có vú",
+		"All": "Tất cả"
+	},
+	"Structure": {
+		"Structure": "Công trình xây dựng",
+		"House": "Nhà ở",
+		"Building": "Công trình kiến trúc",
+		"Other": "Những thứ khác",
+		"All": "Tất cả"
+	},
+	"Vegetation": {
+		"Vegetation": "Thực vật",
+		"Flowers": "Hoa ",
+		"Plants": "Cây cỏ",
+		"PhotoType": "Loại ảnh",
+		"Closeup": "Cận cảnh",
+		"Full": "Toàn cảnh",
+		"All": "Tất cả"
+	},
+	"Filters": {
+		"All": "Tất cả",
+		"Type": "Loại",
+		"Gender": "Giới tính",
+		"Male": "Nam",
+		"Female": "Nữ",
+		"View": "Góc nhìn",
+		"Front": "Chính diện",
+		"Side": "Bên cạnh",
+		"Back": "Đằng sau",
+		"AboveOrBelow": "Từ trên hay từ dưới",
+		"ClassMode": "Chế độ lớp học",
+		"Class": "Tên lớp học",
+		"Minutes": "phút",
+		"Seconds": "giây",
+		"Hour": "giờ",
+		"Hours": "tiếng",
+		"NoTimers": "Không hẹn giờ",
+		"OnlyMostRecentImages": "Chỉ sử dụng hình cảnh được thêm gần đây",
+		"NumberOfImages": "Số lượng hình ảnh",
+		"Start": "Bắt đầu",
+		"Time": "Thời gian:",
+		"Break": "Nghỉ ngơi",
+		"NSFW": "NSFW",
+		"true": "Đúng",
+		"false": "Sai"
+	},
+	"Header": {
+		"Title": " References từ r/SketchDaily",
+		"AddImages": "Thêm hình ảnh",
+		"ManageImages": "Quản lý hình ảnh",
+		"YourImages": "Hình ảnh của bạn",
+		"News": "Tin mới",
+		"Logs": "Logs",
+		"LogIn": "Đăng nhập",
+		"LogOut": "Đăng xuất"
+	},
+	"News": {
+		"WhatsNew": "Có gì mới?",
+		"Announcement": "Thông báo"
+	},
+	"ImageViewer": {
+		"Timer": "Hẹn giờ",
+		"Paused": "Tạm ngưng",
+		"ImageInfo": "Thông tin hình ảnh",
+		"Source": "Nguồn ảnh",
+		"Model": "Người mẫu",
+		"Photographer": "Nhiếp ảnh gia",
+		"DateAdded": "Ngày được thêm",
+		"TermsOfUse": "Điều khoản sử dụng",
+		"Classifications": "Phân loại",
+		"About": "Về chúng tôi",
+		"LeftControls": "Trái - Ảnh trước đó",
+		"RightControls": "Phải - Ảnh tiếp theo",
+		"SpacebarControls": "Spacebar - Tạm ngưng",
+		"EscapeControls": "Escape - Dừng ",
+		"VisitUsOnReddit": "Đến thăm chúng tôi trên Reddit nhé!",
+		"Next": "Tiếp theo",
+		"TakeABreak": "Nghỉ chút nào!",
+		"ItsTimeForABreak": "Đã đến giờ giải lao. Lớp học sẽ tiếp tục khi đồng hồ đếm về 0.",
+		"NoMoreImages": "Thật xin lỗi, không còn ảnh nào theo lời mô tả của bạn cả. ",
+		"Close": "Đóng",
+		"ClassComplete": "Lớp học kết thúc ",
+		"NiceWork": "Giỏi thật, bạn hoàn thành lớp học rồi này!",
+		"MaybeTakeABreak": "Nghỉ ngơi tí đi và tham gia với tụi này trên <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a> nhé!"
+	},
+	"Timers": {
+		"seconds": "{{total}} giây",
+		"minutes": "{{total}} phút",
+		"Class mode": "Chế độ lớp học",
+		"No timers": "Không hẹn giờ",
+		"30 minutes": "30 phút",
+		"1 hour": "1 tiếng",
+		"2 hours": "2 tiếng",
+		"3 hours": "3 tiếng",
+		"6 hours": "6 tiếng"
+	}
+}
