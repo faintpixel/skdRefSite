@@ -1,0 +1,132 @@
+{
+	"FullBody": {
+		"Clothing": "Pakaian",
+		"FullBody": "Seluruh tubuh",
+		"Clothed": "Berpakaian",
+		"Nude": "Telanjang",
+		"Pose": "Pose",
+		"Stationary": "Diam",
+		"All": "Semua",
+		"IncludeNSFWImages": "mengandung gambar NSFW",
+		"Action": "Bergerak"
+	},
+	"Welcome": {
+		"Hello": "Halo!",
+		"LookingForSomethingElseToDraw": "Mencari hal lain untuk digambar?",
+		"Welcome": "Selamat datang di referensi SketchDaily.",
+		"JoinTheFun": "Ikuti keseruannya!"
+	},
+	"Timers": {
+		"6 hours": "6 jam",
+		"seconds": "{{total}} detik",
+		"minutes": "{{total}} menit",
+		"Class mode": "Mode kelas",
+		"No timers": "Tidak ada waktu",
+		"30 minutes": "30 menit",
+		"1 hour": "1 jam",
+		"2 hours": "2 jam",
+		"3 hours": "3 jam"
+	},
+	"BodyPart": {
+		"BodyPart": "Bagian tubuh",
+		"Hand": "Tangan",
+		"Foot": "Kaki",
+		"Head": "Kepala",
+		"All": "Semua"
+	},
+	"Animal": {
+		"Animal": "Hewan",
+		"Species": "Spesies",
+		"Bird": "Burung",
+		"Fish": "Ikan",
+		"ReptileOrAmphibian": "Reptil atau Amfibi",
+		"Category": "Kategori",
+		"Living": "Hidup",
+		"SkeletonOrBones": "Rangka atau Tulang",
+		"Bug": "Serangga",
+		"Mammal": "Mamalia",
+		"All": "Semua"
+	},
+	"Structure": {
+		"Structure": "Struktur",
+		"House": "Rumah",
+		"Building": "Bangunan",
+		"Other": "Lainnya",
+		"All": "Semua"
+	},
+	"Vegetation": {
+		"Vegetation": "Tumbuh-tumbuhan",
+		"Flowers": "Bunga",
+		"Plants": "Tanaman",
+		"PhotoType": "Tipe foto",
+		"All": "Semua",
+		"Closeup": "Dekat",
+		"Full": "Penuh"
+	},
+	"Filters": {
+		"All": "Semua",
+		"Type": "Tipe",
+		"Gender": "Jenis kelamin",
+		"Male": "Laki-laki",
+		"Female": "Perempuan",
+		"View": "Tampak",
+		"Front": "Depan",
+		"Side": "Samping",
+		"Back": "Belakang",
+		"AboveOrBelow": "Atas atau Bawah",
+		"ClassMode": "Mode kelas",
+		"Class": "Kelas",
+		"Minutes": "menit",
+		"Seconds": "detik",
+		"Hour": "jam",
+		"Hours": "jam",
+		"NoTimers": "Tidak ada waktu",
+		"OnlyMostRecentImages": "Hanya gunakan gambar terbaru",
+		"NumberOfImages": "Jumah gambar",
+		"Start": "Mulai",
+		"Time": "Waktu",
+		"Break": "Istirahat",
+		"NSFW": "Tidak aman saat bekerja",
+		"true": "Benar",
+		"false": "Salah"
+	},
+	"Header": {
+		"Title": "Referensi r/SketchDaily",
+		"AddImages": "Tambah gambar",
+		"ManageImages": "Atur gambar",
+		"YourImages": "Gambar anda",
+		"News": "Berita",
+		"LogIn": "Masuk",
+		"LogOut": "Keluar",
+		"Logs": "Catatan"
+	},
+	"News": {
+		"WhatsNew": "Baru",
+		"Announcement": "Pengumuman"
+	},
+	"ImageViewer": {
+		"Timer": "Waktu",
+		"ImageInfo": "Info gambar",
+		"Source": "Sumber",
+		"Model": "Model",
+		"Photographer": "Fotografer",
+		"DateAdded": "Tanggal ditambah",
+		"TermsOfUse": "Aturan pemakaian",
+		"Classifications": "Klasifikasi",
+		"About": "Tentang",
+		"LeftControls": "Kiri - Gambar sebelumnnya",
+		"RightControls": "Kanan - Gambar selanjutnya",
+		"SpacebarControls": "Spasi - Tunda",
+		"VisitUsOnReddit": "Kunjungi kami di Reddit!",
+		"Next": "Selanjutnya",
+		"TakeABreak": "Istirahat!",
+		"ItsTimeForABreak": "Waktunya istirahat. Kelas anda akan dilanjutkan ketika waktu mencapai 0.",
+		"NoMoreImages": "Tidak ada gambar yang cocok dengan your filters. Maaf!",
+		"Close": "Tutup",
+		"ClassComplete": "Kelas selesai",
+		"NiceWork": "Kerja bagus, anda telah menyelesaikan kelas!",
+		"MaybeTakeABreak": "Mungkin istirahat sebentar dan lihat apa yang orang-orang sedang kerjakan di ",
+		"Paused": "Tertunda",
+		"EscapeControls": "Escape - Berhenti"
+	}
+}
