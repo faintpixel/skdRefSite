@@ -263,7 +263,7 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   }
 
   report() {
-    if (this.comment.length === 0 && this.reportType === '4') {
+    if (this.comment.length === 0) {
       alert('Please enter a comment to describe the issue.');
     } else {
       this.reporting = true;
