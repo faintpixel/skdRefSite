@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "你好！",
+        "Welcome": "歡迎來到SketchDaily參考裝置",
+        "LookingForSomethingElseToDraw": "想要尋找其他繪畫的靈感？",
+        "JoinTheFun": "一起加入吧！"
+    },
+    "FullBody": {
+        "FullBody": "全身",
+        "Clothing": "衣著",
+        "Clothed": "穿著衣服",
+        "Nude": "裸體",
+        "IncludeNSFWImages": "包含NSFW圖片",
+        "Pose": "姿勢",
+        "Action": "動作",
+        "Stationary": "靜止",
+        "All": "全"
+    },
+    "BodyPart": {
+        "BodyPart": "身體部位",
+        "Hand": "手",
+        "Foot": "腳",
+        "Head": "頭",
+        "All": "全"
+    },
+    "Animal": {
+        "Animal": "動物",
+        "Species": "物種",
+        "Bird": "鳥",
+        "Fish": "魚",
+        "ReptileOrAmphibian": "兩棲爬蟲",
+        "Category": "類別",
+        "Living": "活體",
+        "SkeletonOrBones": "骨頭",
+        "Bug": "蟲",
+        "Mammal": "哺乳動物",
+        "All": "全"
+    },
+    "Structure": {
+        "Structure": "架構",
+        "House": "房屋",
+        "Building": "建築物",
+        "Other": "其它",
+        "All": "全"
+    },
+    "Vegetation": {
+        "Vegetation": "草木",
+        "Flowers": "花",
+        "Plants": "草",
+        "PhotoType": "圖片種類",
+        "Closeup": "特寫",
+        "Full": "全景",
+        "All": "全"
+    },
+    "Filters": {
+        "All": "全",
+        "Type": "種類",
+        "Gender": "性別",
+        "Male": "男",
+        "Female": "女",
+        "View": "視角",
+        "Front": "正面",
+        "Side": "側面",
+        "Back": "背面",
+        "AboveOrBelow": "上面或下面",
+        "ClassMode": "課堂模式",
+        "Class": "課堂",
+        "Minutes": "分鐘",
+        "Seconds": "秒鐘",
+        "Hour": "小時",
+        "Hours": "小時",
+        "NoTimers": "不計時",
+        "OnlyMostRecentImages": "只使用最新的圖片",
+        "NumberOfImages": "圖片數量",
+        "Start": "開始",
+        "Time": "時間",
+        "Break": "休息",
+        "NSFW": "NSFW",
+        "true": "正確",
+        "false": "錯誤"
+    },
+    "Header": {
+        "Title": "r/SketchDaily 參考",
+        "AddImages": "加入圖片",
+        "ManageImages": "管理圖片",
+        "YourImages": "我的圖片",
+        "News": "消息",
+        "Logs": "紀錄",
+        "LogIn": "登入",
+        "LogOut": "登出"
+    },
+    "News": {
+        "WhatsNew": "新功能",
+        "Announcement": "通知"
+    },
+    "ImageViewer": {
+        "Timer": "計時器",
+        "Paused": "暫停",
+        "ImageInfo": "圖片資訊",
+        "Source": "來源",
+        "Model": "模特兒",
+        "Photographer": "攝影師",
+        "DateAdded": "加入日期",
+        "TermsOfUse": "使用條款",
+        "Classifications": "分類",
+        "About": "關於我們",
+        "LeftControls": "左 - 上一張圖",
+        "RightControls": "右 - 下一張圖",
+        "SpacebarControls": "空格 - 暫停",
+        "EscapeControls": "ESC - 停止",
+        "VisitUsOnReddit": "在Reddit上瀏覽",
+        "Next": "下一張",
+        "TakeABreak": "休息一下！",
+        "ItsTimeForABreak": "休息室間到了，課程在計時倒數到0時繼續。",
+        "NoMoreImages": "沒有其他符合篩選的圖片了，抱歉！",
+        "Close": "關閉",
+        "ClassComplete": "課程完成",
+        "NiceWork": "做得好，你完成課程了！",
+        "MaybeTakeABreak": "或許休息一下，看看大家最近的動態<a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "Timers": {
+        "seconds": "{{total}} 秒",
+        "minutes": "{{total}} 分",
+        "Class mode": "課堂模式",
+        "No timers": "不計時",
+        "30 minutes": "30分鐘",
+        "1 hour": "1小時",
+        "2 hours": "2小時",
+        "3 hours": "3小時",
+        "6 hours": "6小時"
+    }
+}

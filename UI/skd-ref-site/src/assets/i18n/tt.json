@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "Исәнмесез!",
+        "Welcome": "SketchDaily-ның референслар өчен җайланмасына рәхим итегез.",
+        "LookingForSomethingElseToDraw": "Тагын нинди рәсем ясарга дип эзлисезме?",
+        "JoinTheFun": "Күңеллелеккә кушылыгыз!"
+    },
+    "FullBody": {
+        "FullBody": "Тулы гәүдә",
+        "Clothing": "Кием",
+        "Clothed": "Киенгән",
+        "Nude": "Ялангач",
+        "IncludeNSFWImages": "18+ сүрәтләрне кертергә",
+        "Pose": "Поза",
+        "Action": "Хәрәкәттә",
+        "All": "Бөтенесе",
+        "Stationary": "Тик торып"
+    },
+    "BodyPart": {
+        "BodyPart": "Тән әгъзалары",
+        "Hand": "Куллар",
+        "Foot": "Аяк табаннары",
+        "Head": "Башлар",
+        "All": "Бөтенесе"
+    },
+    "Animal": {
+        "Animal": "Хайваннар",
+        "Species": "Төр",
+        "Bird": "Кошлар",
+        "Fish": "Балыклар",
+        "ReptileOrAmphibian": "Сөйрәлүчеләр я амфибияләр",
+        "Category": "Категория",
+        "Living": "Тере",
+        "SkeletonOrBones": "Скелет я сөякләр",
+        "Bug": "Бөҗәкләр ",
+        "Mammal": "Имезүче хайваннар",
+        "All": "Бөтенесе"
+    },
+    "Structure": {
+        "Structure": "Төзелеш",
+        "House": "Йорт",
+        "Building": "Бина",
+        "Other": "Бүтән",
+        "All": "Бөтенесе"
+    },
+    "Vegetation": {
+        "Flowers": "Чәчәкләр",
+        "Plants": "Үсемлекләр",
+        "PhotoType": "Фото төре",
+        "Closeup": "Якыннан",
+        "Full": "Тулысынча",
+        "All": "Бөтенесе",
+        "Vegetation": "Үсемлек"
+    },
+    "Filters": {
+        "All": "Бөтенесе",
+        "Type": "Төр",
+        "Gender": "Җенес",
+        "Male": "Ир-ат",
+        "Female": "Хатын-кыз",
+        "View": "Күренеш",
+        "Front": "Алдан",
+        "Side": "Яктан",
+        "Back": "Арттан",
+        "AboveOrBelow": "Өстән я астан",
+        "ClassMode": "Дәрес режимы ",
+        "Class": "Дәрес",
+        "Minutes": "минут",
+        "Seconds": "секунд",
+        "Hour": "сәгать",
+        "Hours": "сәгать",
+        "NoTimers": "Җаймерсыз",
+        "OnlyMostRecentImages": "Яңа сүрәтләр генә",
+        "NumberOfImages": "Сүрәтләр саны",
+        "Start": "Башларга",
+        "Time": "Вакыт",
+        "Break": "Туктап тору",
+        "NSFW": "NSFW",
+        "true": "True",
+        "false": "False"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "Сүрәт өстәү",
+        "ManageImages": "Сүрәт үзгәртү",
+        "YourImages": "Сезнең сүрәтләр",
+        "News": "Яңалыклар",
+        "Logs": "Logs",
+        "LogIn": "Керу",
+        "LogOut": "Чыгу"
+    },
+    "ImageViewer": {
+        "Timer": "Таймер",
+        "Paused": "Туктатылган",
+        "ImageInfo": "Сүрәт турында",
+        "Source": "Чыганак",
+        "Model": "Модель",
+        "Photographer": "Фотограф",
+        "DateAdded": "Өстәү көне",
+        "TermsOfUse": "Куллану шартлары",
+        "Classifications": "Classifications",
+        "About": "About",
+        "LeftControls": "Сулга - үткән сүрәт",
+        "RightControls": "Уңга - киләсе сүрәт",
+        "SpacebarControls": "Буш урын - Туктап тору",
+        "EscapeControls": "Escape - Туктау",
+        "VisitUsOnReddit": "Reddit-та безгә кереп чыгыгыз! ",
+        "Next": "Алдагы",
+        "TakeABreak": "Тәнәфескә чыгып торыгыз! ",
+        "ItsTimeForABreak": "Тәнәфес өчен вакыт җитте. Вакыт 0 җиткәч сезнең дәресегез бетәчәк. ",
+        "NoMoreImages": "Сезнең фильтрларга туры килгән сүрәтләр юк. Гафу итегез! ",
+        "Close": "Ябырга",
+        "ClassComplete": "Дәрес бетте",
+        "NiceWork": "Яхшы эш, сез дәресегезне бетердегез!",
+        "MaybeTakeABreak": "Бәлки ял итеп алырсыз һәм кешеләр монда нишләгәнен карап алырсыз:<a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "News": {
+        "WhatsNew": "Үзгәрешләр",
+        "Announcement": "Белдерү"
+    },
+    "Timers": {
+        "No timers": "Таймерсыз",
+        "30 minutes": "30 минут",
+        "1 hour": "1 сәгать",
+        "2 hours": "2 сәгать",
+        "3 hours": "3 сәгать",
+        "6 hours": "6 сәгать",
+        "Class mode": "Дәрес режимы",
+        "seconds": "{{total}} секунд",
+        "minutes": "{{total}} минут"
+    }
+}

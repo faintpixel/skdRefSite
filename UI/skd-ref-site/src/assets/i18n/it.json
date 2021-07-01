@@ -1,27 +1,27 @@
 {
 	"Welcome": {
 		"Hello": "Ciao!",
-		"Welcome": "Benvenuto alla macchinetta di riferimento SketchDaily.",
+		"Welcome": "Benvenuto al dispositivo di riferimenti di SketchDaily",
 		"LookingForSomethingElseToDraw": "Cerchi qualcos'altro da disegnare?",
-		"JoinTheFun": "Unisciti al divertimento!"
+		"JoinTheFun": "Partecipa al divertimento!"
 	},
 	"FullBody": {
-		"FullBody": "Corpo completo",
+		"FullBody": "Corpo intero",
 		"Clothing": "Vestiti",
 		"Clothed": "Con vestiti",
-		"Nude": "Foto di nudo",
-		"IncludeNSFWImages": "Includere immagini NSFW",
+		"Nude": "Nudi",
+		"IncludeNSFWImages": "Includi immagini NSFW",
 		"Pose": "Posa",
-		"Action": "Azione",
-		"All": "Tutto",
-		"Stationary": "Stazionario"
+		"Action": "In movimento",
+		"All": "Tutte",
+		"Stationary": "Stazionaria"
 	},
 	"BodyPart": {
-		"BodyPart": "Parte del corpo",
+		"BodyPart": "Parti del corpo",
 		"Hand": "Mani",
 		"Foot": "Piedi",
-		"Head": "Teste",
-		"All": "Tutto"
+		"Head": "Testa",
+		"All": "Tutte"
 	},
 	"Animal": {
 		"Animal": "Animali",
@@ -34,26 +34,26 @@
 		"SkeletonOrBones": "Scheletro o ossa",
 		"Bug": "Insetto",
 		"Mammal": "Mammifero",
-		"All": "Tutto"
+		"All": "Tutti"
 	},
 	"Structure": {
 		"Structure": "Struttura",
 		"House": "Casa",
 		"Building": "Edificio",
 		"Other": "Altro",
-		"All": "Tutto"
+		"All": "Tutte"
 	},
 	"Vegetation": {
 		"Vegetation": "Vegetazione",
 		"Flowers": "Fiori",
 		"Plants": "Piante",
 		"PhotoType": "Tipo di foto",
-		"Closeup": "Ravvicinato",
-		"Full": "Full",
-		"All": "Tutto"
+		"Closeup": "Primo piano",
+		"Full": "Intero",
+		"All": "Tutte"
 	},
 	"Filters": {
-		"All": "Tutto",
+		"All": "Tutti",
 		"Type": "Tipo",
 		"Gender": "Genere",
 		"Male": "Maschio",
@@ -105,22 +105,22 @@
 		"Classifications": "Classificazioni",
 		"About": "About",
 		"LeftControls": "Sinistra - Immagine precedente",
-		"RightControls": "Destra - Prossima immagine",
+		"RightControls": "Destra - Immagine successiva",
 		"SpacebarControls": "Barra spaziatrice - Pausa",
 		"EscapeControls": "Esc - Stop",
 		"VisitUsOnReddit": "Visitaci su Reddit!",
 		"Next": "Prossima",
 		"TakeABreak": "Fai una pausa!",
 		"ItsTimeForABreak": "È il momento di fare una pausa. La tua classe riprenderà quando il timer arriverà a 0.",
-		"NoMoreImages": "Non ci sono altre immagini che corrispondano ai tuoi criteri. Scusa!",
+		"NoMoreImages": "Non ci sono altre immagini che corrispondano ai tuoi criteri. Spiacenti!",
 		"Close": "Chiudi",
 		"ClassComplete": "Classe completata",
 		"NiceWork": "Ben fatto, hai terminato la classe!",
-		"MaybeTakeABreak": "Magari fai una pausa e guarda cos'è successo nel frattempo sul <a href='https://www.reddit.com/r/sketchdaily'>subreddit!</a>"
+		"MaybeTakeABreak": "Magari fai una pausa e guarda cosa hanno fatto gli altri su <a href='https://www.reddit.com/r/sketchdaily'>subreddit!</a>"
 	},
 	"Timers": {
-		"seconds": "secondi",
-		"minutes": "minuti",
+		"seconds": "{{total}} secondi",
+		"minutes": "{{total}} minuti",
 		"Class mode": "Modalità classe",
 		"No timers": "Nessun timer",
 		"30 minutes": "30 minuti",

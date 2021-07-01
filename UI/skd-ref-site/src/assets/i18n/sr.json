@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "Здраво!",
+        "Welcome": "Добро дошли на SketchDaily референце.",
+        "LookingForSomethingElseToDraw": "Да ли тражиш нешто друго да црташ?",
+        "JoinTheFun": "Придружи се забави!"
+    },
+    "FullBody": {
+        "FullBody": "Цело тело",
+        "Clothing": "Одећа",
+        "Clothed": "Обучен",
+        "Nude": "Наг",
+        "IncludeNSFWImages": "Приказуј NSFW (небезбедне слике)",
+        "Pose": "Поза",
+        "Action": "Покретна",
+        "Stationary": "Дрвена Марија",
+        "All": "Све"
+    },
+    "BodyPart": {
+        "BodyPart": "Део тела",
+        "Hand": "Руке",
+        "Foot": "Ноге",
+        "Head": "Главе",
+        "All": "Све"
+    },
+    "Animal": {
+        "Animal": "Животиње",
+        "Species": "Род створења",
+        "Bird": "Птица",
+        "Fish": "Риба",
+        "ReptileOrAmphibian": "Гуштер или гмизавац",
+        "Category": "Категорија",
+        "Living": "Живећа",
+        "SkeletonOrBones": "Скелетон или коске",
+        "Bug": "Буба",
+        "Mammal": "Сисар",
+        "All": "Све"
+    },
+    "Structure": {
+        "Structure": "Структура",
+        "House": "Кућа",
+        "Building": "Зграда",
+        "Other": "Остало",
+        "All": "Све"
+    },
+    "Vegetation": {
+        "Vegetation": "Вегетација",
+        "Flowers": "Цвеће",
+        "Plants": "Биљке",
+        "PhotoType": "Тип фотографије",
+        "Closeup": "Изблиза",
+        "Full": "Цело/ла",
+        "All": "Све"
+    },
+    "Filters": {
+        "All": "Све",
+        "Type": "Тип",
+        "Gender": "Род",
+        "Male": "Мушко",
+        "Female": "Женско",
+        "View": "Поглед",
+        "Front": "Спреда",
+        "Side": "С'бока",
+        "Back": "С'леђа",
+        "AboveOrBelow": "Одозго или Одоздо",
+        "ClassMode": "Тип часа",
+        "Class": "Час",
+        "Minutes": "минути",
+        "Seconds": "секунде",
+        "Hour": "сат",
+        "Hours": "сати",
+        "NoTimers": "Без тајмера",
+        "OnlyMostRecentImages": "Користи само нај скорије слике",
+        "NumberOfImages": "Број слика",
+        "Start": "Старт",
+        "Time": "Време",
+        "Break": "Пауза",
+        "NSFW": "18+",
+        "true": "Тачно",
+        "false": "Нетачно"
+    },
+    "Header": {
+        "Title": "r/SketchDaily референце",
+        "AddImages": "Додај слике",
+        "ManageImages": "Управљај сликама",
+        "YourImages": "Твоје слике",
+        "News": "Вести",
+        "Logs": "Историја",
+        "LogIn": "Улогуј се",
+        "LogOut": "Излогуј се"
+    },
+    "News": {
+        "WhatsNew": "Новости",
+        "Announcement": "Саопштење"
+    },
+    "ImageViewer": {
+        "Timer": "Тајмер",
+        "Paused": "Паузирано",
+        "ImageInfo": "Више о слици",
+        "Source": "Извор",
+        "Model": "Модел",
+        "Photographer": "Фотограф",
+        "DateAdded": "Датум када је додато",
+        "TermsOfUse": "Услови коришћења",
+        "Classifications": "Класификације",
+        "About": "Више о овоме",
+        "LeftControls": "Лево - Предходна слика",
+        "RightControls": "Десно - Следећа слика",
+        "SpacebarControls": "Spacebar - Паузирај",
+        "EscapeControls": "Escape - Стопирај",
+        "VisitUsOnReddit": "Посети нас на Reddit-у!",
+        "Next": "Следеће",
+        "TakeABreak": "Узми одмор!",
+        "ItsTimeForABreak": "Време је за одмор. Твој час ће се наставити када тајмер откуца 0.",
+        "NoMoreImages": "Нема слика са изабраним карактеристикама. Извини!",
+        "Close": "Затвори",
+        "ClassComplete": "Час завршен",
+        "NiceWork": "Добар рад, завршио/ла си час!",
+        "MaybeTakeABreak": "Можда да узмеш и провери шта су људи радили на <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "Timers": {
+        "seconds": "{{total}} секунда",
+        "minutes": "{{total}} минута",
+        "Class mode": "Тип часа",
+        "No timers": "Без тајмера",
+        "30 minutes": "30 минута",
+        "1 hour": "1 сат",
+        "2 hours": "2 сата",
+        "3 hours": "3 сата",
+        "6 hours": "6 сати"
+    }
+}

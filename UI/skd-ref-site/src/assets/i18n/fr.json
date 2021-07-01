@@ -1,8 +1,8 @@
 {
 	"Welcome": {
 		"Hello": "Bonjour !",
-		"Welcome": "Bienvenue sur le site de références de SketchDaily.",
-		"LookingForSomethingElseToDraw": "Envie de dessiner autre choses ?",
+		"Welcome": "Bienvenue sur le site de référence de SketchDaily",
+		"LookingForSomethingElseToDraw": "Envie de dessiner autre chose ?",
 		"JoinTheFun": "Rejoignez-nous !"
 	},
 	"FullBody": {
@@ -44,7 +44,7 @@
 		"All": "Tous"
 	},
 	"Vegetation": {
-		"Vegetation": "Vegetation",
+		"Vegetation": "Végétation",
 		"Flowers": "Fleurs",
 		"Plants": "Plantes",
 		"PhotoType": "Cadrage",
@@ -62,8 +62,8 @@
 		"Front": "De face",
 		"Side": "De profil",
 		"Back": "De dos",
-		"AboveOrBelow": "En plongée ou contre plongée",
-		"ClassMode": "Mode du cours",
+		"AboveOrBelow": "En plongée ou contre-plongée",
+		"ClassMode": "Mode \"Cours de dessin\"",
 		"Class": "Cours",
 		"Minutes": "minutes",
 		"Seconds": "secondes",
@@ -101,8 +101,8 @@
 		"Model": "Modèle",
 		"Photographer": "Photographe",
 		"DateAdded": "Date d'ajout",
-		"TermsOfUse": "Conditions d'utilisation",
-		"Classifications": "Catégorie",
+		"TermsOfUse": "Conditions d'Utilisation",
+		"Classifications": "Catégories",
 		"About": "A propos",
 		"LeftControls": "Gauche - Image précédente",
 		"RightControls": "Droite - Image suivante",
@@ -114,8 +114,8 @@
 		"ItsTimeForABreak": "C'est l'heure de faire une pause. Le cours reprendra lorsque le chronomètre sera revenu à 0.",
 		"NoMoreImages": "Il n'y a plus d'images correspondant à votre recherche. Désolé.",
 		"Close": "Fermer",
-		"ClassComplete": "Cours terminé.",
-		"NiceWork": "Beau travail, vous avez fini le cours.",
+		"ClassComplete": "Cours terminé",
+		"NiceWork": "Beau travail, vous avez fini le cours !",
 		"MaybeTakeABreak": "Faîtes peut être une pause et profitez-en pour voir ce que les gens ont fait sur <a href='https://www.reddit.com/r/sketchdaily'>subreddit !</a>"
 	},
 	"Timers": {

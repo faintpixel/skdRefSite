@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "Čau!",
+        "JoinTheFun": "Pievienojies!",
+        "Welcome": "Laipni lūdzam šeit, SketchDaily reference doohickey.",
+        "LookingForSomethingElseToDraw": "Meklē, ko vēl uzzimēt?"
+    },
+    "FullBody": {
+        "FullBody": "Pilnā augumā",
+        "Clothing": "Apģērbs",
+        "Clothed": "Apģērbtas",
+        "Nude": "Kailas",
+        "IncludeNSFWImages": "Iekļaut NSFW bildes",
+        "Pose": "Poza",
+        "Action": "Kustībā",
+        "Stationary": "Mierā",
+        "All": "Viss"
+    },
+    "BodyPart": {
+        "BodyPart": "Ķermeņa daļas",
+        "Hand": "Rokas",
+        "Foot": "Kājas",
+        "Head": "Galvas",
+        "All": "Viss"
+    },
+    "Animal": {
+        "Animal": "Dzīvnieki",
+        "Species": "Sugas",
+        "Bird": "Putni",
+        "Fish": "Zivis",
+        "ReptileOrAmphibian": "Rāpuli vai amfībijas",
+        "Category": "Kategorija",
+        "Living": "Dzīvas būtnes",
+        "SkeletonOrBones": "Skelets vai kauli",
+        "Bug": "Kukaini",
+        "Mammal": "Zīdītāji",
+        "All": "Viss"
+    },
+    "Timers": {
+        "30 minutes": "30 minūtes",
+        "1 hour": "1 stunda",
+        "2 hours": "2 stundas",
+        "3 hours": "3 stundas",
+        "6 hours": "6 stundas",
+        "No timers": "Bez taimera",
+        "seconds": "{{total}} sekundes",
+        "minutes": "{{total}} minūtes",
+        "Class mode": "Plenēra režīms"
+    },
+    "Structure": {
+        "Structure": "Arhitektūra",
+        "House": "Mājas",
+        "Building": "Celtnes",
+        "Other": "Cits",
+        "All": "Viss"
+    },
+    "Vegetation": {
+        "Vegetation": "Augi",
+        "Flowers": "Ar ziediem",
+        "Plants": "Bez ziediem",
+        "PhotoType": "Bildes tips",
+        "Closeup": "Tuvumā",
+        "Full": "Tālumā",
+        "All": "Viss"
+    },
+    "Filters": {
+        "All": "Viss",
+        "Type": "Tips",
+        "Gender": "Dzimte",
+        "Male": "Vīriešu",
+        "Female": "Sieviešu",
+        "View": "Skats",
+        "Front": "No priekšas",
+        "Side": "No sāniem",
+        "Back": "No aizmugures",
+        "AboveOrBelow": "No augšas vai apakšas",
+        "ClassMode": "Plenēra režīms",
+        "Class": "Plenērs",
+        "Minutes": "minūtes",
+        "Seconds": "sekundes",
+        "Hour": "stunda",
+        "Hours": "stundas",
+        "NoTimers": "Bez taimera",
+        "OnlyMostRecentImages": "Izmantot tikai jaunākas bildes",
+        "NumberOfImages": "Bilžu skaits",
+        "Start": "Sākt",
+        "Time": "Laiks",
+        "Break": "Pauze",
+        "NSFW": "NSFW",
+        "true": "Jā",
+        "false": "Nē"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "Pievienot bildes",
+        "ManageImages": "Pārskatīt bildes",
+        "YourImages": "Tavas bildes",
+        "News": "Ziņas",
+        "Logs": "Logs",
+        "LogIn": "Ienākt",
+        "LogOut": "Iznākt"
+    },
+    "News": {
+        "WhatsNew": "Jaunumi",
+        "Announcement": "Paziņojums"
+    },
+    "ImageViewer": {
+        "Timer": "Taimeris",
+        "Paused": "Uz pauzes",
+        "ImageInfo": "Bildes informācija",
+        "Source": "Avots",
+        "Model": "Modele",
+        "Photographer": "Fotogrāgs",
+        "DateAdded": "Pievienošanas datums",
+        "TermsOfUse": "Noteikumi un nosacījumi",
+        "Classifications": "Klasifikācija",
+        "About": "Par",
+        "LeftControls": "Pa kreisi - Iepriekšējā bilde",
+        "RightControls": "Pa labi - Nākamā bilde",
+        "SpacebarControls": "Atstarpe - Pauze",
+        "EscapeControls": "Escape - Pabeigt",
+        "VisitUsOnReddit": "Nāc ciemos pie mums Redditā!",
+        "Next": "Nākamais",
+        "TakeABreak": "Laiks atpūtai!",
+        "ItsTimeForABreak": "Laiks atpūtai. Tavs plenērs turpinās, kad taimeris sasniegs 0.",
+        "NoMoreImages": "Vairs nav bilžu, kas atbilst taviem filtriem. Atvaino!",
+        "Close": "Aizvērt",
+        "ClassComplete": "Plenērs pabeigts",
+        "NiceWork": "Labs darbs, esi pabeidzis plenēri!",
+        "MaybeTakeABreak": "Varbūt ir pienācis laiks atpūsties un paskatīties, ko dara cilvēki šeit <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    }
+}

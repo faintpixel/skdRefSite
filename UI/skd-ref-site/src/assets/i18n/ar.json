@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "مرحبا!",
+        "Welcome": "اهلا بك الى SketchDaily reference doohickey",
+        "LookingForSomethingElseToDraw": "تبحث عن شي اخر لكي ترسمه؟",
+        "JoinTheFun": "انضم الان!"
+    },
+    "FullBody": {
+        "FullBody": "كامل الجسد",
+        "Clothing": "ملابس",
+        "Nude": "عاري",
+        "Clothed": "بملابس",
+        "IncludeNSFWImages": "يحتوي صور غير امنة لبيئة العمل",
+        "Pose": "الوضعية",
+        "Action": "حركه",
+        "Stationary": "ثابت",
+        "All": "الكل"
+    },
+    "BodyPart": {
+        "BodyPart": "اجزاء الجسد",
+        "Hand": "ايدي",
+        "Foot": "ارجل",
+        "Head": "رأس",
+        "All": "الكل"
+    },
+    "Animal": {
+        "Animal": "حيوانات",
+        "Species": "الفصيله",
+        "Bird": "طيور",
+        "Fish": "اسماك",
+        "ReptileOrAmphibian": "زواحف او برمائيات",
+        "Category": "الفئه",
+        "Living": "حية",
+        "SkeletonOrBones": "هيكل عظمي او عظام",
+        "Bug": "حشرات",
+        "Mammal": "ثديات",
+        "All": "الكل"
+    },
+    "Structure": {
+        "Structure": "هياكل",
+        "House": "منزل",
+        "Building": "بناية",
+        "Other": "غير ذلك",
+        "All": "الكل"
+    },
+    "Vegetation": {
+        "Vegetation": "نباتات",
+        "Flowers": "ازهار",
+        "Plants": "نباتات",
+        "PhotoType": "نوع الصورة",
+        "Closeup": "قريبة من الموضوع",
+        "Full": "كامل الموضوع",
+        "All": "الكل"
+    },
+    "Filters": {
+        "All": "الكل",
+        "Type": "النوع",
+        "Gender": "الجنس",
+        "Male": "ذكر",
+        "Female": "انثى",
+        "View": "مشهد",
+        "Front": "من الامام",
+        "Side": "من جانب",
+        "Back": "من الخلف",
+        "AboveOrBelow": "من الاعلى او الاسفل",
+        "ClassMode": "نمط الصف",
+        "Class": "الصف",
+        "Minutes": "دقائق",
+        "Seconds": "ثواني",
+        "Hour": "ساعة",
+        "Hours": "ساعات",
+        "NoTimers": "من دون مؤقت",
+        "OnlyMostRecentImages": "استخدم الصور الحديثة فقط",
+        "NumberOfImages": "عدد الصور",
+        "Start": "ابدأ",
+        "Time": "الوقت",
+        "Break": "توقف",
+        "NSFW": "غير امن لبيئة العمل",
+        "true": "صائب",
+        "false": "خاطئ"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "اضافة صور",
+        "ManageImages": "ادارة الصور",
+        "YourImages": "الصور الخاصة بك",
+        "News": "اخبار",
+        "Logs": "سجلات",
+        "LogIn": "تسجيل الدخول",
+        "LogOut": "تسجيل الخروج"
+    },
+    "News": {
+        "WhatsNew": "ماهو الجديد",
+        "Announcement": "اعلان"
+    },
+    "ImageViewer": {
+        "Timer": "مؤقت",
+        "Paused": "متوقف مؤقتا",
+        "ImageInfo": "بيانات الصورة",
+        "Source": "المصدر",
+        "Model": "العارض/العارضة",
+        "Photographer": "المصور",
+        "DateAdded": "تأريخ الاضافة",
+        "TermsOfUse": "شروط الاستخدام",
+        "Classifications": "تصنيفات",
+        "About": "حول",
+        "LeftControls": "سهم اليسار - الصورة السابقة",
+        "RightControls": "سهم اليمين - الصورة اللاحقة",
+        "SpacebarControls": "مفتاح المسافة - توقف مؤقت",
+        "EscapeControls": "مفتاح الهروب - توقف",
+        "VisitUsOnReddit": "قم بزيارتنا على Reddit! ",
+        "Next": "التالي",
+        "TakeABreak": "خذ استراحة!",
+        "ItsTimeForABreak": "انه الوقت لاخذ استراحة. الصف سوف يستأنف بعد ان يصل المؤقت الى 0",
+        "NoMoreImages": "لا توجد صور اخرى تطابق الفلتر الذي حددته. نأسف لذلك! ",
+        "Close": "اغلاق",
+        "ClassComplete": "اكتمل الصف",
+        "NiceWork": "عمل جيد, لقد قمت باكمال الصف!",
+        "MaybeTakeABreak": "يمكنك انت تأخذ استراحة وفي غضون ذلك يمكنك تفقد ما قام بيه الاخرون على <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "Timers": {
+        "seconds": "{{total}} ثواني",
+        "minutes": "{{total}} دقائق",
+        "Class mode": "نمط الصف",
+        "30 minutes": "30 دقيقة",
+        "1 hour": "1 ساعة",
+        "2 hours": "2 ساعة",
+        "3 hours": "3 ساعة",
+        "6 hours": "6 ساعة",
+        "No timers": "من دون مؤقت"
+    }
+}

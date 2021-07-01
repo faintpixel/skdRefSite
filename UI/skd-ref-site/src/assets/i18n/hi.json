@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "नमस्ते !",
+        "Welcome": "स्केचडेलीको सन्दर्भ सामाग्रीमा स्वागत छ। ",
+        "LookingForSomethingElseToDraw": "कोर्नलाई अरुनै केही खोज्नु भको हो? ",
+        "JoinTheFun": "रमाइलोमा जोडिनु।"
+    },
+    "FullBody": {
+        "FullBody": "सर्लक्कै ज्यान",
+        "Clothing": "कपडा ",
+        "Clothed": "लुगा लाको",
+        "Nude": "नाङ्गै",
+        "IncludeNSFWImages": "संवेदनशील चित्र पनि",
+        "Action": "कार्य",
+        "Pose": "पोज",
+        "Stationary": "अचल",
+        "All": "सबै"
+    },
+    "BodyPart": {
+        "BodyPart": "शरीरको भाग",
+        "Hand": "हात",
+        "Foot": "खुट्टा",
+        "Head": "टाउको",
+        "All": "सबै"
+    },
+    "Animal": {
+        "Animal": "पशु",
+        "Species": "प्रजाति",
+        "Bird": "चरा",
+        "Fish": "माछा",
+        "ReptileOrAmphibian": "सरीसृप(घिस्रिने) वा उभयचर",
+        "Category": "वर्ग",
+        "Living": "जिवित ",
+        "SkeletonOrBones": "कंकाल वा हड्डीहरु",
+        "Bug": "किरा",
+        "Mammal": "स्तन्धारी",
+        "All": "सबै"
+    },
+    "Structure": {
+        "All": "सबै",
+        "Structure": "संरचना",
+        "House": "घर",
+        "Building": "भवन",
+        "Other": "अरु"
+    },
+    "Vegetation": {
+        "All": "सबै",
+        "Vegetation": "वनस्पति",
+        "Flowers": "फूल",
+        "Plants": "बोटविरुवा",
+        "PhotoType": "चित्र प्रकार",
+        "Closeup": "नजिकैबाट खिचेको",
+        "Full": "पूरा"
+    },
+    "Filters": {
+        "All": "सबै",
+        "Type": "प्रकार",
+        "Gender": "लिङ्ग",
+        "Male": "पुरुष",
+        "Female": "महिला",
+        "View": "दृश्य(कताबाट हेरेको)",
+        "Front": "अगाडि",
+        "Side": "छेउ",
+        "Back": "पछाडि",
+        "AboveOrBelow": "माथि वा तल",
+        "ClassMode": "कक्षाको ढगं",
+        "Class": "कक्षा",
+        "Minutes": "मिनेट",
+        "Seconds": "सेकेण्ड",
+        "Hour": "घण्टा",
+        "Hours": "घण्टा",
+        "NoTimers": "नराखी गर्ने",
+        "OnlyMostRecentImages": "भर्खर्को चित्रहरु मात्रै प्र्योग गर्नु",
+        "NumberOfImages": "चित्रहरुको सङख्या ",
+        "Start": "शुरु",
+        "Time": "समय",
+        "Break": "विश्राम",
+        "NSFW": "काममा हेर्न नमिल्ने",
+        "true": "ठीक",
+        "false": "गलत"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "चित्रहरु हाल्नुहोस्",
+        "ManageImages": "चित्रहरु मिलाउनुहोस्",
+        "YourImages": "तपाईंको चित्रहरु",
+        "News": "समाचार",
+        "Logs": "लगहरू",
+        "LogIn": "लग - इन",
+        "LogOut": "बाहिर निस्कनु"
+    },
+    "News": {
+        "WhatsNew": "नयाँ के छ?",
+        "Announcement": "घोषणा"
+    },
+    "ImageViewer": {
+        "Timer": "घडी",
+        "Paused": "रोकिएको छ",
+        "ImageInfo": "चित्र जानकारी",
+        "Source": "स्रोत",
+        "Model": "नमुना",
+        "Photographer": "फोटोग्राफर",
+        "DateAdded": "हालेको मिती",
+        "TermsOfUse": "प्रयोगका सर्तहरू",
+        "Classifications": "वर्गीकरण",
+        "About": "बारेमा",
+        "LeftControls": "बाँया - अघिको चित्र",
+        "RightControls": "दाँया - अर्को चित्र",
+        "SpacebarControls": "स्पेसबार - थामिनु",
+        "EscapeControls": "स्केप - रोक",
+        "VisitUsOnReddit": "हामीलाई रेड्डिटमा हेर्नुहोस्!",
+        "Next": "अर्को",
+        "TakeABreak": "विश्राम लिनुहोस्!",
+        "ItsTimeForABreak": "अब ब्रेकको समय हो। घडी ० मा पुगेपछी तपाईंलो कक्षा शुरु हुन्छ।",
+        "NoMoreImages": "माफ गर्नुहोला! तपाईंले खोजेजस्तो अरु चित्र भेटिएन।",
+        "Close": "बन्द",
+        "ClassComplete": "कक्षा पुरा भयो। ",
+        "NiceWork": "राम्रो काम, तपाईंले कक्षा पुरा गर्नुभयो!",
+        "MaybeTakeABreak": "शायद एक्छिन विश्रम लिनुहोस् र मान्छेहरुले के गर्दै रैचन्, यसमा हेर्नुहोस् <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "Timers": {
+        "seconds": "{{total}} सेकेण्ड",
+        "minutes": "{{total}} मिनेट",
+        "Class mode": "कक्षाको ढगं",
+        "No timers": "नराखी गर्ने",
+        "30 minutes": "३० मिनेट",
+        "1 hour": "१ घण्टा",
+        "6 hours": "६ घण्टा",
+        "3 hours": "३ घण्टा",
+        "2 hours": "२ घण्टा"
+    }
+}

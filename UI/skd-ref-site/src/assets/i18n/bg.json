@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "Здравейте!",
+        "Welcome": "Добре дошли в сайта за справки SketchDaily",
+        "LookingForSomethingElseToDraw": "Търсите нещо друго, което да рисувате?",
+        "JoinTheFun": "Присъединете се към забавата!"
+    },
+    "FullBody": {
+        "FullBody": "Цяло тяло",
+        "Clothing": "Дрехи",
+        "Clothed": "Облечени",
+        "Nude": "Голи",
+        "IncludeNSFWImages": "Включително NSFW изображения",
+        "Pose": "Поза",
+        "Action": "Действие",
+        "Stationary": "Неподвижен",
+        "All": "Всички"
+    },
+    "BodyPart": {
+        "BodyPart": "Част от тялото",
+        "Hand": "Ръце",
+        "Foot": "Крака",
+        "Head": "Глави",
+        "All": "Всички"
+    },
+    "Animal": {
+        "Animal": "Животни ",
+        "Species": "Видове",
+        "Bird": "Птици",
+        "Fish": "Риби",
+        "ReptileOrAmphibian": "Влечуги или земноводни",
+        "Category": "Категория",
+        "Living": "Живи",
+        "SkeletonOrBones": "Скелет или Кости",
+        "Bug": "Насекоми",
+        "Mammal": "Бозайници",
+        "All": "Всички"
+    },
+    "Structure": {
+        "Structure": "Структури",
+        "House": "Къщи",
+        "Building": "Постройки",
+        "Other": "Други",
+        "All": "Всички"
+    },
+    "Vegetation": {
+        "Vegetation": "Растителност",
+        "Flowers": "Цветя",
+        "Plants": "Растения",
+        "PhotoType": "Вид снимка",
+        "Closeup": "Близък план",
+        "Full": "Цяла",
+        "All": "Всички"
+    },
+    "Filters": {
+        "All": "Всички",
+        "Type": "Вид",
+        "Gender": "Пол",
+        "Male": "Мъже",
+        "Female": "Жени",
+        "View": "Изглед",
+        "Front": "Отпред",
+        "Side": "Отстрани",
+        "Back": "Отзад",
+        "AboveOrBelow": "Отгоре или отдолу",
+        "ClassMode": "Учебен режим",
+        "Class": "Учебен час",
+        "Minutes": "минути",
+        "Seconds": "секунди",
+        "Hour": "час",
+        "Hours": "часове",
+        "NoTimers": "Без таймери",
+        "OnlyMostRecentImages": "Само най-новите изображения",
+        "NumberOfImages": "Брой изображения",
+        "Start": "Начало",
+        "Time": "Време",
+        "Break": "Почивка",
+        "NSFW": "NSFW",
+        "true": "Да",
+        "false": "Не"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "Добавете изображения",
+        "ManageImages": "Управлявайте изображенията",
+        "YourImages": "Вашите изображения",
+        "News": "Новини",
+        "Logs": "Регистрации",
+        "LogIn": "Регистрирайте се",
+        "LogOut": "Излезте от профила си"
+    },
+    "News": {
+        "WhatsNew": "Какво ново",
+        "Announcement": "Съобщения"
+    },
+    "ImageViewer": {
+        "Timer": "Таймер",
+        "Paused": "На пауза",
+        "ImageInfo": "Информация за изображението",
+        "Source": "Източник",
+        "Model": "Модел",
+        "Photographer": "Фотограф",
+        "DateAdded": "Дата на добавяне",
+        "TermsOfUse": "Условия за използване",
+        "Classifications": "Класификации",
+        "About": "Относно",
+        "LeftControls": "Ляво - Предишно изображение",
+        "RightControls": "Дясно - Следващо изображение",
+        "SpacebarControls": "Интервал - Пауза",
+        "EscapeControls": "Escape - Стоп",
+        "VisitUsOnReddit": "Посетете ни в Reddit!",
+        "Next": "Следващо",
+        "TakeABreak": "Вземете си почивка!",
+        "ItsTimeForABreak": "Време е за почивка. Вашият час ще продължи, когато таймерът стигне 0.",
+        "NoMoreImages": "Няма повече изображения, които да отговарят на филтрите Ви. Съжаляваме!",
+        "Close": "Затвори",
+        "ClassComplete": "Часът е завършен",
+        "NiceWork": "Добра работа, приключихте часа",
+        "MaybeTakeABreak": "Може би е добре да си вземете малка почивка и да видите какво правят хората в <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a> "
+    },
+    "Timers": {
+        "seconds": "{{total}} секунди",
+        "minutes": "{{total}} минути",
+        "Class mode": "Учебен час",
+        "No timers": "Без таймери",
+        "30 minutes": "30 минути",
+        "1 hour": "1 час",
+        "2 hours": "2 часа",
+        "3 hours": "3 часа",
+        "6 hours": "6 часа"
+    }
+}

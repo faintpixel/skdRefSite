@@ -1,8 +1,8 @@
 {
 	"Welcome": {
 		"Hello": "Merhaba!",
-		"Welcome": "SketchDaily referans zımbırtısına hoşgeldiniz.",
-		"LookingForSomethingElseToDraw": "Çizmek için birş ey mi arıyorsunuz?",
+		"Welcome": "SketchDaily referans zımbırtısına hoş geldiniz.",
+		"LookingForSomethingElseToDraw": "Çizmek için bir şey mi arıyorsunuz?",
 		"JoinTheFun": "Eğlenceye katılın!"
 	},
 	"FullBody": {
@@ -10,7 +10,7 @@
 		"Clothing": "Kıyafet",
 		"Clothed": "Giyimli",
 		"Nude": "Çıplak",
-		"IncludeNSFWImages": "Görünmesi ",
+		"IncludeNSFWImages": "Uygunsuz fotoğrafları da dahil et",
 		"Pose": "Poz",
 		"Action": "Aksiyon",
 		"All": "Hepsi",
@@ -75,7 +75,7 @@
 		"Start": "Başla",
 		"Time": "Zaman",
 		"Break": "Ara",
-		"NSFW": "Görünmesi ",
+		"NSFW": "Uygunsuz içerik",
 		"true": "Doğru",
 		"false": "Yanlış"
 	},
@@ -91,7 +91,7 @@
 	},
 	"News": {
 		"WhatsNew": "Yeni haberler",
-		"Announcement": "Haber"
+		"Announcement": "Duyuru"
 	},
 	"ImageViewer": {
 		"Paused": "Durduruldu",
@@ -107,16 +107,16 @@
 		"VisitUsOnReddit": "Reddit'de bize ziyaret edin!",
 		"Next": "Sonraki",
 		"TakeABreak": "Ara ver!",
-		"ItsTimeForABreak": "Ara zamanı. Zaman 0'a gelince ders devam edecek.tir.",
+		"ItsTimeForABreak": "Ara zamanı. Zaman 0'a gelince ders devam edecektir.",
 		"NoMoreImages": "Filtrenize göre başka resim bulunamadı. Özür dileriz!",
 		"Close": "Yakın",
 		"ClassComplete": "Ders bitti",
-		"NiceWork": "Aferim, dersi bitirdin!",
+		"NiceWork": "Aferin, dersi bitirdin!",
 		"Timer": "Zamanlama",
 		"Source": "Kaynak",
 		"Classifications": "Sınıflandırma",
-		"SpacebarControls": "Spacebar - Pause",
-		"MaybeTakeABreak": "Birazcık ara verip insanların orda ne yaptığına bakabilirsin belki <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+		"SpacebarControls": "Spacebar - Duraklat",
+		"MaybeTakeABreak": "Belki birazcık ara verip insanların orada ne yaptığına bakabilirsin <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
 	},
 	"Timers": {
 		"Class mode": "Ders modu",

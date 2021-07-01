@@ -2,7 +2,7 @@
     "Welcome": {
         "Hello": "Cześć!",
         "Welcome": "Witamy na SketchDaily - miejscu, gdzie znajdziesz referencje rysunkowe.",
-        "LookingForSomethingElseToDraw": "Szukasz czegoś, co mógłbyś narysować?",
+        "LookingForSomethingElseToDraw": "Szukasz czegoś jeszcze, co mógłbyś narysować?",
         "JoinTheFun": "Dołącz do zabawy!"
     },
     "FullBody": {
@@ -18,7 +18,7 @@
     },
     "BodyPart": {
         "BodyPart": "Część ciała",
-        "Hand": "Ręce",
+        "Hand": "Dłonie",
         "Foot": "Stopy",
         "Head": "Głowy",
         "All": "Wszystko"

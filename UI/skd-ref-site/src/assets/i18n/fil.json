@@ -1,0 +1,132 @@
+{
+    "Timers": {
+        "6 hours": "anim na oras",
+        "3 hours": "tatlong oras",
+        "2 hours": "dalawang oras",
+        "1 hour": "isang oras",
+        "No timers": "walang timer",
+        "Class mode": "Class mode",
+        "30 minutes": "tatlong pung minuto",
+        "seconds": "{{total}} segundo",
+        "minutes": "{{total}} minuto"
+    },
+    "ImageViewer": {
+        "MaybeTakeABreak": "Siguro ay mag pahinga ka muna at tignan kung ano ang mga ginagawa ng mga taong katulad mo sa ",
+        "NiceWork": "Ang galing mo, natapos mo ang klase!",
+        "ClassComplete": "Tapos na ang klase.",
+        "Close": "Isara.",
+        "NoMoreImages": "Wala ng imahe na tumutugma sa iyong sinala. Patawad.",
+        "ItsTimeForABreak": "Oras na para mag pahinga. Ang iyong klase ay tutuloy kapag ang timer ay tumuntong sa 0.",
+        "TakeABreak": "Magpahinga ka muna!",
+        "Next": "Tapos",
+        "VisitUsOnReddit": "Bisitahin mo kami sa Reddit!",
+        "EscapeControls": "Takas - Hinto",
+        "About": "Tungkol",
+        "Timer": "Timer",
+        "Paused": "Nakahinto",
+        "ImageInfo": "Impormasyon ng imahe",
+        "Source": "Source",
+        "Model": "Modelo",
+        "Photographer": "Photographer",
+        "DateAdded": "Kailan idinagdag",
+        "TermsOfUse": "Termino ng pagkakagamit",
+        "Classifications": "Classifications or klasipikasyon (either of the two)",
+        "LeftControls": "kaliwa - kaninang imahe",
+        "RightControls": "kanan - susunod na imahe",
+        "SpacebarControls": "spacebar - pause"
+    },
+    "News": {
+        "WhatsNew": "Ano ang bago",
+        "Announcement": "anunsyo"
+    },
+    "Filters": {
+        "Minutes": "minuto",
+        "Seconds": "segundo",
+        "Hour": "oras",
+        "Hours": "oras",
+        "NoTimers": "walang timer",
+        "OnlyMostRecentImages": "Gamitin lamang ang kamakailan lamang na imahe",
+        "NumberOfImages": "Bilang ng imahe",
+        "Start": "Start",
+        "Time": "Time",
+        "Break": "Pahinga",
+        "NSFW": "NSFW",
+        "true": "totoo",
+        "false": "mali",
+        "Female": "babae",
+        "Male": "lalaki",
+        "Front": "harap",
+        "Back": "likod",
+        "AboveOrBelow": "taas o baba",
+        "ClassMode": "class mode",
+        "Class": "klase",
+        "All": "lahat",
+        "Type": "type",
+        "Gender": "kasarian",
+        "Side": "gilid",
+        "View": "tignan"
+    },
+    "Header": {
+        "AddImages": "Mag dagdag ng imahe",
+        "YourImages": "Iyong imahe",
+        "News": "Balita",
+        "ManageImages": "Manage",
+        "Title": "r/SketchDaily References",
+        "LogOut": "log out",
+        "LogIn": "log in",
+        "Logs": "logs"
+    },
+    "Vegetation": {
+        "All": "lahat",
+        "Full": "buo",
+        "Closeup": "malapit or close up ( i prefer the close up)",
+        "Plants": "halaman",
+        "Flowers": "bulaklak",
+        "PhotoType": "photo type",
+        "Vegetation": "mga halaman"
+    },
+    "Structure": {
+        "All": "lahat",
+        "Other": "iba or other ( i prefer the other)",
+        "Building": "imprastraktura or gusali",
+        "House": "bahay",
+        "Structure": "structure"
+    },
+    "Welcome": {
+        "Hello": "Hello! or Mabuhay!",
+        "LookingForSomethingElseToDraw": "Naghahanap ng ma-i d-drawing? or Naghahanap ka pa ba ng iba pang mai-drawing?",
+        "Welcome": "Maligayang pagdating sa SketchDaily reference doohickey.",
+        "JoinTheFun": "Sumali sa saya!"
+    },
+    "FullBody": {
+        "FullBody": "Buong katawan",
+        "Clothing": "damit",
+        "Clothed": "naka-damit or nakadamit",
+        "Nude": "hubad",
+        "IncludeNSFWImages": "isama ang nsfw images",
+        "Pose": "pose",
+        "Action": "aksyon",
+        "Stationary": "nakatigil or nakatayo",
+        "All": "lahat"
+    },
+    "BodyPart": {
+        "BodyPart": "parte ng katawan",
+        "Hand": "kamay",
+        "Head": "ulo",
+        "Foot": "paa",
+        "All": "lahat"
+    },
+    "Animal": {
+        "Animal": "hayop",
+        "Bird": "ibon",
+        "Fish": "isda",
+        "Category": "kategorya",
+        "Living": "buhay",
+        "SkeletonOrBones": "skeleton or buto",
+        "Bug": "bug",
+        "Mammal": "mammal",
+        "All": "all",
+        "ReptileOrAmphibian": "reptilya or amphibian",
+        "Species": "species"
+    }
+}

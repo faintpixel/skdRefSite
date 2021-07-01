@@ -119,8 +119,8 @@
 		"MaybeTakeABreak": "شاید بهتر باشه یکم استراحت کنید و ببینید که دیگران چه کارهایی انجام دادن در لینک زیر <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
 	},
 	"Timers": {
-		"seconds": "ثانیه ها",
-		"minutes": "دقایق",
+		"seconds": "{{total}} ثانیه ها",
+		"minutes": "{{total}} دقایق",
 		"Class mode": "حالت کلاس ",
 		"No timers": "بدون زمان سنج ",
 		"30 minutes": "سی دقیقه ",

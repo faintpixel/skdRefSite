@@ -1,0 +1,132 @@
+{
+    "Welcome": {
+        "Hello": "Mabuhay!",
+        "Welcome": "Maligayang pagdating sa SketchDaily reference doohickey.",
+        "LookingForSomethingElseToDraw": "Naghahanap ng iba pang maiguguhit?",
+        "JoinTheFun": "Tara na't sumali sa saya!"
+    },
+    "FullBody": {
+        "FullBody": "Buong katawan",
+        "Clothing": "Mga damit",
+        "Clothed": "Nakadamit",
+        "Nude": "Nakahubad",
+        "IncludeNSFWImages": "Isali ang NSFW na mga larawan",
+        "Pose": "Anyo",
+        "Action": "Galaw",
+        "Stationary": "Nakahinto",
+        "All": "Lahat"
+    },
+    "BodyPart": {
+        "BodyPart": "Bahagi ng Katawan",
+        "Hand": "Kamay",
+        "Foot": "Paa",
+        "Head": "Ulo",
+        "All": "Lahat"
+    },
+    "Animal": {
+        "Animal": "Hayop",
+        "Species": "Mga uri",
+        "Bird": "Ibon",
+        "Fish": "Isda",
+        "ReptileOrAmphibian": "Reptilia o Amphibian",
+        "Category": "Mga kategorya",
+        "Living": "Buhay",
+        "SkeletonOrBones": "Mga buto",
+        "Bug": "Insekto",
+        "Mammal": "Mammal",
+        "All": "Lahat"
+    },
+    "Structure": {
+        "Structure": "Istruktura",
+        "House": "Bahay",
+        "Building": "Gusali",
+        "Other": "Iba pa",
+        "All": "Lahat"
+    },
+    "Vegetation": {
+        "Vegetation": "Vegetation",
+        "Flowers": "Mga bulaklak",
+        "Plants": "Mga halaman",
+        "PhotoType": "Mga uri ng larawan",
+        "Closeup": "Malapit",
+        "Full": "Buo",
+        "All": "Lahat"
+    },
+    "Filters": {
+        "All": "Lahat",
+        "Type": "Mga uri",
+        "Gender": "Kasarian",
+        "Male": "Lalaki",
+        "Female": "Babae",
+        "View": "Posisyon",
+        "Front": "Harap",
+        "Side": "Gilid",
+        "Back": "Likod",
+        "AboveOrBelow": "Taas o baba",
+        "ClassMode": "Uri ng klase",
+        "Class": "Klase",
+        "Minutes": "Minuto",
+        "Seconds": "Segundo",
+        "Hour": "Oras",
+        "Hours": "Oras",
+        "NoTimers": "Walang oras",
+        "OnlyMostRecentImages": "Gamitin lamang ang mga bagong larawan",
+        "NumberOfImages": "Bilang ng mga larawan",
+        "Start": "Umpisahan",
+        "Time": "Oras",
+        "Break": "Hinto",
+        "NSFW": "NSFW",
+        "true": "Totoo",
+        "false": "Mali"
+    },
+    "Header": {
+        "Title": "r/SketchDaily References",
+        "AddImages": "Magdagdag ng mga imahe",
+        "ManageImages": "Suriin ang mga imahe",
+        "YourImages": "Mga imahe mo",
+        "News": "Mga balita",
+        "Logs": "Logs",
+        "LogIn": "Mag log-in",
+        "LogOut": "Mag log-out"
+    },
+    "News": {
+        "WhatsNew": "Anong Bago",
+        "Announcement": "Mga anunsyo"
+    },
+    "ImageViewer": {
+        "Timer": "Orasan",
+        "Paused": "Hinto",
+        "ImageInfo": "Mga detalye ng imahe",
+        "VisitUsOnReddit": "Bisitahin kami sa Reddit!",
+        "EscapeControls": "Escape - Tumigil sa pagsasanay",
+        "SpacebarControls": "Spacebar - I-hinto ang pagsasanay",
+        "RightControls": "Right - Sunod na larawan",
+        "Source": "Source",
+        "Model": "Model",
+        "Photographer": "Litratista",
+        "DateAdded": "Petsa ng pagdagdag",
+        "TermsOfUse": "Terms of Use",
+        "Classifications": "Pag-uuri",
+        "About": "Tungkol sa amin",
+        "LeftControls": "Left - Dating larawan",
+        "Next": "Sunod",
+        "TakeABreak": "Magpahinga!",
+        "ItsTimeForABreak": "Oras na muna ng pahinga. Ang klase mo ay magpapatuloy pagkaabot ng 0 sa orasan.",
+        "NoMoreImages": "Wala nang mga larawan na nagtutugma sa iyong mga pinili. Paumanhin!",
+        "Close": "Isara",
+        "ClassComplete": "Tapos na ang klase",
+        "NiceWork": "Napakagaling, natapos mo ang klase!",
+        "MaybeTakeABreak": "Magpahinga ka muna saglit at tignan ang mga gawain ng kapwa mo sa <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+    },
+    "Timers": {
+        "seconds": "{{total}} segundo",
+        "minutes": "{{total}} minuto",
+        "Class mode": "Uri ng klase",
+        "No timers": "Walang orasan",
+        "30 minutes": "30 minuto",
+        "1 hour": "Isang oras (1hr)",
+        "2 hours": "Dalawang oras (2hrs)",
+        "3 hours": "Tatlong oras (3hrs)",
+        "6 hours": "Anim na oras (6hrs)"
+    }
+}

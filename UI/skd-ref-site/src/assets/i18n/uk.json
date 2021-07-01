@@ -119,8 +119,8 @@
 		"MaybeTakeABreak": "Можливо, зробите невеличку перерву та подивитеся, що люди роблять в нашому <a href='https://www.reddit.com/r/sketchdaily'>сабреддіті?</a>"
 	},
 	"Timers": {
-		"seconds": "всього секунд",
-		"minutes": "всього хвилин",
+		"seconds": "{{total}} секунд",
+		"minutes": "{{total}} хвилин",
 		"Class mode": "Режим заняття",
 		"No timers": "Без таймерів",
 		"30 minutes": "30 хвилин",

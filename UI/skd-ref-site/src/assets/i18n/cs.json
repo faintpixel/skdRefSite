@@ -1,9 +1,9 @@
 {
 	"Welcome": {
 		"Hello": "Ahoj!",
-		"Welcome": "Vítej na SketchDaily promítátku předloh.",
-		"LookingForSomethingElseToDraw": "Hledáš něco jiného na kreslení?",
-		"JoinTheFun": "Přidej se!"
+		"Welcome": "Vítejte na SketchDaily, referenčním portálu.",
+		"LookingForSomethingElseToDraw": "Hledáte něco jiného ke kreslení?",
+		"JoinTheFun": "Přidejte se!"
 	},
 	"FullBody": {
 		"FullBody": "Celé tělo",
@@ -37,7 +37,7 @@
 		"All": "Vše"
 	},
 	"Structure": {
-		"Structure": "Stavby",
+		"Structure": "Struktury",
 		"House": "Domy",
 		"Building": "Stavby",
 		"Other": "Ostatní",
@@ -60,15 +60,15 @@
 		"Female": "Žena",
 		"View": "Pohled",
 		"Front": "Zepředu",
-		"Side": "Boční",
+		"Side": "Zboku",
 		"Back": "Zezadu",
 		"AboveOrBelow": "Nadhled nebo podhled",
 		"ClassMode": "Mód lekce",
 		"Class": "Lekce",
-		"Minutes": "min",
-		"Seconds": "s",
-		"Hour": "h",
-		"Hours": "h",
+		"Minutes": "minuty",
+		"Seconds": "sekundy",
+		"Hour": "hodina",
+		"Hours": "hodiny",
 		"NoTimers": "Bez časovače",
 		"OnlyMostRecentImages": "Pouze nejnovější obrázky",
 		"NumberOfImages": "Počet obrázků",
@@ -76,8 +76,8 @@
 		"Time": "Čas",
 		"Break": "Přestávka",
 		"NSFW": "NSFW",
-		"true": "Ano",
-		"false": "Ne"
+		"true": "Pravda",
+		"false": "Lež"
 	},
 	"Header": {
 		"Title": "r/SketchDaily Reference",
@@ -86,8 +86,8 @@
 		"YourImages": "Tvoje obrázky",
 		"News": "Novinky",
 		"Logs": "Logy",
-		"LogIn": "Přihlásit",
-		"LogOut": "Odhlásit"
+		"LogIn": "Přihlásit se ",
+		"LogOut": "Odhlásit se"
 	},
 	"News": {
 		"WhatsNew": "Co je nového",
@@ -111,16 +111,16 @@
 		"VisitUsOnReddit": "Navštiv nás na Redditu!",
 		"Next": "Další",
 		"TakeABreak": "Je čas na přestávku!",
-		"ItsTimeForABreak": "Je čas na přestávku! Lekce bude pokračovat po vypršení odpočtu.",
+		"ItsTimeForABreak": "Je čas na přestávku! Lekce bude pokračovat až časovač dojde k 0.",
 		"NoMoreImages": "Žádné další obrázky nesplňují vybrané filtry. Omlouváme se!",
 		"Close": "Zavřít",
 		"ClassComplete": "Lekce dokončena",
 		"NiceWork": "Dobrá práce, dokončil(a) jsi lekci!",
-		"MaybeTakeABreak": "Možná si zkus vzít krátkou přestávku a mrknout se, jak si vedou ostatní na <a href='https://www.reddit.com/r/sketchdaily'>subredditu!</a>"
+		"MaybeTakeABreak": "Možná si zkus vzít krátkou přestávku a podívat se, jak si vedou ostatní na <a href='https://www.reddit.com/r/sketchdaily'>subredditu!</a>"
 	},
 	"Timers": {
-		"seconds": "{{total}} s",
-		"minutes": "{{total}} min",
+		"seconds": "{{total}} sekundy",
+		"minutes": "{{total}} minuty",
 		"Class mode": "Mód lekce",
 		"No timers": "Bez časovače",
 		"30 minutes": "30 minut",
