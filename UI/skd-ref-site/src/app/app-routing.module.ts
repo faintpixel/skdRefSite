@@ -14,10 +14,12 @@ import { NewsManagerComponent } from './news-manager/news-manager.component';
 import { TranslationManagerComponent } from './translation-manager/translation-manager.component';
 import { ImageEditorComponent } from './image-editor/image-editor.component';
 import { ContributorsComponent } from './contributors/contributors.component';
+import { SubmitImagesComponent } from './submit-images/submit-images.component';
 
 const routes: Routes = [
   { path: 'undefined', redirectTo: 'en'},
-  { path: '', redirectTo: 'en', pathMatch: 'full' },
+  // { path: '', redirectTo: 'en', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '' },
   { path: 'addImages',
       component: AddImagesComponent, canDeactivate: ['canDeactivateAddImages'], canActivate: [ScopeGuard],
@@ -29,6 +31,7 @@ const routes: Routes = [
   { path: 'logs', component: LogsComponent, canActivate: [ScopeGuard], data: { expectedRoles: ['admin']} },
   { path: 'translate', component: TranslationManagerComponent },
   { path: 'contributors', component: ContributorsComponent },
+  { path: 'submitImages', component: SubmitImagesComponent },
   { path: 'callback', component: AuthCallbackComponent },
   { path: 'en', component: HomeComponent, pathMatch: 'full' },
   { path: ':lang/view/:type', component: ImageViewerComponent },

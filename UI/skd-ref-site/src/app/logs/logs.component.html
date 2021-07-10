@@ -23,6 +23,14 @@
         </tr>
       </tbody>
     </table>
+
+    <div *ngFor="let imageId of objectKeys(reportedImages)" [class.minorWarning]="reportedImages[imageId].length <= 5" [class.warning]="reportedImages[imageId].length > 5" [class.severeWarning]="reportedImages[imageId].length >= 10">
+      <b>{{ imageId }}</b> - {{ reportedImages[imageId].length }} - {{ reportedImages[imageId][0].ReferenceType }}
+      <br/>
+      <span *ngFor="let report of reportedImages[imageId]">{{ report.Comment }} --</span>
+    </div>
+
+
   </div>
 </div>
 

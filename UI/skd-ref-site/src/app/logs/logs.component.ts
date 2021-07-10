@@ -9,6 +9,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class LogsComponent implements OnInit {
 
+  reportedImages: any = {};
   logs: Array<any> = [];
   viewModalContent = '';
 
@@ -28,7 +29,27 @@ export class LogsComponent implements OnInit {
   }
 
   getLogs() {
-    this.logsService.getLogs().subscribe(logs => this.logs = logs);
+    this.logsService.getLogs().subscribe(logs => { this.logs = logs; this.parseLogs(); });
+  }
+
+  parseLogs() {
+    console.log('parsing logs');
+    const reportedImages = {};
+    this.logs.forEach(log => {
+      if (log.type === 'Report') {
+        const parameters = JSON.parse(log.parameters);
+        const imageId = parameters.ImageId;
+        if (!reportedImages[imageId]) {
+          reportedImages[imageId] = [];
+        }
+        reportedImages[imageId].push(parameters);
+      }
+    });
+    this.reportedImages = reportedImages;
+  }
+
+  objectKeys(obj) {
+    return Object.keys(obj);
   }
 
   delete(id: string) {

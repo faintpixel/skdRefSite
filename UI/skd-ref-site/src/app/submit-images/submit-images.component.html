@@ -1,0 +1,59 @@
+<app-header></app-header>
+<div class='container'>
+  <div>
+    <h3>Submit Images</h3>
+
+    Thanks for thinking about submitting some images!<br/><br/>
+
+    <b>Currently we're only accepting people pictures (full body, heads, and hands).</b><br/><br/>
+
+    General requirements:
+    <ul>
+      <li>Images <b>must</b> be yours to give. We can't accept images you just found online.</li>
+      <li>High resolution: Ideally at least 1080 pixels tall.</li>
+      <li>No street photography, unless you have a signed model release for it.</li>
+    </ul>
+
+    For full body pictures:
+    <ul>
+      <li>No cut off feet/heads/arms. Full body must be in frame.</li>
+      <li>All models must be aged 18+.</li>
+      <li>Nothing pornographic or overly sexualized.</li>
+      <li>Strong lighting is good, but the form must be fully visible (ie, no body parts fading into the background and becoming indistinguisable).</li>
+    </ul>
+
+    For heads:
+    <ul>
+      <li>Some smiling at the camera pictures are ok, but we'd really like diversity in the head angle and expression.</li>
+    </ul>
+
+    <label><input type="checkbox" [(ngModel)]="firstConfirmed"/> I have read the above and my images are appropriate for use.</label>
+
+
+    <div *ngIf="firstConfirmed">
+      <br/>Wonderful! We'd love to hear from you.<br/><br/>
+
+      Please email Artomizer at <a href="mailto:artomizer@sketchdaily.net">artomizer@sketchdaily.net</a><br/><br/>
+
+      To increase chances of your photos being accepted, please include:
+
+      <ul>
+        <li>The type and quantity of images you'd like to submit</li>
+        <li>A link to the image set, or some sample images (if you need somewhere to upload them we can arrange this - please don't send a huge zip file)</li>
+        <li>Your name as you would wish it to be displayed on the site</li>
+        <li>A link to your website/social media that you would like displayed on the site (optional)</li>
+        <li>Any usage restrictions</li>
+        <li>Additional confirmation that these are your photos and not ones you came across online</li>
+      </ul>
+
+      <br/>
+
+      Thank you, and looking forward to hearing from you!
+
+    </div>
+
+    
+    
+
+  </div>
+</div>

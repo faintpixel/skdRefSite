@@ -1,0 +1,12 @@
+.warning {
+    background-color: lightgreen;
+}
+
+.severeWarning {
+    background-color: orange;
+    color: black;
+}
+
+.minorWarning {
+    display: none;
+}

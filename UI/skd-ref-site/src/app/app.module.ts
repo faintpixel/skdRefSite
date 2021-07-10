@@ -39,6 +39,7 @@ import { ImageSearchComponent } from './image-search/image-search.component';
 import { ImageEditorComponent } from './image-editor/image-editor.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { OfflineComponent } from './offline/offline.component';
+import { SubmitImagesComponent } from './submit-images/submit-images.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -72,7 +73,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImageSearchComponent,
     ImageEditorComponent,
     ContributorsComponent,
-    OfflineComponent
+    OfflineComponent,
+    SubmitImagesComponent
   ],
   imports: [
     BrowserModule,

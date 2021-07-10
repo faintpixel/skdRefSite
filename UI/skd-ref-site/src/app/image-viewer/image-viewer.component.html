@@ -70,9 +70,9 @@
   <div class='modal-body'>
     <a *ngIf="image.sourceUrl" href='{{image.sourceUrl}}'>{{'ImageViewer.Source' | translate}}</a>
     <br /> <b>{{'ImageViewer.Model' | translate}}: </b>
-    <a href='{{image.model?.webpage}}'>{{image.model?.name}}</a>
+    <a href='{{image.model?.webpage}}' target='_blank'>{{image.model?.name}}</a>
     <br /> <b>{{'ImageViewer.Photographer' | translate}}: </b>
-    <a href='{{image.photographer?.webpage}}'>{{image.photographer?.name}}</a>
+    <a href='{{image.photographer?.webpage}}' target='_blank'>{{image.photographer?.name}}</a>
     <br /> <b>{{'ImageViewer.DateAdded' | translate}}: </b> {{image.uploadDate | date : "MMMM d, y"}}
     <br /> <b>{{'ImageViewer.TermsOfUse' | translate}}: </b> {{image.termsOfUse}}
     <br />

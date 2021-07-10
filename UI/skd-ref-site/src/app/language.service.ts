@@ -60,6 +60,7 @@ export class LanguageService {
   }
 
   redirectToLanguageHome(language) {
+    console.log('redirecting to language');
     this.router.navigate(['', language]);
   }
 
