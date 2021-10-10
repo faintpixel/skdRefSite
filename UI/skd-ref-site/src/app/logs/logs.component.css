@@ -8,5 +8,6 @@
 }
 
 .minorWarning {
-    display: none;
+    /* display: none; */
+    opacity: 0.5;
 }
