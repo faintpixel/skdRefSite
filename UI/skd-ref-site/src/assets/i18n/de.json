@@ -68,10 +68,10 @@
 		"Minutes": "Minuten",
 		"Seconds": "Sekunden",
 		"Hour": "Stunde",
-		"Hours": "Std.",
+		"Hours": "Stunden",
 		"NoTimers": "Keine Timer",
-		"OnlyMostRecentImages": "Nur kürzlich hinzugefügte Bilder verwenden",
-		"NumberOfImages": "Anzahl der Bilder",
+		"OnlyMostRecentImages": "Nur neueste Bilder verwenden",
+		"NumberOfImages": "Anzahl der passendsten Bilder",
 		"Start": "Start",
 		"Time": "Zeit",
 		"Break": "Pause",
@@ -82,7 +82,7 @@
 	"Header": {
 		"Title": "r/SketchDaily Vorlagen",
 		"AddImages": "Füge Bilder hinzu",
-		"News": "Nachrichten",
+		"News": "Neuigkeiten",
 		"Logs": "Protokolle",
 		"LogIn": "Einloggen",
 		"LogOut": "Ausloggen",
@@ -90,7 +90,7 @@
 		"YourImages": "Deine Bilder"
 	},
 	"News": {
-		"WhatsNew": "Was gibt's Neues",
+		"WhatsNew": "Neuerungen",
 		"Announcement": "Ankündigung"
 	},
 	"ImageViewer": {
