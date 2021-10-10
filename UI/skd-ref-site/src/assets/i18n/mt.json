@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Bonġu!",
+		"Welcome": "Merħba għal-SketchDaily referenza doohickey.",
+		"LookingForSomethingElseToDraw": "Tixtieq issib xi ħaġa oħra xi tpinġi?",
+		"JoinTheFun": "Inkludi lilek innifsek fil-pjaċir!"
+	},
+	"FullBody": {
+		"FullBody": "Ġisem sħiħ",
+		"Clothing": "Ħwejjeġ",
+		"Clothed": "Imlibbes",
+		"Nude": "Għarwien",
+		"IncludeNSFWImages": "Inkludi ritratti NSFW",
+		"Pose": "Poża",
+		"Action": "Azzjoni",
+		"All": "Kollox",
+		"Stationary": "Wieqfa"
+	},
+	"BodyPart": {
+		"BodyPart": "Parti tal-ġisem",
+		"Hand": "Idejn",
+		"Foot": "Saqajn",
+		"Head": "Irjus",
+		"All": "Kollox"
+	},
+	"Animal": {
+		"Animal": "Annimal",
+		"Species": "Speċi",
+		"Bird": "Għasfur",
+		"Fish": "Ħuta",
+		"ReptileOrAmphibian": "Rettil jew Anfibju",
+		"Category": "Kategorija",
+		"SkeletonOrBones": "Skeletru jew Għadam",
+		"Living": "Ħajjin",
+		"Bug": "Insett",
+		"Mammal": "Mammiferu",
+		"All": "Kollox"
+	},
+	"Structure": {
+		"Structure": "Struttura",
+		"House": "Dar",
+		"Building": "Bini",
+		"Other": "Oħra",
+		"All": "Kollox"
+	},
+	"Vegetation": {
+		"Vegetation": "Veġetazzjoni",
+		"Flowers": "Fjuri",
+		"Plants": "Pjanti",
+		"PhotoType": "Tip ta' ritratt",
+		"Closeup": "Mil-viċin",
+		"All": "Kollox",
+		"Full": "Ħaġa Sħiħa"
+	},
+	"Filters": {
+		"All": "Kollox",
+		"Type": "Tip",
+		"Gender": "Sess",
+		"Male": "Raġel",
+		"Female": "Mara",
+		"View": "Ħares",
+		"Front": "Quddiem",
+		"Side": "Ġenb",
+		"Back": "Wara",
+		"AboveOrBelow": "Min-fuq jew Min-isfel",
+		"Class": "Klassi",
+		"Minutes": "minuti",
+		"ClassMode": "Modalità tal-klassi",
+		"Seconds": "sekondi",
+		"Hour": "siegħa",
+		"Hours": "siegħat",
+		"NoTimers": "Minajr timers",
+		"OnlyMostRecentImages": "Uża biss l-aktar ritratti riċenti",
+		"NumberOfImages": "Numru ta' ritratti",
+		"Start": "Ibda",
+		"Time": "Ħin",
+		"Break": "Brejk",
+		"NSFW": "NSFW",
+		"true": "Veru",
+		"false": "Falz"
+	},
+	"Header": {
+		"Title": "r/SketchDaily Referenzi",
+		"AddImages": "Żid ritratti",
+		"ManageImages": "Immaniġja ritratti",
+		"YourImages": "Ritratti tiegħek",
+		"News": "Aħbarijiet",
+		"Logs": "Logs",
+		"LogIn": "Tillogja ġewwa",
+		"LogOut": "Tillogja barra"
+	},
+	"News": {
+		"WhatsNew": "Xinu ġdid",
+		"Announcement": "Avviżi"
+	},
+	"ImageViewer": {
+		"Timer": "Timer",
+		"Paused": "Imwaqqaf",
+		"ImageInfo": "Informazzjoni dwar ritratt",
+		"Source": "Sors",
+		"Model": "Mudell",
+		"Photographer": "Fotografer",
+		"DateAdded": "Data miżjuda",
+		"TermsOfUse": "Termijiet ta' l-użu",
+		"Classifications": "Klassifikazzjonijiet",
+		"About": "Dwar",
+		"LeftControls": "Xellug - Ritratt ta' qabel",
+		"RightControls": "Lemin - Ritratt li jmiss",
+		"SpacebarControls": "Spacebar - Pawsa",
+		"EscapeControls": "Escape - Waqqaf",
+		"VisitUsOnReddit": "Żuruna fuq Reddit!",
+		"Next": "Li jmiss",
+		"TakeABreak": "Ħu brejk!",
+		"Close": "Għalaq",
+		"ClassComplete": "Klassi kompluta",
+		"NiceWork": "Xogħol tajjeb, int lestejt il-klassi!",
+		"ItsTimeForABreak": "Hu ħin biex tieħu brejk. Il-klassi tiegħek tkompli meta t-timer jilħaq żero.",
+		"NoMoreImages": "Mhemmx aktar ritratti li jaqblu mal-filters. Skużana!",
+		"MaybeTakeABreak": "Forsi ħu brejk żgħir u ara x'qedin jagħmlu nies oħra fuq <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} sekondi",
+		"minutes": "{{total}} minuti",
+		"Class mode": "Modalità tal-klassi",
+		"No timers": "Minajr timers",
+		"30 minutes": "Nofsiegħa",
+		"1 hour": "Siegħa",
+		"2 hours": "Sagħtejn",
+		"3 hours": "Tlett siegħat",
+		"6 hours": "Sitt siegħat"
+	}
+}

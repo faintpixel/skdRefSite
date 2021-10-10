@@ -28,6 +28,7 @@ export class LanguageService {
     { code: 'hi', name: 'हिन्दी' },
     { code: 'hu', name: 'Magyar' },
     { code: 'mk', name: 'Македонски' },
+    { code: 'mt', name: 'Malti' },
     { code: 'nl', name: 'Nederlands' },
     { code: 'nn', name: 'Norsk' },
     { code: 'po', name: 'Polski' },
