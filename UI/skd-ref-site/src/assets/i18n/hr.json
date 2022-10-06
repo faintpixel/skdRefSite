@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Zdravo!",
+		"Welcome": "Dobrodošli u SketchDaily alat s referencama.",
+		"LookingForSomethingElseToDraw": "Tražite nešto drugo za crtanje? ",
+		"JoinTheFun": "Pridruži se zabavi!"
+	},
+	"FullBody": {
+		"FullBody": "Cijelo tijelo",
+		"Clothing": "Odjeća",
+		"Clothed": "Odjeven",
+		"Nude": "Akt",
+		"IncludeNSFWImages": "Uključene slike koje nisu sigurne za posao",
+		"Pose": "Poza",
+		"Action": "Radnja",
+		"Stationary": "Stacionaran",
+		"All": "Sve"
+	},
+	"BodyPart": {
+		"BodyPart": "Dio tijela",
+		"Hand": "Ruke",
+		"Foot": "Stopala",
+		"Head": "Glave",
+		"All": "Sve"
+	},
+	"Animal": {
+		"Animal": "Životinje",
+		"Species": "Vrsta",
+		"Bird": "Ptica",
+		"Fish": "Riba",
+		"ReptileOrAmphibian": "Gmaz ili vodozemac ",
+		"Category": "Kategorija",
+		"Living": "Živ",
+		"SkeletonOrBones": "Kostur ili kosti",
+		"Bug": "Kukac",
+		"Mammal": "Sisavac",
+		"All": "Sve"
+	},
+	"Structure": {
+		"Structure": "Struktura",
+		"House": "Kuća",
+		"Building": "Zgrada",
+		"Other": "Ostalo",
+		"All": "Sve"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetacija",
+		"Flowers": "Cvijeće",
+		"Plants": "Biljke",
+		"PhotoType": "Vrsta fotografije",
+		"Closeup": "Izbliza",
+		"Full": "Cijelo",
+		"All": "Sve"
+	},
+	"Filters": {
+		"All": "Sve",
+		"Type": "Tip",
+		"Gender": "Spol",
+		"Male": "Muško",
+		"Female": "Žensko",
+		"View": "Pogled",
+		"Front": "Sprijeda",
+		"Side": "Bočno",
+		"Back": "Odostraga",
+		"AboveOrBelow": "Iznad ili ispod",
+		"ClassMode": "Školski način",
+		"Class": "Sat",
+		"NoTimers": "Nema mjerača vremena",
+		"Minutes": "minute",
+		"Seconds": "sekunde",
+		"Hour": "sat",
+		"Hours": "sati",
+		"OnlyMostRecentImages": "Koristi samo zadnje slike",
+		"NumberOfImages": "Broj slika",
+		"Start": "Start",
+		"Time": "Vrijeme",
+		"Break": "Pauza",
+		"NSFW": "Nije sigurno za posao",
+		"true": "Točno",
+		"false": "Netočno"
+	},
+	"Header": {
+		"Title": "r/SketchDaily reference",
+		"AddImages": "Dodaj slike",
+		"ManageImages": "Uredi slike",
+		"YourImages": "Tvoje slike",
+		"News": "Vijesti",
+		"Logs": "Dnevnici",
+		"LogIn": "Prijaviti se",
+		"LogOut": "Odjaviti se"
+	},
+	"News": {
+		"WhatsNew": "Što je novo",
+		"Announcement": "Obavjesti"
+	},
+	"ImageViewer": {
+		"Timer": "Mjerač vremena",
+		"Paused": "Pauzirano",
+		"ImageInfo": "Informacije o slici",
+		"Source": "Izvor",
+		"Model": "Model",
+		"Photographer": "Fotograf",
+		"DateAdded": "Datum dodavanja",
+		"TermsOfUse": "Uvjeti korištenja",
+		"Classifications": "Klasifikacije",
+		"About": "Oko",
+		"LeftControls": "Lijevo - prethodna slika",
+		"RightControls": "Desno - iduća slika",
+		"SpacebarControls": "Razmaknica - Pauza",
+		"EscapeControls": "Escape - Stop",
+		"VisitUsOnReddit": "Posjetite nas na Redditu!",
+		"Next": "Iduće",
+		"TakeABreak": "Odmorite se!",
+		"ItsTimeForABreak": "Vrijeme je za pauzu. Vaš sat će se nastaviti kada mjerač vremena dosegne 0. ",
+		"NoMoreImages": "Nema više slika koje odgovaraju vašim filtrima. Oprostite! ",
+		"Close": "Blizu",
+		"ClassComplete": "Sat završen",
+		"NiceWork": "Bravo, završili ste sat! ",
+		"MaybeTakeABreak": "Uzmite malu pauzu i provjerite što ljudi rade na <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a> "
+	},
+	"Timers": {
+		"seconds": "{{total}} sekunde",
+		"minutes": "{{total}} minute",
+		"Class mode": "Školski način",
+		"No timers": "Bez mjerača vremena",
+		"30 minutes": "30 minuta",
+		"1 hour": "1 sat",
+		"2 hours": "2 sata",
+		"3 hours": "3 sata",
+		"6 hours": "6 sati"
+	}
+}
