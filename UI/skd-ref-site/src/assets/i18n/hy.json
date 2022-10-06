@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Բարև!",
+		"Welcome": "Բարի գալուստ SketchDaily, նկարչական բնորդների աղբյուր։",
+		"LookingForSomethingElseToDraw": "Ցանկանու՞մ եք ուրիշ բան նկարել",
+		"JoinTheFun": "Միացե՛ք զվարճանքին!"
+	},
+	"FullBody": {
+		"FullBody": "Մարմին",
+		"Clothing": "Հագուստ",
+		"Clothed": "Հագնված",
+		"Nude": "Մերկ",
+		"IncludeNSFWImages": "Ներառել NSFW պատկերներ",
+		"Pose": "Դիրք",
+		"Action": "Շարժման Մեջ",
+		"Stationary": "Անշարժ",
+		"All": "Ամբողջը"
+	},
+	"BodyPart": {
+		"BodyPart": "Մարմնի Մաս",
+		"Hand": "Ձեռքեր",
+		"Foot": "Ոտքեր",
+		"Head": "Գլուխներ",
+		"All": "Ամբողջը"
+	},
+	"Animal": {
+		"Animal": "Կենդանի",
+		"Species": "Տեսակը",
+		"Bird": "Թռչուն",
+		"Fish": "Ձուկ",
+		"ReptileOrAmphibian": "Սողուն կամ Երկկենցաղ",
+		"Category": "Հանգամանք",
+		"Living": "Կենդանի",
+		"SkeletonOrBones": "Կմախք կամ Ոսկորներ",
+		"Bug": "Միջատ",
+		"Mammal": "Կաթնասուն",
+		"All": "Ամբողջը"
+	},
+	"Structure": {
+		"Structure": "Կառույց",
+		"House": "Առանձնատուն",
+		"Building": "Շենք",
+		"Other": "Այլ",
+		"All": "Ամբողջը"
+	},
+	"Vegetation": {
+		"Vegetation": "Բուսականություն",
+		"Flowers": "Ծաղիկներ",
+		"Plants": "Բույսեր",
+		"PhotoType": "Լուսանկարի Տեսակը",
+		"Full": "Ամբողջական",
+		"Closeup": "Մասնակի ",
+		"All": "Ամբողջը"
+	},
+	"Filters": {
+		"All": "Ամբողջը",
+		"Type": "Տեսակը",
+		"Gender": "Սեռ",
+		"Male": "Տղամարդ",
+		"Female": "Կին",
+		"View": "Տեսքը",
+		"Front": "Դիմացից",
+		"Side": "Կողքից",
+		"Back": "Ետևից",
+		"AboveOrBelow": "Վերևից կամ Տակից",
+		"ClassMode": "Դասի Տեսակը",
+		"Class": "Դաս",
+		"Minutes": "րոպե",
+		"Seconds": "վայրկյան",
+		"Hour": "ժամ",
+		"Hours": "ժամ",
+		"NoTimers": "Անսահմանափակ",
+		"OnlyMostRecentImages": "Ցույց տալ միայն ամենանոր նկարները",
+		"NumberOfImages": "Նկարների քանակությունը",
+		"Start": "Սկսել",
+		"Time": "Ժամանակը",
+		"Break": "Ընդհատել",
+		"NSFW": "NSFW",
+		"true": "Ճիշտ",
+		"false": "Սխալ"
+	},
+	"Header": {
+		"Title": "r/SketchDaily բնորդներ",
+		"AddImages": "Ավելացնել նկարներ",
+		"ManageImages": "Կարգավորել նկարները",
+		"YourImages": "Ձեր նկարները",
+		"News": "Նորություններ",
+		"Logs": "Գրանցումներ",
+		"LogIn": "Մուտք գործել",
+		"LogOut": "մԴուրս գալ հաակարգից"
+	},
+	"News": {
+		"WhatsNew": "Ի՞նչ նոր բան կա",
+		"Announcement": "Հայտարարություններ"
+	},
+	"ImageViewer": {
+		"Timer": "Ժամանակ",
+		"Paused": "Ընդմիջում",
+		"ImageInfo": "Տեղեկություններ նկարի մասին",
+		"Source": "Աղբյուր",
+		"Model": "Բնորդ",
+		"Photographer": "Լուսանկարիչ",
+		"DateAdded": "Ավելացված է",
+		"TermsOfUse": "Օգտագործման Պայմանները",
+		"Classifications": "Դասակարգում",
+		"About": "Մեր մասին",
+		"LeftControls": "Ձախ կոճակ ֊ Նախորդ նկարը",
+		"RightControls": "Աջ կոճակ ֊ Հաջորդ նկարը",
+		"SpacebarControls": "Spacebar - Ընդմիջում",
+		"EscapeControls": "Escape - Դադարեցնել",
+		"VisitUsOnReddit": "Այցելեք մեզ Reddit֊ում!",
+		"Next": "Հաջորդը",
+		"TakeABreak": "Ընդմիջում անել!",
+		"ItsTimeForABreak": "Ընդմիջման ժամմանակն է։ Դասը կվերսկսվի ժամանակը լռանալուց հետո",
+		"NoMoreImages": "Ձեր ֆիլտրեին համապատասխանող նկարները վերջացան։ Ներողություն!",
+		"Close": "Փակել",
+		"ClassComplete": "Դասն ավարտված է",
+		"NiceWork": "Կեցցե՛ք, դուք ավարտեցիք դասը!",
+		"MaybeTakeABreak": "Մի՞ գուցե մի փոքր ընդմիջում անեք և տեսնեք թե ինչ կա մեր <a href='https://www.reddit.com/r/sketchdaily'>subreddit֊ում!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} վայրկյաններ",
+		"minutes": "{{total}} րոպեներ",
+		"Class mode": "Դասի ռեվիմը",
+		"No timers": "Առանձ ժամանակի",
+		"30 minutes": "30 րոպե",
+		"1 hour": "1 ժամ",
+		"2 hours": "2 ժամ",
+		"3 hours": "3 ժամ",
+		"6 hours": "6 ժամ"
+	}
+}
