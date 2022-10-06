@@ -1,0 +1,132 @@
+{
+	"Welcome": {
+		"Hello": "Hesi!",
+		"Welcome": "tinogamuchirwa kuchinhu ichi chinonzi SketchDaily Reference.",
+		"LookingForSomethingElseToDraw": "Kutsvaga zvokudhirohwa?",
+		"JoinTheFun": "Nakidzwa nesu!"
+	},
+	"FullBody": {
+		"FullBody": "Muviri Yose",
+		"Clothing": "Hembe",
+		"Clothed": "Vanhu vakapfeka",
+		"Nude": "Vanhu vakashama",
+		"IncludeNSFWImages": "Ratidza mufananidzo ezvinyadzi",
+		"Pose": "Pose",
+		"Action": "Varikushanda",
+		"Stationary": "Vakamira",
+		"All": "Zvose"
+	},
+	"BodyPart": {
+		"BodyPart": "Nhengo yemuviri",
+		"Hand": "Maoko",
+		"Foot": "Tsoka",
+		"Head": "Misoro",
+		"All": "Zvose"
+	},
+	"Animal": {
+		"Animal": "Mhuka Dzakasiyana",
+		"Bird": "Shiri",
+		"Species": "Mhando remhuka",
+		"Fish": "Hove",
+		"ReptileOrAmphibian": "ChiReptile kana chiAmphibia",
+		"Category": "Chikamu",
+		"Living": "Zvine Upenyu",
+		"SkeletonOrBones": "Mabhonzo ega ega",
+		"Bug": "Zvihuma",
+		"Mammal": "Mhuka",
+		"All": "Zvese"
+	},
+	"Structure": {
+		"Structure": "Chimiro",
+		"House": "Imba",
+		"Building": "Chivakwa",
+		"Other": "Zvimwe",
+		"All": "Zvese"
+	},
+	"Vegetation": {
+		"Vegetation": "Zvinomera",
+		"Flowers": "Ruva",
+		"Plants": "Plants",
+		"PhotoType": "Mhando yemufananidzo",
+		"Closeup": "Padhuze",
+		"Full": "Full",
+		"All": "Zvese"
+	},
+	"Filters": {
+		"All": "Zvese",
+		"Type": "Mhando",
+		"Gender": "Jenda",
+		"Male": "Murume",
+		"Female": "Mukadzi",
+		"View": "Chionero",
+		"Front": "Kumberi",
+		"Side": "Divi",
+		"Back": "Kumashure",
+		"AboveOrBelow": "Pamusoro kana pazasi",
+		"ClassMode": "Nzira yeKirasi",
+		"Class": "Kirasi",
+		"Minutes": "Maminetsi",
+		"Seconds": "Masekondi ",
+		"Hour": "Awa",
+		"Hours": "Maawa Mangani",
+		"NoTimers": "Hapana zviverengi",
+		"OnlyMostRecentImages": "Usashadnisa mufananidzo ekudhara",
+		"NumberOfImages": "Huwandu hwemifananidzo",
+		"Start": "Chitanga",
+		"Time": "Nguva",
+		"NSFW": "Mifananidzo anonyadzisa",
+		"Break": "Mira",
+		"false": "Nhema",
+		"true": "Chokwadi"
+	},
+	"Header": {
+		"Title": "MaReference epa chisubhuredhiti ye r/Sketchdaily",
+		"AddImages": "Isa mifananidzo",
+		"ManageImages": "Gadzirisa mifananidzo",
+		"YourImages": "Mifananidzo dzako",
+		"News": "Nhau",
+		"Logs": "Logs",
+		"LogIn": "Loga In",
+		"LogOut": "Loga out"
+	},
+	"News": {
+		"WhatsNew": "Chi chiri nyowani?",
+		"Announcement": "Chiziviso"
+	},
+	"ImageViewer": {
+		"Timer": "Zviverengi",
+		"Paused": "Irikukumirira",
+		"ImageInfo": "Ruzivo Repachifananidzo",
+		"Source": "Mabviro",
+		"Model": "Muenzaniso",
+		"Photographer": "Munhu arikutora pikicha",
+		"DateAdded": "Zuva razvaiswa",
+		"TermsOfUse": "Mitemo yekushandisa",
+		"Classifications": "Kupatsanura",
+		"About": "Ndezvei",
+		"LeftControls": "Ruboshwe - Faninidzo rapfura",
+		"RightControls": "Rudyi - Fananidzo rakutevera",
+		"SpacebarControls": "Spacebar - Chimirise",
+		"EscapeControls": "Esc - Regera",
+		"VisitUsOnReddit": "Titarise paReddit",
+		"Next": "Inotevera",
+		"TakeABreak": "Chimbomira!",
+		"ItsTimeForABreak": "Yanguva yokumbomira. Kirasi ichozotanga kana chivierengi chasvika pa0",
+		"NoMoreImages": "Hapana zvifananidzo zvinotevera zvaurikuda.",
+		"Close": "Vhara",
+		"ClassComplete": "Kirasi Yazadziswa",
+		"NiceWork": "Wagona! Wapedza Kirasi!",
+		"MaybeTakeABreak": "Chimbozorora wotatisa zvirikuitwa nevanhu pa <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} Masekondi",
+		"minutes": "{{total}} Maminetsi",
+		"Class mode": "Kirasi",
+		"30 minutes": "Maminitsi 30",
+		"1 hour": "Awa 1",
+		"2 hours": "Maawa 2",
+		"3 hours": "Maawa 3",
+		"6 hours": "Maawa 6",
+		"No timers": "Hapana Zviverengi"
+	}
+}

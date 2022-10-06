@@ -36,6 +36,7 @@ export class LanguageService {
     { code: 'ro', name: 'Romanian' },
     { code: 'ru', name: 'Русский' },
     { code: 'sr', name: 'Српски' },
+    { code: 'sn', name: 'Shona' },
     { code: 'sv', name: 'Svenska' },
     { code: 'tl', name: 'Tagalog' },
     { code: 'th', name: 'Thai' },
