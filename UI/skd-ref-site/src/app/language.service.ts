@@ -30,6 +30,7 @@ export class LanguageService {
     { code: 'hu', name: 'Magyar' },
     { code: 'mk', name: 'Македонски' },
     { code: 'mt', name: 'Malti' },
+    { code: 'mn', name: 'Монгол' },
     { code: 'nl', name: 'Nederlands' },
     { code: 'nn', name: 'Norsk' },
     { code: 'po', name: 'Polski' },
