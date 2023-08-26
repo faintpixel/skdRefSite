@@ -36,7 +36,7 @@ export class LogsComponent implements OnInit {
     console.log('parsing logs');
     const reportedImages = {};
     this.logs.forEach(log => {
-      if (log.type === 4) {
+      if (log.type === 'Report') {
         const parameters = JSON.parse(log.parameters);
         const imageId = parameters.ImageId;
         if (!reportedImages[imageId]) {
