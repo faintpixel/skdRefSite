@@ -26,8 +26,16 @@ export class ImageSearchComponent implements OnInit {
   }
 
   search() {
-    this.filters.uploadDateStart = this.setDatePickerFilter(this.uploadDateStartPicker);
-    this.filters.uploadDateEnd = this.setDatePickerFilter(this.uploadDateEndPicker);
+    const uploadStartDate = this.setDatePickerFilter(this.uploadDateStartPicker);
+    const uploadEndDate = this.setDatePickerFilter(this.uploadDateEndPicker);
+
+    if (uploadStartDate) {
+      this.filters.uploadDateStart = this.setDatePickerFilter(this.uploadDateStartPicker);
+    }
+    if (uploadEndDate) {
+      this.filters.uploadDateEnd = this.setDatePickerFilter(this.uploadDateEndPicker);
+    }
+    
     this.searchEvent.emit(this.filters);
   }
 
