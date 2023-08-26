@@ -13,7 +13,6 @@ export class ErrorService {
 
   public handleError<T>(userMessage, operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-
       // TODO: send the error to remote logging infrastructure
       console.error(error); // log to console instead
 

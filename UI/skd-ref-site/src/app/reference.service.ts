@@ -49,13 +49,13 @@ export class ReferenceService {
   }
 
   getBatches() {
-    return this.http.get<Array<any>>(environment.baseUrl + 'Batches', {
+    return this.http.get<Array<any>>(environment.baseUrl + 'Batch', {
       headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('id_token')}`)
     }).pipe(catchError(this.errorService.handleError('Error getting batches.', 'getBatches', [])));
   }
 
   getBatchImages(id: string) {
-    return this.http.get<any>(environment.baseUrl + 'Batches/' + id + '/images', {
+    return this.http.get<any>(environment.baseUrl + 'Batch/' + id + '/images', {
       headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('id_token')}`)
     }).pipe(catchError(this.errorService.handleError('Error getting batch images.', 'getBatchImages', {})));
   }
@@ -78,16 +78,19 @@ export class ReferenceService {
 
   reportImage(imageId: string, comment: string, reportType: any, referenceType: string) {
     const body = {
-      comment: comment,
-      referenceType: referenceType,
-      reportType: reportType
+      ImageId: imageId,
+      Comment: comment,
+      User: null,
+      ReportType: parseInt(reportType),
+      ReferenceType: referenceType,
+      Date: null
     };
-    return this.http.post<Array<object>>(environment.baseUrl + 'images/' + imageId + '/report', body)
+    return this.http.post<Array<object>>(environment.baseUrl + 'Image/' + imageId + '/Report', body)
       .pipe(catchError(this.errorService.handleError('Error reporting image.', 'reportImage', false)));
   }
 
   deleteBatch(id: string) {
-    return this.http.delete<boolean>(environment.baseUrl + 'batches/' + id, {
+    return this.http.delete<boolean>(environment.baseUrl + 'Batch/' + id, {
       headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('id_token')}`)
     }).pipe(catchError(this.errorService.handleError('Error deleting batch.', 'deleteBatch', false)));
   }

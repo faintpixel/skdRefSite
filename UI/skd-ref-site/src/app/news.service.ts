@@ -30,7 +30,7 @@ export class NewsService {
 
   saveAnnouncement(announcement: string): Observable<boolean> {
     const obj = { value: announcement };
-    return this.http.post<boolean>(environment.baseUrl + 'announcement', obj, {
+    return this.http.post<boolean>(environment.baseUrl + 'Announcement', obj, {
       headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem('id_token')}`)
     }).pipe(catchError(this.errorService.handleError('Error saving announcement.', 'saveAnnouncement', false)));
   }

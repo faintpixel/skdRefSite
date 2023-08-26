@@ -116,7 +116,7 @@ export class ReferenceFiltersComponent implements OnInit {
     this.imageCount = null;
     const referenceType = this.currentTab.replace('Tab', '');
     const filters = this.removeUnusedFilters(this.filters[referenceType]);
-    filters.recentImagesOnly = this.filters.OnlyMostRecent;
+    filters.recentImagesOnly = this.filters.OnlyMostRecent || false;
     this.referenceService.getReferenceCount(referenceType, filters).subscribe(count => this.imageCount = count);
   }
 
@@ -132,7 +132,7 @@ export class ReferenceFiltersComponent implements OnInit {
     if (referenceType === 'FullBodies') {
       filter = this.referenceService.fixFullBodyFilters(filter);
     }
-    filter.recentImagesOnly = this.filters.OnlyMostRecent;
+    filter.recentImagesOnly = this.filters.OnlyMostRecent || false;
     console.log(this.languageService.language);
     console.log(referenceType);
 

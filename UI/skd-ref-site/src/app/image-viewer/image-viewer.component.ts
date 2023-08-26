@@ -263,14 +263,19 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   }
 
   report() {
+    console.log('here');
     if (this.comment.length === 0) {
       alert('Please enter a comment to describe the issue.');
     } else {
       this.reporting = true;
       this.referenceService.reportImage(this.image.id, this.comment, this.reportType, this.referenceType)
         .subscribe(x => {
-          alert('Image has been reported.');
-          this.reporting = false;
+          if (x != false) {
+            alert('Image has been reported.');
+            this.reporting = false;
+          } else {
+            alert('Error reporting.');
+          }                   
         });
     }
   }
