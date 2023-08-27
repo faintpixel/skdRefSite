@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://testapi.sketchdaily.net/ReferenceSite/',
+  baseUrl: 'https://api-test.sketchdaily.net/ReferenceSite/',
   imageUrl: 'https://files.sketchdaily.net/references',
-  auth0RedirectUri: 'http://reference-test.sketchdaily.net/callback/en'
+  auth0RedirectUri: 'https://reference-test.sketchdaily.net/callback/en'
 };
