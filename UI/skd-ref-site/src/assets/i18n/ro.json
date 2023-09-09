@@ -79,6 +79,12 @@
 		"true": "Adevărat",
 		"false": "Fals"
 	},
+	"YourPics": {
+		"YourPics": "Pozele tale",
+		"SelectPicturesFromDevice": "Selectați imagini de pe dispozitivul dvs. pentru a desena!",
+		"NoDataIsSent": "Nu sunt trimise date către serverul nostru și nimeni altcineva nu va putea vedea imaginile pe care le selectați.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily References",
 		"AddImages": "Adaugă imagini",

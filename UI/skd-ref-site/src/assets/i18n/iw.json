@@ -79,6 +79,12 @@
 		"true": "נכון",
 		"false": "לא נכון"
 	},
+	"YourPics": {
+		"YourPics": "התמונות שלך",
+		"SelectPicturesFromDevice": "בחר תמונות מהמכשיר שלך לצייר!",
+		"NoDataIsSent": "לא נשלח נתונים לשרת שלנו, ואף אחד אחר לא יוכל לראות את התמונות שבחרת.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "רפרנסים מ-r/SketchDaily",
 		"AddImages": "הוסף תמונות",

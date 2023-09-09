@@ -79,6 +79,12 @@
 		"true": "Pravda",
 		"false": "Lež"
 	},
+	"YourPics": {
+		"YourPics": "Vaše obrázky",
+		"SelectPicturesFromDevice": "Vyberte obrázky ze svého zařízení, které chcete kreslit!",
+		"NoDataIsSent": "Na náš server se neodesílají žádná data a nikdo jiný nebude moci vidět obrázky, které vyberete.",
+		"ShuffleImages": "Náhodné přehrávání obrázků"
+	},
 	"Header": {
 		"Title": "r/SketchDaily Reference",
 		"AddImages": "Přidat obrázky",

@@ -40,6 +40,8 @@ import { ImageEditorComponent } from './image-editor/image-editor.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { OfflineComponent } from './offline/offline.component';
 import { SubmitImagesComponent } from './submit-images/submit-images.component';
+import { SafeUrlPipe } from './safe-resource-url.pipe';
+import { DrawYourPicsComponent } from './draw-your-pics/draw-your-pics.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -74,7 +76,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ImageEditorComponent,
     ContributorsComponent,
     OfflineComponent,
-    SubmitImagesComponent
+    SubmitImagesComponent,
+    SafeUrlPipe,
+    DrawYourPicsComponent
   ],
   imports: [
     BrowserModule,

@@ -79,6 +79,12 @@
         "true": "正確",
         "false": "錯誤"
     },
+    "YourPics": {
+		"YourPics": "你的照片",
+		"SelectPicturesFromDevice": "從您的設備中選擇圖片進行繪製！",
+		"NoDataIsSent": "不會將任何數據發送到我們的服務器，其他人也無法看到您選擇的圖片。",
+		"ShuffleImages": "Shuffle images"
+	},
     "Header": {
         "Title": "r/SketchDaily 參考",
         "AddImages": "加入圖片",

@@ -15,10 +15,11 @@ import { ClassService } from '../class.service';
 import { environment } from '../../environments/environment';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../language.service';
+
 @Component({
-  selector: 'app-image-viewer',
-  templateUrl: './image-viewer.component.html',
-  styleUrls: ['./image-viewer.component.css'],
+  selector: 'app-draw-your-pics',
+  templateUrl: './draw-your-pics.component.html',
+  styleUrls: ['./draw-your-pics.component.css'],
   animations: [
     trigger('fadeOut', [
       state('0', style({
@@ -32,7 +33,7 @@ import { LanguageService } from '../language.service';
     ])
   ]
 })
-export class ImageViewerComponent implements OnInit, OnDestroy {
+export class DrawYourPicsComponent implements OnInit {
 
   image: any = {};
   filters: any = {};
@@ -49,16 +50,10 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   loadingImage = false;
   imageUrl: string = null;
   nextImageUrl: string = null;
-  reporting = false;
-  reportType = '4';
   comment = '';
   imageUrls = [];
   disableNavigation = false;
-  selectingPics = false;
-  selectedFiles: File[] = [];
-  userPics: Array<any> = [];
-  userPicIndex = 0;
-  shufflePictures = true;
+  started = false;
 
   @ViewChild('classComplete') private classCompleteModal;
   constructor(
@@ -75,15 +70,9 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.languageService.updateLanguageFromRoute(this.route);
 
-    this.params = this.route.params.subscribe(params => {
-      this.referenceType = params['type'];
-      this.sessionService.referenceType = this.referenceType;
-    });
-
-    this.route.queryParamMap.subscribe(params => {
-      const p: any = params;
-      this.filters = p.params;
-    });
+    this.referenceType = 'YourPics'
+    this.sessionService.referenceType = this.referenceType;
+    this.filters = {};
 
     if (this.filters.Class) {
       this.classInfo = this.classService.getClass(this.filters.Class);
@@ -96,13 +85,6 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
     this.break = false;
     this.setTimer();
     this.sessionService.ClearHistory();
-
-    if (this.referenceType == 'YourPics') {
-      this.selectingPics = true;
-    } else {
-      this.previousImages = this.sessionService.GetPreviousIds();
-      this.nextImage(false);
-    }    
   }
 
   ngOnDestroy() {
@@ -155,29 +137,23 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
       this.incrementClass();
     }
 
-    const nextImage = this.sessionService.NextImage();
-    if (nextImage != null) {
-      this.showNewImage(nextImage, false);
-    } else {
-      const previousIds = this.sessionService.GetPreviousIds();
-
-      if (this.referenceType == 'YourPics') {
-        this.showNewImage(this.userPics[this.userPicIndex], true);
-        this.userPicIndex++;
-      } else {
-        this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(image => {
-          this.showNewImage(image, true);
-        });
-      }
-    }
+    // const nextImage = this.sessionService.NextImage();
+    // if (nextImage != null) {
+    //   this.showNewImage(nextImage, false);
+    // } else {
+    //   const previousIds = this.sessionService.GetPreviousIds();
+    //   this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(image => {
+    //     this.showNewImage(image, true);
+    //   });
+    // }
   }
 
   previousImage(): void {
     this.decrementClass();
 
     clearInterval(this.timer);
-    const previousImage = this.sessionService.PreviousImage();
-    this.showNewImage(previousImage, false);
+    // const previousImage = this.sessionService.PreviousImage();
+    // this.showNewImage(previousImage, false);
   }
 
   imageLoaded() {
@@ -195,9 +171,7 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
     this.loadingImage = true;
     this.imageUrl = this.getUrl(image);
     const previousIds = this.sessionService.GetPreviousIds();
-    if (this.referenceType != 'YourPics') {
-      this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(i => this.preloadNextImage(i));
-    }
+    this.referenceService.getReference(this.referenceType, this.filters, previousIds).subscribe(i => this.preloadNextImage(i));
     this.image = image;
 
     this.imageUrls = [ this.imageUrl ]; // workaround to get images to display while they load
@@ -216,8 +190,6 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   getUrl(image: any) {
     if (image === null || image === undefined) {
       return '';
-    } else if (this.referenceType == 'YourPics') {
-      return image.file;
     } else {
       return environment.imageUrl + image.file;
     }
@@ -281,62 +253,5 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   imageFound() {
     return this.image !== {} && this.image != null;
   }
-
-  shuffle (arr) {
-    var j, x, index;
-    for (index = arr.length - 1; index > 0; index--) {
-        j = Math.floor(Math.random() * (index + 1));
-        x = arr[index];
-        arr[index] = arr[j];
-        arr[j] = x;
-    }
-    return arr;
-  }
-
-  startYourPics() {
-    this.userPics = [];
-
-    let i = 0;
-    let files = [];
-    for (const file of this.selectedFiles) {
-      files.push({
-        id: i,
-        file: URL.createObjectURL(file) 
-      });
-      i++;
-    }
-
-    if (this.shufflePictures) {
-      this.userPics = this.shuffle(files);
-    } else {
-      this.userPics = files;
-    }
-
-    this.selectingPics = false;
-    this.previousImages = this.sessionService.GetPreviousIds();
-    this.nextImage(false);
-  }
-
-  handleFileInput(event: any) {
-    this.selectedFiles = event.target.files;
-  }
-
-  report() {
-    console.log('here');
-    if (this.comment.length === 0) {
-      alert('Please enter a comment to describe the issue.');
-    } else {
-      this.reporting = true;
-      this.referenceService.reportImage(this.image.id, this.comment, this.reportType, this.referenceType)
-        .subscribe(x => {
-          if (x != false) {
-            alert('Image has been reported.');
-            this.reporting = false;
-          } else {
-            alert('Error reporting.');
-          }                   
-        });
-    }
-  }
-
+  
 }

@@ -79,6 +79,12 @@
 		"true": "Sant",
 		"false": "Falskt"
 	},
+	"YourPics": {
+		"YourPics": "Dine bilder",
+		"SelectPicturesFromDevice": "Velg bilder fra enheten du vil tegne!",
+		"NoDataIsSent": "Ingen data sendes til serveren vår, og ingen andre vil kunne se bildene du velger.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily References",
 		"AddImages": "Legg til bilder",

@@ -79,6 +79,12 @@
         "true": "Totoo",
         "false": "Mali"
     },
+    "YourPics": {
+		"YourPics": "Iyong mga Larawan",
+		"SelectPicturesFromDevice": "Pumili ng mga larawan mula sa iyong device na iguguhit!",
+		"NoDataIsSent": "Walang data na ipinapadala sa aming server, at walang ibang makakakita sa mga larawang pipiliin mo.",
+		"ShuffleImages": "Shuffle images"
+	},
     "Header": {
         "Title": "r/SketchDaily References",
         "AddImages": "Magdagdag ng mga imahe",

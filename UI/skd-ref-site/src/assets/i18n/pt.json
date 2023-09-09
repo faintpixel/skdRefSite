@@ -79,6 +79,12 @@
 		"true": "Verdadeiro",
 		"false": "Falso"
 	},
+	"YourPics": {
+		"YourPics": "Suas fotos",
+		"SelectPicturesFromDevice": "Selecione fotos do seu dispositivo para desenhar!",
+		"NoDataIsSent": "Nenhum dado é enviado ao nosso servidor e ninguém mais poderá ver as imagens que você selecionar.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily Referências",
 		"AddImages": "Adicionar imagens",

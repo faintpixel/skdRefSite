@@ -79,6 +79,12 @@
         "true": "Тачно",
         "false": "Нетачно"
     },
+    "YourPics": {
+		"YourPics": "Ваше слике",
+		"SelectPicturesFromDevice": "Изаберите слике са свог уређаја за цртање!",
+		"NoDataIsSent": "Подаци се не шаљу на наш сервер и нико други неће моћи да види слике које изаберете.",
+		"ShuffleImages": "Shuffle images"
+	},
     "Header": {
         "Title": "r/SketchDaily референце",
         "AddImages": "Додај слике",

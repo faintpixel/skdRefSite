@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Gender } from '../models/gender';
 import { PoseType } from '../models/poseType';
 import { ViewAngle } from '../models/viewAngle';
@@ -15,6 +15,7 @@ import { LanguageService } from '../language.service';
 import { StructureType } from '../models/structureType';
 import { VegetationPhotoType } from '../models/vegetationPhotoType';
 import { VegetationType } from '../models/vegetationType';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-reference-filters',
@@ -22,6 +23,7 @@ import { VegetationType } from '../models/vegetationType';
   styleUrls: ['./reference-filters.component.css']
 })
 export class ReferenceFiltersComponent implements OnInit {
+  @ViewChild('fileInput') fileInput: ElementRef;
 
   filters: any = {
     FullBodies: {
@@ -64,11 +66,14 @@ export class ReferenceFiltersComponent implements OnInit {
   currentTab = 'FullBodiesTab';
 
   imageCount?: any = null;
+  selectedFiles: File[] = [];
+  testImage: any = '';
 
   constructor(private referenceService: ReferenceService,
     private sessionService: SessionService,
     private classService: ClassService,
     private router: Router,
+    private sanitizer: DomSanitizer,
     private languageService: LanguageService) {
 
     this.genders = Object.keys(Gender);
@@ -114,10 +119,15 @@ export class ReferenceFiltersComponent implements OnInit {
 
   updateCount(): void {
     this.imageCount = null;
-    const referenceType = this.currentTab.replace('Tab', '');
-    const filters = this.removeUnusedFilters(this.filters[referenceType]);
-    filters.recentImagesOnly = this.filters.OnlyMostRecent || false;
-    this.referenceService.getReferenceCount(referenceType, filters).subscribe(count => this.imageCount = count);
+    if (this.currentTab == 'YourPicsTab') {
+      const files: FileList = this.fileInput.nativeElement.files;
+      this.imageCount = files.length;
+    } else {
+      const referenceType = this.currentTab.replace('Tab', '');
+      const filters = this.removeUnusedFilters(this.filters[referenceType]);
+      filters.recentImagesOnly = this.filters.OnlyMostRecent || false;
+      this.referenceService.getReferenceCount(referenceType, filters).subscribe(count => this.imageCount = count);
+    }
   }
 
   start(): void {
@@ -136,7 +146,29 @@ export class ReferenceFiltersComponent implements OnInit {
     console.log(this.languageService.language);
     console.log(referenceType);
 
+    if(referenceType === 'YourPics') {
+
+      const userPics = [];
+
+      for (const file of this.selectedFiles) {
+        userPics.push(URL.createObjectURL(file));
+      }
+
+      localStorage.setItem('yourPics', JSON.stringify(userPics));
+    }
+
     this.router.navigate([this.languageService.language, 'view', referenceType], { queryParams: filter });
+  }
+
+  handleFileInput(event: any) {
+    this.selectedFiles = event.target.files;
+
+    // for (const file of this.selectedFiles) {
+      
+    //   this.testImage = URL.createObjectURL(file);
+    //   console.log(this.testImage);
+    // }
+
   }
 
   removeUnusedFilters(filters): any {

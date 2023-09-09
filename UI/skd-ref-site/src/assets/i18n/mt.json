@@ -79,6 +79,12 @@
 		"true": "Veru",
 		"false": "Falz"
 	},
+	"YourPics": {
+		"YourPics": "Pics tiegħek",
+		"SelectPicturesFromDevice": "Agħżel stampi mit-tagħmir tiegħek biex tiġbed!",
+		"NoDataIsSent": "L-ebda data ma tintbagħat lis-server tagħna, u ħadd ieħor ma jkun jista’ jara l-istampi li tagħżel.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily Referenzi",
 		"AddImages": "Żid ritratti",

@@ -79,6 +79,12 @@
 		"ClassMode": "Klassetilstand",
 		"Class": "Klasse"
 	},
+	"YourPics": {
+		"YourPics": "Dine billeder",
+		"SelectPicturesFromDevice": "Vælg billeder fra din enhed til at tegne!",
+		"NoDataIsSent": "Der sendes ingen data til vores server, og ingen andre vil kunne se de billeder, du vælger.",
+		"ShuffleImages": "Bland billeder"
+	},
 	"Header": {
 		"Title": "r/SketchDaily referencer",
 		"AddImages": "Tilføj billeder",

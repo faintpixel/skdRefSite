@@ -79,6 +79,12 @@
 		"true": "Doğru",
 		"false": "Yanlış"
 	},
+	"YourPics": {
+		"YourPics": "Fotoğrafların",
+		"SelectPicturesFromDevice": "Çizmek için cihazınızdan resimler seçin!",
+		"NoDataIsSent": "Sunucumuza hiçbir veri gönderilmez ve seçtiğiniz resimleri başka kimse göremez.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily Referanslar",
 		"AddImages": "Fotoğraf ekle",

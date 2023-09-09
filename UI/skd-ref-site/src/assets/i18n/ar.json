@@ -79,6 +79,12 @@
         "true": "صائب",
         "false": "خاطئ"
     },
+    "YourPics": {
+		"YourPics": "صورك",
+		"SelectPicturesFromDevice": "حدد الصور من جهازك للرسم!",
+		"NoDataIsSent": "لا يتم إرسال أي بيانات إلى خادمنا، ولن يتمكن أي شخص آخر من رؤية الصور التي تحددها.",
+		"ShuffleImages": "خلط الصور"
+	},
     "Header": {
         "Title": "r/SketchDaily References",
         "AddImages": "اضافة صور",

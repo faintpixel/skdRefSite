@@ -79,6 +79,12 @@
         "true": "True",
         "false": "False"
     },
+    "YourPics": {
+		"YourPics": "Сезнең рәсемнәр",
+		"SelectPicturesFromDevice": "Рәсем ясау өчен җайланмадан рәсемнәр сайлагыз!",
+		"NoDataIsSent": "Безнең серверга бернинди мәгълүмат җибәрелми, һәм сез сайлаган рәсемнәрне бүтән беркем дә күрә алмаячак.",
+		"ShuffleImages": "Shuffle images"
+	},
     "Header": {
         "Title": "r/SketchDaily References",
         "AddImages": "Сүрәт өстәү",

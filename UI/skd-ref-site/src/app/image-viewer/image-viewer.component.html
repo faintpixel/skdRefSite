@@ -2,7 +2,7 @@
   <div class='container'>
     <a class='navbar-brand' [routerLink]="['', languageService.language]">{{'Header.Title' | translate}}</a>
 
-    <div id='controls'>
+    <div id='controls' *ngIf="!selectingPics">
       {{'ImageViewer.Timer' | translate}}: <span *ngIf="loadingImage">Loading... </span><span *ngIf="!loadingImage">{{time.minutes}}:{{time.seconds
         | number:'2.0'}} </span> <span *ngIf="paused">({{'ImageViewer.Paused'
         | translate}})</span>
@@ -21,7 +21,7 @@
       <button (click)="nextImage()">
         <fa-icon icon="forward"></fa-icon>
       </button>
-      <button (click)="openModal(info)">
+      <button (click)="openModal(info)" *ngIf="referenceType != 'YourPics'">
         <fa-icon icon="info-circle"></fa-icon>
       </button>
       <button (click)="openModal(about)">
@@ -43,10 +43,24 @@
   </div>
 </nav>
 
-<div class='container' (document:keyup)="keyPressed($event)">
+<div class="container" *ngIf="selectingPics"><br/>
+  <b>{{'YourPics.SelectPicturesFromDevice' | translate}}</b><br/><br/>
+
+  {{'YourPics.NoDataIsSent' | translate}} <br/><br/>
+  <input type="file" #fileInput id="fileSelection" name="files" accept="image/png, image/jpeg, image/gif" multiple (change)="handleFileInput($event)" />
+  <br/>
+  <div id="shuffleContainer">
+    <input id='shufflePictures' class='form-check-input' type='checkbox' [(ngModel)]="shufflePictures" />
+    <label for='shufflePictures' class='form-check-label'>{{'YourPics.ShuffleImages' | translate}}</label>
+  </div>
+  <br/>
+  <button class='btn btn-primary btn-block' (click)="startYourPics()">{{'Filters.Start' | translate}}</button>
+</div>
+
+<div class='container' *ngIf="!selectingPics" (document:keyup)="keyPressed($event)">
   <div id="image" *ngIf="imageFound() && image.file !== undefined">
     <span *ngIf="!break">
-      <img *ngFor="let url of imageUrls" [src]="url" class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()" />
+      <img *ngFor="let url of imageUrls" [src]="url | safeResourceUrl" class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()" />
     </span>
     <img id='nextImage' *ngIf="nextImageUrl != null" [src]="nextImageUrl" />
     <div *ngIf="break">

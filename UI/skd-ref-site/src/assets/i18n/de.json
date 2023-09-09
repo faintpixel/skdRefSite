@@ -79,6 +79,12 @@
 		"true": "Wahr",
 		"false": "Falsch"
 	},
+	"YourPics": {
+		"YourPics": "Your Pics",
+		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
+		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily Vorlagen",
 		"AddImages": "Füge Bilder hinzu",

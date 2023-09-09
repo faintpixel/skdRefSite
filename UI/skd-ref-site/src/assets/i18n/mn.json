@@ -66,7 +66,7 @@
 		"Seconds": "секунд",
 		"Hour": "цаг",
 		"Hours": "цаг",
-		"OnlyMostRecentImages": "Only use most recent images",
+		"OnlyMostRecentImages": "Зөвхөн хамгийн сүүлийн үеийн зургийг ашиглана уу",
 		"NumberOfImages": "Зургийн тоо",
 		"Start": "Эхлүүлэх",
 		"Time": "Хугацаа",
@@ -78,6 +78,12 @@
 		"Class": "Class",
 		"NoTimers": "Хугацаа заахгүй",
 		"View": "View"
+	},
+	"YourPics": {
+		"YourPics": "Таны зургууд",
+		"SelectPicturesFromDevice": "Зурахын тулд төхөөрөмжөөсөө зураг сонго!",
+		"NoDataIsSent": "Манай серверт ямар ч өгөгдөл илгээгдээгүй бөгөөд таны сонгосон зургуудыг хэн ч харах боломжгүй.",
+		"ShuffleImages": "Shuffle images"
 	},
 	"Header": {
 		"Title": "r/SketchDaily References",

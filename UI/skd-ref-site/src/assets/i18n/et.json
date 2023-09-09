@@ -79,6 +79,12 @@
 		"NumberOfImages": "Piltide arv",
 		"OnlyMostRecentImages": "Kasuta ainult hiljutisi pilte"
 	},
+	"YourPics": {
+		"YourPics": "Your Pics",
+		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
+		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"YourImages": "Sinu pildid",
 		"AddImages": "Lisa pilte",

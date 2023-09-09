@@ -90,6 +90,12 @@
         "true": "Jā",
         "false": "Nē"
     },
+    "YourPics": {
+		"YourPics": "Jūsu attēli",
+		"SelectPicturesFromDevice": "Izvēlieties attēlus no ierīces, ko zīmēt!",
+		"NoDataIsSent": "Uz mūsu serveri netiek sūtīti nekādi dati, un neviens cits nevarēs redzēt jūsu atlasītos attēlus.",
+		"ShuffleImages": "Shuffle images"
+	},
     "Header": {
         "Title": "r/SketchDaily References",
         "AddImages": "Pievienot bildes",

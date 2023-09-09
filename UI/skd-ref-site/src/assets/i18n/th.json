@@ -79,6 +79,12 @@
 		"true": "จริง",
 		"false": "เท็จ"
 	},
+	"YourPics": {
+		"YourPics": "รูปของคุณ",
+		"SelectPicturesFromDevice": "เลือกรูปภาพจากอุปกรณ์ของคุณเพื่อวาด!",
+		"NoDataIsSent": "ไม่มีการส่งข้อมูลไปยังเซิร์ฟเวอร์ของเรา และจะไม่มีใครสามารถเห็นภาพที่คุณเลือกได้",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily อ้างอิง",
 		"AddImages": "เพิ่มรูปภาพ",

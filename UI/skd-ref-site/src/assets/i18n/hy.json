@@ -79,6 +79,12 @@
 		"true": "Ճիշտ",
 		"false": "Սխալ"
 	},
+	"YourPics": {
+		"YourPics": "Ձեր նկարները",
+		"SelectPicturesFromDevice": "Ընտրեք նկարներ ձեր սարքից նկարելու համար:",
+		"NoDataIsSent": "Ոչ մի տվյալ չի ուղարկվում մեր սերվերին, և ոչ ոք չի կարողանա տեսնել ձեր ընտրած նկարները:",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily բնորդներ",
 		"AddImages": "Ավելացնել նկարներ",

@@ -134,6 +134,15 @@
     </ngb-tab>
 
 
+    <ngb-tab title="{{'YourPics.YourPics' | translate}}" id='YourPicsTab'>
+      <ng-template ngbTabContent>
+
+        <i>{{'YourPics.SelectPicturesFromDevice' | translate}}</i><br/><br/>
+
+        <i>{{'YourPics.NoDataIsSent' | translate}}</i><br/><br/>
+
+      </ng-template>
+    </ngb-tab>
 
 
   </ngb-tabset>
@@ -177,12 +186,12 @@
       </div>
     </div>
 
-    <div id='onlyMostRecentImages' class='form-check'>
+    <div id='onlyMostRecentImages' class='form-check' *ngIf="currentTab != 'YourPicsTab'">
       <input id='onlyMostRecent' class='form-check-input' type='checkbox' [(ngModel)]="filters.OnlyMostRecent" />
       <label for='onlyMostRecent' class='form-check-label'>{{'Filters.OnlyMostRecentImages' | translate}}</label>
     </div>
 
-    <br /> {{'Filters.NumberOfImages' | translate}}: {{imageCount}}
+    <br /> <span *ngIf="currentTab != 'YourPicsTab'">{{'Filters.NumberOfImages' | translate}}: {{imageCount}}</span>
     <br />
     <button class='btn btn-primary btn-block' (click)="start()">{{'Filters.Start' | translate}}</button>
 

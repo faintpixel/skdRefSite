@@ -79,6 +79,12 @@
 		"false": "False",
 		"Break": "休憩"
 	},
+	"YourPics": {
+		"YourPics": "あなたの写真",
+		"SelectPicturesFromDevice": "デバイスから絵を選択して描きましょう!",
+		"NoDataIsSent": "データはサーバーに送信されず、選択した写真を他の人が見ることはできません。",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily References",
 		"AddImages": "画像を追加する",

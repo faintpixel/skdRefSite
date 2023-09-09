@@ -79,6 +79,12 @@
 		"true": "Точно",
 		"false": "Неточно"
 	},
+	"YourPics": {
+		"YourPics": "Вашите слики",
+		"SelectPicturesFromDevice": "Изберете слики од вашиот уред за цртање!",
+		"NoDataIsSent": "Не се испраќаат податоци до нашиот сервер и никој друг нема да може да ги види сликите што ќе ги изберете.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/SketchDaily слики",
 		"AddImages": "Додади слики",

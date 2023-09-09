@@ -79,6 +79,12 @@
         "true": "Да",
         "false": "Не"
     },
+    "YourPics": {
+		"YourPics": "Вашите снимки",
+		"SelectPicturesFromDevice": "Изберете снимки от вашето устройство, за да рисувате!",
+		"NoDataIsSent": "До нашия сървър не се изпращат данни и никой друг няма да може да види избраните от вас снимки.",
+		"ShuffleImages": "Разбъркване на изображения"
+	},
     "Header": {
         "Title": "r/SketchDaily References",
         "AddImages": "Добавете изображения",

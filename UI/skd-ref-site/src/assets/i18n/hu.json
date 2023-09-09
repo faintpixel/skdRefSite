@@ -79,6 +79,12 @@
 		"ClassMode": "Óra mód",
 		"Class": "Óra"
 	},
+	"YourPics": {
+		"YourPics": "Az Ön képei",
+		"SelectPicturesFromDevice": "Válasszon képeket a készülékéről a rajzoláshoz!",
+		"NoDataIsSent": "A szerverünkre nem küldenek adatokat, és senki más nem láthatja az Ön által kiválasztott képeket.",
+		"ShuffleImages": "Shuffle images"
+	},
 	"Header": {
 		"Title": "r/NapiVázlat Referenciák",
 		"AddImages": "Képek hozzáadása",
