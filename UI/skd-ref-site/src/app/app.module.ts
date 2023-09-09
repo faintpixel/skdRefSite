@@ -10,7 +10,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle, faSun, faMoon, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './/app-routing.module';
 import { AddImagesComponent } from './add-images/add-images.component';
@@ -42,7 +42,7 @@ import { OfflineComponent } from './offline/offline.component';
 import { SubmitImagesComponent } from './submit-images/submit-images.component';
 import { SafeUrlPipe } from './safe-resource-url.pipe';
 
-library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle, faSun, faMoon);
+library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle, faSun, faMoon, faExclamationCircle);
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

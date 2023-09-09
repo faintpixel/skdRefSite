@@ -16,4 +16,7 @@
 
     --background-image: url('/assets/img/background-light.jpg');
     --home-text-background-color: rgba(255, 255, 255, 0.8);
+
+    --announcement-background-color: slategrey;
+    --announcement-text-color: white;
 }

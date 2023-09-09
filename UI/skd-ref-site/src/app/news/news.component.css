@@ -29,3 +29,14 @@ h1 {
 .pageControls a {
     padding-right: 10px;
 }
+
+#announcement {
+    background-color: var(--announcement-background-color);
+    border-radius: 6px;
+    padding: 5px;
+    color: var(--announcement-text-color);
+}
+
+.header fa-icon {
+    padding-right: 6px;
+}

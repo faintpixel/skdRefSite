@@ -16,4 +16,7 @@
 
     --background-image: url('/assets/img/background.jpg');
     --home-text-background-color: rgba(0, 0, 0, 0.5);
+
+    --announcement-background-color: #7d7d7d;
+    --announcement-text-color: black;
 }

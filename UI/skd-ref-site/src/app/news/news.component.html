@@ -1,8 +1,13 @@
 <h1>{{'News.WhatsNew' | translate}}</h1>
 
-<div *ngIf="announcement != ''">
-    <b>{{'News.Announcement' | translate}}: </b> <span [innerHTML]="announcement"></span>
-    <hr />
+<div *ngIf="announcement != ''" id="announcement">
+    <div>
+        <div class="header">
+            <fa-icon icon="exclamation-circle"></fa-icon>
+            <b>{{'News.Announcement' | translate}}: </b>
+        </div>
+        <span [innerHTML]="announcement"></span>
+    </div>
 </div>
 
 <div *ngFor="let entry of news; let lastItem = last;">
