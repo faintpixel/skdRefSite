@@ -80,10 +80,10 @@
         "false": "गलत"
     },
     "YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "आपकी तस्वीरें",
+		"SelectPicturesFromDevice": "खींचने के लिए अपने डिवाइस से चित्र चुनें!",
+		"NoDataIsSent": "हमारे सर्वर पर कोई डेटा नहीं भेजा जाता है, और कोई भी आपके द्वारा चुनी गई तस्वीरों को नहीं देख पाएगा।",
+		"ShuffleImages": "छवियों को शफ़ल करें"
 	},
     "Header": {
         "Title": "r/SketchDaily References",

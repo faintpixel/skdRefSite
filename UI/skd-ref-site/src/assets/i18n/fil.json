@@ -67,10 +67,10 @@
         "View": "tignan"
     },
     "YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "Iyong mga Larawan",
+		"SelectPicturesFromDevice": "Pumili ng mga larawan mula sa iyong device na iguguhit!",
+		"NoDataIsSent": "Walang data na ipinapadala sa aming server, at walang ibang makakakita sa mga larawang pipiliin mo.",
+		"ShuffleImages": "I-shuffle ang mga larawan"
 	},
     "Header": {
         "AddImages": "Mag dagdag ng imahe",

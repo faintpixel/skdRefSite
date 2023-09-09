@@ -80,10 +80,10 @@
 		"OnlyMostRecentImages": "Kasuta ainult hiljutisi pilte"
 	},
 	"YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "Teie pildid",
+		"SelectPicturesFromDevice": "Valige joonistamiseks oma seadmest pildid!",
+		"NoDataIsSent": "Meie serverisse andmeid ei saadeta ja keegi teine ​​ei näe teie valitud pilte.",
+		"ShuffleImages": "Kujutiste segamine"
 	},
 	"Header": {
 		"YourImages": "Sinu pildid",

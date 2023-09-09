@@ -80,10 +80,10 @@
 		"false": "غلط"
 	},
 	"YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "عکس های شما",
+		"SelectPicturesFromDevice": "تصاویر را از دستگاه خود برای کشیدن انتخاب کنید!",
+		"NoDataIsSent": "هیچ داده ای به سرور ما ارسال نمی شود و هیچ کس دیگری نمی تواند تصاویر انتخابی شما را ببیند.",
+		"ShuffleImages": "مخلوط کردن تصاویر"
 	},
 	"Header": {
 		"Title": "/SketchDaily References",

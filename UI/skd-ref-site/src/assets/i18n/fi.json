@@ -80,10 +80,10 @@
 		"false": "Väärin"
 	},
 	"YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "Sinun kuvasi",
+		"SelectPicturesFromDevice": "Valitse piirrettävät kuvat laitteestasi!",
+		"NoDataIsSent": "Palvelimellemme ei lähetetä tietoja, eikä kukaan muu voi nähdä valitsemiasi kuvia.",
+		"ShuffleImages": "Sekoita kuvat"
 	},
 	"Header": {
 		"Title": "r/SketchDaily Refrenssit",
