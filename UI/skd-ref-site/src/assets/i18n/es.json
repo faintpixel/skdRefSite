@@ -80,10 +80,10 @@
 		"false": "Falso"
 	},
 	"YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "Tus fotos",
+		"SelectPicturesFromDevice": "¡Selecciona imágenes de tu dispositivo para dibujar!",
+		"NoDataIsSent": "No se envían datos a nuestro servidor y nadie más podrá ver las imágenes que seleccione.",
+		"ShuffleImages": "Mezclar imágenes"
 	},
 	"Header": {
 		"Title": "Referencias de r/SketchDaily",

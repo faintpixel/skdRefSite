@@ -80,10 +80,10 @@
 		"false": "Falsch"
 	},
 	"YourPics": {
-		"YourPics": "Your Pics",
-		"SelectPicturesFromDevice": "Select pictures from your device to draw!",
-		"NoDataIsSent": "No data is sent to our server, and nobody else will be able to see the pictures you select.",
-		"ShuffleImages": "Shuffle images"
+		"YourPics": "Deine Bilder",
+		"SelectPicturesFromDevice": "Wählen Sie Bilder von Ihrem Gerät zum Zeichnen aus!",
+		"NoDataIsSent": "Es werden keine Daten an unseren Server gesendet und niemand sonst kann die von Ihnen ausgewählten Bilder sehen.",
+		"ShuffleImages": "Bilder mischen"
 	},
 	"Header": {
 		"Title": "r/SketchDaily Vorlagen",

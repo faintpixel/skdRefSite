@@ -41,7 +41,6 @@ import { ContributorsComponent } from './contributors/contributors.component';
 import { OfflineComponent } from './offline/offline.component';
 import { SubmitImagesComponent } from './submit-images/submit-images.component';
 import { SafeUrlPipe } from './safe-resource-url.pipe';
-import { DrawYourPicsComponent } from './draw-your-pics/draw-your-pics.component';
 
 library.add(faBackward, faForward, faPause, faPlay, faStop, faInfoCircle, faQuestionCircle);
 
@@ -77,8 +76,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContributorsComponent,
     OfflineComponent,
     SubmitImagesComponent,
-    SafeUrlPipe,
-    DrawYourPicsComponent
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
