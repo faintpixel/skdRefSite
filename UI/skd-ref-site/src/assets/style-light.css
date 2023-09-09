@@ -1,0 +1,19 @@
+:root {
+    --main-text-color: black; /* slategrey */ 
+    --darker-text-color: darkslategrey; /* darkslategrey */
+    --main-background-color: white; /* black */
+    --light-text-color: darkslategrey; /* white */
+    --link-color: #08c; /* #08c */
+    --link-hover-color: #005580; /* #005580 */
+
+    --navbar-background-color: #ededed; /* #1b1b1b */
+    --navbar-background-color-start: #ededed; /* #222 */
+    --navbar-background-color-end: #e6e3e3; /* #111 */
+    --navbar-border-color: white; /* #252525 */
+
+    --filter-background-color: #f5f5f5; /* #f5f5f5 */
+    --filter-border-color: #e3e3e3; /* #e3e3e3 */
+
+    --background-image: url('/assets/img/background-light.jpg');
+    --home-text-background-color: rgba(255, 255, 255, 0.8);
+}

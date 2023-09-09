@@ -1,7 +1,7 @@
 #editContainer {
     position: fixed;
     bottom: 0;
-    background-color: white;
+    background-color: var(--light-text-color);;
     left: 0;
     right: 0;
     padding: 0.5em;

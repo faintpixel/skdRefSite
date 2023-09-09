@@ -4,7 +4,7 @@
 
 .severeWarning {
     background-color: orange;
-    color: black;
+    color: var(--main-background-color);
 }
 
 .minorWarning {

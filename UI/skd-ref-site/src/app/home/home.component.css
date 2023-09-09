@@ -3,7 +3,7 @@
 }
 
 .background {
-    background-image: url('/assets/img/background.jpg');
+    background-image: var(--background-image);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -18,6 +18,10 @@
 }
 
 hr {
-    background-color: slategrey;
-    color: slategrey;
+    background-color: var(--main-text-color);
+    color: var(--main-text-color);
+}
+
+.homeText {
+    background-color: var(--home-text-background-color);
 }

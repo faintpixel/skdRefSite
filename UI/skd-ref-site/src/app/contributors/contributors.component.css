@@ -9,7 +9,7 @@ h2 {
 .category {
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-color: darkslategrey;
+    border-color: var(--main-text-color);
     padding-top: 30px;
     padding-bottom: 30px;
 }
