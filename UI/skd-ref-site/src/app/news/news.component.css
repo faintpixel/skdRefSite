@@ -37,6 +37,10 @@ h1 {
     color: var(--announcement-text-color);
 }
 
+::ng-deep .announcement a {
+    color: var(--darker-text-color);
+}
+
 .header fa-icon {
     padding-right: 6px;
 }
