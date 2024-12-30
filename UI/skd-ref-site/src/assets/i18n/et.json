@@ -98,6 +98,10 @@
 	"ImageViewer": {
 		"LeftControls": "Vasak - Eelmine pilt",
 		"RightControls": "Parem - Järgmine pilt",
+		"BControls": "b - Lülita must-valge režiim",
+		"FControls": "f - Pööra pilt",
+		"GControls": "g - Lülita ruudustik",
+		"MControls": "m - Peegelda",
 		"SpacebarControls": "Tühikuklahv - Paus",
 		"EscapeControls": "Esc - Stopp",
 		"Next": "Järgmine",

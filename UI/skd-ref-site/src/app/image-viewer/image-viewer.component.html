@@ -58,7 +58,7 @@
 </div>
 
 <div class='container' *ngIf="!selectingPics" (document:keyup)="keyPressed($event)">
-  <div id="image" *ngIf="imageFound() && image.file !== undefined">
+  <div #imageContainer id="image" *ngIf="imageFound() && image.file !== undefined">
     <span *ngIf="!break">
       <img *ngFor="let url of imageUrls" [src]="url | safeResourceUrl" class='referenceImage' [@fadeOut]="fadeOut" (load)="imageLoaded()" />
     </span>
@@ -145,7 +145,12 @@
     {{'ImageViewer.LeftControls' | translate}}
     <br /> {{'ImageViewer.RightControls' | translate}}
     <br /> {{'ImageViewer.SpacebarControls' | translate}}
-    <br /> {{'ImageViewer.EscapeControls' | translate}}<br />
+    <br /> {{'ImageViewer.EscapeControls' | translate}}
+    <br /> {{'ImageViewer.BControls' | translate}}
+    <br /> {{'ImageViewer.FControls' | translate}}
+    <br /> {{'ImageViewer.GControls' | translate}}
+    <br /> {{'ImageViewer.MControls' | translate}}    
+    <br />
     <br />
     <a href='mailto:artomizer@sketchdaily.net'>Contact us</a> to report issues or suggest improvements!<br />
     <a href='https://www.reddit.com/r/sketchdaily'>{{'ImageViewer.VisitUsOnReddit' | translate}}</a>

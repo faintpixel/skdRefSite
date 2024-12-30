@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
+import { Component, OnInit, ViewChild, OnDestroy, ElementRef } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { SessionService } from '../session.service';
 import { ReferenceService } from '../reference.service';
@@ -59,8 +59,11 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   userPics: Array<any> = [];
   userPicIndex = 0;
   shufflePictures = true;
+  gridState = 0; // 0: No grid, 1: Black grid, 2: White grid
 
   @ViewChild('classComplete') private classCompleteModal;
+  @ViewChild('imageContainer') imageContainer: ElementRef;
+
   constructor(
     private modalService: NgbModal,
     private referenceService: ReferenceService,
@@ -227,6 +230,64 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
     this.paused = !this.paused;
   }
 
+  toggleBlackAndWhite(): void {
+    const element = this.imageContainer.nativeElement;
+    element.classList.toggle('blackAndWhite');
+  }
+
+  // toggleFlip(): void {
+  //   const element = this.imageContainer.nativeElement;
+  //   element.classList.toggle('flipHorizontally');
+  // }
+
+  toggleGrid(): void {
+    const element = this.imageContainer.nativeElement;
+    element.classList.remove('gridOverlayDark', 'gridOverlayLight');
+    this.gridState = (this.gridState + 1) % 3;
+    if (this.gridState === 1) {
+      element.classList.add('gridOverlayDark');
+    } else if (this.gridState === 2) {
+      element.classList.add('gridOverlayLight');
+    }
+  }
+
+  toggleFlip(): void {
+    const element = this.imageContainer.nativeElement;
+    if (element.classList.contains('flipHorizontally')) {
+      element.classList.remove('flipHorizontally');
+      this.updateTransform(element);
+    } else {
+      element.classList.add('flipHorizontally');
+      this.updateTransform(element);
+    }
+  }
+
+  toggleMirror(): void {
+    const element = this.imageContainer.nativeElement;
+    if (element.classList.contains('mirror')) {
+      element.classList.remove('mirror');
+      this.updateTransform(element);
+    } else {
+      element.classList.add('mirror');
+      this.updateTransform(element);
+    }
+  }
+
+  private updateTransform(element: HTMLElement): void {
+    const isFlipped = element.classList.contains('flipHorizontally');
+    const isMirrored = element.classList.contains('mirror');
+  
+    if (isFlipped && isMirrored) {
+      element.style.transform = 'scaleX(-1) scaleY(-1)';
+    } else if (isFlipped) {
+      element.style.transform = 'scaleY(-1)';
+    } else if (isMirrored) {
+      element.style.transform = 'scaleX(-1)';
+    } else {
+      element.style.transform = '';
+    }
+  }
+
   stop(): void {
     clearInterval(this.timer);
     console.log('stopping');
@@ -242,6 +303,14 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
       this.stop();
     } else if (e.key === ' ') {
       this.togglePause();
+    } else if (e.key === 'm') {
+      this.toggleMirror();
+    } else if (e.key === 'f') {
+      this.toggleFlip();
+    } else if (e.key === 'b') {
+      this.toggleBlackAndWhite();
+    } else if (e.key === 'g') {
+      this.toggleGrid();
     }
   }
 

@@ -33,6 +33,10 @@
         "Classifications": "Classifications or klasipikasyon (either of the two)",
         "LeftControls": "kaliwa - kaninang imahe",
         "RightControls": "kanan - susunod na imahe",
+        "BControls": "b - I-toggle ang itim at puti",
+        "FControls": "f - I-flip ang imahe",
+        "GControls": "g - I-toggle ang grid",
+        "MControls": "m - I-mirror",
         "SpacebarControls": "spacebar - pause"
     },
     "News": {
