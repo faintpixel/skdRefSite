@@ -3,7 +3,7 @@
     <a class='navbar-brand' [routerLink]="['', languageService.language]">{{'Header.Title' | translate}}</a>
 
     <div id='controls' *ngIf="!selectingPics">
-      {{'ImageViewer.Timer' | translate}}: <span *ngIf="loadingImage">Loading... </span><span *ngIf="!loadingImage">{{time.minutes}}:{{time.seconds
+      <span id="timerText">{{'ImageViewer.Timer' | translate}}: </span><span *ngIf="loadingImage">Loading... </span><span *ngIf="!loadingImage">{{time.minutes}}:{{time.seconds
         | number:'2.0'}} </span> <span *ngIf="paused">({{'ImageViewer.Paused'
         | translate}})</span>
 
@@ -20,10 +20,22 @@
       </button>
       <button (click)="nextImage()">
         <fa-icon icon="forward"></fa-icon>
+      </button>        
+      <button (click)="toggleFlip()">
+        <fa-icon icon="sort"></fa-icon>
+      </button>
+      <button (click)="toggleMirror()">
+        <fa-icon icon="exchange-alt"></fa-icon>
+      </button>
+      <button (click)="toggleBlackAndWhite()">
+        <fa-icon icon="palette"></fa-icon>
+      </button>
+      <button (click)="toggleGrid()">
+        <fa-icon icon="table"></fa-icon>
       </button>
       <button (click)="openModal(info)" *ngIf="referenceType != 'YourPics'">
         <fa-icon icon="info-circle"></fa-icon>
-      </button>
+      </button>    
       <button (click)="openModal(about)">
         <fa-icon icon="question-circle"></fa-icon>
       </button>

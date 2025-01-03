@@ -235,11 +235,6 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
     element.classList.toggle('blackAndWhite');
   }
 
-  // toggleFlip(): void {
-  //   const element = this.imageContainer.nativeElement;
-  //   element.classList.toggle('flipHorizontally');
-  // }
-
   toggleGrid(): void {
     const element = this.imageContainer.nativeElement;
     element.classList.remove('gridOverlayDark', 'gridOverlayLight');
