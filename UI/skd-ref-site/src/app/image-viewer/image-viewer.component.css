@@ -73,4 +73,8 @@
     #timerText {
       display: none;
     }
+
+    .hideOnPhone {
+        display: none;
+    }
 }

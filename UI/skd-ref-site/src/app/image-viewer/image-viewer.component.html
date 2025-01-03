@@ -21,16 +21,16 @@
       <button (click)="nextImage()">
         <fa-icon icon="forward"></fa-icon>
       </button>        
-      <button (click)="toggleFlip()">
+      <button (click)="toggleFlip()" class="hideOnPhone">
         <fa-icon icon="sort"></fa-icon>
       </button>
-      <button (click)="toggleMirror()">
+      <button (click)="toggleMirror()" class="hideOnPhone">
         <fa-icon icon="exchange-alt"></fa-icon>
       </button>
-      <button (click)="toggleBlackAndWhite()">
+      <button (click)="toggleBlackAndWhite()" class="hideOnPhone">
         <fa-icon icon="palette"></fa-icon>
       </button>
-      <button (click)="toggleGrid()">
+      <button (click)="toggleGrid()" class="hideOnPhone">
         <fa-icon icon="table"></fa-icon>
       </button>
       <button (click)="openModal(info)" *ngIf="referenceType != 'YourPics'">
