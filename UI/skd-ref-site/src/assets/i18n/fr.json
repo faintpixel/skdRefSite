@@ -7,24 +7,24 @@
 	},
 	"FullBody": {
 		"FullBody": "Corps entier",
-		"All": "Tous",
-		"Clothing": "Habillement",
+		"All": "Toutes",
+		"Clothing": "Habits",
 		"Clothed": "Habillé",
 		"Nude": "Nu",
 		"IncludeNSFWImages": "Inclure les images NSFW",
-		"Pose": "Pose",
+		"Pose": "Poses",
 		"Action": "En mouvement",
 		"Stationary": "Immobile"
 	},
 	"BodyPart": {
-		"BodyPart": "Partie du corps",
+		"BodyPart": "Parties du corps",
 		"Hand": "Mains",
 		"Foot": "Pieds",
 		"Head": "Visages",
-		"All": "Tous"
+		"All": "Toutes"
 	},
 	"Animal": {
-		"Animal": "Animal",
+		"Animal": "Animaux",
 		"Species": "Espèce",
 		"Bird": "Oiseau",
 		"Fish": "Poisson",
@@ -34,14 +34,14 @@
 		"SkeletonOrBones": "Squelette ou os",
 		"Bug": "Insecte",
 		"Mammal": "Mammifère",
-		"All": "Tous"
+		"All": "Toutes"
 	},
 	"Structure": {
 		"Structure": "Structure",
 		"House": "Maison",
 		"Building": "Bâtiment",
 		"Other": "Autre",
-		"All": "Tous"
+		"All": "Toutes"
 	},
 	"Vegetation": {
 		"Vegetation": "Végétation",
@@ -97,7 +97,7 @@
 	},
 	"News": {
 		"WhatsNew": "Quoi de neuf",
-		"Announcement": "Annonce"
+		"Announcement": "Annonces"
 	},
 	"ImageViewer": {
 		"Timer": "Minuteur",

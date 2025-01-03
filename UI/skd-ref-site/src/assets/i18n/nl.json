@@ -19,7 +19,7 @@
 	"BodyPart": {
 		"BodyPart": "Lichaamsdeel",
 		"Hand": "Handen",
-		"Foot": "Feet",
+		"Foot": "Voeten",
 		"Head": "Hoofden",
 		"All": "Alles"
 	},
@@ -28,7 +28,7 @@
 		"Species": "Soorten",
 		"Bird": "Vogel",
 		"Fish": "Vis",
-		"ReptileOrAmphibian": "Reptiel of amfibieën",
+		"ReptileOrAmphibian": "Reptiel of amfibie",
 		"Category": "Categorie",
 		"Living": "Leven",
 		"SkeletonOrBones": "Skelet of botten",
@@ -91,7 +91,7 @@
 		"News": "Nieuws",
 		"Logs": "Logs",
 		"LogIn": "Log in",
-		"LogOut": "Log out",
+		"LogOut": "Log uit",
 		"YourImages": "Uw afbeeldingen",
 		"ManageImages": "Afbeeldingen beheren"
 	},
@@ -101,7 +101,7 @@
 	},
 	"ImageViewer": {
 		"Timer": "Timer",
-		"Paused": "Onderbroken",
+		"Paused": "Gepauzeerd",
 		"ImageInfo": "Afbeeldingsinformatie",
 		"Source": "Bron",
 		"Model": "Model",
@@ -117,7 +117,7 @@
 		"GControls": "g - Wissel de grid",
 		"MControls": "m - Spiegel",
 		"SpacebarControls": "Spatiebalk - Pauze",
-		"EscapeControls": "Escape - Hou op",
+		"EscapeControls": "Escape - Stop",
 		"VisitUsOnReddit": "Bezoek ons ​​op Reddit!",
 		"Next": "Volgende",
 		"TakeABreak": "Neem een pauze!",
@@ -135,8 +135,8 @@
 		"No timers": "Geen timers",
 		"30 minutes": "30 minuten",
 		"1 hour": "1 uur",
-		"2 hours": "2 uren",
-		"3 hours": "3 uren",
-		"6 hours": "6 uren"
+		"2 hours": "2 uur",
+		"3 hours": "3 uur",
+		"6 hours": "6 uur"
 	}
 }

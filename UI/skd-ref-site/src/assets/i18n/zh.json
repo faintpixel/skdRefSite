@@ -3,21 +3,21 @@
 		"Hello": "你好！",
 		"LookingForSomethingElseToDraw": "想找些别的东西来画吗？",
 		"Welcome": "欢迎来到每日素描参照装置。",
-		"JoinTheFun": "加入到这一乐趣中吧！"
+		"JoinTheFun": "加入到这乐趣中吧！"
 	},
 	"FullBody": {
 		"FullBody": "全身",
 		"Clothing": "衣着",
-		"Clothed": "着衣的",
+		"Clothed": "着装的",
 		"Nude": "裸体的",
-		"IncludeNSFWImages": "包含工作不宜的图片",
+		"IncludeNSFWImages": "包含不宜在上班时浏览的图片",
 		"Pose": "姿势",
 		"Action": "动态",
 		"Stationary": "静态",
 		"All": "全部"
 	},
 	"BodyPart": {
-		"BodyPart": "身体部分",
+		"BodyPart": "身体部位",
 		"Hand": "手",
 		"Foot": "脚",
 		"Head": "头",
@@ -62,7 +62,7 @@
 		"Front": "正面",
 		"Side": "侧面",
 		"Back": "背面",
-		"AboveOrBelow": "上方或下方的角度",
+		"AboveOrBelow": "仰视或俯视",
 		"ClassMode": "课堂模式",
 		"Class": "课堂",
 		"Minutes": "分钟",
@@ -75,7 +75,7 @@
 		"Start": "开始",
 		"Time": "时间",
 		"Break": "休息",
-		"NSFW": "不建议在工作区域开启或展示",
+		"NSFW": "不建议在上班时浏览",
 		"true": "正确",
 		"false": "错误"
 	},
@@ -92,8 +92,8 @@
 		"YourImages": "你的图片",
 		"News": "新闻",
 		"Logs": "日志",
-		"LogIn": "登入",
-		"LogOut": "登出"
+		"LogIn": "登陆",
+		"LogOut": "退出"
 	},
 	"News": {
 		"WhatsNew": "最新消息",
@@ -103,10 +103,10 @@
 		"Timer": "计时器",
 		"Paused": "暂停",
 		"ImageInfo": "图片信息",
-		"Source": "资源",
+		"Source": "来源",
 		"Model": "模特",
 		"Photographer": "摄影师",
-		"DateAdded": "加入日期",
+		"DateAdded": "上传日期",
 		"TermsOfUse": "使用条款",
 		"Classifications": "分类",
 		"About": "关于",
@@ -118,15 +118,15 @@
 		"MControls": "m - 镜像",
 		"SpacebarControls": "空格 - 暂停",
 		"EscapeControls": "ESC - 停止",
-		"VisitUsOnReddit": "在Reddit上拜访我们！",
+		"VisitUsOnReddit": "在Reddit上找到我们！",
 		"Next": "下一个",
-		"TakeABreak": "休息一会！",
+		"TakeABreak": "休息一下！",
 		"ItsTimeForABreak": "是时候休息一下了。你的课程将在计时器为零时重新开始。",
 		"NoMoreImages": "很抱歉！没有符合筛选的图片。",
 		"Close": "关闭",
 		"ClassComplete": "课程完成",
-		"NiceWork": "干得好，你完成了这个课程！",
-		"MaybeTakeABreak": "也许你该休息一会，然后到 <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a> 看看人们都在做些什么。"
+		"NiceWork": "干得好，你完成了课程！",
+		"MaybeTakeABreak": "也许你该休息一下，然后到 <a href='https://www.reddit.com/r/sketchdaily'>the subreddit!</a> 看看大家都在做些什么。"
 	},
 	"Timers": {
 		"seconds": "{{total}} 秒钟",

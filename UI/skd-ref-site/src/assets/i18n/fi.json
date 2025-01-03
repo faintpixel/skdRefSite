@@ -1,23 +1,23 @@
 {
 	"Welcome": {
 		"Hello": "Hei!",
-		"Welcome": "Tervetuloa SketchDaily -refrenssidoohikiin.",
-		"LookingForSomethingElseToDraw": "Etsitkö jotain muuta piirrettävää?",
-		"JoinTheFun": "Liity hauskaan mukaan!"
+		"Welcome": "Tervetuloa SketchDaily -refrenssihärveliin.",
+		"LookingForSomethingElseToDraw": "Etsitkö jotakin muuta piirrettävää?",
+		"JoinTheFun": "Liity mukaan hauskanpitoon!"
 	},
 	"FullBody": {
 		"FullBody": "Kokovartalo",
 		"Clothing": "Vaatetus",
 		"Clothed": "Puettu",
 		"Nude": "Alaston",
-		"IncludeNSFWImages": "Sisältää NSFW kuvia",
-		"Pose": "Poseeraus",
-		"Action": "Toiminta",
+		"IncludeNSFWImages": "Käytä NSFW-kuvia.",
+		"Pose": "Mallin asento",
+		"Action": "Liikkeessä",
 		"Stationary": "Liikkumaton",
 		"All": "Kaikki"
 	},
 	"BodyPart": {
-		"BodyPart": "Ruumiinosa",
+		"BodyPart": "Ruumiinosat",
 		"Hand": "Kädet",
 		"Foot": "Jalat",
 		"Head": "Päät",
@@ -37,7 +37,7 @@
 		"All": "Kaikki"
 	},
 	"Structure": {
-		"Structure": "Rakenne",
+		"Structure": "Rakennelmat",
 		"House": "Talo",
 		"Building": "Rakennus",
 		"Other": "Muu",
@@ -106,7 +106,7 @@
 		"Source": "Lähde",
 		"Model": "Malli",
 		"Photographer": "Valokuvaaja",
-		"DateAdded": "Lisäyspäivämäärä",
+		"DateAdded": "Kuva lisätty",
 		"TermsOfUse": "Käyttöehdot",
 		"Classifications": "Luokittelu",
 		"About": "Aiheesta",
@@ -118,11 +118,11 @@
 		"MControls": "m - Peilaa",
 		"SpacebarControls": "Välilyönti - Tauko",
 		"EscapeControls": "Escape - Pysäytä",
-		"VisitUsOnReddit": "Vieraile meitä Redditissä!",
+		"VisitUsOnReddit": "Vieraile luonamme Redditissä!",
 		"Next": "Seuraava",
 		"TakeABreak": "Pidä tauko!",
 		"ItsTimeForABreak": "On tauon aika. Opetus jatkuu kun ajastin saavuttaa 0.",
-		"NoMoreImages": "Ei enään kuvia jotka sopivat suodattimeesi. Olemme pahoillamme!",
+		"NoMoreImages": "Ei valintoihin sopivia kuvia. Sori!",
 		"Close": "Sulje",
 		"ClassComplete": "Luokka suoritettu",
 		"NiceWork": "Hyvää työtä, suoritit luokan!",

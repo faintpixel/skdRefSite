@@ -9,12 +9,12 @@
 		"FullBody": "Ganzkörper",
 		"All": "Alle",
 		"Clothing": "Kleidung",
-		"Clothed": "Bekleidet",
-		"Nude": "Nackt",
+		"Clothed": "bekleidet",
+		"Nude": "nackt",
 		"IncludeNSFWImages": "NSFW-Bilder einschließen",
 		"Pose": "Pose",
 		"Action": "In Aktion",
-		"Stationary": "Statisch"
+		"Stationary": "statisch"
 	},
 	"BodyPart": {
 		"BodyPart": "Körperteil",
@@ -25,7 +25,7 @@
 	},
 	"Animal": {
 		"Animal": "Tier",
-		"Species": "Spezies",
+		"Species": "Gattung",
 		"Bird": "Vogel",
 		"Fish": "Fisch",
 		"ReptileOrAmphibian": "Reptil oder Amphibien",
@@ -38,7 +38,7 @@
 	},
 	"Structure": {
 		"Structure": "Strukturen",
-		"House": "Häuser",
+		"House": "Haus",
 		"Building": "Gebäude",
 		"Other": "andere",
 		"All": "Alle"
@@ -49,20 +49,20 @@
 		"Plants": "Pflanzen",
 		"PhotoType": "Photo Typ",
 		"Closeup": "Closeup",
-		"Full": "Vollständig",
+		"Full": "vollständig",
 		"All": "Alle"
 	},
 	"Filters": {
 		"All": "Alle",
 		"Type": "Typ",
 		"Gender": "Geschlecht",
-		"Male": "Männlich",
-		"Female": "Weiblich",
+		"Male": "männlich",
+		"Female": "weiblich",
 		"View": "Ansicht",
-		"Front": "Frontal",
-		"Side": "Seitlich",
+		"Front": "frontal",
+		"Side": "seitlich",
 		"Back": "Rücken",
-		"AboveOrBelow": "Oberhalb oder unterhalb",
+		"AboveOrBelow": "ober- oder unterhalb",
 		"ClassMode": "Klassenmodus",
 		"Class": "Klasse",
 		"Minutes": "Minuten",
@@ -71,23 +71,23 @@
 		"Hours": "Stunden",
 		"NoTimers": "Keine Timer",
 		"OnlyMostRecentImages": "Nur neueste Bilder verwenden",
-		"NumberOfImages": "Anzahl der passendsten Bilder",
+		"NumberOfImages": "Anzahl Bilder",
 		"Start": "Start",
 		"Time": "Zeit",
 		"Break": "Pause",
 		"NSFW": "NSFW",
-		"true": "Wahr",
-		"false": "Falsch"
+		"true": "wahr",
+		"false": "falsch"
 	},
 	"YourPics": {
 		"YourPics": "Deine Bilder",
 		"SelectPicturesFromDevice": "Wählen Sie Bilder von Ihrem Gerät zum Zeichnen aus!",
-		"NoDataIsSent": "Es werden keine Daten an unseren Server gesendet und niemand sonst kann die von Ihnen ausgewählten Bilder sehen.",
+		"NoDataIsSent": "Es werden keine Daten an unseren Server gesendet, und niemand anderes kann Ihre ausgewählten Bilder sehen.",
 		"ShuffleImages": "Bilder mischen"
 	},
 	"Header": {
 		"Title": "r/SketchDaily Vorlagen",
-		"AddImages": "Füge Bilder hinzu",
+		"AddImages": "Bilder hinzufügen",
 		"News": "Neuigkeiten",
 		"Logs": "Protokolle",
 		"LogIn": "Einloggen",
@@ -101,17 +101,17 @@
 	},
 	"ImageViewer": {
 		"Timer": "Timer",
-		"Paused": "Pausiert",
+		"Paused": "pausiert",
 		"ImageInfo": "Bildinformationen",
 		"Source": "Quelle",
 		"Model": "Modell",
 		"Photographer": "Fotograf",
-		"DateAdded": "Hinzugefügt",
+		"DateAdded": "hinzugefügt am",
 		"TermsOfUse": "Nutzungsbedingungen",
 		"Classifications": "Klassifikationen",
-		"About": "Über",
-		"LeftControls": "Links - Vorheriges Bild",
-		"RightControls": "Recht - Nächstes Bild",
+		"About": "über",
+		"LeftControls": "Links - vorheriges Bild",
+		"RightControls": "Rechts - Nächstes Bild",
 		"BControls": "b - Schwarz-Weiß umschalten",
 		"FControls": "f - Bild drehen",
 		"GControls": "g - Gitter umschalten",
@@ -120,13 +120,13 @@
 		"EscapeControls": "ESC - Halt",
 		"VisitUsOnReddit": "Besuchen Sie uns auf Reddit!",
 		"Next": "Nächstes",
-		"TakeABreak": "Mach eine Pause!",
+		"TakeABreak": "Mach mal Pause!",
 		"ItsTimeForABreak": "Zeit für eine Pause. Die Übung geht weiter, wenn der Timer 0 erreicht.",
-		"NoMoreImages": "Es wurden keine weiteren Bilder die der Auswahl entsprechen gefunden. Sorry!",
-		"Close": "Schließen",
+		"NoMoreImages": "Es wurden keine weiteren Bilder für deine Auswahlkriterien gefunden. Sorry!",
+		"Close": "schließen",
 		"ClassComplete": "Übung abgeschlossen",
 		"NiceWork": "Du hast die Übung erfolgreich abgeschlossen. Gut gemacht!",
-		"MaybeTakeABreak": "Nimm dir vielleicht eine kleine Pause und sieh dir an was andere auf <a href='https://www.reddit.com/r/sketchdaily'>dem Subreddit</a> machen!"
+		"MaybeTakeABreak": "Nimm dir vielleicht eine kleine Pause und sieh dir an, was andere auf <a href='https://www.reddit.com/r/sketchdaily'>dem Subreddit</a> machen!"
 	},
 	"Timers": {
 		"seconds": "{{total}} Sekunden",
@@ -134,9 +134,9 @@
 		"Class mode": "Klassen Modus",
 		"No timers": "Keine Zeitbegrenzung",
 		"30 minutes": "30 Minuten",
-		"1 hour": "1 std",
-		"2 hours": "2 std",
-		"3 hours": "3 std",
-		"6 hours": "6 std"
+		"1 hour": "1 Std",
+		"2 hours": "2 Std",
+		"3 hours": "3 Std",
+		"6 hours": "6 Std"
 	}
 }

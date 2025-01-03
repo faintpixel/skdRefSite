@@ -8,10 +8,10 @@
 	"FullBody": {
 		"FullBody": "Teljes alak",
 		"Clothing": "Ruházat",
-		"Nude": "Ruha nélkül",
+		"Nude": "Meztelen",
 		"Clothed": "Ruhával",
 		"Pose": "Póz",
-		"IncludeNSFWImages": "Felnőtt tartalom",
+		"IncludeNSFWImages": "Legyen köztük felnőtt tartalmú is",
 		"All": "Mindegyik",
 		"Action": "Dinamikus",
 		"Stationary": "Mozdulatlan"

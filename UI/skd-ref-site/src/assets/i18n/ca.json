@@ -1,0 +1,142 @@
+{
+	"Welcome": {
+		"Hello": "Hola !",
+		"Welcome": "Benvinguts al bàrtol de referències de SketchDaily",
+		"LookingForSomethingElseToDraw": "Voldries dibuixar alguna cosa més ?",
+		"JoinTheFun": "Diverteix-te amb nosaltres !"
+	},
+	"FullBody": {
+		"FullBody": "Cos sencer",
+		"Clothing": "Roba",
+		"Clothed": "Amb roba",
+		"Nude": "Nu",
+		"IncludeNSFWImages": "Incloure imatges NSFW",
+		"Pose": "Pose",
+		"Action": "Acció",
+		"Stationary": "Estàtic",
+		"All": "Totes"
+	},
+	"BodyPart": {
+		"BodyPart": "Part del cos",
+		"Hand": "Mans",
+		"Foot": "Peus",
+		"Head": "Caps",
+		"All": "Totes"
+	},
+	"Animal": {
+		"Animal": "Animals",
+		"Species": "Espècies",
+		"Bird": "Ocell",
+		"Fish": "Peix",
+		"ReptileOrAmphibian": "Rèptil o Amfibi",
+		"Category": "Categoria",
+		"Living": "Vius",
+		"SkeletonOrBones": "Esquelets o ossos",
+		"Bug": "Insectes",
+		"Mammal": "Mamífers",
+		"All": "Totes"
+	},
+	"Structure": {
+		"Structure": "Estructura",
+		"House": "Casa",
+		"Building": "Edifici",
+		"Other": "Altres",
+		"All": "Totes"
+	},
+	"Vegetation": {
+		"Vegetation": "Vegetació",
+		"Flowers": "Flors",
+		"Plants": "Plantes",
+		"PhotoType": "Tipus de fotografia",
+		"Closeup": "A prop",
+		"Full": "Sencer",
+		"All": "Totes"
+	},
+    "YourPics": {
+		"YourPics": "Les teves imatges",
+        "SelectPicturesFromDevice": "Selecciona imatges del teu dispositiu per dibuixar!",
+        "NoDataIsSent": "No s'envien dades al nostre servidor, i ningú més podrà veure les imatges que seleccionis.",
+        "ShuffleImages": "Barrejar imatges"
+	},
+	"Filters": {
+		"All": "Totes",
+		"Type": "Tipus",
+		"Gender": "Gènere",
+		"Male": "Masculí",
+		"Female": "Femení",
+		"View": "Vista",
+		"Front": "Frontal",
+		"Side": "Lateral",
+		"Back": "Posterior",
+		"AboveOrBelow": "Superior o Inferior",
+		"ClassMode": "Tipus de classe",
+		"Class": "Classe",
+		"Minutes": "Minuts",
+		"Seconds": "Segons",
+		"Hour": "Hora",
+		"Hours": "Hores",
+		"NoTimers": "Sense temps",
+		"OnlyMostRecentImages": "Fer servir només les imatges més recents",
+		"NumberOfImages": "Número d'imatges",
+		"Start": "Comença",
+		"Time": "Temps",
+		"Break": "Pausa",
+		"NSFW": "NSFW",
+		"true": "Vertader",
+		"false": "Fals"
+	},
+	"Header": {
+		"Title": "r/SketchDaily References",
+		"AddImages": "Afegir imatges",
+		"ManageImages": "Editar imatges",
+		"YourImages": "Les teves imatges",
+		"News": "Novetats",
+		"Logs": "Logs",
+		"LogIn": "Log in",
+		"LogOut": "Log out"
+	},
+	"News": {
+		"WhatsNew": "Novetats",
+		"Announcement": "Anunci"
+	},
+	"ImageViewer": {
+		"Timer": "Cronòmetre",
+		"Paused": "Pausat",
+		"ImageInfo": "Informació de l'imatge",
+		"Source": "Font",
+		"Model": "Model",
+		"Photographer": "Fotògraf",
+		"DateAdded": "Data de submissió",
+		"TermsOfUse": "Condicions d'ús",
+		"Classifications": "Classificacions",
+		"About": "Sobre",
+		"LeftControls": "Esquerra - Imatge anterior",
+		"RightControls": "Dreta - Següent imatge",
+        "BControls": "b - Canviar a blanc i negre",
+        "FControls": "f - Capgirar imatge",
+        "GControls": "g - Mostrar o amagar quadrícula",
+        "MControls": "m - Mirall",
+		"SpacebarControls": "Espai - Pausa",
+		"EscapeControls": "Escape - Aturar",
+		"VisitUsOnReddit": "Visita'ns a Reddit !",
+		"Next": "Següent",
+		"TakeABreak": "Fes una pausa !",
+		"ItsTimeForABreak": "És hora de fer una pausa. La teva classe continuarà quan el cronòmetre arribi a 0.",
+		"NoMoreImages": "No hi ha més imatges que s'adaptin als teus filtres...",
+		"Close": "Tancar",
+		"ClassComplete": "Classe completada",
+		"NiceWork": "Bona feina, has acabat la classe !",
+		"MaybeTakeABreak": "Potser pots fer una petita pausa i veure què ha fet la gent el el <a href='https://www.reddit.com/r/sketchdaily'>subreddit!</a>"
+	},
+	"Timers": {
+		"seconds": "{{total}} segons",
+		"minutes": "{{total}} minuts",
+		"Class mode": "Mode de classe",
+		"No timers": "Sense cronòmetre",
+		"30 minutes": "30 minuts",
+		"1 hour": "1 hora",
+		"2 hours": "2 hores",
+		"3 hours": "3 hores",
+		"6 hours": "6 hores"
+	}
+}

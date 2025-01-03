@@ -11,6 +11,7 @@ export class LanguageService {
     { code: 'en', name: 'English' },
     { code: 'ar', name: 'العربية' },
     { code: 'bg', name: 'Български' },
+    { code: 'ca', name: 'Catalan' },
     { code: 'cs', name: 'Česky' },
     { code: 'da', name: 'Dansk' },
     { code: 'de', name: 'Deutsch' },
