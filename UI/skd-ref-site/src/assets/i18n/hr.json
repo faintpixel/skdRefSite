@@ -55,7 +55,7 @@
 	"Filters": {
 		"All": "Sve",
 		"Type": "Tip",
-		"Gender": "Spol",
+		"Sex": "Spol",
 		"Male": "Muško",
 		"Female": "Žensko",
 		"View": "Pogled",

@@ -55,7 +55,7 @@
 	"Filters": {
 		"All": "모두",
 		"Type": "분류",
-		"Gender": "성별",
+		"Sex": "성별",
 		"Male": "남성",
 		"Female": "여성",
 		"View": "시점",

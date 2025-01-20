@@ -55,7 +55,7 @@
 	"Filters": {
 		"All": "Hepsi",
 		"Type": "Tür",
-		"Gender": "Cinsiyet",
+		"Sex": "Cinsiyet",
 		"Male": "Erkek",
 		"Female": "Kadın",
 		"View": "Görüntü Yönleri",

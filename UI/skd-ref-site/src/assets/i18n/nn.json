@@ -55,7 +55,7 @@
 	"Filters": {
 		"All": "Alt ",
 		"Type": "Type",
-		"Gender": "Kjønn",
+		"Sex": "Kjønn",
 		"Male": "Mann",
 		"Female": "Kvinne",
 		"View": "Vinkel",

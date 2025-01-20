@@ -60,7 +60,7 @@
             <select [(ngModel)]="selectedClothed" (change)="propertyChanged(selectedClothed, 'clothing')">
               <option *ngFor="let option of yesNo" [value]="option">{{option}}</option>
             </select>
-            <br /> Gender:
+            <br /> Sex:
             <select [(ngModel)]="selectedGender" (change)="propertyChanged(selectedGender, 'gender')">
               <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>
             </select>

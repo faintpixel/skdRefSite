@@ -3,7 +3,7 @@
     <ngb-tab title="{{'FullBody.FullBody' | translate}}" id='FullBodiesTab'>
       <ng-template ngbTabContent>
         <div>
-          <label for='fullBodyGender'>{{'Filters.Gender' | translate}}:</label>
+          <label for='fullBodyGender'>{{'Filters.Sex' | translate}}:</label>
           <select id='fullBodyGender' class='form-control' [(ngModel)]="filters.FullBodies.Gender">
             <option *ngFor="let gender of genders" [value]="gender">{{ 'Filters.' + gender | translate }}</option>
 
@@ -43,7 +43,7 @@
             <option *ngFor="let part of bodyParts" [value]="part">{{ 'BodyPart.' + part | translate }}</option>
           </select>
           <br />
-          <label for='bodyPartsGender'>{{'Filters.Gender' | translate}}:</label>
+          <label for='bodyPartsGender'>{{'Filters.Sex' | translate}}:</label>
           <select id='bodyPartsGender' class='form-control' [(ngModel)]="filters.BodyParts.Gender">
             <option *ngFor="let gender of genders" [value]="gender">{{ 'Filters.' + gender | translate }}</option>
           </select>

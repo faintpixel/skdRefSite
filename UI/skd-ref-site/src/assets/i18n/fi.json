@@ -55,7 +55,7 @@
 	"Filters": {
 		"All": "Kaikki",
 		"Type": "Tyyppi",
-		"Gender": "Sukupuoli",
+		"Sex": "Sukupuoli",
 		"Male": "Mies",
 		"Female": "Nainen",
 		"View": "Näkymä",

@@ -55,7 +55,7 @@
 	"Filters": {
 		"All": "Bce",
 		"Type": "Тип",
-		"Gender": "Пол",
+		"Sex": "Пол",
 		"Male": "Мужской",
 		"Female": "Женский",
 		"View": "Ракурс",

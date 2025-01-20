@@ -107,7 +107,7 @@
     <div *ngIf="referenceType == 'FullBodies'">
       <b>{{'Filters.NSFW' | translate}}:</b> {{'Filters.' + image.classifications.nsfw | translate}}<br />
       <b>{{'FullBody.Clothing' | translate}}:</b> {{'Filters.' + image.classifications.clothing | translate}}<br />
-      <b>{{'Filters.Gender' | translate}}:</b> {{'Filters.' + image.classifications.gender | translate}}<br />
+      <b>{{'Filters.Sex' | translate}}:</b> {{'Filters.' + image.classifications.gender | translate}}<br />
       <b>{{'FullBody.Pose' | translate}}:</b> {{'FullBody.' + image.classifications.poseType | translate}}<br />
       <b>{{'Filters.View' | translate}}:</b> {{'Filters.' + image.classifications.viewAngle | translate}}
     </div>
@@ -120,7 +120,7 @@
 
     <div *ngIf="referenceType == 'BodyParts'">
       <b>{{'BodyPart.BodyPart' | translate}}: </b>{{'BodyPart.' + image.classifications.bodyPart | translate}}<br />
-      <b>{{'Filters.Gender' | translate}}: </b>{{'Filters.' + image.classifications.gender | translate}}<br />
+      <b>{{'Filters.Sex' | translate}}: </b>{{'Filters.' + image.classifications.gender | translate}}<br />
       <b>{{'Filters.View' | translate}}: </b>{{'Filters.' + image.classifications.viewAngle | translate}}
     </div>
     <hr />
