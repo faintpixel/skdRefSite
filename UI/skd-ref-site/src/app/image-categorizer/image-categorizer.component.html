@@ -80,7 +80,7 @@
             <select [(ngModel)]="selectedBodyPart" (change)="propertyChanged(selectedBodyPart, 'bodyPart')">
               <option *ngFor="let part of bodyParts" [value]="part">{{part}}</option>
             </select>
-            <br /> Gender:
+            <br /> Sex:
             <select [(ngModel)]="selectedGender" (change)="propertyChanged(selectedGender, 'gender')">
               <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>
             </select>
