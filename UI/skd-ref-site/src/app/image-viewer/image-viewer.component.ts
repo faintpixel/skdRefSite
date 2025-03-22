@@ -61,6 +61,8 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
   shufflePictures = true;
   gridState = 0; // 0: No grid, 1: Black grid, 2: White grid
 
+  private wakeLock: any = null;
+
   @ViewChild('classComplete') private classCompleteModal;
   @ViewChild('imageContainer') imageContainer: ElementRef;
 
@@ -105,13 +107,21 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
     } else {
       this.previousImages = this.sessionService.GetPreviousIds();
       this.nextImage(false);
-    }    
+    } 
+    
+    this.requestWakeLock();
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && !this.wakeLock) {
+        this.requestWakeLock();
+      }
+    });
   }
 
   ngOnDestroy() {
     if (this.timer != null) {
       clearInterval(this.timer);
     }
+    this.releaseWakeLock();
   }
 
   openModal(content) {
@@ -400,6 +410,32 @@ export class ImageViewerComponent implements OnInit, OnDestroy {
             alert('Error reporting.');
           }                   
         });
+    }
+  }
+
+  async requestWakeLock() {
+    if ('wakeLock' in navigator) {
+      try {
+        this.wakeLock = await (navigator as any).wakeLock.request('screen');
+        console.log('Screen Wake Lock is active');
+
+        this.wakeLock.addEventListener('release', () => {
+          console.log('Screen Wake Lock was released');
+          this.wakeLock = null;
+        });
+      } catch (err) {
+        console.error(`Wake Lock failed: ${err.name}, ${err.message}`);
+      }
+    } else {
+      console.warn('Wake Lock API is not supported in this browser.');
+    }
+  }
+
+  async releaseWakeLock() {
+    if (this.wakeLock !== null) {
+      await this.wakeLock.release();
+      this.wakeLock = null;
+      console.log('Screen Wake Lock released manually');
     }
   }
 
