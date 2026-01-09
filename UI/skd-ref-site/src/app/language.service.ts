@@ -52,16 +52,18 @@ export class LanguageService {
     { code: 'zh-hant', name: '繁體中文' }
   ];
 
-  public language: 'en';
+  public language = 'en';
 
   constructor(private translateService: TranslateService, private router: Router) { }
 
-  changeLanguage(language) {
-    for (const l of this.languages) {
-      if (l.code === language) {
-        this.language = language;
-        this.translateService.use(language);
-      }
+  changeLanguage(language: string) {
+    const exists = this.languages.some(l => l.code === language);
+
+    const finalLang = exists ? language : 'en';
+
+    if (this.language !== finalLang) {
+      this.language = finalLang;
+      this.translateService.use(finalLang);
     }
   }
 
